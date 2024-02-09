@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="92d5ff32-e2d4-4097-b74a-d8cfebe5aef0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Admin/.vs/admin &amp; tke/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../Admin/.vs/admin &amp; tke/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Admin/admin &amp; tke/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Admin/admin &amp; tke/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Admin/admin &amp; tke/obj/Debug/admin &amp; tke.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Admin/admin &amp; tke/obj/Debug/admin &amp; tke.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Game02/.vs/Game02/FileContentIndex/0b1849e7-36fc-470b-a3a7-ec1f3cf820da.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Game02/.vs/Game02/FileContentIndex/12567580-cf2e-460d-bb7c-48aca13ab3ad.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Game02/.vs/Game02/FileContentIndex/53dc1b3a-4a4d-4bc8-b3f9-b7997f18bfc4.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Game02/.vs/Game02/FileContentIndex/9557e391-08e6-4b76-b9f1-48ffb22dd2f9.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Game02/.vs/Game02/FileContentIndex/9ec23913-9278-4bfd-96fc-98bb30568e32.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Game02/.vs/Game02/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../Game02/.vs/Game02/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Game02/Game02/obj/Debug/DesignTimeResolveAssemblyReferences.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Game02/Game02/obj/Debug/DesignTimeResolveAssemblyReferences.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Game02/Game02/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Game02/Game02/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Game02/Game02/obj/Debug/Game02.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Game02/Game02/obj/Debug/Game02.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/Gaming Dashboard/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Gaming Dashboard/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoiMatKhau.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DoiMatKhau.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Gaming Dashboard.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Gaming Dashboard.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Gaming Dashboard.csproj.ResolveComReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Gaming Dashboard.csproj.ResolveComReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Interop.WMPLib.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Interop.WMPLib.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../game03/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../game03/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../game03/Codecool.Quest.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../game03/Codecool.Quest/App.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../game03/Codecool.Quest/Codecool.Quest.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../game03/Codecool.Quest/Form1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../game03/Codecool.Quest/Form1.designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../game03/Codecool.Quest/Form1.resx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../game03/Codecool.Quest/MainForm.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../game03/Codecool.Quest/MainForm.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../game03/Codecool.Quest/MainForm.resx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../game03/Codecool.Quest/Models/Actors/Actor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../game03/Codecool.Quest/Models/Actors/Bandit.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../game03/Codecool.Quest/Models/Actors/Environment.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../game03/Codecool.Quest/Models/Actors/Item.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../game03/Codecool.Quest/Models/Actors/Player.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../game03/Codecool.Quest/Models/Cell.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../game03/Codecool.Quest/Models/CellType.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../game03/Codecool.Quest/Models/Directions.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../game03/Codecool.Quest/Models/GameMap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../game03/Codecool.Quest/Models/IDrawable.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../game03/Codecool.Quest/Models/Inventory.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../game03/Codecool.Quest/Models/MapLoader.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../game03/Codecool.Quest/Models/Tiles.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../game03/Codecool.Quest/Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../game03/Codecool.Quest/Properties/AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../game03/Codecool.Quest/Properties/Resources.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../game03/Codecool.Quest/Properties/Resources.resx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../game03/Codecool.Quest/Properties/Settings.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../game03/Codecool.Quest/Properties/Settings.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../game03/Codecool.Quest/Properties/witcher3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../game03/Codecool.Quest/Resources/castle.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../game03/Codecool.Quest/Resources/forest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../game03/Codecool.Quest/Resources/game3soundtrack.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../game03/Codecool.Quest/Resources/map.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../game03/Codecool.Quest/Resources/questions.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../game03/Codecool.Quest/Resources/roguelikeDungeon_transparent.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../game03/Codecool.Quest/SoundManager.cs" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 3
+}]]></component>
+  <component name="ProjectId" id="2biTyhaQQwqhrm5adqstxLDP4Xq" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/github_repo/catchy",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-20.0.2-azul-20.0.2-f644763e9732-d86f2a68" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="92d5ff32-e2d4-4097-b74a-d8cfebe5aef0" name="Changes" comment="" />
+      <created>1706697162638</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1706697162638</updated>
+      <workItem from="1706697165468" duration="34000" />
+    </task>
+    <servers />
+  </component>
+</project>

@@ -1,0 +1,66 @@
+E:\Source Code Visual Stduio 2019\Gaming Dashboard\bin\Debug\Gaming Dashboard.exe.config
+E:\Source Code Visual Stduio 2019\Gaming Dashboard\bin\Debug\Gaming Dashboard.exe
+E:\Source Code Visual Stduio 2019\Gaming Dashboard\bin\Debug\Gaming Dashboard.pdb
+E:\Source Code Visual Stduio 2019\Gaming Dashboard\bin\Debug\Guna.UI2.dll
+E:\Source Code Visual Stduio 2019\Gaming Dashboard\obj\Debug\Gaming Dashboard.csprojAssemblyReference.cache
+E:\Source Code Visual Stduio 2019\Gaming Dashboard\obj\Debug\Gaming_Dashboard.Form1.resources
+E:\Source Code Visual Stduio 2019\Gaming Dashboard\obj\Debug\Gaming_Dashboard.Properties.Resources.resources
+E:\Source Code Visual Stduio 2019\Gaming Dashboard\obj\Debug\Gaming Dashboard.csproj.GenerateResource.cache
+E:\Source Code Visual Stduio 2019\Gaming Dashboard\obj\Debug\Gaming Dashboard.csproj.CoreCompileInputs.cache
+E:\Source Code Visual Stduio 2019\Gaming Dashboard\obj\Debug\Gaming Dashboard.csproj.CopyComplete
+E:\Source Code Visual Stduio 2019\Gaming Dashboard\obj\Debug\Gaming Dashboard.exe
+E:\Source Code Visual Stduio 2019\Gaming Dashboard\obj\Debug\Gaming Dashboard.pdb
+D:\github_repo\Game-Dashboard-GabiBox\bin\Debug\Gaming Dashboard.exe.config
+D:\github_repo\Game-Dashboard-GabiBox\bin\Debug\Gaming Dashboard.exe
+D:\github_repo\Game-Dashboard-GabiBox\bin\Debug\Gaming Dashboard.pdb
+D:\github_repo\Game-Dashboard-GabiBox\bin\Debug\Guna.UI2.dll
+D:\github_repo\Game-Dashboard-GabiBox\obj\Debug\Gaming Dashboard.csproj.AssemblyReference.cache
+D:\github_repo\Game-Dashboard-GabiBox\obj\Debug\Gaming_Dashboard.Properties.Resources.resources
+D:\github_repo\Game-Dashboard-GabiBox\obj\Debug\Gaming Dashboard.csproj.GenerateResource.cache
+D:\github_repo\Game-Dashboard-GabiBox\obj\Debug\Gaming Dashboard.csproj.CoreCompileInputs.cache
+D:\github_repo\Game-Dashboard-GabiBox\obj\Debug\Gaming Dashboard.csproj.CopyComplete
+D:\github_repo\Game-Dashboard-GabiBox\obj\Debug\Gaming Dashboard.exe
+D:\github_repo\Game-Dashboard-GabiBox\obj\Debug\Gaming Dashboard.pdb
+D:\github_repo\Game-Dashboard-GabiBox\obj\Debug\Gaming_Dashboard.Main.resources
+D:\github_repo\Game-Dashboard-GabiBox\obj\Debug\Gaming_Dashboard.DangNhap.resources
+D:\github_repo\Game-Dashboard-GabiBox\obj\Debug\Gaming_Dashboard.QuenMatKhau.resources
+D:\github_repo\Game-Dashboard-GabiBox\obj\Debug\Gaming_Dashboard.UserCaiDat.resources
+D:\github_repo\Game-Dashboard-GabiBox\obj\Debug\Gaming_Dashboard.UserMain.resources
+D:\github_repo\Game-Dashboard-GabiBox\obj\Debug\Gaming_Dashboard.UserThanhTich.resources
+D:\github_repo\Game-Dashboard-GabiBox\obj\Debug\Gaming_Dashboard.DangKy1.resources
+D:\github_repo\Game-Dashboard-GabiBox\obj\Debug\Gaming_Dashboard.DoiMatKhau.resources
+D:\github_repo\Game-Dashboard-GabiBox\obj\Debug\Gaming_Dashboard.UserTaiKhoan.resources
+D:\github_repo\Game-Dashboard-GabiBox\obj\Debug\Gaming_Dashboard.BangXepHang.resources
+D:\github_repo\Game-Dashboard-GabiBox\obj\Debug\Gaming_Dashboard.UserTroChoiYeuThich.resources
+D:\github_repo\Game-Dashboard-GabiBox\obj\Debug\Gaming_Dashboard.UserThongBao.resources
+D:\github_repo\Game-Dashboard-GabiBox\obj\Debug\Gaming_Dashboard.UserThongTinCaNhan.resources
+D:\github_repo\Game-Dashboard-GabiBox\obj\Debug\Gaming_Dashboard.TinTuc.resources
+D:\github_repo\Game-Dashboard-GabiBox\obj\Debug\Interop.WMPLib.dll
+D:\github_repo\Game-Dashboard-GabiBox\obj\Debug\Gaming Dashboard.csproj.ResolveComReference.cache
+D:\github_repo\Desktop-team-A\TrangChu\obj\Debug\Gaming Dashboard.csproj.AssemblyReference.cache
+D:\github_repo\Desktop-team-A\TrangChu\obj\Debug\Interop.WMPLib.dll
+D:\github_repo\Desktop-team-A\TrangChu\obj\Debug\Gaming Dashboard.csproj.ResolveComReference.cache
+D:\github_repo\Desktop-team-A\TrangChu\obj\Debug\Gaming_Dashboard.BangXepHang.resources
+D:\github_repo\Desktop-team-A\TrangChu\obj\Debug\Gaming_Dashboard.DangKy1.resources
+D:\github_repo\Desktop-team-A\TrangChu\obj\Debug\Gaming_Dashboard.DangNhap.resources
+D:\github_repo\Desktop-team-A\TrangChu\obj\Debug\Gaming_Dashboard.DoiMatKhau.resources
+D:\github_repo\Desktop-team-A\TrangChu\obj\Debug\Gaming_Dashboard.Main.resources
+D:\github_repo\Desktop-team-A\TrangChu\obj\Debug\Gaming_Dashboard.Properties.Resources.resources
+D:\github_repo\Desktop-team-A\TrangChu\obj\Debug\Gaming_Dashboard.QuenMatKhau.resources
+D:\github_repo\Desktop-team-A\TrangChu\obj\Debug\Gaming_Dashboard.UserDoiMatKhau.resources
+D:\github_repo\Desktop-team-A\TrangChu\obj\Debug\Gaming_Dashboard.UserThongBao.resources
+D:\github_repo\Desktop-team-A\TrangChu\obj\Debug\Gaming_Dashboard.UserThongTinCaNhan.resources
+D:\github_repo\Desktop-team-A\TrangChu\obj\Debug\Gaming_Dashboard.UserTroChoiYeuThich.resources
+D:\github_repo\Desktop-team-A\TrangChu\obj\Debug\Gaming_Dashboard.UserCaiDat.resources
+D:\github_repo\Desktop-team-A\TrangChu\obj\Debug\Gaming_Dashboard.UserMain.resources
+D:\github_repo\Desktop-team-A\TrangChu\obj\Debug\Gaming_Dashboard.UserTaiKhoan.resources
+D:\github_repo\Desktop-team-A\TrangChu\obj\Debug\Gaming_Dashboard.UserThanhTich.resources
+D:\github_repo\Desktop-team-A\TrangChu\obj\Debug\Gaming Dashboard.csproj.GenerateResource.cache
+D:\github_repo\Desktop-team-A\TrangChu\obj\Debug\Gaming Dashboard.csproj.CoreCompileInputs.cache
+D:\github_repo\Desktop-team-A\TrangChu\obj\Debug\Gaming Dashboard.exe
+D:\github_repo\Desktop-team-A\TrangChu\obj\Debug\Gaming Dashboard.pdb
+D:\github_repo\Desktop-team-A\TrangChu\bin\Debug\Gaming Dashboard.exe.config
+D:\github_repo\Desktop-team-A\TrangChu\bin\Debug\Gaming Dashboard.exe
+D:\github_repo\Desktop-team-A\TrangChu\bin\Debug\Gaming Dashboard.pdb
+D:\github_repo\Desktop-team-A\TrangChu\bin\Debug\Guna.UI2.dll
+D:\github_repo\Desktop-team-A\TrangChu\obj\Debug\Gaming Dashboard.csproj.CopyComplete
