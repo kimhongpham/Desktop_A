@@ -207,6 +207,7 @@
             this.guna2CircleButton6.Size = new System.Drawing.Size(60, 60);
             this.guna2CircleButton6.TabIndex = 30;
             this.guna2CircleButton6.UseTransparentBackground = true;
+            this.guna2CircleButton6.Click += new System.EventHandler(this.guna2CircleButton6_Click);
             // 
             // Setting_Game
             // 

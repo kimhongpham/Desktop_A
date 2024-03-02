@@ -23,5 +23,10 @@ namespace admin___tke
             Edit_info f2 = new Edit_info();
             f2.ShowDialog();
         }
+
+        private void guna2CircleButton6_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -21,5 +21,10 @@ namespace admin___tke
         {
 
         }
+
+        private void guna2CircleButton6_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }   
 }

@@ -24,5 +24,10 @@ namespace admin___tke
             f4.ShowDialog();
             
         }
+
+        private void guna2CircleButton6_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

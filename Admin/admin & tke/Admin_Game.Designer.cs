@@ -359,11 +359,12 @@
             this.guna2CircleButton6.Size = new System.Drawing.Size(60, 60);
             this.guna2CircleButton6.TabIndex = 29;
             this.guna2CircleButton6.UseTransparentBackground = true;
+            this.guna2CircleButton6.Click += new System.EventHandler(this.guna2CircleButton6_Click);
             // 
             // Admin_Game
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1920, 1080);
             this.Controls.Add(this.guna2CircleButton6);

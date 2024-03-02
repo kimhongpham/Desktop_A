@@ -48,12 +48,12 @@
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.chart3 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
+            this.chart4 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2ComboBox3 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2CircleButton6 = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.chart4 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.guna2Panel2.SuspendLayout();
@@ -156,6 +156,22 @@
             this.guna2Panel4.Size = new System.Drawing.Size(824, 362);
             this.guna2Panel4.TabIndex = 6;
             // 
+            // chart4
+            // 
+            chartArea4.Name = "ChartArea1";
+            this.chart4.ChartAreas.Add(chartArea4);
+            legend4.Name = "Legend1";
+            this.chart4.Legends.Add(legend4);
+            this.chart4.Location = new System.Drawing.Point(60, 33);
+            this.chart4.Name = "chart4";
+            series4.ChartArea = "ChartArea1";
+            series4.Legend = "Legend1";
+            series4.Name = "Series1";
+            this.chart4.Series.Add(series4);
+            this.chart4.Size = new System.Drawing.Size(466, 240);
+            this.chart4.TabIndex = 2;
+            this.chart4.Text = "chart4";
+            // 
             // guna2ComboBox1
             // 
             this.guna2ComboBox1.AutoRoundedCorners = true;
@@ -251,22 +267,7 @@
             this.guna2CircleButton6.Size = new System.Drawing.Size(60, 60);
             this.guna2CircleButton6.TabIndex = 30;
             this.guna2CircleButton6.UseTransparentBackground = true;
-            // 
-            // chart4
-            // 
-            chartArea4.Name = "ChartArea1";
-            this.chart4.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            this.chart4.Legends.Add(legend4);
-            this.chart4.Location = new System.Drawing.Point(60, 33);
-            this.chart4.Name = "chart4";
-            series4.ChartArea = "ChartArea1";
-            series4.Legend = "Legend1";
-            series4.Name = "Series1";
-            this.chart4.Series.Add(series4);
-            this.chart4.Size = new System.Drawing.Size(466, 240);
-            this.chart4.TabIndex = 2;
-            this.chart4.Text = "chart4";
+            this.guna2CircleButton6.Click += new System.EventHandler(this.guna2CircleButton6_Click);
             // 
             // Reports
             // 

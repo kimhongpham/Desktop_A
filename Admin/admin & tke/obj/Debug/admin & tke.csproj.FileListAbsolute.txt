@@ -15,3 +15,38 @@ C:\Users\Dell\OneDrive\Documents\admin & tke\admin & tke\obj\Debug\admin___tke.F
 C:\Users\Dell\OneDrive\Documents\admin & tke\admin & tke\obj\Debug\admin___tke.Form4.resources
 C:\Users\Dell\OneDrive\Documents\admin & tke\admin & tke\obj\Debug\admin___tke.Form5.resources
 C:\Users\Dell\OneDrive\Documents\admin & tke\admin & tke\obj\Debug\admin___tke.Form6.resources
+D:\Github\CSLT\Desktop_A\Admin\admin & tke\bin\Debug\admin & tke.exe.config
+D:\Github\CSLT\Desktop_A\Admin\admin & tke\bin\Debug\admin & tke.exe
+D:\Github\CSLT\Desktop_A\Admin\admin & tke\bin\Debug\admin & tke.pdb
+D:\Github\CSLT\Desktop_A\Admin\admin & tke\bin\Debug\Guna.UI2.dll
+D:\Github\CSLT\Desktop_A\Admin\admin & tke\bin\Debug\Syncfusion.Licensing.dll
+D:\Github\CSLT\Desktop_A\Admin\admin & tke\bin\Debug\Syncfusion.SfChart.WPF.dll
+D:\Github\CSLT\Desktop_A\Admin\admin & tke\bin\Debug\ZedGraph.dll
+D:\Github\CSLT\Desktop_A\Admin\admin & tke\bin\Debug\Syncfusion.SfChart.WPF.xml
+D:\Github\CSLT\Desktop_A\Admin\admin & tke\bin\Debug\ZedGraph.xml
+D:\Github\CSLT\Desktop_A\Admin\admin & tke\bin\Debug\de\ZedGraph.resources.dll
+D:\Github\CSLT\Desktop_A\Admin\admin & tke\bin\Debug\es\ZedGraph.resources.dll
+D:\Github\CSLT\Desktop_A\Admin\admin & tke\bin\Debug\fr\ZedGraph.resources.dll
+D:\Github\CSLT\Desktop_A\Admin\admin & tke\bin\Debug\hu\ZedGraph.resources.dll
+D:\Github\CSLT\Desktop_A\Admin\admin & tke\bin\Debug\it\ZedGraph.resources.dll
+D:\Github\CSLT\Desktop_A\Admin\admin & tke\bin\Debug\ja\ZedGraph.resources.dll
+D:\Github\CSLT\Desktop_A\Admin\admin & tke\bin\Debug\pt\ZedGraph.resources.dll
+D:\Github\CSLT\Desktop_A\Admin\admin & tke\bin\Debug\ru\ZedGraph.resources.dll
+D:\Github\CSLT\Desktop_A\Admin\admin & tke\bin\Debug\sk\ZedGraph.resources.dll
+D:\Github\CSLT\Desktop_A\Admin\admin & tke\bin\Debug\sv\ZedGraph.resources.dll
+D:\Github\CSLT\Desktop_A\Admin\admin & tke\bin\Debug\tr\ZedGraph.resources.dll
+D:\Github\CSLT\Desktop_A\Admin\admin & tke\bin\Debug\zh-cn\ZedGraph.resources.dll
+D:\Github\CSLT\Desktop_A\Admin\admin & tke\bin\Debug\zh-tw\ZedGraph.resources.dll
+D:\Github\CSLT\Desktop_A\Admin\admin & tke\obj\Debug\admin & tke.csproj.AssemblyReference.cache
+D:\Github\CSLT\Desktop_A\Admin\admin & tke\obj\Debug\admin___tke.Admin_Player.resources
+D:\Github\CSLT\Desktop_A\Admin\admin & tke\obj\Debug\admin___tke.Edit_info.resources
+D:\Github\CSLT\Desktop_A\Admin\admin & tke\obj\Debug\admin___tke.Admin_Game.resources
+D:\Github\CSLT\Desktop_A\Admin\admin & tke\obj\Debug\admin___tke.Setting_Game.resources
+D:\Github\CSLT\Desktop_A\Admin\admin & tke\obj\Debug\admin___tke.Reports.resources
+D:\Github\CSLT\Desktop_A\Admin\admin & tke\obj\Debug\admin___tke.Search.resources
+D:\Github\CSLT\Desktop_A\Admin\admin & tke\obj\Debug\admin___tke.Properties.Resources.resources
+D:\Github\CSLT\Desktop_A\Admin\admin & tke\obj\Debug\admin & tke.csproj.GenerateResource.cache
+D:\Github\CSLT\Desktop_A\Admin\admin & tke\obj\Debug\admin & tke.csproj.CoreCompileInputs.cache
+D:\Github\CSLT\Desktop_A\Admin\admin & tke\obj\Debug\admin & tke.csproj.CopyComplete
+D:\Github\CSLT\Desktop_A\Admin\admin & tke\obj\Debug\admin & tke.exe
+D:\Github\CSLT\Desktop_A\Admin\admin & tke\obj\Debug\admin & tke.pdb
