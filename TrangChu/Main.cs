@@ -182,5 +182,20 @@ namespace Gaming_Dashboard
         {
             MessageBox.Show("Yêu cầu đăng nhập!");
         }
+
+        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_TopGameMain_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
