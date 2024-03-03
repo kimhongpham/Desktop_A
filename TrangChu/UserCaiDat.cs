@@ -33,7 +33,7 @@ namespace Gaming_Dashboard
         private void guna2ToggleSwitch1_CheckedChanged(object sender, EventArgs e)
         {
            
-            if (guna2ToggleSwitch1.Checked)
+            if (tgls_NhacNen.Checked)
             {
                 sound.Play();
             }

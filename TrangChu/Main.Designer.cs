@@ -40,7 +40,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.guna2PictureBox6 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lbl_Game1 = new System.Windows.Forms.Label();
             this.picbox_game1Main = new Guna.UI2.WinForms.Guna2PictureBox();
             this.lbl_TopGameMain = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -113,38 +113,34 @@
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.label13 = new System.Windows.Forms.Label();
+            this.lbl_Game2 = new System.Windows.Forms.Label();
             this.picbox_game2Main = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2ImageButton2 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.label14 = new System.Windows.Forms.Label();
             this.guna2PictureBox9 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.picbox_game3Main = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.lbl_game3 = new System.Windows.Forms.Label();
+            this.lbl_TenGame3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.btn_ChoiNgayMain = new Guna.UI2.WinForms.Guna2Button();
             this.btn_DangNhapMain = new System.Windows.Forms.Label();
             this.btn_DangKyMain = new System.Windows.Forms.Label();
             this.guna2Panel8 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel13 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
-            this.label20 = new System.Windows.Forms.Label();
-            this.lbl_TopNguoiChoi4_Main = new System.Windows.Forms.Label();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-            this.label9 = new System.Windows.Forms.Label();
+            this.btn_DiemUser3 = new Guna.UI2.WinForms.Guna2Button();
+            this.lbl_BXHgame3 = new System.Windows.Forms.Label();
             this.lbl_TopNguoiChoi3_Main = new System.Windows.Forms.Label();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.label3 = new System.Windows.Forms.Label();
+            this.btn_DiemUser2 = new Guna.UI2.WinForms.Guna2Button();
+            this.lbl_BXHgame2 = new System.Windows.Forms.Label();
             this.lbl_TopNguoiChoi2_Main = new System.Windows.Forms.Label();
             this.guna2Panel9 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Button9 = new Guna.UI2.WinForms.Guna2Button();
-            this.label35 = new System.Windows.Forms.Label();
+            this.btn_DiemUser1 = new Guna.UI2.WinForms.Guna2Button();
+            this.lbl_BXHgame1 = new System.Windows.Forms.Label();
             this.lbl_TopNguoiChoi1_Main = new System.Windows.Forms.Label();
             this.lbl_BangXepHangMain = new System.Windows.Forms.Label();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txt_Search = new Guna.UI2.WinForms.Guna2TextBox();
             this.pn_TrangChu2 = new Guna.UI2.WinForms.Guna2Panel();
             this.pn_SidebarTrangChu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgBtn_logo)).BeginInit();
@@ -182,9 +178,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.picbox_game2Main)).BeginInit();
             this.guna2Panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picbox_game3Main)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lbl_TenGame3)).BeginInit();
             this.guna2Panel8.SuspendLayout();
-            this.guna2Panel13.SuspendLayout();
             this.guna2Panel4.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
             this.guna2Panel9.SuspendLayout();
@@ -314,7 +309,7 @@
             this.guna2Panel2.Controls.Add(this.label7);
             this.guna2Panel2.Controls.Add(this.guna2PictureBox6);
             this.guna2Panel2.Controls.Add(this.label6);
-            this.guna2Panel2.Controls.Add(this.label5);
+            this.guna2Panel2.Controls.Add(this.lbl_Game1);
             this.guna2Panel2.Controls.Add(this.picbox_game1Main);
             this.guna2Panel2.FillColor = System.Drawing.Color.White;
             this.guna2Panel2.Location = new System.Drawing.Point(19, 278);
@@ -375,15 +370,15 @@
             this.label6.TabIndex = 16;
             this.label6.Text = "4.6";
             // 
-            // label5
+            // lbl_Game1
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(8, 108);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(90, 20);
-            this.label5.TabIndex = 14;
-            this.label5.Text = "Tên game 1";
+            this.lbl_Game1.AutoSize = true;
+            this.lbl_Game1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Game1.Location = new System.Drawing.Point(8, 108);
+            this.lbl_Game1.Name = "lbl_Game1";
+            this.lbl_Game1.Size = new System.Drawing.Size(90, 20);
+            this.lbl_Game1.TabIndex = 14;
+            this.lbl_Game1.Text = "Tên game 1";
             // 
             // picbox_game1Main
             // 
@@ -407,6 +402,7 @@
             this.lbl_TopGameMain.Size = new System.Drawing.Size(189, 23);
             this.lbl_TopGameMain.TabIndex = 50;
             this.lbl_TopGameMain.Text = "Top Game Trong Ngày";
+            this.lbl_TopGameMain.Click += new System.EventHandler(this.lbl_TopGameMain_Click);
             // 
             // label12
             // 
@@ -430,7 +426,7 @@
             this.pn_TrangChuMain.Controls.Add(this.btn_DangKyMain);
             this.pn_TrangChuMain.Controls.Add(this.guna2Panel8);
             this.pn_TrangChuMain.Controls.Add(this.guna2PictureBox3);
-            this.pn_TrangChuMain.Controls.Add(this.guna2TextBox1);
+            this.pn_TrangChuMain.Controls.Add(this.txt_Search);
             this.pn_TrangChuMain.Controls.Add(this.guna2Panel2);
             this.pn_TrangChuMain.Controls.Add(this.lbl_TopGameMain);
             this.pn_TrangChuMain.FillColor = System.Drawing.Color.White;
@@ -1289,7 +1285,7 @@
             this.guna2Panel5.Controls.Add(this.label11);
             this.guna2Panel5.Controls.Add(this.guna2PictureBox1);
             this.guna2Panel5.Controls.Add(this.label12);
-            this.guna2Panel5.Controls.Add(this.label13);
+            this.guna2Panel5.Controls.Add(this.lbl_Game2);
             this.guna2Panel5.Controls.Add(this.picbox_game2Main);
             this.guna2Panel5.FillColor = System.Drawing.Color.White;
             this.guna2Panel5.Location = new System.Drawing.Point(187, 278);
@@ -1330,15 +1326,15 @@
             this.guna2PictureBox1.TabStop = false;
             this.guna2PictureBox1.UseTransparentBackground = true;
             // 
-            // label13
+            // lbl_Game2
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(8, 108);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(90, 20);
-            this.label13.TabIndex = 14;
-            this.label13.Text = "Tên game 2";
+            this.lbl_Game2.AutoSize = true;
+            this.lbl_Game2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Game2.Location = new System.Drawing.Point(8, 108);
+            this.lbl_Game2.Name = "lbl_Game2";
+            this.lbl_Game2.Size = new System.Drawing.Size(90, 20);
+            this.lbl_Game2.TabIndex = 14;
+            this.lbl_Game2.Text = "Tên game 2";
             // 
             // picbox_game2Main
             // 
@@ -1361,8 +1357,8 @@
             this.guna2Panel6.Controls.Add(this.label14);
             this.guna2Panel6.Controls.Add(this.guna2PictureBox9);
             this.guna2Panel6.Controls.Add(this.label15);
-            this.guna2Panel6.Controls.Add(this.label16);
-            this.guna2Panel6.Controls.Add(this.picbox_game3Main);
+            this.guna2Panel6.Controls.Add(this.lbl_game3);
+            this.guna2Panel6.Controls.Add(this.lbl_TenGame3);
             this.guna2Panel6.FillColor = System.Drawing.Color.White;
             this.guna2Panel6.Location = new System.Drawing.Point(355, 278);
             this.guna2Panel6.Name = "guna2Panel6";
@@ -1422,28 +1418,28 @@
             this.label15.TabIndex = 16;
             this.label15.Text = "4.6";
             // 
-            // label16
+            // lbl_game3
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(8, 108);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(90, 20);
-            this.label16.TabIndex = 14;
-            this.label16.Text = "Tên game 3";
+            this.lbl_game3.AutoSize = true;
+            this.lbl_game3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_game3.Location = new System.Drawing.Point(8, 108);
+            this.lbl_game3.Name = "lbl_game3";
+            this.lbl_game3.Size = new System.Drawing.Size(90, 20);
+            this.lbl_game3.TabIndex = 14;
+            this.lbl_game3.Text = "Tên game 3";
             // 
-            // picbox_game3Main
+            // lbl_TenGame3
             // 
-            this.picbox_game3Main.BackColor = System.Drawing.Color.Transparent;
-            this.picbox_game3Main.Image = global::Gaming_Dashboard.Properties.Resources.Rectangle_35;
-            this.picbox_game3Main.ImageRotate = 0F;
-            this.picbox_game3Main.Location = new System.Drawing.Point(10, 9);
-            this.picbox_game3Main.Name = "picbox_game3Main";
-            this.picbox_game3Main.Size = new System.Drawing.Size(143, 93);
-            this.picbox_game3Main.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picbox_game3Main.TabIndex = 0;
-            this.picbox_game3Main.TabStop = false;
-            this.picbox_game3Main.UseTransparentBackground = true;
+            this.lbl_TenGame3.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_TenGame3.Image = global::Gaming_Dashboard.Properties.Resources.Rectangle_35;
+            this.lbl_TenGame3.ImageRotate = 0F;
+            this.lbl_TenGame3.Location = new System.Drawing.Point(10, 9);
+            this.lbl_TenGame3.Name = "lbl_TenGame3";
+            this.lbl_TenGame3.Size = new System.Drawing.Size(143, 93);
+            this.lbl_TenGame3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.lbl_TenGame3.TabIndex = 0;
+            this.lbl_TenGame3.TabStop = false;
+            this.lbl_TenGame3.UseTransparentBackground = true;
             // 
             // btn_ChoiNgayMain
             // 
@@ -1492,7 +1488,6 @@
             // 
             this.guna2Panel8.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel8.BorderRadius = 12;
-            this.guna2Panel8.Controls.Add(this.guna2Panel13);
             this.guna2Panel8.Controls.Add(this.guna2Panel4);
             this.guna2Panel8.Controls.Add(this.guna2Panel3);
             this.guna2Panel8.Controls.Add(this.guna2Panel9);
@@ -1507,99 +1502,47 @@
             this.guna2Panel8.Size = new System.Drawing.Size(171, 370);
             this.guna2Panel8.TabIndex = 54;
             // 
-            // guna2Panel13
-            // 
-            this.guna2Panel13.Controls.Add(this.guna2Button5);
-            this.guna2Panel13.Controls.Add(this.label20);
-            this.guna2Panel13.Controls.Add(this.lbl_TopNguoiChoi4_Main);
-            this.guna2Panel13.Location = new System.Drawing.Point(11, 262);
-            this.guna2Panel13.Name = "guna2Panel13";
-            this.guna2Panel13.Size = new System.Drawing.Size(148, 67);
-            this.guna2Panel13.TabIndex = 33;
-            // 
-            // guna2Button5
-            // 
-            this.guna2Button5.Animated = true;
-            this.guna2Button5.BackColor = System.Drawing.Color.White;
-            this.guna2Button5.BorderColor = System.Drawing.Color.DimGray;
-            this.guna2Button5.BorderRadius = 6;
-            this.guna2Button5.BorderThickness = 1;
-            this.guna2Button5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button5.FillColor = System.Drawing.Color.White;
-            this.guna2Button5.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Bold);
-            this.guna2Button5.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button5.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button5.Location = new System.Drawing.Point(6, 10);
-            this.guna2Button5.Name = "guna2Button5";
-            this.guna2Button5.Size = new System.Drawing.Size(70, 47);
-            this.guna2Button5.TabIndex = 29;
-            this.guna2Button5.Text = "Điểm";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label20.Location = new System.Drawing.Point(82, 31);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(53, 19);
-            this.label20.TabIndex = 29;
-            this.label20.Text = "Game1";
-            // 
-            // lbl_TopNguoiChoi4_Main
-            // 
-            this.lbl_TopNguoiChoi4_Main.AutoSize = true;
-            this.lbl_TopNguoiChoi4_Main.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_TopNguoiChoi4_Main.Location = new System.Drawing.Point(82, 10);
-            this.lbl_TopNguoiChoi4_Main.Name = "lbl_TopNguoiChoi4_Main";
-            this.lbl_TopNguoiChoi4_Main.Size = new System.Drawing.Size(45, 23);
-            this.lbl_TopNguoiChoi4_Main.TabIndex = 14;
-            this.lbl_TopNguoiChoi4_Main.Text = "User";
-            // 
             // guna2Panel4
             // 
-            this.guna2Panel4.Controls.Add(this.guna2Button3);
-            this.guna2Panel4.Controls.Add(this.label9);
+            this.guna2Panel4.Controls.Add(this.btn_DiemUser3);
+            this.guna2Panel4.Controls.Add(this.lbl_BXHgame3);
             this.guna2Panel4.Controls.Add(this.lbl_TopNguoiChoi3_Main);
             this.guna2Panel4.Location = new System.Drawing.Point(11, 189);
             this.guna2Panel4.Name = "guna2Panel4";
             this.guna2Panel4.Size = new System.Drawing.Size(148, 67);
             this.guna2Panel4.TabIndex = 32;
             // 
-            // guna2Button3
+            // btn_DiemUser3
             // 
-            this.guna2Button3.Animated = true;
-            this.guna2Button3.BackColor = System.Drawing.Color.White;
-            this.guna2Button3.BorderColor = System.Drawing.Color.DimGray;
-            this.guna2Button3.BorderRadius = 6;
-            this.guna2Button3.BorderThickness = 1;
-            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button3.FillColor = System.Drawing.Color.White;
-            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Bold);
-            this.guna2Button3.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button3.Location = new System.Drawing.Point(6, 10);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(70, 47);
-            this.guna2Button3.TabIndex = 29;
-            this.guna2Button3.Text = "Điểm";
+            this.btn_DiemUser3.Animated = true;
+            this.btn_DiemUser3.BackColor = System.Drawing.Color.White;
+            this.btn_DiemUser3.BorderColor = System.Drawing.Color.DimGray;
+            this.btn_DiemUser3.BorderRadius = 6;
+            this.btn_DiemUser3.BorderThickness = 1;
+            this.btn_DiemUser3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_DiemUser3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_DiemUser3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_DiemUser3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_DiemUser3.FillColor = System.Drawing.Color.White;
+            this.btn_DiemUser3.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Bold);
+            this.btn_DiemUser3.ForeColor = System.Drawing.Color.Black;
+            this.btn_DiemUser3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_DiemUser3.Location = new System.Drawing.Point(6, 10);
+            this.btn_DiemUser3.Name = "btn_DiemUser3";
+            this.btn_DiemUser3.Size = new System.Drawing.Size(70, 47);
+            this.btn_DiemUser3.TabIndex = 29;
+            this.btn_DiemUser3.Text = "Điểm";
             // 
-            // label9
+            // lbl_BXHgame3
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label9.Location = new System.Drawing.Point(82, 31);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(53, 19);
-            this.label9.TabIndex = 29;
-            this.label9.Text = "Game1";
+            this.lbl_BXHgame3.AutoSize = true;
+            this.lbl_BXHgame3.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_BXHgame3.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.lbl_BXHgame3.Location = new System.Drawing.Point(82, 31);
+            this.lbl_BXHgame3.Name = "lbl_BXHgame3";
+            this.lbl_BXHgame3.Size = new System.Drawing.Size(53, 19);
+            this.lbl_BXHgame3.TabIndex = 29;
+            this.lbl_BXHgame3.Text = "Game1";
             // 
             // lbl_TopNguoiChoi3_Main
             // 
@@ -1613,45 +1556,45 @@
             // 
             // guna2Panel3
             // 
-            this.guna2Panel3.Controls.Add(this.guna2Button2);
-            this.guna2Panel3.Controls.Add(this.label3);
+            this.guna2Panel3.Controls.Add(this.btn_DiemUser2);
+            this.guna2Panel3.Controls.Add(this.lbl_BXHgame2);
             this.guna2Panel3.Controls.Add(this.lbl_TopNguoiChoi2_Main);
             this.guna2Panel3.Location = new System.Drawing.Point(11, 116);
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.Size = new System.Drawing.Size(148, 67);
             this.guna2Panel3.TabIndex = 31;
             // 
-            // guna2Button2
+            // btn_DiemUser2
             // 
-            this.guna2Button2.Animated = true;
-            this.guna2Button2.BackColor = System.Drawing.Color.White;
-            this.guna2Button2.BorderColor = System.Drawing.Color.DimGray;
-            this.guna2Button2.BorderRadius = 6;
-            this.guna2Button2.BorderThickness = 1;
-            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.FillColor = System.Drawing.Color.White;
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Bold);
-            this.guna2Button2.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button2.Location = new System.Drawing.Point(6, 10);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(70, 47);
-            this.guna2Button2.TabIndex = 29;
-            this.guna2Button2.Text = "Điểm";
+            this.btn_DiemUser2.Animated = true;
+            this.btn_DiemUser2.BackColor = System.Drawing.Color.White;
+            this.btn_DiemUser2.BorderColor = System.Drawing.Color.DimGray;
+            this.btn_DiemUser2.BorderRadius = 6;
+            this.btn_DiemUser2.BorderThickness = 1;
+            this.btn_DiemUser2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_DiemUser2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_DiemUser2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_DiemUser2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_DiemUser2.FillColor = System.Drawing.Color.White;
+            this.btn_DiemUser2.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Bold);
+            this.btn_DiemUser2.ForeColor = System.Drawing.Color.Black;
+            this.btn_DiemUser2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_DiemUser2.Location = new System.Drawing.Point(6, 10);
+            this.btn_DiemUser2.Name = "btn_DiemUser2";
+            this.btn_DiemUser2.Size = new System.Drawing.Size(70, 47);
+            this.btn_DiemUser2.TabIndex = 29;
+            this.btn_DiemUser2.Text = "Điểm";
             // 
-            // label3
+            // lbl_BXHgame2
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label3.Location = new System.Drawing.Point(82, 31);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 19);
-            this.label3.TabIndex = 29;
-            this.label3.Text = "Game1";
+            this.lbl_BXHgame2.AutoSize = true;
+            this.lbl_BXHgame2.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_BXHgame2.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.lbl_BXHgame2.Location = new System.Drawing.Point(82, 31);
+            this.lbl_BXHgame2.Name = "lbl_BXHgame2";
+            this.lbl_BXHgame2.Size = new System.Drawing.Size(53, 19);
+            this.lbl_BXHgame2.TabIndex = 29;
+            this.lbl_BXHgame2.Text = "Game1";
             // 
             // lbl_TopNguoiChoi2_Main
             // 
@@ -1665,45 +1608,45 @@
             // 
             // guna2Panel9
             // 
-            this.guna2Panel9.Controls.Add(this.guna2Button9);
-            this.guna2Panel9.Controls.Add(this.label35);
+            this.guna2Panel9.Controls.Add(this.btn_DiemUser1);
+            this.guna2Panel9.Controls.Add(this.lbl_BXHgame1);
             this.guna2Panel9.Controls.Add(this.lbl_TopNguoiChoi1_Main);
             this.guna2Panel9.Location = new System.Drawing.Point(11, 44);
             this.guna2Panel9.Name = "guna2Panel9";
             this.guna2Panel9.Size = new System.Drawing.Size(148, 67);
             this.guna2Panel9.TabIndex = 30;
             // 
-            // guna2Button9
+            // btn_DiemUser1
             // 
-            this.guna2Button9.Animated = true;
-            this.guna2Button9.BackColor = System.Drawing.Color.White;
-            this.guna2Button9.BorderColor = System.Drawing.Color.DimGray;
-            this.guna2Button9.BorderRadius = 6;
-            this.guna2Button9.BorderThickness = 1;
-            this.guna2Button9.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button9.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button9.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button9.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button9.FillColor = System.Drawing.Color.White;
-            this.guna2Button9.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Bold);
-            this.guna2Button9.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button9.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button9.Location = new System.Drawing.Point(6, 10);
-            this.guna2Button9.Name = "guna2Button9";
-            this.guna2Button9.Size = new System.Drawing.Size(70, 47);
-            this.guna2Button9.TabIndex = 29;
-            this.guna2Button9.Text = "Điểm";
+            this.btn_DiemUser1.Animated = true;
+            this.btn_DiemUser1.BackColor = System.Drawing.Color.White;
+            this.btn_DiemUser1.BorderColor = System.Drawing.Color.DimGray;
+            this.btn_DiemUser1.BorderRadius = 6;
+            this.btn_DiemUser1.BorderThickness = 1;
+            this.btn_DiemUser1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_DiemUser1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_DiemUser1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_DiemUser1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_DiemUser1.FillColor = System.Drawing.Color.White;
+            this.btn_DiemUser1.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Bold);
+            this.btn_DiemUser1.ForeColor = System.Drawing.Color.Black;
+            this.btn_DiemUser1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_DiemUser1.Location = new System.Drawing.Point(6, 10);
+            this.btn_DiemUser1.Name = "btn_DiemUser1";
+            this.btn_DiemUser1.Size = new System.Drawing.Size(70, 47);
+            this.btn_DiemUser1.TabIndex = 29;
+            this.btn_DiemUser1.Text = "Điểm";
             // 
-            // label35
+            // lbl_BXHgame1
             // 
-            this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label35.Location = new System.Drawing.Point(82, 31);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(53, 19);
-            this.label35.TabIndex = 29;
-            this.label35.Text = "Game1";
+            this.lbl_BXHgame1.AutoSize = true;
+            this.lbl_BXHgame1.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_BXHgame1.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.lbl_BXHgame1.Location = new System.Drawing.Point(82, 31);
+            this.lbl_BXHgame1.Name = "lbl_BXHgame1";
+            this.lbl_BXHgame1.Size = new System.Drawing.Size(53, 19);
+            this.lbl_BXHgame1.TabIndex = 29;
+            this.lbl_BXHgame1.Text = "Game1";
             // 
             // lbl_TopNguoiChoi1_Main
             // 
@@ -1739,29 +1682,31 @@
             this.guna2PictureBox3.TabIndex = 48;
             this.guna2PictureBox3.TabStop = false;
             this.guna2PictureBox3.UseTransparentBackground = true;
+            this.guna2PictureBox3.Click += new System.EventHandler(this.guna2PictureBox3_Click);
             // 
-            // guna2TextBox1
+            // txt_Search
             // 
-            this.guna2TextBox1.Animated = true;
-            this.guna2TextBox1.BorderRadius = 8;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.IconLeft = global::Gaming_Dashboard.Properties.Resources.search_96px;
-            this.guna2TextBox1.Location = new System.Drawing.Point(21, 20);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "Search Games";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(491, 36);
-            this.guna2TextBox1.TabIndex = 46;
+            this.txt_Search.Animated = true;
+            this.txt_Search.BorderRadius = 8;
+            this.txt_Search.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_Search.DefaultText = "";
+            this.txt_Search.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_Search.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_Search.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_Search.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_Search.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_Search.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_Search.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_Search.IconLeft = global::Gaming_Dashboard.Properties.Resources.search_96px;
+            this.txt_Search.Location = new System.Drawing.Point(21, 20);
+            this.txt_Search.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_Search.Name = "txt_Search";
+            this.txt_Search.PasswordChar = '\0';
+            this.txt_Search.PlaceholderText = "Search Games";
+            this.txt_Search.SelectedText = "";
+            this.txt_Search.Size = new System.Drawing.Size(491, 36);
+            this.txt_Search.TabIndex = 46;
+            this.txt_Search.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
             // 
             // pn_TrangChu2
             // 
@@ -1845,11 +1790,9 @@
             this.guna2Panel6.ResumeLayout(false);
             this.guna2Panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picbox_game3Main)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lbl_TenGame3)).EndInit();
             this.guna2Panel8.ResumeLayout(false);
             this.guna2Panel8.PerformLayout();
-            this.guna2Panel13.ResumeLayout(false);
-            this.guna2Panel13.PerformLayout();
             this.guna2Panel4.ResumeLayout(false);
             this.guna2Panel4.PerformLayout();
             this.guna2Panel3.ResumeLayout(false);
@@ -1874,42 +1817,38 @@
         private System.Windows.Forms.Label label11;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label lbl_Game2;
         private Guna.UI2.WinForms.Guna2PictureBox picbox_game2Main;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel6;
         private System.Windows.Forms.Label label14;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox9;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
-        private Guna.UI2.WinForms.Guna2PictureBox picbox_game3Main;
+        private System.Windows.Forms.Label lbl_game3;
+        private Guna.UI2.WinForms.Guna2PictureBox lbl_TenGame3;
         private Guna.UI2.WinForms.Guna2Button btn_ChoiNgayMain;
         private System.Windows.Forms.Label btn_DangNhapMain;
         private System.Windows.Forms.Label btn_DangKyMain;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel8;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel13;
-        private Guna.UI2.WinForms.Guna2Button guna2Button5;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label lbl_TopNguoiChoi4_Main;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
-        private System.Windows.Forms.Label label9;
+        private Guna.UI2.WinForms.Guna2Button btn_DiemUser3;
+        private System.Windows.Forms.Label lbl_BXHgame3;
         private System.Windows.Forms.Label lbl_TopNguoiChoi3_Main;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private System.Windows.Forms.Label label3;
+        private Guna.UI2.WinForms.Guna2Button btn_DiemUser2;
+        private System.Windows.Forms.Label lbl_BXHgame2;
         private System.Windows.Forms.Label lbl_TopNguoiChoi2_Main;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel9;
-        private Guna.UI2.WinForms.Guna2Button guna2Button9;
-        private System.Windows.Forms.Label label35;
+        private Guna.UI2.WinForms.Guna2Button btn_DiemUser1;
+        private System.Windows.Forms.Label lbl_BXHgame1;
         private System.Windows.Forms.Label lbl_TopNguoiChoi1_Main;
         private System.Windows.Forms.Label lbl_BangXepHangMain;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2TextBox txt_Search;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private System.Windows.Forms.Label label7;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox6;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lbl_Game1;
         private Guna.UI2.WinForms.Guna2PictureBox picbox_game1Main;
         private System.Windows.Forms.Label lbl_TopGameMain;
         private Guna.UI2.WinForms.Guna2ImageButton imgBtn_YeuThich1_Main;

@@ -38,9 +38,9 @@
             this.label9 = new System.Windows.Forms.Label();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.label10 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
+            this.lbl_XepHang = new System.Windows.Forms.Label();
+            this.lbl_DiemCaoNhat = new System.Windows.Forms.Label();
+            this.lbl_TroChoiYeuThich = new System.Windows.Forms.Label();
             this.guna2Panel9 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PictureBox22 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -184,35 +184,35 @@
             this.label10.TabIndex = 14;
             this.label10.Text = "Game 2";
             // 
-            // label6
+            // lbl_XepHang
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(478, 106);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(95, 23);
-            this.label6.TabIndex = 71;
-            this.label6.Text = "XẾP HẠNG";
+            this.lbl_XepHang.AutoSize = true;
+            this.lbl_XepHang.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_XepHang.Location = new System.Drawing.Point(478, 106);
+            this.lbl_XepHang.Name = "lbl_XepHang";
+            this.lbl_XepHang.Size = new System.Drawing.Size(95, 23);
+            this.lbl_XepHang.TabIndex = 71;
+            this.lbl_XepHang.Text = "XẾP HẠNG";
             // 
-            // label5
+            // lbl_DiemCaoNhat
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(325, 106);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(147, 23);
-            this.label5.TabIndex = 70;
-            this.label5.Text = "ĐIỂM CAO NHẤT";
+            this.lbl_DiemCaoNhat.AutoSize = true;
+            this.lbl_DiemCaoNhat.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_DiemCaoNhat.Location = new System.Drawing.Point(325, 106);
+            this.lbl_DiemCaoNhat.Name = "lbl_DiemCaoNhat";
+            this.lbl_DiemCaoNhat.Size = new System.Drawing.Size(147, 23);
+            this.lbl_DiemCaoNhat.TabIndex = 70;
+            this.lbl_DiemCaoNhat.Text = "ĐIỂM CAO NHẤT";
             // 
-            // label19
+            // lbl_TroChoiYeuThich
             // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(123, 106);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(184, 23);
-            this.label19.TabIndex = 66;
-            this.label19.Text = "TRÒ CHƠI YÊU THÍCH";
+            this.lbl_TroChoiYeuThich.AutoSize = true;
+            this.lbl_TroChoiYeuThich.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_TroChoiYeuThich.Location = new System.Drawing.Point(123, 106);
+            this.lbl_TroChoiYeuThich.Name = "lbl_TroChoiYeuThich";
+            this.lbl_TroChoiYeuThich.Size = new System.Drawing.Size(184, 23);
+            this.lbl_TroChoiYeuThich.TabIndex = 66;
+            this.lbl_TroChoiYeuThich.Text = "TRÒ CHƠI YÊU THÍCH";
             // 
             // guna2Panel9
             // 
@@ -287,9 +287,9 @@
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Controls.Add(this.guna2Panel3);
             this.Controls.Add(this.guna2Panel2);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label19);
+            this.Controls.Add(this.lbl_XepHang);
+            this.Controls.Add(this.lbl_DiemCaoNhat);
+            this.Controls.Add(this.lbl_TroChoiYeuThich);
             this.Controls.Add(this.guna2Panel9);
             this.Name = "UserTroChoiYeuThich";
             this.Size = new System.Drawing.Size(700, 450);
@@ -317,9 +317,9 @@
         private System.Windows.Forms.Label label9;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label lbl_XepHang;
+        private System.Windows.Forms.Label lbl_DiemCaoNhat;
+        private System.Windows.Forms.Label lbl_TroChoiYeuThich;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel9;
         private System.Windows.Forms.Label label8;
         private Guna.UI2.WinForms.Guna2Button guna2Button9;

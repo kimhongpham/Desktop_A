@@ -29,54 +29,52 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.label3 = new System.Windows.Forms.Label();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lbl_QuenMatKhau = new System.Windows.Forms.Label();
+            this.txt_EmailXacMinh = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btn_XacMinh = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
-            // label3
+            // lbl_QuenMatKhau
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(35, 167);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(253, 38);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "QUÊN MẬT KHẨU";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            this.lbl_QuenMatKhau.AutoSize = true;
+            this.lbl_QuenMatKhau.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_QuenMatKhau.ForeColor = System.Drawing.Color.Black;
+            this.lbl_QuenMatKhau.Location = new System.Drawing.Point(35, 167);
+            this.lbl_QuenMatKhau.Name = "lbl_QuenMatKhau";
+            this.lbl_QuenMatKhau.Size = new System.Drawing.Size(253, 38);
+            this.lbl_QuenMatKhau.TabIndex = 8;
+            this.lbl_QuenMatKhau.Text = "QUÊN MẬT KHẨU";
+            this.lbl_QuenMatKhau.Click += new System.EventHandler(this.label3_Click);
             // 
-            // guna2TextBox1
+            // txt_EmailXacMinh
             // 
-            this.guna2TextBox1.Animated = true;
-            this.guna2TextBox1.BackColor = System.Drawing.Color.White;
-            this.guna2TextBox1.BorderColor = System.Drawing.Color.Black;
-            this.guna2TextBox1.BorderRadius = 6;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(32, 213);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "Nhập email xác minh";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(251, 36);
-            this.guna2TextBox1.TabIndex = 1;
+            this.txt_EmailXacMinh.Animated = true;
+            this.txt_EmailXacMinh.BackColor = System.Drawing.Color.White;
+            this.txt_EmailXacMinh.BorderColor = System.Drawing.Color.Black;
+            this.txt_EmailXacMinh.BorderRadius = 6;
+            this.txt_EmailXacMinh.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_EmailXacMinh.DefaultText = "";
+            this.txt_EmailXacMinh.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_EmailXacMinh.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_EmailXacMinh.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_EmailXacMinh.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_EmailXacMinh.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_EmailXacMinh.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_EmailXacMinh.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_EmailXacMinh.Location = new System.Drawing.Point(32, 213);
+            this.txt_EmailXacMinh.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_EmailXacMinh.Name = "txt_EmailXacMinh";
+            this.txt_EmailXacMinh.PasswordChar = '\0';
+            this.txt_EmailXacMinh.PlaceholderText = "Nhập email xác minh";
+            this.txt_EmailXacMinh.SelectedText = "";
+            this.txt_EmailXacMinh.Size = new System.Drawing.Size(251, 36);
+            this.txt_EmailXacMinh.TabIndex = 1;
             // 
             // guna2AnimateWindow1
             // 
@@ -96,69 +94,53 @@
             // guna2Panel2
             // 
             this.guna2Panel2.BackColor = System.Drawing.Color.White;
-            this.guna2Panel2.Controls.Add(this.guna2Button1);
-            this.guna2Panel2.Controls.Add(this.label3);
-            this.guna2Panel2.Controls.Add(this.guna2TextBox1);
+            this.guna2Panel2.Controls.Add(this.btn_XacMinh);
+            this.guna2Panel2.Controls.Add(this.lbl_QuenMatKhau);
+            this.guna2Panel2.Controls.Add(this.txt_EmailXacMinh);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.guna2Panel2.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(331, 450);
             this.guna2Panel2.TabIndex = 9;
             // 
-            // guna2PictureBox2
+            // btn_XacMinh
             // 
-            this.guna2PictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox2.Image = global::Gaming_Dashboard.Properties.Resources.UEH_cover;
-            this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(134, -123);
-            this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.Size = new System.Drawing.Size(829, 697);
-            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox2.TabIndex = 10;
-            this.guna2PictureBox2.TabStop = false;
-            this.guna2PictureBox2.UseTransparentBackground = true;
-            // 
-            // guna2Button1
-            // 
-            this.guna2Button1.Animated = true;
-            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.BorderRadius = 10;
-            this.guna2Button1.BorderThickness = 2;
-            this.guna2Button1.FillColor = System.Drawing.Color.SteelBlue;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.guna2Button1.Location = new System.Drawing.Point(103, 256);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(125, 52);
-            this.guna2Button1.TabIndex = 10;
-            this.guna2Button1.Text = "Xác minh";
-            this.guna2Button1.UseTransparentBackground = true;
+            this.btn_XacMinh.Animated = true;
+            this.btn_XacMinh.BackColor = System.Drawing.Color.Transparent;
+            this.btn_XacMinh.BorderRadius = 10;
+            this.btn_XacMinh.BorderThickness = 2;
+            this.btn_XacMinh.FillColor = System.Drawing.Color.SteelBlue;
+            this.btn_XacMinh.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_XacMinh.ForeColor = System.Drawing.Color.White;
+            this.btn_XacMinh.HoverState.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btn_XacMinh.Location = new System.Drawing.Point(103, 256);
+            this.btn_XacMinh.Name = "btn_XacMinh";
+            this.btn_XacMinh.Size = new System.Drawing.Size(125, 52);
+            this.btn_XacMinh.TabIndex = 10;
+            this.btn_XacMinh.Text = "Xác minh";
+            this.btn_XacMinh.UseTransparentBackground = true;
             // 
             // QuenMatKhau
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.guna2Panel2);
-            this.Controls.Add(this.guna2PictureBox2);
             this.Name = "QuenMatKhau";
             this.Size = new System.Drawing.Size(800, 450);
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Label label3;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private System.Windows.Forms.Label lbl_QuenMatKhau;
+        private Guna.UI2.WinForms.Guna2TextBox txt_EmailXacMinh;
         private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
         private Guna.UI2.WinForms.Guna2ShadowForm guna2ShadowForm1;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button btn_XacMinh;
     }
 }
