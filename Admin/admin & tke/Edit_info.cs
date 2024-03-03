@@ -17,8 +17,11 @@ namespace admin___tke
             InitializeComponent();
         }
 
-        private void guna2CircleButton6_Click(object sender, EventArgs e)
+        private void btn_Cancle_Click(object sender, EventArgs e)
         {
+            
+            Admin_Player admin_Player = new Admin_Player();
+            admin_Player.Show();
             this.Close();
         }
     }

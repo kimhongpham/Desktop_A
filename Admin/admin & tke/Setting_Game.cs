@@ -17,14 +17,14 @@ namespace admin___tke
             InitializeComponent();
         }
 
-        private void guna2TextBox2_TextChanged(object sender, EventArgs e)
-        {
+     
 
-        }
-
-        private void guna2CircleButton6_Click(object sender, EventArgs e)
+        private void btn_Cancle_Click(object sender, EventArgs e)
         {
             this.Close();
+            Admin_Game admin_Game = new Admin_Game();
+            admin_Game.Show();
+
         }
     }   
 }

@@ -15,19 +15,36 @@ namespace admin___tke
         public Admin_Game()
         {
             InitializeComponent();
-        }
-
-        private void guna2CircleButton1_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Setting_Game f4 = new Setting_Game();
-            f4.ShowDialog();
             
         }
 
-        private void guna2CircleButton6_Click(object sender, EventArgs e)
+
+        private void btn_Exit_Click_1(object sender, EventArgs e)
         {
             this.Close();
+
+        }
+
+        private void btn_SettingG1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Setting_Game setting_Game = new Setting_Game();
+            setting_Game.Show();
+            
+        }
+
+        private void btn_SettingG2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Setting_Game setting_Game = new Setting_Game();
+            setting_Game.Show();
+        }
+
+        private void btn_GamePage_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Admin_Player admin_Player = new Admin_Player();
+            admin_Player.Show();
         }
     }
 }

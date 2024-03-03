@@ -17,7 +17,7 @@ namespace admin___tke
             InitializeComponent();
         }
 
-        private void guna2CircleButton6_Click(object sender, EventArgs e)
+        private void btn_E_Click(object sender, EventArgs e)
         {
             this.Close();
         }
