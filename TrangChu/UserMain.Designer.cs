@@ -105,6 +105,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
+            this.pn_TrangChu2.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -120,7 +121,7 @@
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(50, 469);
+            this.guna2Panel1.Size = new System.Drawing.Size(50, 415);
             this.guna2Panel1.TabIndex = 34;
             // 
             // imgBtn_DangXuat
@@ -266,7 +267,7 @@
             this.pn_TrangChuMain.Controls.Add(this.label4);
             this.pn_TrangChuMain.Controls.Add(this.lbl_Username);
             this.pn_TrangChuMain.FillColor = System.Drawing.Color.White;
-            this.pn_TrangChuMain.Location = new System.Drawing.Point(52, 3);
+            this.pn_TrangChuMain.Location = new System.Drawing.Point(0, 2);
             this.pn_TrangChuMain.Name = "pn_TrangChuMain";
             this.pn_TrangChuMain.ShadowDecoration.BorderRadius = 12;
             this.pn_TrangChuMain.ShadowDecoration.Color = System.Drawing.Color.Gainsboro;
@@ -870,6 +871,7 @@
             // 
             this.pn_TrangChu2.BackColor = System.Drawing.Color.Transparent;
             this.pn_TrangChu2.BorderRadius = 12;
+            this.pn_TrangChu2.Controls.Add(this.pn_TrangChuMain);
             this.pn_TrangChu2.FillColor = System.Drawing.Color.White;
             this.pn_TrangChu2.Location = new System.Drawing.Point(52, 1);
             this.pn_TrangChu2.Name = "pn_TrangChu2";
@@ -887,7 +889,6 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(782, 403);
-            this.Controls.Add(this.pn_TrangChuMain);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.pn_TrangChu2);
             this.Name = "UserMain";
@@ -924,6 +925,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();
+            this.pn_TrangChu2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

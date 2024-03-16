@@ -379,6 +379,7 @@
             this.lbl_Game1.Size = new System.Drawing.Size(90, 20);
             this.lbl_Game1.TabIndex = 14;
             this.lbl_Game1.Text = "Tên game 1";
+            this.lbl_Game1.Click += new System.EventHandler(this.lbl_Game1_Click);
             // 
             // picbox_game1Main
             // 
@@ -1729,7 +1730,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(782, 403);
+            this.ClientSize = new System.Drawing.Size(803, 403);
             this.Controls.Add(this.pn_SidebarTrangChu);
             this.Controls.Add(this.pn_TrangChu2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;

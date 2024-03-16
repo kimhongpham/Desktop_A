@@ -91,3 +91,92 @@ D:\github_repo\Desktop_A\TrangChu\obj\Debug\Gaming Dashboard.csproj.CoreCompileI
 D:\github_repo\Desktop_A\TrangChu\obj\Debug\Gaming Dashboard.csproj.CopyComplete
 D:\github_repo\Desktop_A\TrangChu\obj\Debug\Gaming Dashboard.exe
 D:\github_repo\Desktop_A\TrangChu\obj\Debug\Gaming Dashboard.pdb
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\Desktop_A\Desktop_A\TrangChu\bin\Debug\Gaming Dashboard.exe.config
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\Desktop_A\Desktop_A\TrangChu\bin\Debug\Gaming Dashboard.exe
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\Desktop_A\Desktop_A\TrangChu\bin\Debug\Gaming Dashboard.pdb
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\Desktop_A\Desktop_A\TrangChu\bin\Debug\Guna.UI2.dll
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\Desktop_A\Desktop_A\TrangChu\obj\Debug\Gaming Dashboard.csproj.AssemblyReference.cache
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\Desktop_A\Desktop_A\TrangChu\obj\Debug\Interop.WMPLib.dll
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\Desktop_A\Desktop_A\TrangChu\obj\Debug\Gaming Dashboard.csproj.ResolveComReference.cache
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\Desktop_A\Desktop_A\TrangChu\obj\Debug\Gaming_Dashboard.BangXepHang.resources
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\Desktop_A\Desktop_A\TrangChu\obj\Debug\Gaming_Dashboard.DangKy1.resources
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\Desktop_A\Desktop_A\TrangChu\obj\Debug\Gaming_Dashboard.DangNhap.resources
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\Desktop_A\Desktop_A\TrangChu\obj\Debug\Gaming_Dashboard.DoiMatKhau.resources
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\Desktop_A\Desktop_A\TrangChu\obj\Debug\Gaming_Dashboard.Main.resources
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\Desktop_A\Desktop_A\TrangChu\obj\Debug\Gaming_Dashboard.Properties.Resources.resources
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\Desktop_A\Desktop_A\TrangChu\obj\Debug\Gaming_Dashboard.QuenMatKhau.resources
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\Desktop_A\Desktop_A\TrangChu\obj\Debug\Gaming_Dashboard.UserDoiMatKhau.resources
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\Desktop_A\Desktop_A\TrangChu\obj\Debug\Gaming_Dashboard.UserThongBao.resources
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\Desktop_A\Desktop_A\TrangChu\obj\Debug\Gaming_Dashboard.UserThongTinCaNhan.resources
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\Desktop_A\Desktop_A\TrangChu\obj\Debug\Gaming_Dashboard.UserTroChoiYeuThich.resources
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\Desktop_A\Desktop_A\TrangChu\obj\Debug\Gaming_Dashboard.UserCaiDat.resources
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\Desktop_A\Desktop_A\TrangChu\obj\Debug\Gaming_Dashboard.UserMain.resources
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\Desktop_A\Desktop_A\TrangChu\obj\Debug\Gaming_Dashboard.UserTaiKhoan.resources
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\Desktop_A\Desktop_A\TrangChu\obj\Debug\Gaming_Dashboard.UserThanhTich.resources
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\Desktop_A\Desktop_A\TrangChu\obj\Debug\Gaming Dashboard.csproj.GenerateResource.cache
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\Desktop_A\Desktop_A\TrangChu\obj\Debug\Gaming Dashboard.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\Desktop_A\Desktop_A\TrangChu\obj\Debug\Gaming Dashboard.csproj.CopyComplete
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\Desktop_A\Desktop_A\TrangChu\obj\Debug\Gaming Dashboard.exe
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\Desktop_A\Desktop_A\TrangChu\obj\Debug\Gaming Dashboard.pdb
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\TrangChu\bin\Debug\Gaming Dashboard.exe.config
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\TrangChu\bin\Debug\Gaming Dashboard.exe
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\TrangChu\bin\Debug\Gaming Dashboard.pdb
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\TrangChu\bin\Debug\Guna.UI2.dll
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\TrangChu\obj\Debug\Gaming Dashboard.csproj.AssemblyReference.cache
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\TrangChu\obj\Debug\Interop.WMPLib.dll
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\TrangChu\obj\Debug\Gaming Dashboard.csproj.ResolveComReference.cache
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\TrangChu\obj\Debug\Gaming_Dashboard.BangXepHang.resources
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\TrangChu\obj\Debug\Gaming_Dashboard.DangKy1.resources
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\TrangChu\obj\Debug\Gaming_Dashboard.DoiMatKhau.resources
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\TrangChu\obj\Debug\Gaming_Dashboard.Main.resources
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\TrangChu\obj\Debug\Gaming_Dashboard.Properties.Resources.resources
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\TrangChu\obj\Debug\Gaming_Dashboard.QuenMatKhau.resources
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\TrangChu\obj\Debug\Gaming_Dashboard.UserDoiMatKhau.resources
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\TrangChu\obj\Debug\Gaming_Dashboard.UserThongBao.resources
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\TrangChu\obj\Debug\Gaming_Dashboard.UserThongTinCaNhan.resources
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\TrangChu\obj\Debug\Gaming_Dashboard.UserTroChoiYeuThich.resources
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\TrangChu\obj\Debug\Gaming_Dashboard.UserCaiDat.resources
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\TrangChu\obj\Debug\Gaming_Dashboard.UserMain.resources
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\TrangChu\obj\Debug\Gaming_Dashboard.UserTaiKhoan.resources
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\TrangChu\obj\Debug\Gaming_Dashboard.UserThanhTich.resources
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\TrangChu\obj\Debug\Gaming Dashboard.csproj.GenerateResource.cache
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\TrangChu\obj\Debug\Gaming Dashboard.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\TrangChu\obj\Debug\Gaming Dashboard.csproj.CopyComplete
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\TrangChu\obj\Debug\Gaming Dashboard.exe
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\TrangChu\obj\Debug\Gaming Dashboard.pdb
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\TrangChu\obj\Debug\Gaming_Dashboard.DangNhap.resources
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\TrangChu\bin\Debug\EntityFramework.dll
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\TrangChu\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\TrangChu\bin\Debug\EntityFramework.xml
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\TrangChu\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Đồ án cuối kỳ\Desktop_A\TrangChu\TrangChu\bin\Debug\Gaming Dashboard.exe.config
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Đồ án cuối kỳ\Desktop_A\TrangChu\TrangChu\bin\Debug\Gaming Dashboard.exe
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Đồ án cuối kỳ\Desktop_A\TrangChu\TrangChu\bin\Debug\Gaming Dashboard.pdb
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Đồ án cuối kỳ\Desktop_A\TrangChu\TrangChu\bin\Debug\EntityFramework.dll
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Đồ án cuối kỳ\Desktop_A\TrangChu\TrangChu\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Đồ án cuối kỳ\Desktop_A\TrangChu\TrangChu\bin\Debug\Guna.UI2.dll
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Đồ án cuối kỳ\Desktop_A\TrangChu\TrangChu\bin\Debug\EntityFramework.xml
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Đồ án cuối kỳ\Desktop_A\TrangChu\TrangChu\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Đồ án cuối kỳ\Desktop_A\TrangChu\TrangChu\obj\Debug\Gaming Dashboard.csproj.AssemblyReference.cache
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Đồ án cuối kỳ\Desktop_A\TrangChu\TrangChu\obj\Debug\Interop.WMPLib.dll
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Đồ án cuối kỳ\Desktop_A\TrangChu\TrangChu\obj\Debug\Gaming Dashboard.csproj.ResolveComReference.cache
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Đồ án cuối kỳ\Desktop_A\TrangChu\TrangChu\obj\Debug\Gaming_Dashboard.BangXepHang.resources
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Đồ án cuối kỳ\Desktop_A\TrangChu\TrangChu\obj\Debug\Gaming_Dashboard.DangKy1.resources
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Đồ án cuối kỳ\Desktop_A\TrangChu\TrangChu\obj\Debug\Gaming_Dashboard.DangNhap.resources
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Đồ án cuối kỳ\Desktop_A\TrangChu\TrangChu\obj\Debug\Gaming_Dashboard.DoiMatKhau.resources
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Đồ án cuối kỳ\Desktop_A\TrangChu\TrangChu\obj\Debug\Gaming_Dashboard.Main.resources
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Đồ án cuối kỳ\Desktop_A\TrangChu\TrangChu\obj\Debug\Gaming_Dashboard.Properties.Resources.resources
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Đồ án cuối kỳ\Desktop_A\TrangChu\TrangChu\obj\Debug\Gaming_Dashboard.QuenMatKhau.resources
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Đồ án cuối kỳ\Desktop_A\TrangChu\TrangChu\obj\Debug\Gaming_Dashboard.UserDoiMatKhau.resources
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Đồ án cuối kỳ\Desktop_A\TrangChu\TrangChu\obj\Debug\Gaming_Dashboard.UserThongBao.resources
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Đồ án cuối kỳ\Desktop_A\TrangChu\TrangChu\obj\Debug\Gaming_Dashboard.UserThongTinCaNhan.resources
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Đồ án cuối kỳ\Desktop_A\TrangChu\TrangChu\obj\Debug\Gaming_Dashboard.UserTroChoiYeuThich.resources
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Đồ án cuối kỳ\Desktop_A\TrangChu\TrangChu\obj\Debug\Gaming_Dashboard.UserCaiDat.resources
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Đồ án cuối kỳ\Desktop_A\TrangChu\TrangChu\obj\Debug\Gaming_Dashboard.UserMain.resources
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Đồ án cuối kỳ\Desktop_A\TrangChu\TrangChu\obj\Debug\Gaming_Dashboard.UserTaiKhoan.resources
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Đồ án cuối kỳ\Desktop_A\TrangChu\TrangChu\obj\Debug\Gaming_Dashboard.UserThanhTich.resources
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Đồ án cuối kỳ\Desktop_A\TrangChu\TrangChu\obj\Debug\Gaming Dashboard.csproj.GenerateResource.cache
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Đồ án cuối kỳ\Desktop_A\TrangChu\TrangChu\obj\Debug\Gaming Dashboard.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Đồ án cuối kỳ\Desktop_A\TrangChu\TrangChu\obj\Debug\Gaming Dashboard.csproj.CopyComplete
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Đồ án cuối kỳ\Desktop_A\TrangChu\TrangChu\obj\Debug\Gaming Dashboard.exe
+C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Đồ án cuối kỳ\Desktop_A\TrangChu\TrangChu\obj\Debug\Gaming Dashboard.pdb

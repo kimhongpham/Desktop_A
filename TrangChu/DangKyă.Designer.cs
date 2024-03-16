@@ -131,6 +131,7 @@
             this.btn_DangKy.TabIndex = 12;
             this.btn_DangKy.Text = "Đăng ký";
             this.btn_DangKy.UseTransparentBackground = true;
+            this.btn_DangKy.Click += new System.EventHandler(this.btn_DangKy_Click);
             // 
             // btn_QuayLai
             // 
@@ -232,7 +233,6 @@
             this.guna2PictureBox2.TabIndex = 8;
             this.guna2PictureBox2.TabStop = false;
             this.guna2PictureBox2.UseTransparentBackground = true;
-            this.guna2PictureBox2.Click += new System.EventHandler(this.guna2PictureBox2_Click);
             // 
             // DangKy1
             // 

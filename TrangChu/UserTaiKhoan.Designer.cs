@@ -97,6 +97,7 @@
             this.lbl_Username.Size = new System.Drawing.Size(103, 23);
             this.lbl_Username.TabIndex = 29;
             this.lbl_Username.Text = "@username";
+            this.lbl_Username.Click += new System.EventHandler(this.lbl_Username_Click);
             // 
             // guna2Panel8
             // 

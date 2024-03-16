@@ -17,7 +17,7 @@ namespace Gaming_Dashboard
     public partial class Main : Form
     {
 
-        public SoundManager sound = new SoundManager(@"D:\github_repo\Game-Dashboard-GabiBox\Resources\welcome_soundtrack.mp3");
+        public SoundManager sound = new SoundManager(@"C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\TrangChu\Resources\welcome_soundtrack.mp3");
         public Main()
         {
             InitializeComponent();
@@ -119,7 +119,10 @@ namespace Gaming_Dashboard
             else
                 pn_TrangChu2.BringToFront();
                 DangNhap.Instance.BringToFront();
+
+            DangNhap.Instance.main = this;
         }
+        
 
         private void btn_DangKy_Click_1(object sender, EventArgs e)
         {
@@ -134,6 +137,7 @@ namespace Gaming_Dashboard
             else
                 pn_TrangChu2.BringToFront();
             DangKy1.Instance.BringToFront();
+            DangKy1.Instance.main = this;
         }
 
         private void lbl_BangXepHangMain_Click(object sender, EventArgs e)
@@ -194,6 +198,11 @@ namespace Gaming_Dashboard
         }
 
         private void lbl_TopGameMain_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_Game1_Click(object sender, EventArgs e)
         {
 
         }

@@ -108,7 +108,7 @@
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.Size = new System.Drawing.Size(70, 47);
             this.guna2Button2.TabIndex = 29;
-            this.guna2Button2.Text = "#1";
+            this.guna2Button2.Text = "#3";
             // 
             // label12
             // 
@@ -173,7 +173,7 @@
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(70, 47);
             this.guna2Button1.TabIndex = 29;
-            this.guna2Button1.Text = "#1";
+            this.guna2Button1.Text = "#2";
             // 
             // label10
             // 
@@ -225,6 +225,7 @@
             this.guna2Panel9.Name = "guna2Panel9";
             this.guna2Panel9.Size = new System.Drawing.Size(462, 67);
             this.guna2Panel9.TabIndex = 61;
+            this.guna2Panel9.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel9_Paint);
             // 
             // guna2PictureBox13
             // 
@@ -248,6 +249,7 @@
             this.label8.Size = new System.Drawing.Size(50, 23);
             this.label8.TabIndex = 30;
             this.label8.Text = "1200";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // guna2Button9
             // 

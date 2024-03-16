@@ -2,11 +2,15 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Runtime.CompilerServices.RuntimeHelpers;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace Gaming_Dashboard
 {
@@ -19,6 +23,9 @@ namespace Gaming_Dashboard
 
         }
         private static DoiMatKhau _instance;
+        private object email;
+        private object password;
+
         public static DoiMatKhau Instance
         {
             get
@@ -28,6 +35,7 @@ namespace Gaming_Dashboard
                 return _instance;
             }
         }
+        
 
         private void guna2PictureBox2_Click(object sender, EventArgs e)
         {
@@ -36,7 +44,67 @@ namespace Gaming_Dashboard
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
+            // Hiển thị ô nhập mã xác minh và hướng dẫn
+            lbl_DatLaiMatKhau.Text = "Vui lòng nhập mã xác minh được gửi đến địa chỉ email của bạn.";
+            txt_NhapMaXacMinh.Visible = true;
+            btn_MatKhauNhapLai.Visible = true;
+            if(string.IsNullOrEmpty(txt_NhapMaXacMinh.Text))
+            {
+                MessageBox.Show("Vui lòng nhập mã xác nhận.");
+                return;
+            }
 
+            if (txt_NhapMaXacMinh.Text != "123456") // Thay thế mã này bằng mã xác minh thực tế được gửi đến email của người dùng
+            {
+                MessageBox.Show("Mã xác minh không hợp lệ.");
+                return;
+            }
+            lbl_DatLaiMatKhau.Text = "";
+            txt_NhapMaXacMinh.Visible = false;
+        }
+
+        private void btn_MatKhauNhapLai_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(txt_MatKhau.Text) && !string.IsNullOrEmpty(txt_MatKhauNhapLai.Text))
+            {
+                if (txt_MatKhau.Text != txt_MatKhauNhapLai.Text)
+                {
+                    MessageBox.Show("Mật khẩu mới không khớp.");
+                    return;
+                }
+                string connectionString = "Data Source=ROSIE-PHAM\\SQLEXPRESS;Initial Catalog=game_databaseA;Integrated Security=True";
+                try
+                {
+                    using (SqlConnection connection = new SqlConnection(connectionString))
+                    {
+                        connection.Open(); // Mở kết nối
+                        string sql = "UPDATE Users SET Password = @Password WHERE Email = @Email";
+                        SqlCommand command = new SqlCommand(sql, connection);
+                        command.Parameters.AddWithValue("@Email", email);
+                        command.Parameters.AddWithValue("@Password", password);
+                        command.ExecuteNonQuery();
+                        connection.Close();
+                    }
+                    // Hiển thị thông báo thành công và chuyển đến trang chủ
+                    MessageBox.Show("Mật khẩu của bạn đã được thiết lập lại. Vui lòng đăng nhập bằng mật khẩu mới của bạn.");
+                    this.Hide();
+                    //UserMain userMain = new UserMain();
+                    //userMain.ShowDialog();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi khi thêm tài khoản: " + ex.Message);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng điền đầy đủ thông tin.");
+            }
+            // Ẩn ô nhập mã xác minh và hướng dẫn
+            lbl_DatLaiMatKhau.Text = "";
+            btn_MatKhauNhapLai.Visible = false;
+            txt_MatKhau.Clear();
+            txt_MatKhauNhapLai.Clear();
         }
     }
 }

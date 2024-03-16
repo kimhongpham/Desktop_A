@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Web.UI;
 using System.Windows.Forms;
 using WMPLib;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace Gaming_Dashboard
 {
@@ -18,12 +19,16 @@ namespace Gaming_Dashboard
         
         
         public SoundManager sound = new SoundManager(@"D:\github_repo\Game-Dashboard-GabiBox\Resources\welcome_soundtrack.mp3");
-        public UserMain()
+        private string _username; // khai báo một trường riêng tư để lưu trữ tên người dùng
+
+        public UserMain(string username) // sửa đổi hàm tạo để chấp nhận tham số tên người dùng
         {
             InitializeComponent();
+            _username = username; // đặt trường riêng tư thành tên người dùng
+            lbl_Username.Text = _username; // đặt văn bản của nhãn thành tên người dùng
         }
 
-        
+
         private void guna2Panel7_Paint(object sender, PaintEventArgs e)
         {
 
@@ -76,18 +81,19 @@ namespace Gaming_Dashboard
 
         private void label1_Click(object sender, EventArgs e)
         {
-            if (!pn_TrangChu2.Controls.Contains(UserTaiKhoan.Instance))
+            if (!pn_TrangChu2.Controls.Contains(UserTaiKhoan.Instance(_username)))
             {
-                pn_TrangChu2.Controls.Add(UserTaiKhoan.Instance);
-                UserTaiKhoan.Instance.Dock = DockStyle.Fill;
+                pn_TrangChu2.Controls.Add(UserTaiKhoan.Instance(_username));
+                UserTaiKhoan.Instance(_username).Dock = DockStyle.Fill;
                 pn_TrangChu2.BringToFront();
                 AutoScroll = false;
-                UserTaiKhoan.Instance.BringToFront();
+                UserTaiKhoan.Instance(_username).BringToFront();
             }
             else
-                UserTaiKhoan.Instance.BringToFront();
-                
+                UserTaiKhoan.Instance(_username).BringToFront();
         }
+
+        
 
         private void UserMain_Load(object sender, EventArgs e)
         {
@@ -96,18 +102,18 @@ namespace Gaming_Dashboard
 
         private void label1_Click_1(object sender, EventArgs e)
         {
-            if (!pn_TrangChu2.Controls.Contains(UserTaiKhoan.Instance))
+            if (!pn_TrangChu2.Controls.Contains(UserTaiKhoan.Instance(_username)))
             {
-                pn_TrangChu2.Controls.Add(UserTaiKhoan.Instance);
-                UserTaiKhoan.Instance.Dock = DockStyle.Fill;
+                pn_TrangChu2.Controls.Add(UserTaiKhoan.Instance(_username));
+                UserTaiKhoan.Instance(_username).Dock = DockStyle.Fill;
                 pn_TrangChu2.BringToFront();
                 AutoScroll = false;
-                UserTaiKhoan.Instance.BringToFront();
+                UserTaiKhoan.Instance(_username).BringToFront();
             }
             else
                 AutoScroll = false;
-                pn_TrangChu2.BringToFront();
-                UserTaiKhoan.Instance.BringToFront();
+            pn_TrangChu2.BringToFront();
+            UserTaiKhoan.Instance(_username).BringToFront();
         }
 
         private void guna2PictureBox2_Click(object sender, EventArgs e)

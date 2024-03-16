@@ -50,7 +50,6 @@
             this.lbl_QuenMatKhau.Size = new System.Drawing.Size(253, 38);
             this.lbl_QuenMatKhau.TabIndex = 8;
             this.lbl_QuenMatKhau.Text = "QUÊN MẬT KHẨU";
-            this.lbl_QuenMatKhau.Click += new System.EventHandler(this.label3_Click);
             // 
             // txt_EmailXacMinh
             // 
@@ -119,6 +118,7 @@
             this.btn_XacMinh.TabIndex = 10;
             this.btn_XacMinh.Text = "Xác minh";
             this.btn_XacMinh.UseTransparentBackground = true;
+            this.btn_XacMinh.Click += new System.EventHandler(this.btn_XacMinh_Click);
             // 
             // QuenMatKhau
             // 

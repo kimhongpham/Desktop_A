@@ -140,8 +140,9 @@
             this.btn_MatKhauNhapLai.Name = "btn_MatKhauNhapLai";
             this.btn_MatKhauNhapLai.Size = new System.Drawing.Size(203, 52);
             this.btn_MatKhauNhapLai.TabIndex = 11;
-            this.btn_MatKhauNhapLai.Text = "Nhập lại mật khẩu";
+            this.btn_MatKhauNhapLai.Text = "Đặt lại mật khẩu";
             this.btn_MatKhauNhapLai.UseTransparentBackground = true;
+            this.btn_MatKhauNhapLai.Click += new System.EventHandler(this.btn_MatKhauNhapLai_Click);
             // 
             // txt_MatKhau
             // 

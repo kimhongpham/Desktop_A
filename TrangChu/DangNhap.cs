@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -14,8 +15,9 @@ namespace Gaming_Dashboard
 {
     public partial class DangNhap : UserControl
     {
-
+        public Main main;
         private UserControl previousUserControl;
+        public static string loggedInUsername;
         public DangNhap()
         {
             InitializeComponent();
@@ -111,6 +113,66 @@ namespace Gaming_Dashboard
         private void guna2Panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btn_DangNhap_Click(object sender, EventArgs e)
+        {
+            string email = txt_DNEmail.Text;
+            string password = txt_DNMatKhau.Text;
+
+            // Xác thực email và mật khẩu
+            if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password))
+            {
+                MessageBox.Show("Vui lòng nhập email và mật khẩu.");
+                return;
+            }
+
+            // Thực hiện logic đăng nhập
+            bool isLoggedIn = PerformLogin(email, password);
+
+            if (isLoggedIn)
+            {
+                // Đóng biểu mẫu đăng nhập và mở biểu mẫu chính
+                this.Hide();
+                UserMain userMain = new UserMain(loggedInUsername); // pass the username to the UserMain constructor
+                this.main.Hide();
+                userMain.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Email hoặc mật khẩu không đúng.");
+            }
+        }
+        private bool PerformLogin(string email, string password)
+        {
+            const string connectionString = "Data Source=ROSIE-PHAM\\SQLEXPRESS;Initial Catalog=game_databaseA;Integrated Security=True";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                string sql = "SELECT * FROM Users WHERE Email = @Email AND Password = @Password";
+                SqlCommand command = new SqlCommand(sql, connection);
+                command.Parameters.AddWithValue("@Email", email);
+                command.Parameters.AddWithValue("@Password", password);
+
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.Read())
+                {
+                    // Set the loggedInUsername variable
+                    loggedInUsername = reader["Username"].ToString();
+
+                    // Close the connection and return true
+                    connection.Close();
+                    return true;
+                }
+                else
+                {
+                    // Close the connection and return false
+                    connection.Close();
+                    return false;
+                }
+            }
         }
     }
 }

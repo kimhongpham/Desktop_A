@@ -35,7 +35,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.txt_QuocGia = new Guna.UI2.WinForms.Guna2TextBox();
             this.lbl_QuocGia = new System.Windows.Forms.Label();
-            this.txt_Email = new Guna.UI2.WinForms.Guna2TextBox();
             this.lbl_Email = new System.Windows.Forms.Label();
             this.txt_SoDienThoai = new Guna.UI2.WinForms.Guna2TextBox();
             this.lbl_SoDienThoai = new System.Windows.Forms.Label();
@@ -61,6 +60,7 @@
             this.guna2Button1.TabIndex = 113;
             this.guna2Button1.Text = "Cập nhật";
             this.guna2Button1.UseTransparentBackground = true;
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // txt_DiaChi
             // 
@@ -160,38 +160,14 @@
             this.lbl_QuocGia.TabIndex = 106;
             this.lbl_QuocGia.Text = "Quốc gia";
             // 
-            // txt_Email
-            // 
-            this.txt_Email.Animated = true;
-            this.txt_Email.BorderRadius = 8;
-            this.txt_Email.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_Email.DefaultText = "";
-            this.txt_Email.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_Email.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_Email.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_Email.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_Email.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.txt_Email.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_Email.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_Email.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_Email.Location = new System.Drawing.Point(264, 115);
-            this.txt_Email.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txt_Email.Name = "txt_Email";
-            this.txt_Email.PasswordChar = '\0';
-            this.txt_Email.PlaceholderText = "";
-            this.txt_Email.SelectedText = "";
-            this.txt_Email.Size = new System.Drawing.Size(192, 36);
-            this.txt_Email.TabIndex = 105;
-            // 
             // lbl_Email
             // 
             this.lbl_Email.AutoSize = true;
             this.lbl_Email.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Email.Location = new System.Drawing.Point(260, 88);
             this.lbl_Email.Name = "lbl_Email";
-            this.lbl_Email.Size = new System.Drawing.Size(54, 23);
+            this.lbl_Email.Size = new System.Drawing.Size(0, 23);
             this.lbl_Email.TabIndex = 104;
-            this.lbl_Email.Text = "Email";
             // 
             // txt_SoDienThoai
             // 
@@ -213,7 +189,7 @@
             this.txt_SoDienThoai.PasswordChar = '\0';
             this.txt_SoDienThoai.PlaceholderText = "";
             this.txt_SoDienThoai.SelectedText = "";
-            this.txt_SoDienThoai.Size = new System.Drawing.Size(192, 36);
+            this.txt_SoDienThoai.Size = new System.Drawing.Size(424, 36);
             this.txt_SoDienThoai.TabIndex = 103;
             // 
             // lbl_SoDienThoai
@@ -301,6 +277,7 @@
             this.txt_ten.SelectedText = "";
             this.txt_ten.Size = new System.Drawing.Size(192, 36);
             this.txt_ten.TabIndex = 99;
+            this.txt_ten.TextChanged += new System.EventHandler(this.txt_ten_TextChanged);
             // 
             // UserThongTinCaNhan
             // 
@@ -314,7 +291,6 @@
             this.Controls.Add(this.label10);
             this.Controls.Add(this.txt_QuocGia);
             this.Controls.Add(this.lbl_QuocGia);
-            this.Controls.Add(this.txt_Email);
             this.Controls.Add(this.lbl_Email);
             this.Controls.Add(this.txt_SoDienThoai);
             this.Controls.Add(this.lbl_SoDienThoai);
@@ -339,7 +315,6 @@
         private System.Windows.Forms.Label label10;
         private Guna.UI2.WinForms.Guna2TextBox txt_QuocGia;
         private System.Windows.Forms.Label lbl_QuocGia;
-        private Guna.UI2.WinForms.Guna2TextBox txt_Email;
         private System.Windows.Forms.Label lbl_Email;
         private Guna.UI2.WinForms.Guna2TextBox txt_SoDienThoai;
         private System.Windows.Forms.Label lbl_SoDienThoai;
