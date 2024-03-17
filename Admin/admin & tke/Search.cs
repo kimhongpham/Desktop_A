@@ -17,9 +17,5 @@ namespace admin___tke
             InitializeComponent();
         }
 
-        private void btn_E_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
     }
 }

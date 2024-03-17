@@ -41,12 +41,16 @@
             this.btn_SP2 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.btn_SP1 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.cbx_Date = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.btn_Find = new Guna.UI2.WinForms.Guna2Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.txt_S = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btn_E = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.cbxDate = new Guna.UI2.WinForms.Guna2ComboBox();
             this.pnl_1st.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_N1)).BeginInit();
             this.pnl_2nd.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_N2)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbl_Welc
@@ -75,10 +79,10 @@
             // lbl_DesN1
             // 
             this.lbl_DesN1.AutoSize = true;
-            this.lbl_DesN1.Font = new System.Drawing.Font("Lucida Fax", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_DesN1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_DesN1.Location = new System.Drawing.Point(512, 80);
             this.lbl_DesN1.Name = "lbl_DesN1";
-            this.lbl_DesN1.Size = new System.Drawing.Size(118, 41);
+            this.lbl_DesN1.Size = new System.Drawing.Size(107, 40);
             this.lbl_DesN1.TabIndex = 15;
             this.lbl_DesN1.Text = "Mô tả";
             // 
@@ -120,10 +124,10 @@
             // lbl_DesN2
             // 
             this.lbl_DesN2.AutoSize = true;
-            this.lbl_DesN2.Font = new System.Drawing.Font("Lucida Fax", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_DesN2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_DesN2.Location = new System.Drawing.Point(512, 95);
             this.lbl_DesN2.Name = "lbl_DesN2";
-            this.lbl_DesN2.Size = new System.Drawing.Size(118, 41);
+            this.lbl_DesN2.Size = new System.Drawing.Size(107, 40);
             this.lbl_DesN2.TabIndex = 18;
             this.lbl_DesN2.Text = "Mô tả";
             // 
@@ -159,7 +163,7 @@
             this.btn_SP3.FillColor = System.Drawing.Color.Transparent;
             this.btn_SP3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.btn_SP3.ForeColor = System.Drawing.Color.DimGray;
-            this.btn_SP3.Location = new System.Drawing.Point(1134, 928);
+            this.btn_SP3.Location = new System.Drawing.Point(1136, 911);
             this.btn_SP3.Name = "btn_SP3";
             this.btn_SP3.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btn_SP3.Size = new System.Drawing.Size(71, 73);
@@ -176,7 +180,7 @@
             this.btn_SP2.FillColor = System.Drawing.Color.Transparent;
             this.btn_SP2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.btn_SP2.ForeColor = System.Drawing.Color.DimGray;
-            this.btn_SP2.Location = new System.Drawing.Point(1057, 928);
+            this.btn_SP2.Location = new System.Drawing.Point(1059, 911);
             this.btn_SP2.Name = "btn_SP2";
             this.btn_SP2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btn_SP2.Size = new System.Drawing.Size(71, 73);
@@ -191,7 +195,7 @@
             this.btn_SP1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btn_SP1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_SP1.ForeColor = System.Drawing.Color.White;
-            this.btn_SP1.Location = new System.Drawing.Point(973, 928);
+            this.btn_SP1.Location = new System.Drawing.Point(975, 911);
             this.btn_SP1.Name = "btn_SP1";
             this.btn_SP1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btn_SP1.Size = new System.Drawing.Size(71, 73);
@@ -213,11 +217,42 @@
             this.cbx_Date.Items.AddRange(new object[] {
             "Newest",
             "Latest"});
-            this.cbx_Date.Location = new System.Drawing.Point(1186, 122);
+            this.cbx_Date.Location = new System.Drawing.Point(1322, 100);
             this.cbx_Date.Name = "cbx_Date";
             this.cbx_Date.Size = new System.Drawing.Size(232, 36);
             this.cbx_Date.TabIndex = 24;
             this.cbx_Date.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // btn_Find
+            // 
+            this.btn_Find.BorderRadius = 10;
+            this.btn_Find.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Find.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Find.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Find.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Find.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Find.ForeColor = System.Drawing.Color.White;
+            this.btn_Find.Location = new System.Drawing.Point(1161, 112);
+            this.btn_Find.Name = "btn_Find";
+            this.btn_Find.Size = new System.Drawing.Size(169, 61);
+            this.btn_Find.TabIndex = 32;
+            this.btn_Find.Text = "Find";
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.cbxDate);
+            this.panel1.Controls.Add(this.cbx_Date);
+            this.panel1.Location = new System.Drawing.Point(54, 96);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1791, 93);
+            this.panel1.TabIndex = 33;
+            // 
+            // panel2
+            // 
+            this.panel2.Location = new System.Drawing.Point(951, 897);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(276, 100);
+            this.panel2.TabIndex = 34;
             // 
             // txt_S
             // 
@@ -244,52 +279,54 @@
             this.txt_S.Size = new System.Drawing.Size(1054, 61);
             this.txt_S.TabIndex = 25;
             // 
-            // btn_E
+            // cbxDate
             // 
-            this.btn_E.BackColor = System.Drawing.Color.Transparent;
-            this.btn_E.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_E.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_E.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_E.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_E.FillColor = System.Drawing.Color.White;
-            this.btn_E.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_E.ForeColor = System.Drawing.Color.White;
-            this.btn_E.Image = global::admin___tke.Properties.Resources.x_icon_150997;
-            this.btn_E.ImageSize = new System.Drawing.Size(30, 30);
-            this.btn_E.Location = new System.Drawing.Point(1826, 12);
-            this.btn_E.Name = "btn_E";
-            this.btn_E.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btn_E.Size = new System.Drawing.Size(60, 60);
-            this.btn_E.TabIndex = 30;
-            this.btn_E.UseTransparentBackground = true;
-            this.btn_E.Click += new System.EventHandler(this.btn_E_Click);
+            this.cbxDate.AutoRoundedCorners = true;
+            this.cbxDate.BackColor = System.Drawing.Color.Transparent;
+            this.cbxDate.BorderRadius = 17;
+            this.cbxDate.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbxDate.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxDate.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbxDate.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbxDate.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbxDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbxDate.ItemHeight = 30;
+            this.cbxDate.Items.AddRange(new object[] {
+            "Newest",
+            "Latest"});
+            this.cbxDate.Location = new System.Drawing.Point(1421, 16);
+            this.cbxDate.Name = "cbxDate";
+            this.cbxDate.Size = new System.Drawing.Size(232, 36);
+            this.cbxDate.TabIndex = 35;
+            this.cbxDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Search
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1920, 1080);
-            this.Controls.Add(this.btn_E);
+            this.ClientSize = new System.Drawing.Size(1920, 1050);
+            this.Controls.Add(this.btn_Find);
             this.Controls.Add(this.txt_S);
-            this.Controls.Add(this.cbx_Date);
             this.Controls.Add(this.btn_SP3);
             this.Controls.Add(this.btn_SP2);
             this.Controls.Add(this.btn_SP1);
             this.Controls.Add(this.pnl_2nd);
             this.Controls.Add(this.pnl_1st);
             this.Controls.Add(this.lbl_Welc);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Search";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form6";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Text = "Search";
             this.pnl_1st.ResumeLayout(false);
             this.pnl_1st.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_N1)).EndInit();
             this.pnl_2nd.ResumeLayout(false);
             this.pnl_2nd.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_N2)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -310,7 +347,10 @@
         private System.Windows.Forms.Label lbl_DesN2;
         private System.Windows.Forms.Label lbl_NameN2;
         private Guna.UI2.WinForms.Guna2ComboBox cbx_Date;
+        private Guna.UI2.WinForms.Guna2Button btn_Find;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
         private Guna.UI2.WinForms.Guna2TextBox txt_S;
-        private Guna.UI2.WinForms.Guna2CircleButton btn_E;
+        private Guna.UI2.WinForms.Guna2ComboBox cbxDate;
     }
 }

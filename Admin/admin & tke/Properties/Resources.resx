@@ -127,6 +127,9 @@
   <data name="cacbcb625450fe0ea741" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cacbcb625450fe0ea741.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="setting_settings_icon_183789" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\setting_settings_icon_183789.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Rectangle 2386" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Rectangle 2386.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -136,13 +139,16 @@
   <data name="23d49a59106bba35e37a" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\23d49a59106bba35e37a.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="setting_settings_icon_183789" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\setting_settings_icon_183789.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="5d4e00d996eb3cb565fa" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\5d4e00d996eb3cb565fa.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="x_icon_150997" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\x_icon_150997.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Group 288816" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 288816.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Download" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Download.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

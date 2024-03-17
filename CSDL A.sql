@@ -45,7 +45,10 @@ CREATE TABLE GameSessions (
 select *from Games;
 select *from Users;
 select *from UserGames;
-select *from GameSessions;
+
+
+
+
 SELECT 
     UserID,
     GameID,

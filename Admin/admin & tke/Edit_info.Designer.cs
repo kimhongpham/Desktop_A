@@ -35,6 +35,7 @@
             this.dgv_Player = new Guna.UI2.WinForms.Guna2DataGridView();
             this.btn_Save = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Cancle = new Guna.UI2.WinForms.Guna2Button();
+            this.btnInvite = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Player)).BeginInit();
             this.SuspendLayout();
             // 
@@ -77,7 +78,7 @@
             this.dgv_Player.RowHeadersVisible = false;
             this.dgv_Player.RowHeadersWidth = 62;
             this.dgv_Player.RowTemplate.Height = 28;
-            this.dgv_Player.Size = new System.Drawing.Size(1791, 842);
+            this.dgv_Player.Size = new System.Drawing.Size(1791, 801);
             this.dgv_Player.TabIndex = 1;
             this.dgv_Player.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgv_Player.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -110,7 +111,7 @@
             this.btn_Save.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btn_Save.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Save.ForeColor = System.Drawing.Color.White;
-            this.btn_Save.Location = new System.Drawing.Point(699, 992);
+            this.btn_Save.Location = new System.Drawing.Point(459, 954);
             this.btn_Save.Name = "btn_Save";
             this.btn_Save.Size = new System.Drawing.Size(253, 67);
             this.btn_Save.TabIndex = 16;
@@ -127,28 +128,47 @@
             this.btn_Cancle.FillColor = System.Drawing.Color.White;
             this.btn_Cancle.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
             this.btn_Cancle.ForeColor = System.Drawing.Color.Black;
-            this.btn_Cancle.Location = new System.Drawing.Point(1103, 992);
+            this.btn_Cancle.Location = new System.Drawing.Point(1251, 954);
             this.btn_Cancle.Name = "btn_Cancle";
             this.btn_Cancle.Size = new System.Drawing.Size(274, 70);
             this.btn_Cancle.TabIndex = 19;
             this.btn_Cancle.Text = "Cancle";
             this.btn_Cancle.Click += new System.EventHandler(this.btn_Cancle_Click);
             // 
+            // btnInvite
+            // 
+            this.btnInvite.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(176)))), ((int)(((byte)(135)))));
+            this.btnInvite.BorderRadius = 17;
+            this.btnInvite.BorderThickness = 8;
+            this.btnInvite.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnInvite.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnInvite.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnInvite.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnInvite.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(192)))), ((int)(((byte)(152)))));
+            this.btnInvite.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInvite.ForeColor = System.Drawing.Color.White;
+            this.btnInvite.Location = new System.Drawing.Point(863, 954);
+            this.btnInvite.Name = "btnInvite";
+            this.btnInvite.Size = new System.Drawing.Size(253, 67);
+            this.btnInvite.TabIndex = 20;
+            this.btnInvite.Text = "Invite";
+            this.btnInvite.Click += new System.EventHandler(this.btnInvite_Click);
+            // 
             // Edit_info
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1920, 1080);
+            this.ClientSize = new System.Drawing.Size(1920, 1050);
+            this.Controls.Add(this.btnInvite);
             this.Controls.Add(this.btn_Cancle);
             this.Controls.Add(this.btn_Save);
             this.Controls.Add(this.dgv_Player);
             this.Controls.Add(this.lbl_Edit);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Edit_info";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Player)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -161,5 +181,6 @@
         private Guna.UI2.WinForms.Guna2DataGridView dgv_Player;
         private Guna.UI2.WinForms.Guna2Button btn_Save;
         private Guna.UI2.WinForms.Guna2Button btn_Cancle;
+        private Guna.UI2.WinForms.Guna2Button btnInvite;
     }
 }

@@ -17,22 +17,11 @@ namespace admin___tke
             InitializeComponent();
         }
 
-
-        private void btn_E_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void btn_Edit_Click_1(object sender, EventArgs e)
         {
             this.Hide();
             Edit_info f2 = new Edit_info();
             f2.ShowDialog();
-        }
-
-        private void btn_PPage_Click(object sender, EventArgs e)
-        {
-            
         }
 
         private void btn_GPage_Click(object sender, EventArgs e)

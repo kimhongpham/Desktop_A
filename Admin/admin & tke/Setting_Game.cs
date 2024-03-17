@@ -17,8 +17,6 @@ namespace admin___tke
             InitializeComponent();
         }
 
-     
-
         private void btn_Cancle_Click(object sender, EventArgs e)
         {
             this.Close();

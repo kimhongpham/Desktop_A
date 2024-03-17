@@ -18,13 +18,6 @@ namespace admin___tke
             
         }
 
-
-        private void btn_Exit_Click_1(object sender, EventArgs e)
-        {
-            this.Close();
-
-        }
-
         private void btn_SettingG1_Click(object sender, EventArgs e)
         {
             this.Close();
