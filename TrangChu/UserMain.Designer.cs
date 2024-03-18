@@ -83,6 +83,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.lbl_Username = new System.Windows.Forms.Label();
             this.pn_TrangChu2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btn_Game1 = new System.Windows.Forms.Button();
+            this.btn_game2 = new System.Windows.Forms.Button();
+            this.btn_game3 = new System.Windows.Forms.Button();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgBtn_Logo)).BeginInit();
             this.pn_TrangChuMain.SuspendLayout();
@@ -256,6 +259,9 @@
             this.pn_TrangChuMain.AutoScroll = true;
             this.pn_TrangChuMain.BackColor = System.Drawing.Color.Transparent;
             this.pn_TrangChuMain.BorderRadius = 12;
+            this.pn_TrangChuMain.Controls.Add(this.btn_game3);
+            this.pn_TrangChuMain.Controls.Add(this.btn_game2);
+            this.pn_TrangChuMain.Controls.Add(this.btn_Game1);
             this.pn_TrangChuMain.Controls.Add(this.ptrb_Avatar);
             this.pn_TrangChuMain.Controls.Add(this.guna2Panel5);
             this.pn_TrangChuMain.Controls.Add(this.guna2Panel6);
@@ -882,6 +888,36 @@
             this.pn_TrangChu2.Size = new System.Drawing.Size(702, 414);
             this.pn_TrangChu2.TabIndex = 55;
             // 
+            // btn_Game1
+            // 
+            this.btn_Game1.Location = new System.Drawing.Point(29, 94);
+            this.btn_Game1.Name = "btn_Game1";
+            this.btn_Game1.Size = new System.Drawing.Size(94, 36);
+            this.btn_Game1.TabIndex = 55;
+            this.btn_Game1.Text = "Game 1";
+            this.btn_Game1.UseVisualStyleBackColor = true;
+            this.btn_Game1.Click += new System.EventHandler(this.btn_Game1_Click);
+            // 
+            // btn_game2
+            // 
+            this.btn_game2.Location = new System.Drawing.Point(149, 94);
+            this.btn_game2.Name = "btn_game2";
+            this.btn_game2.Size = new System.Drawing.Size(94, 36);
+            this.btn_game2.TabIndex = 56;
+            this.btn_game2.Text = "Game 2";
+            this.btn_game2.UseVisualStyleBackColor = true;
+            this.btn_game2.Click += new System.EventHandler(this.btn_game2_Click);
+            // 
+            // btn_game3
+            // 
+            this.btn_game3.Location = new System.Drawing.Point(94, 142);
+            this.btn_game3.Name = "btn_game3";
+            this.btn_game3.Size = new System.Drawing.Size(94, 36);
+            this.btn_game3.TabIndex = 57;
+            this.btn_game3.Text = "Game 3";
+            this.btn_game3.UseVisualStyleBackColor = true;
+            this.btn_game3.Click += new System.EventHandler(this.btn_game3_Click);
+            // 
             // UserMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -986,5 +1022,8 @@
         private System.Windows.Forms.Label lbl_Username;
         private Guna.UI2.WinForms.Guna2Panel pn_TrangChu2;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton5;
+        private System.Windows.Forms.Button btn_game3;
+        private System.Windows.Forms.Button btn_game2;
+        private System.Windows.Forms.Button btn_Game1;
     }
 }

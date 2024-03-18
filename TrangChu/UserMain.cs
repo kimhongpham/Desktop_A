@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -210,6 +211,26 @@ namespace Gaming_Dashboard
         private void pn_TrangChuMain_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btn_Game1_Click(object sender, EventArgs e)
+        {
+            
+            this.Hide();
+        }
+
+        private void btn_game3_Click(object sender, EventArgs e)
+        {
+            string fileNext = @"";
+            Process.Start(fileNext);
+            this.Hide();
+        }
+
+        private void btn_game2_Click(object sender, EventArgs e)
+        {
+            string fileNext = @"C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\Game_2\Game02\bin\Debug\Game02.exe";
+            Process.Start(fileNext);
+            this.Hide();
         }
     }
 }

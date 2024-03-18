@@ -142,6 +142,7 @@
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.txt_Search = new Guna.UI2.WinForms.Guna2TextBox();
             this.pn_TrangChu2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.pn_SidebarTrangChu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgBtn_logo)).BeginInit();
             this.guna2Panel2.SuspendLayout();
@@ -1489,6 +1490,7 @@
             // 
             this.guna2Panel8.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel8.BorderRadius = 12;
+            this.guna2Panel8.Controls.Add(this.guna2Button2);
             this.guna2Panel8.Controls.Add(this.guna2Panel4);
             this.guna2Panel8.Controls.Add(this.guna2Panel3);
             this.guna2Panel8.Controls.Add(this.guna2Panel9);
@@ -1724,6 +1726,25 @@
             this.pn_TrangChu2.Size = new System.Drawing.Size(702, 467);
             this.pn_TrangChu2.TabIndex = 57;
             // 
+            // guna2Button2
+            // 
+            this.guna2Button2.Animated = true;
+            this.guna2Button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(156)))), ((int)(((byte)(252)))));
+            this.guna2Button2.BorderRadius = 12;
+            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button2.FillColor = System.Drawing.Color.White;
+            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.guna2Button2.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button2.Image = global::Gaming_Dashboard.Properties.Resources.play_96px3;
+            this.guna2Button2.Location = new System.Drawing.Point(5, 288);
+            this.guna2Button2.Name = "guna2Button2";
+            this.guna2Button2.Size = new System.Drawing.Size(126, 30);
+            this.guna2Button2.TabIndex = 57;
+            this.guna2Button2.Text = "Chơi ngay";
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1921,5 +1942,6 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox16;
         private System.Windows.Forms.Label label54;
         private Guna.UI2.WinForms.Guna2Panel pn_TrangChu2;
+        private Guna.UI2.WinForms.Guna2Button guna2Button2;
     }
 }

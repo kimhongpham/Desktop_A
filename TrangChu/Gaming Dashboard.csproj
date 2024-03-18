@@ -85,21 +85,6 @@
     <Compile Include="DoiMatKhau.Designer.cs">
       <DependentUpon>DoiMatKhau.cs</DependentUpon>
     </Compile>
-    <Compile Include="gamedatabase.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>gamedatabase.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="gamedatabase.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>gamedatabase.tt</DependentUpon>
-    </Compile>
-    <Compile Include="gamedatabase.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>gamedatabase.edmx</DependentUpon>
-    </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -215,13 +200,6 @@
     <EmbeddedResource Include="UserThanhTich.resx">
       <DependentUpon>UserThanhTich.cs</DependentUpon>
     </EmbeddedResource>
-    <EntityDeploy Include="gamedatabase.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>gamedatabase.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="gamedatabase.edmx.diagram">
-      <DependentUpon>gamedatabase.edmx</DependentUpon>
-    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -386,19 +364,36 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="gamedatabase.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>gamedatabase.Context.cs</LastGenOutput>
-      <DependentUpon>gamedatabase.edmx</DependentUpon>
-    </Content>
-    <Content Include="gamedatabase.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>gamedatabase.edmx</DependentUpon>
-      <LastGenOutput>gamedatabase.cs</LastGenOutput>
-    </Content>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Admin\Admin.csproj">
+      <Project>{8ff6420e-493c-4081-9295-f2e775149444}</Project>
+      <Name>Admin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{44225287-266b-4274-a0d9-90bca564fa1d}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{883aa1d9-07ca-48a2-8afb-929c398659a6}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Game 1\Game 1.csproj">
+      <Project>{3de23c0b-69b6-4b05-a00d-6ac9c6cf93ec}</Project>
+      <Name>Game 1</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Game 2\Game 2.csproj">
+      <Project>{eb58f440-01ef-4e36-8848-e778ad4ee83c}</Project>
+      <Name>Game 2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Game 3\Game 3.csproj">
+      <Project>{51b016a3-d7fd-4e27-b6f3-179537524b8e}</Project>
+      <Name>Game 3</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
