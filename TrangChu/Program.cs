@@ -4,8 +4,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WMPLib;
-using Game_1;
-
 namespace Gaming_Dashboard
 {
     public static class Program
@@ -18,7 +16,7 @@ namespace Gaming_Dashboard
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Main());
         }
     }
 }
