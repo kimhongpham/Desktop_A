@@ -9,3 +9,14 @@ C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desk
 C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\DAL\obj\Debug\DAL.csproj.CopyComplete
 C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\DAL\obj\Debug\DAL.exe
 C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\DAL\obj\Debug\DAL.pdb
+D:\github_repo\do-an-desktop\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+D:\github_repo\do-an-desktop\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\github_repo\do-an-desktop\DAL\obj\Debug\DAL.exe
+D:\github_repo\do-an-desktop\DAL\obj\Debug\DAL.pdb
+D:\github_repo\do-an-desktop\DAL\bin\Debug\DAL.exe.config
+D:\github_repo\do-an-desktop\DAL\bin\Debug\DAL.exe
+D:\github_repo\do-an-desktop\DAL\bin\Debug\DAL.pdb
+D:\github_repo\do-an-desktop\DAL\bin\Debug\DTO.exe
+D:\github_repo\do-an-desktop\DAL\bin\Debug\DTO.pdb
+D:\github_repo\do-an-desktop\DAL\bin\Debug\DTO.exe.config
+D:\github_repo\do-an-desktop\DAL\obj\Debug\DAL.csproj.CopyComplete
