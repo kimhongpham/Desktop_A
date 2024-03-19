@@ -303,3 +303,31 @@ C:\Users\Admin\Pictures\Desktop_A\TrangChu\obj\Debug\Gaming Dashboard.csproj.Cor
 C:\Users\Admin\Pictures\Desktop_A\TrangChu\obj\Debug\Gaming Dashboard.csproj.CopyComplete
 C:\Users\Admin\Pictures\Desktop_A\TrangChu\obj\Debug\Gaming Dashboard.exe
 C:\Users\Admin\Pictures\Desktop_A\TrangChu\obj\Debug\Gaming Dashboard.pdb
+C:\Users\Admin\Downloads\Desktop_A\TrangChu\bin\Debug\admin & tke.exe
+C:\Users\Admin\Downloads\Desktop_A\TrangChu\bin\Debug\DAL.exe
+C:\Users\Admin\Downloads\Desktop_A\TrangChu\bin\Debug\DTO.exe
+C:\Users\Admin\Downloads\Desktop_A\TrangChu\bin\Debug\Game02.exe
+C:\Users\Admin\Downloads\Desktop_A\TrangChu\bin\Debug\admin & tke.pdb
+C:\Users\Admin\Downloads\Desktop_A\TrangChu\bin\Debug\admin & tke.exe.config
+C:\Users\Admin\Downloads\Desktop_A\TrangChu\bin\Debug\DAL.pdb
+C:\Users\Admin\Downloads\Desktop_A\TrangChu\bin\Debug\DAL.exe.config
+C:\Users\Admin\Downloads\Desktop_A\TrangChu\bin\Debug\DTO.pdb
+C:\Users\Admin\Downloads\Desktop_A\TrangChu\bin\Debug\DTO.exe.config
+C:\Users\Admin\Downloads\Desktop_A\TrangChu\bin\Debug\Game02.pdb
+C:\Users\Admin\Downloads\Desktop_A\TrangChu\bin\Debug\Game02.exe.config
+C:\Users\Admin\Downloads\Desktop_A\TrangChu\bin\Debug\MEMORY MATCH.exe
+C:\Users\Admin\Downloads\Desktop_A\TrangChu\bin\Debug\MEMORY MATCH.pdb
+C:\Users\Admin\Downloads\Desktop_A\TrangChu\bin\Debug\MEMORY MATCH.exe.config
+C:\Users\Admin\Downloads\Desktop_A\TrangChu\bin\Debug\NAudio.WinMM.dll
+C:\Users\Admin\Downloads\Desktop_A\TrangChu\bin\Debug\NAudio.dll
+C:\Users\Admin\Downloads\Desktop_A\TrangChu\bin\Debug\NAudio.Core.dll
+C:\Users\Admin\Downloads\Desktop_A\TrangChu\bin\Debug\Microsoft.Win32.Registry.dll
+C:\Users\Admin\Downloads\Desktop_A\TrangChu\bin\Debug\NAudio.Wasapi.dll
+C:\Users\Admin\Downloads\Desktop_A\TrangChu\bin\Debug\NAudio.WinMM.xml
+C:\Users\Admin\Downloads\Desktop_A\TrangChu\bin\Debug\NAudio.xml
+C:\Users\Admin\Downloads\Desktop_A\TrangChu\bin\Debug\NAudio.Core.xml
+C:\Users\Admin\Downloads\Desktop_A\TrangChu\bin\Debug\Microsoft.Win32.Registry.xml
+C:\Users\Admin\Downloads\Desktop_A\TrangChu\bin\Debug\NAudio.Wasapi.xml
+C:\Users\Admin\Downloads\Desktop_A\TrangChu\bin\Debug\Codecool.Quest.exe
+C:\Users\Admin\Downloads\Desktop_A\TrangChu\bin\Debug\Codecool.Quest.pdb
+C:\Users\Admin\Downloads\Desktop_A\TrangChu\bin\Debug\Codecool.Quest.exe.config

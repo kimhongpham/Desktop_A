@@ -440,5 +440,15 @@
   <ItemGroup>
     <None Include="Resources\Coin.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\DAL\DAL.csproj">
+      <Project>{44225287-266b-4274-a0d9-90bca564fa1d}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DTO\DTO.csproj">
+      <Project>{883aa1d9-07ca-48a2-8afb-929c398659a6}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

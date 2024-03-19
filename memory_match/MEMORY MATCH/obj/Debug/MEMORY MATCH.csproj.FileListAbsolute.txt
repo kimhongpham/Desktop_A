@@ -1,0 +1,197 @@
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\GAME CK\Desktop-team-A\MEMORY_MATCH\MEMORY MATCH\MEMORY MATCH\bin\Debug\MEMORY MATCH.exe.config
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\GAME CK\Desktop-team-A\MEMORY_MATCH\MEMORY MATCH\MEMORY MATCH\bin\Debug\MEMORY MATCH.exe
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\GAME CK\Desktop-team-A\MEMORY_MATCH\MEMORY MATCH\MEMORY MATCH\bin\Debug\MEMORY MATCH.pdb
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\GAME CK\Desktop-team-A\MEMORY_MATCH\MEMORY MATCH\MEMORY MATCH\bin\Debug\Guna.UI2.dll
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\GAME CK\Desktop-team-A\MEMORY_MATCH\MEMORY MATCH\MEMORY MATCH\obj\Debug\MEMORY MATCH.csproj.AssemblyReference.cache
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\GAME CK\Desktop-team-A\MEMORY_MATCH\MEMORY MATCH\MEMORY MATCH\obj\Debug\MEMORY MATCH.csproj.SuggestedBindingRedirects.cache
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\GAME CK\Desktop-team-A\MEMORY_MATCH\MEMORY MATCH\MEMORY MATCH\obj\Debug\MEMORY_MATCH.EndGame.resources
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\GAME CK\Desktop-team-A\MEMORY_MATCH\MEMORY MATCH\MEMORY MATCH\obj\Debug\MEMORY_MATCH.Exit.resources
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\GAME CK\Desktop-team-A\MEMORY_MATCH\MEMORY MATCH\MEMORY MATCH\obj\Debug\MEMORY_MATCH.MainOption.resources
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\GAME CK\Desktop-team-A\MEMORY_MATCH\MEMORY MATCH\MEMORY MATCH\obj\Debug\MEMORY_MATCH.GameOver.resources
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\GAME CK\Desktop-team-A\MEMORY_MATCH\MEMORY MATCH\MEMORY MATCH\obj\Debug\MEMORY_MATCH.Howtoplay.resources
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\GAME CK\Desktop-team-A\MEMORY_MATCH\MEMORY MATCH\MEMORY MATCH\obj\Debug\MEMORY_MATCH.MainGame.resources
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\GAME CK\Desktop-team-A\MEMORY_MATCH\MEMORY MATCH\MEMORY MATCH\obj\Debug\MEMORY_MATCH.Pause.resources
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\GAME CK\Desktop-team-A\MEMORY_MATCH\MEMORY MATCH\MEMORY MATCH\obj\Debug\MEMORY_MATCH.Play.resources
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\GAME CK\Desktop-team-A\MEMORY_MATCH\MEMORY MATCH\MEMORY MATCH\obj\Debug\MEMORY_MATCH.PlayAgain.resources
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\GAME CK\Desktop-team-A\MEMORY_MATCH\MEMORY MATCH\MEMORY MATCH\obj\Debug\MEMORY_MATCH.Properties.Resources.resources
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\GAME CK\Desktop-team-A\MEMORY_MATCH\MEMORY MATCH\MEMORY MATCH\obj\Debug\MEMORY_MATCH.Record.resources
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\GAME CK\Desktop-team-A\MEMORY_MATCH\MEMORY MATCH\MEMORY MATCH\obj\Debug\MEMORY_MATCH.Setting.resources
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\GAME CK\Desktop-team-A\MEMORY_MATCH\MEMORY MATCH\MEMORY MATCH\obj\Debug\MEMORY MATCH.csproj.GenerateResource.cache
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\GAME CK\Desktop-team-A\MEMORY_MATCH\MEMORY MATCH\MEMORY MATCH\obj\Debug\MEMORY MATCH.csproj.CoreCompileInputs.cache
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\GAME CK\Desktop-team-A\MEMORY_MATCH\MEMORY MATCH\MEMORY MATCH\obj\Debug\MEMORY MATCH.csproj.CopyComplete
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\GAME CK\Desktop-team-A\MEMORY_MATCH\MEMORY MATCH\MEMORY MATCH\obj\Debug\MEMORY MATCH.exe
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\GAME CK\Desktop-team-A\MEMORY_MATCH\MEMORY MATCH\MEMORY MATCH\obj\Debug\MEMORY MATCH.pdb
+C:\Csharp\GAME CK\GAME CK\Desktop-team-A\MEMORY_MATCH\MEMORY MATCH\MEMORY MATCH\bin\Debug\MEMORY MATCH.exe.config
+C:\Csharp\GAME CK\GAME CK\Desktop-team-A\MEMORY_MATCH\MEMORY MATCH\MEMORY MATCH\bin\Debug\MEMORY MATCH.exe
+C:\Csharp\GAME CK\GAME CK\Desktop-team-A\MEMORY_MATCH\MEMORY MATCH\MEMORY MATCH\bin\Debug\MEMORY MATCH.pdb
+C:\Csharp\GAME CK\GAME CK\Desktop-team-A\MEMORY_MATCH\MEMORY MATCH\MEMORY MATCH\bin\Debug\Guna.UI2.dll
+C:\Csharp\GAME CK\GAME CK\Desktop-team-A\MEMORY_MATCH\MEMORY MATCH\MEMORY MATCH\obj\Debug\MEMORY MATCH.csproj.AssemblyReference.cache
+C:\Csharp\GAME CK\GAME CK\Desktop-team-A\MEMORY_MATCH\MEMORY MATCH\MEMORY MATCH\obj\Debug\MEMORY_MATCH.EndGame.resources
+C:\Csharp\GAME CK\GAME CK\Desktop-team-A\MEMORY_MATCH\MEMORY MATCH\MEMORY MATCH\obj\Debug\MEMORY_MATCH.Exit.resources
+C:\Csharp\GAME CK\GAME CK\Desktop-team-A\MEMORY_MATCH\MEMORY MATCH\MEMORY MATCH\obj\Debug\MEMORY_MATCH.MainOption.resources
+C:\Csharp\GAME CK\GAME CK\Desktop-team-A\MEMORY_MATCH\MEMORY MATCH\MEMORY MATCH\obj\Debug\MEMORY_MATCH.GameOver.resources
+C:\Csharp\GAME CK\GAME CK\Desktop-team-A\MEMORY_MATCH\MEMORY MATCH\MEMORY MATCH\obj\Debug\MEMORY_MATCH.Howtoplay.resources
+C:\Csharp\GAME CK\GAME CK\Desktop-team-A\MEMORY_MATCH\MEMORY MATCH\MEMORY MATCH\obj\Debug\MEMORY_MATCH.MainGame.resources
+C:\Csharp\GAME CK\GAME CK\Desktop-team-A\MEMORY_MATCH\MEMORY MATCH\MEMORY MATCH\obj\Debug\MEMORY_MATCH.Pause.resources
+C:\Csharp\GAME CK\GAME CK\Desktop-team-A\MEMORY_MATCH\MEMORY MATCH\MEMORY MATCH\obj\Debug\MEMORY_MATCH.Play.resources
+C:\Csharp\GAME CK\GAME CK\Desktop-team-A\MEMORY_MATCH\MEMORY MATCH\MEMORY MATCH\obj\Debug\MEMORY_MATCH.PlayAgain.resources
+C:\Csharp\GAME CK\GAME CK\Desktop-team-A\MEMORY_MATCH\MEMORY MATCH\MEMORY MATCH\obj\Debug\MEMORY_MATCH.Properties.Resources.resources
+C:\Csharp\GAME CK\GAME CK\Desktop-team-A\MEMORY_MATCH\MEMORY MATCH\MEMORY MATCH\obj\Debug\MEMORY_MATCH.Record.resources
+C:\Csharp\GAME CK\GAME CK\Desktop-team-A\MEMORY_MATCH\MEMORY MATCH\MEMORY MATCH\obj\Debug\MEMORY_MATCH.Setting.resources
+C:\Csharp\GAME CK\GAME CK\Desktop-team-A\MEMORY_MATCH\MEMORY MATCH\MEMORY MATCH\obj\Debug\MEMORY MATCH.csproj.GenerateResource.cache
+C:\Csharp\GAME CK\GAME CK\Desktop-team-A\MEMORY_MATCH\MEMORY MATCH\MEMORY MATCH\obj\Debug\MEMORY MATCH.csproj.CoreCompileInputs.cache
+C:\Csharp\GAME CK\GAME CK\Desktop-team-A\MEMORY_MATCH\MEMORY MATCH\MEMORY MATCH\obj\Debug\MEMORY MATCH.csproj.CopyComplete
+C:\Csharp\GAME CK\GAME CK\Desktop-team-A\MEMORY_MATCH\MEMORY MATCH\MEMORY MATCH\obj\Debug\MEMORY MATCH.exe
+C:\Csharp\GAME CK\GAME CK\Desktop-team-A\MEMORY_MATCH\MEMORY MATCH\MEMORY MATCH\obj\Debug\MEMORY MATCH.pdb
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\memory_match\MEMORY MATCH\bin\Debug\MEMORY MATCH.exe.config
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\memory_match\MEMORY MATCH\bin\Debug\MEMORY MATCH.exe
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\memory_match\MEMORY MATCH\bin\Debug\MEMORY MATCH.pdb
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\memory_match\MEMORY MATCH\bin\Debug\Guna.UI2.dll
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\memory_match\MEMORY MATCH\obj\Debug\MEMORY MATCH.csproj.AssemblyReference.cache
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\memory_match\MEMORY MATCH\obj\Debug\MEMORY MATCH.csproj.SuggestedBindingRedirects.cache
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\memory_match\MEMORY MATCH\obj\Debug\MEMORY_MATCH.EndGame.resources
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\memory_match\MEMORY MATCH\obj\Debug\MEMORY_MATCH.Exit.resources
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\memory_match\MEMORY MATCH\obj\Debug\MEMORY_MATCH.MainOption.resources
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\memory_match\MEMORY MATCH\obj\Debug\MEMORY_MATCH.GameOver.resources
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\memory_match\MEMORY MATCH\obj\Debug\MEMORY_MATCH.Howtoplay.resources
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\memory_match\MEMORY MATCH\obj\Debug\MEMORY_MATCH.MainGame.resources
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\memory_match\MEMORY MATCH\obj\Debug\MEMORY_MATCH.Pause.resources
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\memory_match\MEMORY MATCH\obj\Debug\MEMORY_MATCH.Play.resources
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\memory_match\MEMORY MATCH\obj\Debug\MEMORY_MATCH.PlayAgain.resources
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\memory_match\MEMORY MATCH\obj\Debug\MEMORY_MATCH.Properties.Resources.resources
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\memory_match\MEMORY MATCH\obj\Debug\MEMORY_MATCH.Record.resources
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\memory_match\MEMORY MATCH\obj\Debug\MEMORY_MATCH.Setting.resources
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\memory_match\MEMORY MATCH\obj\Debug\MEMORY MATCH.csproj.GenerateResource.cache
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\memory_match\MEMORY MATCH\obj\Debug\MEMORY MATCH.csproj.CoreCompileInputs.cache
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\memory_match\MEMORY MATCH\obj\Debug\MEMORY MATCH.csproj.CopyComplete
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\memory_match\MEMORY MATCH\obj\Debug\MEMORY MATCH.exe
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\memory_match\MEMORY MATCH\obj\Debug\MEMORY MATCH.pdb
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\memory_match\MEMORY MATCH\obj\Debug\MEMORY_MATCH.Setting_1.resources
+C:\Csharp\memory_match\MEMORY MATCH\obj\Debug\MEMORY MATCH.csproj.AssemblyReference.cache
+C:\Csharp\memory_match\MEMORY MATCH\obj\Debug\MEMORY_MATCH.EndGame.resources
+C:\Csharp\memory_match\MEMORY MATCH\obj\Debug\MEMORY_MATCH.Exit.resources
+C:\Csharp\memory_match\MEMORY MATCH\obj\Debug\MEMORY_MATCH.MainOption.resources
+C:\Csharp\memory_match\MEMORY MATCH\obj\Debug\MEMORY_MATCH.GameOver.resources
+C:\Csharp\memory_match\MEMORY MATCH\obj\Debug\MEMORY_MATCH.Howtoplay.resources
+C:\Csharp\memory_match\MEMORY MATCH\obj\Debug\MEMORY_MATCH.Pause.resources
+C:\Csharp\memory_match\MEMORY MATCH\obj\Debug\MEMORY_MATCH.Play.resources
+C:\Csharp\memory_match\MEMORY MATCH\obj\Debug\MEMORY_MATCH.PlayAgain.resources
+C:\Csharp\memory_match\MEMORY MATCH\obj\Debug\MEMORY_MATCH.Record.resources
+C:\Csharp\memory_match\MEMORY MATCH\obj\Debug\MEMORY_MATCH.Setting_1.resources
+C:\Csharp\memory_match\MEMORY MATCH\obj\Debug\MEMORY_MATCH.Setting.resources
+C:\Csharp\memory_match\MEMORY MATCH\obj\Debug\MEMORY MATCH.csproj.GenerateResource.cache
+C:\Csharp\memory_match\MEMORY MATCH\obj\Debug\MEMORY MATCH.exe
+C:\Csharp\memory_match\MEMORY MATCH\obj\Debug\MEMORY MATCH.pdb
+C:\Csharp\memory_match\MEMORY MATCH\bin\Debug\MEMORY MATCH.exe.config
+C:\Csharp\memory_match\MEMORY MATCH\bin\Debug\MEMORY MATCH.exe
+C:\Csharp\memory_match\MEMORY MATCH\bin\Debug\MEMORY MATCH.pdb
+C:\Csharp\memory_match\MEMORY MATCH\bin\Debug\Guna.UI2.dll
+C:\Csharp\memory_match\MEMORY MATCH\obj\Debug\MEMORY_MATCH.Properties.Resources.resources
+C:\Csharp\memory_match\MEMORY MATCH\obj\Debug\MEMORY MATCH.csproj.CoreCompileInputs.cache
+C:\Csharp\memory_match\MEMORY MATCH\obj\Debug\MEMORY MATCH.csproj.CopyComplete
+C:\Csharp\memory_match\MEMORY MATCH\bin\Debug\Microsoft.Win32.Registry.dll
+C:\Csharp\memory_match\MEMORY MATCH\bin\Debug\NAudio.Asio.dll
+C:\Csharp\memory_match\MEMORY MATCH\bin\Debug\NAudio.Core.dll
+C:\Csharp\memory_match\MEMORY MATCH\bin\Debug\NAudio.dll
+C:\Csharp\memory_match\MEMORY MATCH\bin\Debug\NAudio.Midi.dll
+C:\Csharp\memory_match\MEMORY MATCH\bin\Debug\NAudio.Wasapi.dll
+C:\Csharp\memory_match\MEMORY MATCH\bin\Debug\NAudio.WinForms.dll
+C:\Csharp\memory_match\MEMORY MATCH\bin\Debug\NAudio.WinMM.dll
+C:\Csharp\memory_match\MEMORY MATCH\bin\Debug\System.Security.AccessControl.dll
+C:\Csharp\memory_match\MEMORY MATCH\bin\Debug\System.Security.Principal.Windows.dll
+C:\Csharp\memory_match\MEMORY MATCH\bin\Debug\Microsoft.Win32.Registry.xml
+C:\Csharp\memory_match\MEMORY MATCH\bin\Debug\NAudio.xml
+C:\Csharp\memory_match\MEMORY MATCH\bin\Debug\NAudio.Asio.xml
+C:\Csharp\memory_match\MEMORY MATCH\bin\Debug\NAudio.Core.xml
+C:\Csharp\memory_match\MEMORY MATCH\bin\Debug\NAudio.Midi.xml
+C:\Csharp\memory_match\MEMORY MATCH\bin\Debug\NAudio.Wasapi.xml
+C:\Csharp\memory_match\MEMORY MATCH\bin\Debug\NAudio.WinForms.xml
+C:\Csharp\memory_match\MEMORY MATCH\bin\Debug\NAudio.WinMM.xml
+C:\Csharp\memory_match\MEMORY MATCH\bin\Debug\System.Security.AccessControl.xml
+C:\Csharp\memory_match\MEMORY MATCH\bin\Debug\System.Security.Principal.Windows.xml
+C:\Csharp\memory_match\MEMORY MATCH\obj\Debug\MEMORY_MATCH.MainGame.resources
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\Memory_Match_3\memory_match\MEMORY MATCH\bin\Debug\MEMORY MATCH.exe.config
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\Memory_Match_3\memory_match\MEMORY MATCH\bin\Debug\MEMORY MATCH.exe
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\Memory_Match_3\memory_match\MEMORY MATCH\bin\Debug\MEMORY MATCH.pdb
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\Memory_Match_3\memory_match\MEMORY MATCH\bin\Debug\Guna.UI2.dll
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\Memory_Match_3\memory_match\MEMORY MATCH\bin\Debug\Microsoft.Win32.Registry.dll
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\Memory_Match_3\memory_match\MEMORY MATCH\bin\Debug\NAudio.Asio.dll
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\Memory_Match_3\memory_match\MEMORY MATCH\bin\Debug\NAudio.Core.dll
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\Memory_Match_3\memory_match\MEMORY MATCH\bin\Debug\NAudio.dll
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\Memory_Match_3\memory_match\MEMORY MATCH\bin\Debug\NAudio.Midi.dll
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\Memory_Match_3\memory_match\MEMORY MATCH\bin\Debug\NAudio.Wasapi.dll
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\Memory_Match_3\memory_match\MEMORY MATCH\bin\Debug\NAudio.WinForms.dll
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\Memory_Match_3\memory_match\MEMORY MATCH\bin\Debug\NAudio.WinMM.dll
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\Memory_Match_3\memory_match\MEMORY MATCH\bin\Debug\System.Security.AccessControl.dll
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\Memory_Match_3\memory_match\MEMORY MATCH\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\Memory_Match_3\memory_match\MEMORY MATCH\bin\Debug\Microsoft.Win32.Registry.xml
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\Memory_Match_3\memory_match\MEMORY MATCH\bin\Debug\NAudio.xml
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\Memory_Match_3\memory_match\MEMORY MATCH\bin\Debug\NAudio.Asio.xml
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\Memory_Match_3\memory_match\MEMORY MATCH\bin\Debug\NAudio.Core.xml
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\Memory_Match_3\memory_match\MEMORY MATCH\bin\Debug\NAudio.Midi.xml
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\Memory_Match_3\memory_match\MEMORY MATCH\bin\Debug\NAudio.Wasapi.xml
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\Memory_Match_3\memory_match\MEMORY MATCH\bin\Debug\NAudio.WinForms.xml
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\Memory_Match_3\memory_match\MEMORY MATCH\bin\Debug\NAudio.WinMM.xml
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\Memory_Match_3\memory_match\MEMORY MATCH\bin\Debug\System.Security.AccessControl.xml
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\Memory_Match_3\memory_match\MEMORY MATCH\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\Memory_Match_3\memory_match\MEMORY MATCH\obj\Debug\MEMORY MATCH.csproj.AssemblyReference.cache
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\Memory_Match_3\memory_match\MEMORY MATCH\obj\Debug\MEMORY MATCH.csproj.SuggestedBindingRedirects.cache
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\Memory_Match_3\memory_match\MEMORY MATCH\obj\Debug\MEMORY_MATCH.EndGame.resources
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\Memory_Match_3\memory_match\MEMORY MATCH\obj\Debug\MEMORY_MATCH.Exit.resources
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\Memory_Match_3\memory_match\MEMORY MATCH\obj\Debug\MEMORY_MATCH.MainOption.resources
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\Memory_Match_3\memory_match\MEMORY MATCH\obj\Debug\MEMORY_MATCH.GameOver.resources
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\Memory_Match_3\memory_match\MEMORY MATCH\obj\Debug\MEMORY_MATCH.Howtoplay.resources
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\Memory_Match_3\memory_match\MEMORY MATCH\obj\Debug\MEMORY_MATCH.MainGame.resources
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\Memory_Match_3\memory_match\MEMORY MATCH\obj\Debug\MEMORY_MATCH.Pause.resources
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\Memory_Match_3\memory_match\MEMORY MATCH\obj\Debug\MEMORY_MATCH.Play.resources
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\Memory_Match_3\memory_match\MEMORY MATCH\obj\Debug\MEMORY_MATCH.PlayAgain.resources
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\Memory_Match_3\memory_match\MEMORY MATCH\obj\Debug\MEMORY_MATCH.Properties.Resources.resources
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\Memory_Match_3\memory_match\MEMORY MATCH\obj\Debug\MEMORY_MATCH.Record.resources
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\Memory_Match_3\memory_match\MEMORY MATCH\obj\Debug\MEMORY_MATCH.Setting.resources
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\Memory_Match_3\memory_match\MEMORY MATCH\obj\Debug\MEMORY MATCH.csproj.GenerateResource.cache
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\Memory_Match_3\memory_match\MEMORY MATCH\obj\Debug\MEMORY MATCH.csproj.CoreCompileInputs.cache
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\Memory_Match_3\memory_match\MEMORY MATCH\obj\Debug\MEMORY MATCH.csproj.CopyComplete
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\Memory_Match_3\memory_match\MEMORY MATCH\obj\Debug\MEMORY MATCH.exe
+C:\Users\Hi\Documents\Phat_Trien_UD_Desktop\Memory_Match_3\memory_match\MEMORY MATCH\obj\Debug\MEMORY MATCH.pdb
+C:\Users\Admin\Downloads\MEMORY+MATCH\MEMORY+MATCH\memory_match\MEMORY MATCH\bin\Debug\MEMORY MATCH.exe.config
+C:\Users\Admin\Downloads\MEMORY+MATCH\MEMORY+MATCH\memory_match\MEMORY MATCH\bin\Debug\MEMORY MATCH.exe
+C:\Users\Admin\Downloads\MEMORY+MATCH\MEMORY+MATCH\memory_match\MEMORY MATCH\bin\Debug\MEMORY MATCH.pdb
+C:\Users\Admin\Downloads\MEMORY+MATCH\MEMORY+MATCH\memory_match\MEMORY MATCH\bin\Debug\Guna.UI2.dll
+C:\Users\Admin\Downloads\MEMORY+MATCH\MEMORY+MATCH\memory_match\MEMORY MATCH\bin\Debug\Microsoft.Win32.Registry.dll
+C:\Users\Admin\Downloads\MEMORY+MATCH\MEMORY+MATCH\memory_match\MEMORY MATCH\bin\Debug\NAudio.Asio.dll
+C:\Users\Admin\Downloads\MEMORY+MATCH\MEMORY+MATCH\memory_match\MEMORY MATCH\bin\Debug\NAudio.Core.dll
+C:\Users\Admin\Downloads\MEMORY+MATCH\MEMORY+MATCH\memory_match\MEMORY MATCH\bin\Debug\NAudio.dll
+C:\Users\Admin\Downloads\MEMORY+MATCH\MEMORY+MATCH\memory_match\MEMORY MATCH\bin\Debug\NAudio.Midi.dll
+C:\Users\Admin\Downloads\MEMORY+MATCH\MEMORY+MATCH\memory_match\MEMORY MATCH\bin\Debug\NAudio.Wasapi.dll
+C:\Users\Admin\Downloads\MEMORY+MATCH\MEMORY+MATCH\memory_match\MEMORY MATCH\bin\Debug\NAudio.WinForms.dll
+C:\Users\Admin\Downloads\MEMORY+MATCH\MEMORY+MATCH\memory_match\MEMORY MATCH\bin\Debug\NAudio.WinMM.dll
+C:\Users\Admin\Downloads\MEMORY+MATCH\MEMORY+MATCH\memory_match\MEMORY MATCH\bin\Debug\System.Security.AccessControl.dll
+C:\Users\Admin\Downloads\MEMORY+MATCH\MEMORY+MATCH\memory_match\MEMORY MATCH\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\Admin\Downloads\MEMORY+MATCH\MEMORY+MATCH\memory_match\MEMORY MATCH\bin\Debug\Microsoft.Win32.Registry.xml
+C:\Users\Admin\Downloads\MEMORY+MATCH\MEMORY+MATCH\memory_match\MEMORY MATCH\bin\Debug\NAudio.xml
+C:\Users\Admin\Downloads\MEMORY+MATCH\MEMORY+MATCH\memory_match\MEMORY MATCH\bin\Debug\NAudio.Asio.xml
+C:\Users\Admin\Downloads\MEMORY+MATCH\MEMORY+MATCH\memory_match\MEMORY MATCH\bin\Debug\NAudio.Core.xml
+C:\Users\Admin\Downloads\MEMORY+MATCH\MEMORY+MATCH\memory_match\MEMORY MATCH\bin\Debug\NAudio.Midi.xml
+C:\Users\Admin\Downloads\MEMORY+MATCH\MEMORY+MATCH\memory_match\MEMORY MATCH\bin\Debug\NAudio.Wasapi.xml
+C:\Users\Admin\Downloads\MEMORY+MATCH\MEMORY+MATCH\memory_match\MEMORY MATCH\bin\Debug\NAudio.WinForms.xml
+C:\Users\Admin\Downloads\MEMORY+MATCH\MEMORY+MATCH\memory_match\MEMORY MATCH\bin\Debug\NAudio.WinMM.xml
+C:\Users\Admin\Downloads\MEMORY+MATCH\MEMORY+MATCH\memory_match\MEMORY MATCH\bin\Debug\System.Security.AccessControl.xml
+C:\Users\Admin\Downloads\MEMORY+MATCH\MEMORY+MATCH\memory_match\MEMORY MATCH\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\Admin\Downloads\MEMORY+MATCH\MEMORY+MATCH\memory_match\MEMORY MATCH\obj\Debug\MEMORY MATCH.csproj.AssemblyReference.cache
+C:\Users\Admin\Downloads\MEMORY+MATCH\MEMORY+MATCH\memory_match\MEMORY MATCH\obj\Debug\MEMORY_MATCH.EndGame.resources
+C:\Users\Admin\Downloads\MEMORY+MATCH\MEMORY+MATCH\memory_match\MEMORY MATCH\obj\Debug\MEMORY_MATCH.Exit.resources
+C:\Users\Admin\Downloads\MEMORY+MATCH\MEMORY+MATCH\memory_match\MEMORY MATCH\obj\Debug\MEMORY_MATCH.MainOption.resources
+C:\Users\Admin\Downloads\MEMORY+MATCH\MEMORY+MATCH\memory_match\MEMORY MATCH\obj\Debug\MEMORY_MATCH.GameOver.resources
+C:\Users\Admin\Downloads\MEMORY+MATCH\MEMORY+MATCH\memory_match\MEMORY MATCH\obj\Debug\MEMORY_MATCH.Howtoplay.resources
+C:\Users\Admin\Downloads\MEMORY+MATCH\MEMORY+MATCH\memory_match\MEMORY MATCH\obj\Debug\MEMORY_MATCH.MainGame.resources
+C:\Users\Admin\Downloads\MEMORY+MATCH\MEMORY+MATCH\memory_match\MEMORY MATCH\obj\Debug\MEMORY_MATCH.Pause.resources
+C:\Users\Admin\Downloads\MEMORY+MATCH\MEMORY+MATCH\memory_match\MEMORY MATCH\obj\Debug\MEMORY_MATCH.Play.resources
+C:\Users\Admin\Downloads\MEMORY+MATCH\MEMORY+MATCH\memory_match\MEMORY MATCH\obj\Debug\MEMORY_MATCH.PlayAgain.resources
+C:\Users\Admin\Downloads\MEMORY+MATCH\MEMORY+MATCH\memory_match\MEMORY MATCH\obj\Debug\MEMORY_MATCH.Properties.Resources.resources
+C:\Users\Admin\Downloads\MEMORY+MATCH\MEMORY+MATCH\memory_match\MEMORY MATCH\obj\Debug\MEMORY_MATCH.Record.resources
+C:\Users\Admin\Downloads\MEMORY+MATCH\MEMORY+MATCH\memory_match\MEMORY MATCH\obj\Debug\MEMORY_MATCH.Setting.resources
+C:\Users\Admin\Downloads\MEMORY+MATCH\MEMORY+MATCH\memory_match\MEMORY MATCH\obj\Debug\MEMORY MATCH.csproj.GenerateResource.cache
+C:\Users\Admin\Downloads\MEMORY+MATCH\MEMORY+MATCH\memory_match\MEMORY MATCH\obj\Debug\MEMORY MATCH.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Downloads\MEMORY+MATCH\MEMORY+MATCH\memory_match\MEMORY MATCH\obj\Debug\MEMORY MATCH.csproj.CopyComplete
+C:\Users\Admin\Downloads\MEMORY+MATCH\MEMORY+MATCH\memory_match\MEMORY MATCH\obj\Debug\MEMORY MATCH.exe
+C:\Users\Admin\Downloads\MEMORY+MATCH\MEMORY+MATCH\memory_match\MEMORY MATCH\obj\Debug\MEMORY MATCH.pdb

@@ -12,6 +12,9 @@ using System.Web.UI;
 using System.Windows.Forms;
 using WMPLib;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+using Game02;
+using MEMORY_MATCH;
+using Codecool.Quest;
 
 namespace Gaming_Dashboard
 {
@@ -215,22 +218,23 @@ namespace Gaming_Dashboard
 
         private void btn_Game1_Click(object sender, EventArgs e)
         {
-            
             this.Hide();
+            var MainOption = new MEMORY_MATCH.MainOption(); // create a new instance of MainMenu
+            MainOption.ShowDialog();
         }
 
         private void btn_game3_Click(object sender, EventArgs e)
         {
-            string fileNext = @"";
-            Process.Start(fileNext);
             this.Hide();
+            var MainForm = new Codecool.Quest.MainForm(); // create a new instance of MainMenu
+            MainForm.ShowDialog(); // show the main menu form
         }
 
         private void btn_game2_Click(object sender, EventArgs e)
         {
-            string fileNext = @"C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\Game_2\Game02\bin\Debug\Game02.exe";
-            Process.Start(fileNext);
             this.Hide();
+            var mainMenu = new Game02.MainMenu(); // create a new instance of MainMenu
+            mainMenu.ShowDialog(); // show the main menu form
         }
     }
 }

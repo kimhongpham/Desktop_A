@@ -11,9 +11,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTO", "..\DTO\DTO.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "admin & tke", "..\Admin\admin & tke\admin & tke.csproj", "{C2C8B5E6-85B1-4FB3-83AD-58A38E417926}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MEMORY MATCH", "..\MEMORY_MATCH\MEMORY MATCH\MEMORY MATCH\MEMORY MATCH.csproj", "{E2A4416D-2725-454E-B21B-889C1746ADDC}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game02", "..\Game_2\Game02\Game02.csproj", "{1C0F478F-7FCA-4E3C-9D01-7A38B3A9EE05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MEMORY MATCH", "..\memory_match\MEMORY MATCH\MEMORY MATCH.csproj", "{E2A4416D-2725-454E-B21B-889C1746ADDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codecool.Quest", "..\Game_03\Codecool.Quest\Codecool.Quest.csproj", "{E705A73B-D7C5-4F3C-AFB5-D7EA15A2ACC3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,14 +39,18 @@ Global
 		{C2C8B5E6-85B1-4FB3-83AD-58A38E417926}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C2C8B5E6-85B1-4FB3-83AD-58A38E417926}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C2C8B5E6-85B1-4FB3-83AD-58A38E417926}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E2A4416D-2725-454E-B21B-889C1746ADDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E2A4416D-2725-454E-B21B-889C1746ADDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E2A4416D-2725-454E-B21B-889C1746ADDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E2A4416D-2725-454E-B21B-889C1746ADDC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1C0F478F-7FCA-4E3C-9D01-7A38B3A9EE05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1C0F478F-7FCA-4E3C-9D01-7A38B3A9EE05}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C0F478F-7FCA-4E3C-9D01-7A38B3A9EE05}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C0F478F-7FCA-4E3C-9D01-7A38B3A9EE05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2A4416D-2725-454E-B21B-889C1746ADDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2A4416D-2725-454E-B21B-889C1746ADDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2A4416D-2725-454E-B21B-889C1746ADDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2A4416D-2725-454E-B21B-889C1746ADDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E705A73B-D7C5-4F3C-AFB5-D7EA15A2ACC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E705A73B-D7C5-4F3C-AFB5-D7EA15A2ACC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E705A73B-D7C5-4F3C-AFB5-D7EA15A2ACC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E705A73B-D7C5-4F3C-AFB5-D7EA15A2ACC3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

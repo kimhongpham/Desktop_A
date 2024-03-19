@@ -193,6 +193,18 @@
       <Project>{51b016a3-d7fd-4e27-b6f3-179537524b8e}</Project>
       <Name>Game 3</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\Game_03\Codecool.Quest\Codecool.Quest.csproj">
+      <Project>{e705a73b-d7c5-4f3c-afb5-d7ea15a2acc3}</Project>
+      <Name>Codecool.Quest</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Game_2\Game02\Game02.csproj">
+      <Project>{1c0f478f-7fca-4e3c-9d01-7a38b3a9ee05}</Project>
+      <Name>Game02</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\memory_match\MEMORY MATCH\MEMORY MATCH.csproj">
+      <Project>{e2a4416d-2725-454e-b21b-889c1746addc}</Project>
+      <Name>MEMORY MATCH</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
