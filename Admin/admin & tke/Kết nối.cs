@@ -11,10 +11,10 @@ namespace admin___tke
     {
         private static SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder
         {
-            DataSource = "ROSIE-PHAM\\SQLEXPRESS",
+            DataSource = "awsse2004.cjm26kg663sc.ap-southeast-2.rds.amazonaws.com",
             InitialCatalog = "game_databaseA",
-            IntegratedSecurity = true,
-            Encrypt = true,
+            UserID = "admin",
+            Password = "LopSE2004", 
             TrustServerCertificate = true
         };
 
