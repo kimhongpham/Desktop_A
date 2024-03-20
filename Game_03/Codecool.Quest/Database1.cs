@@ -10,40 +10,57 @@ namespace Codecool.Quest
 {
     public class Database1
     {
-        private static string con_str = "Data Source=DESKTOP-HRCOHGR\\SQLEXPRESS;Initial Catalog=Question;Integrated Security=True";
-        private static SqlConnection connection;
-        private static SqlCommand command;
-        public static SqlConnection CreateConnection()
-        {
-            try
+            private static string con_str = "Data Source=B508PC09;Initial Catalog=Question;Integrated Security=True";
+            private static SqlConnection connection;
+            private static SqlCommand command;
+            public static SqlConnection CreateConnection()
             {
-                connection = new SqlConnection(con_str);
-                connection.Open();
+                try
+                {
+                    connection = new SqlConnection(con_str);
+                    connection.Open();
+                }
+                catch
+                {
+                    connection = null;
+                }
+                return connection;
             }
-            catch
+            public static SqlCommand CreateCommand(string commandText, SqlConnection connection)
             {
-                connection = null;
+                try
+                {
+                    command = new SqlCommand(commandText, CreateConnection());
+                }
+                catch { command = null; }
+                return command;
             }
-            return connection;
-        }
-        public static SqlCommand CreateCommand(string commandText, SqlConnection connection)
-        {
-            try
+            public static DataTable SelectQuery(string sql)
             {
-                command = new SqlCommand(commandText, CreateConnection());
+                DataTable dt = new DataTable();
+
+                using (SqlConnection connection = new SqlConnection(con_str))
+                {
+                    try
+                    {
+                        connection.Open();
+
+                        using (SqlCommand command = new SqlCommand(sql, connection))
+                        {
+                            using (SqlDataAdapter adapter = new SqlDataAdapter(command))
+                            {
+                                adapter.Fill(dt);
+                            }
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        // Xử lý các ngoại lệ nếu cần thiết
+                        Console.WriteLine("Lỗi: " + ex.Message);
+                    }
+                }
+
+                return dt;
             }
-            catch { command = null; }
-            return command;
-        }
-        public static DataTable SelectQuery(string sql)
-        {
-            command = CreateCommand(sql, null);
-            SqlDataAdapter adt = new SqlDataAdapter(command);
-            DataTable dt = new DataTable();
-            adt.Fill(dt);
-            command.Dispose();
-            adt.Dispose();
-            return dt;
         }
     }
-}
