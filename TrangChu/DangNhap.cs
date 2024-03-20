@@ -126,6 +126,7 @@ namespace Gaming_Dashboard
                 // Open the Admin form
                 this.Hide();
                 var admin = new admin___tke.Admin();
+                this.main.Hide();
                 admin.ShowDialog();
                 return;
             }
