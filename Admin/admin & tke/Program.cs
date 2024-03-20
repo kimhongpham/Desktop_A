@@ -16,7 +16,7 @@ namespace admin___tke
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Admin_Player());
+            Application.Run(new Admin());
         }
     }
 }

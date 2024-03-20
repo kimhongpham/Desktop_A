@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using admin___tke;
 
 namespace Gaming_Dashboard
 {
@@ -66,17 +67,19 @@ namespace Gaming_Dashboard
                     Password = txt_DKMatKhau.Text
                 };
 
-                string connectionString = "Data Source=ROSIE-PHAM\\SQLEXPRESS;Initial Catalog=game_databaseA;Integrated Security=True";
+                //string connectionString = "Data Source = ROSIE - PHAM\SQLEXPRESS; Initial Catalog = game_databaseA; Persist Security Info = True; User ID = rosie0107; Password = ***********; Encrypt = True; Trust Server Certificate = True";
+                //string connectionString = "Data Source = ROSIE - PHAM\SQLEXPRESS; Initial Catalog = game_databaseA; Integrated Security = True; Encrypt = True; Trust Server Certificate = True";
+                //string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\Admin\\Documents\\Tài liệu\\Desktop_A\\TrangChu\\Database1.mdf\";Integrated Security=True"; 
                 try
                 {
-                    using (SqlConnection connection = new SqlConnection(connectionString))
+                    using (SqlConnection sqlConnection = admin___tke.Kết_nối.getConnection())
                     {
-                        connection.Open(); // Mở kết nối
+                        sqlConnection.Open(); // Mở kết nối
                         MessageBox.Show("Kết nối thành công!");
 
                         // Định nghĩa truy vấn SQL để chèn dữ liệu người dùng và lấy UserID được tạo ra
                         string sql = "INSERT INTO Users (Username, Email, Password, NGAYTHAMGIA) VALUES (@Username, @Email, @Password, GETDATE()); SELECT SCOPE_IDENTITY()";
-                        using (SqlCommand command = new SqlCommand(sql, connection))
+                        using (SqlCommand command = new SqlCommand(sql, sqlConnection))
                         {
                             command.Parameters.AddWithValue("@Username", newUser.Username);
                             command.Parameters.AddWithValue("@Email", newUser.Email);

@@ -32,14 +32,16 @@ namespace Gaming_Dashboard
         public void DisplayHighestScores(string username)
         {
             // Create a connection to the database
-            string connectionString = "Data Source=ROSIE-PHAM\\SQLEXPRESS;Initial Catalog=game_databaseA;Integrated Security=True";
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            //string connectionString = "Data Source = ROSIE - PHAM\SQLEXPRESS; Initial Catalog = game_databaseA; Persist Security Info = True; User ID = rosie0107; Password = ***********; Encrypt = True; Trust Server Certificate = True";
+            //string connectionString = "Data Source = ROSIE - PHAM\SQLEXPRESS; Initial Catalog = game_databaseA; Integrated Security = True; Encrypt = True; Trust Server Certificate = True";
+            //string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\Admin\\Documents\\Tài liệu\\Desktop_A\\TrangChu\\Database1.mdf\";Integrated Security=True";
+            using (SqlConnection sqlConnection = admin___tke.Kết_nối.getConnection())
             {
-                connection.Open();
+                sqlConnection.Open();
 
                 // Create a command to retrieve the user's highest scores from the database
                 string selectCommand = "SELECT g.GameName, MAX(gs.Score) as HighestScore FROM GameSessions gs JOIN Users u ON gs.UserID = u.UserID JOIN UserGames ug ON gs.GameID = ug.GameID JOIN Games g ON gs.GameID = g.GameID WHERE u.UserName = @UserName GROUP BY g.GameName ORDER BY HighestScore DESC";
-                using (SqlCommand command = new SqlCommand(selectCommand, connection))
+                using (SqlCommand command = new SqlCommand(selectCommand, sqlConnection))
                 {
                     // Set the parameter value for the command
                     command.Parameters.AddWithValue("@UserName", username);
@@ -81,6 +83,7 @@ namespace Gaming_Dashboard
                         }
                     }
                 }
+                sqlConnection.Close();
             }
         }
     }

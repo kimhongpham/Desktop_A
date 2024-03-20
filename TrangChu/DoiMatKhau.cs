@@ -16,7 +16,7 @@ namespace Gaming_Dashboard
 {
     public partial class DoiMatKhau : UserControl
     {
-        
+
         public DoiMatKhau()
         {
             InitializeComponent();
@@ -35,7 +35,7 @@ namespace Gaming_Dashboard
                 return _instance;
             }
         }
-        
+
 
         private void guna2PictureBox2_Click(object sender, EventArgs e)
         {
@@ -48,7 +48,7 @@ namespace Gaming_Dashboard
             lbl_DatLaiMatKhau.Text = "Vui lòng nhập mã xác minh được gửi đến địa chỉ email của bạn.";
             txt_NhapMaXacMinh.Visible = true;
             btn_MatKhauNhapLai.Visible = true;
-            if(string.IsNullOrEmpty(txt_NhapMaXacMinh.Text))
+            if (string.IsNullOrEmpty(txt_NhapMaXacMinh.Text))
             {
                 MessageBox.Show("Vui lòng nhập mã xác nhận.");
                 return;
@@ -72,18 +72,20 @@ namespace Gaming_Dashboard
                     MessageBox.Show("Mật khẩu mới không khớp.");
                     return;
                 }
-                string connectionString = "Data Source=ROSIE-PHAM\\SQLEXPRESS;Initial Catalog=game_databaseA;Integrated Security=True";
+                //string connectionString = "Data Source = ROSIE - PHAM\SQLEXPRESS; Initial Catalog = game_databaseA; Persist Security Info = True; User ID = rosie0107; Password = ***********; Encrypt = True; Trust Server Certificate = True";
+                //string connectionString = "Data Source = ROSIE - PHAM\SQLEXPRESS; Initial Catalog = game_databaseA; Integrated Security = True; Encrypt = True; Trust Server Certificate = True";
+                //string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\Admin\\Documents\\Tài liệu\\Desktop_A\\TrangChu\\Database1.mdf\";Integrated Security=True";
                 try
                 {
-                    using (SqlConnection connection = new SqlConnection(connectionString))
+                    using (SqlConnection sqlConnection = admin___tke.Kết_nối.getConnection())
                     {
-                        connection.Open(); // Mở kết nối
+                        sqlConnection.Open(); // Mở kết nối
                         string sql = "UPDATE Users SET Password = @Password WHERE Email = @Email";
-                        SqlCommand command = new SqlCommand(sql, connection);
+                        SqlCommand command = new SqlCommand(sql, sqlConnection);
                         command.Parameters.AddWithValue("@Email", email);
                         command.Parameters.AddWithValue("@Password", password);
                         command.ExecuteNonQuery();
-                        connection.Close();
+                        sqlConnection.Close();
                     }
                     // Hiển thị thông báo thành công và chuyển đến trang chủ
                     MessageBox.Show("Mật khẩu của bạn đã được thiết lập lại. Vui lòng đăng nhập bằng mật khẩu mới của bạn.");

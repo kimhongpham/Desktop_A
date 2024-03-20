@@ -45,9 +45,10 @@
             // 
             this.lbl_Setting.AutoSize = true;
             this.lbl_Setting.Font = new System.Drawing.Font("Segoe UI Black", 26F, System.Drawing.FontStyle.Bold);
-            this.lbl_Setting.Location = new System.Drawing.Point(831, 32);
+            this.lbl_Setting.Location = new System.Drawing.Point(692, 27);
+            this.lbl_Setting.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_Setting.Name = "lbl_Setting";
-            this.lbl_Setting.Size = new System.Drawing.Size(369, 70);
+            this.lbl_Setting.Size = new System.Drawing.Size(313, 60);
             this.lbl_Setting.TabIndex = 0;
             this.lbl_Setting.Text = "Setting game";
             // 
@@ -60,9 +61,10 @@
             this.pnl_Setting.Controls.Add(this.btn_ChangePic);
             this.pnl_Setting.Controls.Add(this.pic_G);
             this.pnl_Setting.FillColor = System.Drawing.Color.White;
-            this.pnl_Setting.Location = new System.Drawing.Point(52, 183);
+            this.pnl_Setting.Location = new System.Drawing.Point(43, 152);
+            this.pnl_Setting.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnl_Setting.Name = "pnl_Setting";
-            this.pnl_Setting.Size = new System.Drawing.Size(1814, 593);
+            this.pnl_Setting.Size = new System.Drawing.Size(1512, 494);
             this.pnl_Setting.TabIndex = 14;
             // 
             // txt_Des
@@ -77,14 +79,14 @@
             this.txt_Des.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_Des.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Des.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_Des.Location = new System.Drawing.Point(503, 91);
-            this.txt_Des.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_Des.Location = new System.Drawing.Point(419, 76);
             this.txt_Des.Name = "txt_Des";
             this.txt_Des.PasswordChar = '\0';
             this.txt_Des.PlaceholderText = "";
             this.txt_Des.SelectedText = "";
-            this.txt_Des.Size = new System.Drawing.Size(1074, 189);
+            this.txt_Des.Size = new System.Drawing.Size(895, 158);
             this.txt_Des.TabIndex = 21;
+            this.txt_Des.TextChanged += new System.EventHandler(this.txt_Des_TextChanged);
             // 
             // txt_NameG
             // 
@@ -98,14 +100,15 @@
             this.txt_NameG.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_NameG.Font = new System.Drawing.Font("Lucida Sans Unicode", 20F, System.Drawing.FontStyle.Bold);
             this.txt_NameG.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_NameG.Location = new System.Drawing.Point(503, 19);
-            this.txt_NameG.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txt_NameG.Location = new System.Drawing.Point(419, 16);
+            this.txt_NameG.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_NameG.Name = "txt_NameG";
             this.txt_NameG.PasswordChar = '\0';
             this.txt_NameG.PlaceholderText = "";
             this.txt_NameG.SelectedText = "";
-            this.txt_NameG.Size = new System.Drawing.Size(733, 54);
+            this.txt_NameG.Size = new System.Drawing.Size(611, 45);
             this.txt_NameG.TabIndex = 20;
+            this.txt_NameG.TextChanged += new System.EventHandler(this.txt_NameG_TextChanged);
             // 
             // btn_ChangePic
             // 
@@ -119,10 +122,11 @@
             this.btn_ChangePic.ForeColor = System.Drawing.Color.White;
             this.btn_ChangePic.Image = global::admin___tke.Properties.Resources.setting_settings_icon_183789;
             this.btn_ChangePic.ImageSize = new System.Drawing.Size(30, 30);
-            this.btn_ChangePic.Location = new System.Drawing.Point(402, 227);
+            this.btn_ChangePic.Location = new System.Drawing.Point(335, 189);
+            this.btn_ChangePic.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_ChangePic.Name = "btn_ChangePic";
             this.btn_ChangePic.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btn_ChangePic.Size = new System.Drawing.Size(40, 40);
+            this.btn_ChangePic.Size = new System.Drawing.Size(33, 33);
             this.btn_ChangePic.TabIndex = 19;
             this.btn_ChangePic.UseTransparentBackground = true;
             // 
@@ -131,9 +135,10 @@
             this.pic_G.BorderRadius = 50;
             this.pic_G.Image = global::admin___tke.Properties.Resources.Rectangle_2386;
             this.pic_G.ImageRotate = 0F;
-            this.pic_G.Location = new System.Drawing.Point(15, 19);
+            this.pic_G.Location = new System.Drawing.Point(12, 16);
+            this.pic_G.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pic_G.Name = "pic_G";
-            this.pic_G.Size = new System.Drawing.Size(442, 261);
+            this.pic_G.Size = new System.Drawing.Size(368, 218);
             this.pic_G.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pic_G.TabIndex = 0;
             this.pic_G.TabStop = false;
@@ -147,9 +152,10 @@
             this.btn_Save.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btn_Save.Font = new System.Drawing.Font("Segoe UI", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Save.ForeColor = System.Drawing.Color.White;
-            this.btn_Save.Location = new System.Drawing.Point(435, 892);
+            this.btn_Save.Location = new System.Drawing.Point(362, 743);
+            this.btn_Save.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_Save.Name = "btn_Save";
-            this.btn_Save.Size = new System.Drawing.Size(275, 86);
+            this.btn_Save.Size = new System.Drawing.Size(229, 72);
             this.btn_Save.TabIndex = 15;
             this.btn_Save.Text = "Save";
             // 
@@ -164,9 +170,10 @@
             this.btn_Cancle.FillColor = System.Drawing.Color.White;
             this.btn_Cancle.Font = new System.Drawing.Font("Segoe UI", 26F, System.Drawing.FontStyle.Bold);
             this.btn_Cancle.ForeColor = System.Drawing.Color.Black;
-            this.btn_Cancle.Location = new System.Drawing.Point(833, 892);
+            this.btn_Cancle.Location = new System.Drawing.Point(694, 743);
+            this.btn_Cancle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_Cancle.Name = "btn_Cancle";
-            this.btn_Cancle.Size = new System.Drawing.Size(275, 86);
+            this.btn_Cancle.Size = new System.Drawing.Size(229, 72);
             this.btn_Cancle.TabIndex = 18;
             this.btn_Cancle.Text = "Cancle";
             this.btn_Cancle.Click += new System.EventHandler(this.btn_Cancle_Click);
@@ -181,24 +188,26 @@
             this.btn_Del.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
             this.btn_Del.Font = new System.Drawing.Font("Segoe UI", 26F, System.Drawing.FontStyle.Bold);
             this.btn_Del.ForeColor = System.Drawing.Color.White;
-            this.btn_Del.Location = new System.Drawing.Point(1218, 892);
+            this.btn_Del.Location = new System.Drawing.Point(1015, 743);
+            this.btn_Del.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_Del.Name = "btn_Del";
-            this.btn_Del.Size = new System.Drawing.Size(275, 86);
+            this.btn_Del.Size = new System.Drawing.Size(229, 72);
             this.btn_Del.TabIndex = 19;
             this.btn_Del.Text = "Delete";
             // 
             // Setting_Game
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1920, 1050);
+            this.ClientSize = new System.Drawing.Size(1600, 875);
             this.Controls.Add(this.btn_Del);
             this.Controls.Add(this.btn_Cancle);
             this.Controls.Add(this.btn_Save);
             this.Controls.Add(this.pnl_Setting);
             this.Controls.Add(this.lbl_Setting);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Setting_Game";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Setting Game";

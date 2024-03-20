@@ -213,22 +213,22 @@ namespace Gaming_Dashboard
         private void btn_Game1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            var MainOption = new MEMORY_MATCH.MainOption(); // create a new instance of MainMenu
+            var MainOption = new MEMORY_MATCH.MainOption(); // tạo một phiên bản mới của Main Game 1
             MainOption.ShowDialog();
         }
 
         private void btn_game2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            var mainMenu = new Game02.MainMenu(); // create a new instance of MainMenu
-            mainMenu.ShowDialog(); // show the main menu form
+            var mainMenu = new Game02.MainMenu(); // tạo một phiên bản mới của Main Game 2
+            mainMenu.ShowDialog(); // hiển thị mẫu Main Game 2
         }
 
         private void btn_game3_Click(object sender, EventArgs e)
         {
             this.Hide();
-            var MainForm = new Codecool.Quest.MainForm(); // create a new instance of MainMenu
-            MainForm.ShowDialog(); // show the main menu form
+            var MainForm = new Codecool.Quest.MainForm(); // tạo một phiên bản mới của Main Game 3
+            MainForm.ShowDialog(); // hiển thị mẫu Main Game 3
         }
     }
 }

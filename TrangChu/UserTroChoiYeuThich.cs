@@ -36,9 +36,12 @@ namespace Gaming_Dashboard
         {
             // Connect to the database
             // Replace "your_connection_string" with the actual connection string
-            using (SqlConnection connection = new SqlConnection("your_connection_string"))
+            //string connectionString = "Data Source = ROSIE - PHAM\SQLEXPRESS; Initial Catalog = game_databaseA; Persist Security Info = True; User ID = rosie0107; Password = ***********; Encrypt = True; Trust Server Certificate = True";
+            //string connectionString = "Data Source = ROSIE - PHAM\SQLEXPRESS; Initial Catalog = game_databaseA; Integrated Security = True; Encrypt = True; Trust Server Certificate = True";
+            //string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\Admin\\Documents\\Tài liệu\\Desktop_A\\TrangChu\\Database1.mdf\";Integrated Security=True";
+            using (SqlConnection sqlConnection = admin___tke.Kết_nối.getConnection())
             {
-                connection.Open();
+                sqlConnection.Open();
 
                 // Define the SQL query
                 string query = @"
@@ -53,7 +56,7 @@ namespace Gaming_Dashboard
         ";
 
                 // Execute the SQL query
-                using (SqlCommand command = new SqlCommand(query, connection))
+                using (SqlCommand command = new SqlCommand(query, sqlConnection))
                 {
                     using (SqlDataReader reader = command.ExecuteReader())
                     {
@@ -94,7 +97,7 @@ namespace Gaming_Dashboard
                     }
                 }
 
-                connection.Close();
+                sqlConnection.Close();
             }
         }
     }

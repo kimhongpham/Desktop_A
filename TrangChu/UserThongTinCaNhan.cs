@@ -39,10 +39,12 @@ namespace Gaming_Dashboard
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             // Tạo kết nối tới cơ sở dữ liệu
-            string connectionString = "Data Source=ROSIE-PHAM\\SQLEXPRESS;Initial Catalog=game_databaseA;Integrated Security=True";
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            //string connectionString = "Data Source = ROSIE - PHAM\SQLEXPRESS; Initial Catalog = game_databaseA; Persist Security Info = True; User ID = rosie0107; Password = ***********; Encrypt = True; Trust Server Certificate = True";
+            //string connectionString = "Data Source = ROSIE - PHAM\SQLEXPRESS; Initial Catalog = game_databaseA; Integrated Security = True; Encrypt = True; Trust Server Certificate = True";
+            //string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\Admin\\Documents\\Tài liệu\\Desktop_A\\TrangChu\\Database1.mdf\";Integrated Security=True";
+            using (SqlConnection sqlConnection = admin___tke.Kết_nối.getConnection())
             {
-                connection.Open();
+                sqlConnection.Open();
 
                 // Truy xuất thông tin của người dùng từ các điều khiển biểu mẫu
                 int userId = GetUserIdFromUsername(_username);
@@ -55,7 +57,7 @@ namespace Gaming_Dashboard
 
                 // Tạo lệnh cập nhật thông tin người dùng vào cơ sở dữ liệu
                 string updateCommand = "UPDATE Users SET TEN = @FirstName, HO = @LastName, SDT = @PhoneNumber, QUOCGIA = @Country, THANHPHO = @City, Address = @Address WHERE UserID = @UserID";
-                using (SqlCommand command = new SqlCommand(updateCommand, connection))
+                using (SqlCommand command = new SqlCommand(updateCommand, sqlConnection))
                 {
                     // Đặt giá trị tham số cho lệnh
                     command.Parameters.AddWithValue("@FirstName", firstName);
@@ -80,20 +82,21 @@ namespace Gaming_Dashboard
                         MessageBox.Show($"Đã xảy ra lỗi khi cập nhật thông tin của bạn: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
+                sqlConnection.Close();
             }
         }
         private int GetUserIdFromUsername(string username)
         {
             // Create a connection to the database
-            string connectionString = "Data Source=ROSIE-PHAM\\SQLEXPRESS;Initial Catalog=game_databaseA;Integrated Security=True";
+            //string connectionString = "Data Source=ROSIE-PHAM\\SQLEXPRESS;Initial Catalog=game_databaseA;Initial Catalog=game_databaseA;Persist Security Info=False;User ID=rosie0107;Password=@hong0107;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=True;Connection Timeout=30;";
             int userId = -1;
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            using (SqlConnection sqlConnection = Kết_nối.getConnection())
             {
-                connection.Open();
+                sqlConnection.Open();
 
                 // Create a command to retrieve the user's ID from the database
                 string selectCommand = "SELECT UserID FROM Users WHERE UserName = @UserName";
-                using (SqlCommand command = new SqlCommand(selectCommand, connection))
+                using (SqlCommand command = new SqlCommand(selectCommand, sqlConnection))
                 {
                     // Set the parameter value for the command
                     command.Parameters.AddWithValue("@UserName", username);
@@ -107,6 +110,7 @@ namespace Gaming_Dashboard
                         }
                     }
                 }
+                sqlConnection.Close();
             }
 
             return userId;

@@ -37,6 +37,9 @@
             this.guna2ImageButton5 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.imgBtn_Logo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pn_TrangChuMain = new Guna.UI2.WinForms.Guna2Panel();
+            this.btn_game3 = new System.Windows.Forms.Button();
+            this.btn_game2 = new System.Windows.Forms.Button();
+            this.btn_Game1 = new System.Windows.Forms.Button();
             this.ptrb_Avatar = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
             this.label11 = new System.Windows.Forms.Label();
@@ -83,9 +86,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.lbl_Username = new System.Windows.Forms.Label();
             this.pn_TrangChu2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.btn_Game1 = new System.Windows.Forms.Button();
-            this.btn_game2 = new System.Windows.Forms.Button();
-            this.btn_game3 = new System.Windows.Forms.Button();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgBtn_Logo)).BeginInit();
             this.pn_TrangChuMain.SuspendLayout();
@@ -259,9 +259,6 @@
             this.pn_TrangChuMain.AutoScroll = true;
             this.pn_TrangChuMain.BackColor = System.Drawing.Color.Transparent;
             this.pn_TrangChuMain.BorderRadius = 12;
-            this.pn_TrangChuMain.Controls.Add(this.btn_game3);
-            this.pn_TrangChuMain.Controls.Add(this.btn_game2);
-            this.pn_TrangChuMain.Controls.Add(this.btn_Game1);
             this.pn_TrangChuMain.Controls.Add(this.ptrb_Avatar);
             this.pn_TrangChuMain.Controls.Add(this.guna2Panel5);
             this.pn_TrangChuMain.Controls.Add(this.guna2Panel6);
@@ -283,6 +280,36 @@
             this.pn_TrangChuMain.TabIndex = 45;
             this.pn_TrangChuMain.Paint += new System.Windows.Forms.PaintEventHandler(this.pn_TrangChuMain_Paint);
             // 
+            // btn_game3
+            // 
+            this.btn_game3.Location = new System.Drawing.Point(130, 106);
+            this.btn_game3.Name = "btn_game3";
+            this.btn_game3.Size = new System.Drawing.Size(23, 24);
+            this.btn_game3.TabIndex = 57;
+            this.btn_game3.Text = "Game 3";
+            this.btn_game3.UseVisualStyleBackColor = true;
+            this.btn_game3.Click += new System.EventHandler(this.btn_game3_Click);
+            // 
+            // btn_game2
+            // 
+            this.btn_game2.Location = new System.Drawing.Point(130, 109);
+            this.btn_game2.Name = "btn_game2";
+            this.btn_game2.Size = new System.Drawing.Size(23, 23);
+            this.btn_game2.TabIndex = 56;
+            this.btn_game2.Text = "Game 2";
+            this.btn_game2.UseVisualStyleBackColor = true;
+            this.btn_game2.Click += new System.EventHandler(this.btn_game2_Click);
+            // 
+            // btn_Game1
+            // 
+            this.btn_Game1.Location = new System.Drawing.Point(118, 107);
+            this.btn_Game1.Name = "btn_Game1";
+            this.btn_Game1.Size = new System.Drawing.Size(23, 26);
+            this.btn_Game1.TabIndex = 55;
+            this.btn_Game1.Text = "Game 1";
+            this.btn_Game1.UseVisualStyleBackColor = true;
+            this.btn_Game1.Click += new System.EventHandler(this.btn_Game1_Click);
+            // 
             // ptrb_Avatar
             // 
             this.ptrb_Avatar.BackColor = System.Drawing.Color.Transparent;
@@ -302,6 +329,7 @@
             this.guna2Panel5.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel5.BorderRadius = 12;
             this.guna2Panel5.Controls.Add(this.label11);
+            this.guna2Panel5.Controls.Add(this.btn_game2);
             this.guna2Panel5.Controls.Add(this.guna2PictureBox1);
             this.guna2Panel5.Controls.Add(this.label12);
             this.guna2Panel5.Controls.Add(this.guna2PictureBox7);
@@ -388,6 +416,7 @@
             // 
             this.guna2Panel6.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel6.BorderRadius = 12;
+            this.guna2Panel6.Controls.Add(this.btn_game3);
             this.guna2Panel6.Controls.Add(this.label14);
             this.guna2Panel6.Controls.Add(this.guna2PictureBox9);
             this.guna2Panel6.Controls.Add(this.label15);
@@ -771,6 +800,7 @@
             this.lbl_Game1.BorderRadius = 12;
             this.lbl_Game1.Controls.Add(this.label7);
             this.lbl_Game1.Controls.Add(this.guna2PictureBox6);
+            this.lbl_Game1.Controls.Add(this.btn_Game1);
             this.lbl_Game1.Controls.Add(this.label6);
             this.lbl_Game1.Controls.Add(this.guna2PictureBox5);
             this.lbl_Game1.Controls.Add(this.label5);
@@ -888,43 +918,13 @@
             this.pn_TrangChu2.Size = new System.Drawing.Size(702, 414);
             this.pn_TrangChu2.TabIndex = 55;
             // 
-            // btn_Game1
-            // 
-            this.btn_Game1.Location = new System.Drawing.Point(29, 94);
-            this.btn_Game1.Name = "btn_Game1";
-            this.btn_Game1.Size = new System.Drawing.Size(94, 36);
-            this.btn_Game1.TabIndex = 55;
-            this.btn_Game1.Text = "Game 1";
-            this.btn_Game1.UseVisualStyleBackColor = true;
-            this.btn_Game1.Click += new System.EventHandler(this.btn_Game1_Click);
-            // 
-            // btn_game2
-            // 
-            this.btn_game2.Location = new System.Drawing.Point(149, 94);
-            this.btn_game2.Name = "btn_game2";
-            this.btn_game2.Size = new System.Drawing.Size(94, 36);
-            this.btn_game2.TabIndex = 56;
-            this.btn_game2.Text = "Game 2";
-            this.btn_game2.UseVisualStyleBackColor = true;
-            this.btn_game2.Click += new System.EventHandler(this.btn_game2_Click);
-            // 
-            // btn_game3
-            // 
-            this.btn_game3.Location = new System.Drawing.Point(94, 142);
-            this.btn_game3.Name = "btn_game3";
-            this.btn_game3.Size = new System.Drawing.Size(94, 36);
-            this.btn_game3.TabIndex = 57;
-            this.btn_game3.Text = "Game 3";
-            this.btn_game3.UseVisualStyleBackColor = true;
-            this.btn_game3.Click += new System.EventHandler(this.btn_game3_Click);
-            // 
             // UserMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(782, 403);
+            this.ClientSize = new System.Drawing.Size(803, 403);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.pn_TrangChu2);
             this.Name = "UserMain";

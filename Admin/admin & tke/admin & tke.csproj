@@ -36,6 +36,24 @@
     <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
       <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\..\TrangChu\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\..\TrangChu\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\..\TrangChu\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\..\TrangChu\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\..\TrangChu\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\..\TrangChu\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
     <Reference Include="Syncfusion.Licensing, Version=24.1460.47.0, Culture=neutral, PublicKeyToken=632609b4d040f6b4, processorArchitecture=MSIL">
       <HintPath>..\packages\Syncfusion.Licensing.24.1.47\lib\net46\Syncfusion.Licensing.dll</HintPath>
     </Reference>
@@ -62,6 +80,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin_Player.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,15 +104,14 @@
     <Compile Include="Admin_Game.Designer.cs">
       <DependentUpon>Admin_Game.cs</DependentUpon>
     </Compile>
+    <Compile Include="Kết nối.cs" />
     <Compile Include="Setting_Game.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Setting_Game.Designer.cs">
       <DependentUpon>Setting_Game.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reports.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="Reports.cs" />
     <Compile Include="Reports.Designer.cs">
       <DependentUpon>Reports.cs</DependentUpon>
     </Compile>
@@ -100,6 +123,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin_Player.resx">
       <DependentUpon>Admin_Player.cs</DependentUpon>
     </EmbeddedResource>
@@ -168,19 +195,24 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="License-LGPL.txt" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="Resources\Download.png" />
     <None Include="Resources\Group 288816.png" />
     <None Include="Resources\x_icon_150997.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\DAL\DAL.csproj">
-      <Project>{44225287-266b-4274-a0d9-90bca564fa1d}</Project>
-      <Name>DAL</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\DTO\DTO.csproj">
-      <Project>{883aa1d9-07ca-48a2-8afb-929c398659a6}</Project>
-      <Name>DTO</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\..\ueh\phát triển ứng dụng desktop\Desktop_A\Game 1\Game 1.csproj">
       <Project>{3de23c0b-69b6-4b05-a00d-6ac9c6cf93ec}</Project>
       <Name>Game 1</Name>
@@ -192,18 +224,6 @@
     <ProjectReference Include="..\..\..\ueh\phát triển ứng dụng desktop\Desktop_A\Game 3\Game 3.csproj">
       <Project>{51b016a3-d7fd-4e27-b6f3-179537524b8e}</Project>
       <Name>Game 3</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Game_03\Codecool.Quest\Codecool.Quest.csproj">
-      <Project>{e705a73b-d7c5-4f3c-afb5-d7ea15a2acc3}</Project>
-      <Name>Codecool.Quest</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Game_2\Game02\Game02.csproj">
-      <Project>{1c0f478f-7fca-4e3c-9d01-7a38b3a9ee05}</Project>
-      <Name>Game02</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\memory_match\MEMORY MATCH\MEMORY MATCH.csproj">
-      <Project>{e2a4416d-2725-454e-b21b-889c1746addc}</Project>
-      <Name>MEMORY MATCH</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

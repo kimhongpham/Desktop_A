@@ -112,7 +112,6 @@ C:\Users\Admin\Documents\Tài liệu\Desktop_A\Admin\admin & tke\obj\Debug\admin
 C:\Users\Admin\Documents\Tài liệu\Desktop_A\Admin\admin & tke\obj\Debug\admin___tke.Edit_info.resources
 C:\Users\Admin\Documents\Tài liệu\Desktop_A\Admin\admin & tke\obj\Debug\admin___tke.Admin_Game.resources
 C:\Users\Admin\Documents\Tài liệu\Desktop_A\Admin\admin & tke\obj\Debug\admin___tke.Setting_Game.resources
-C:\Users\Admin\Documents\Tài liệu\Desktop_A\Admin\admin & tke\obj\Debug\admin___tke.Reports.resources
 C:\Users\Admin\Documents\Tài liệu\Desktop_A\Admin\admin & tke\obj\Debug\admin___tke.Search.resources
 C:\Users\Admin\Documents\Tài liệu\Desktop_A\Admin\admin & tke\obj\Debug\admin___tke.Properties.Resources.resources
 C:\Users\Admin\Documents\Tài liệu\Desktop_A\Admin\admin & tke\obj\Debug\admin & tke.csproj.GenerateResource.cache
@@ -161,3 +160,112 @@ C:\Users\Admin\Pictures\Desktop_A\Admin\admin & tke\obj\Debug\admin & tke.csproj
 C:\Users\Admin\Pictures\Desktop_A\Admin\admin & tke\obj\Debug\admin & tke.csproj.CopyComplete
 C:\Users\Admin\Pictures\Desktop_A\Admin\admin & tke\obj\Debug\admin & tke.exe
 C:\Users\Admin\Pictures\Desktop_A\Admin\admin & tke\obj\Debug\admin & tke.pdb
+C:\Users\Admin\Downloads\Desktop_A\Admin\admin & tke\bin\Debug\admin & tke.exe.config
+C:\Users\Admin\Downloads\Desktop_A\Admin\admin & tke\bin\Debug\admin & tke.exe
+C:\Users\Admin\Downloads\Desktop_A\Admin\admin & tke\bin\Debug\admin & tke.pdb
+C:\Users\Admin\Downloads\Desktop_A\Admin\admin & tke\bin\Debug\Codecool.Quest.exe
+C:\Users\Admin\Downloads\Desktop_A\Admin\admin & tke\bin\Debug\Game02.exe
+C:\Users\Admin\Downloads\Desktop_A\Admin\admin & tke\bin\Debug\Guna.UI2.dll
+C:\Users\Admin\Downloads\Desktop_A\Admin\admin & tke\bin\Debug\MEMORY MATCH.exe
+C:\Users\Admin\Downloads\Desktop_A\Admin\admin & tke\bin\Debug\Syncfusion.Licensing.dll
+C:\Users\Admin\Downloads\Desktop_A\Admin\admin & tke\bin\Debug\Syncfusion.SfChart.WPF.dll
+C:\Users\Admin\Downloads\Desktop_A\Admin\admin & tke\bin\Debug\ZedGraph.dll
+C:\Users\Admin\Downloads\Desktop_A\Admin\admin & tke\bin\Debug\NAudio.WinMM.dll
+C:\Users\Admin\Downloads\Desktop_A\Admin\admin & tke\bin\Debug\NAudio.dll
+C:\Users\Admin\Downloads\Desktop_A\Admin\admin & tke\bin\Debug\NAudio.Core.dll
+C:\Users\Admin\Downloads\Desktop_A\Admin\admin & tke\bin\Debug\Microsoft.Win32.Registry.dll
+C:\Users\Admin\Downloads\Desktop_A\Admin\admin & tke\bin\Debug\NAudio.Wasapi.dll
+C:\Users\Admin\Downloads\Desktop_A\Admin\admin & tke\bin\Debug\Codecool.Quest.pdb
+C:\Users\Admin\Downloads\Desktop_A\Admin\admin & tke\bin\Debug\Codecool.Quest.exe.config
+C:\Users\Admin\Downloads\Desktop_A\Admin\admin & tke\bin\Debug\Game02.pdb
+C:\Users\Admin\Downloads\Desktop_A\Admin\admin & tke\bin\Debug\Game02.exe.config
+C:\Users\Admin\Downloads\Desktop_A\Admin\admin & tke\bin\Debug\MEMORY MATCH.pdb
+C:\Users\Admin\Downloads\Desktop_A\Admin\admin & tke\bin\Debug\MEMORY MATCH.exe.config
+C:\Users\Admin\Downloads\Desktop_A\Admin\admin & tke\bin\Debug\Syncfusion.SfChart.WPF.xml
+C:\Users\Admin\Downloads\Desktop_A\Admin\admin & tke\bin\Debug\ZedGraph.xml
+C:\Users\Admin\Downloads\Desktop_A\Admin\admin & tke\bin\Debug\NAudio.WinMM.xml
+C:\Users\Admin\Downloads\Desktop_A\Admin\admin & tke\bin\Debug\NAudio.xml
+C:\Users\Admin\Downloads\Desktop_A\Admin\admin & tke\bin\Debug\NAudio.Core.xml
+C:\Users\Admin\Downloads\Desktop_A\Admin\admin & tke\bin\Debug\Microsoft.Win32.Registry.xml
+C:\Users\Admin\Downloads\Desktop_A\Admin\admin & tke\bin\Debug\NAudio.Wasapi.xml
+C:\Users\Admin\Downloads\Desktop_A\Admin\admin & tke\bin\Debug\de\ZedGraph.resources.dll
+C:\Users\Admin\Downloads\Desktop_A\Admin\admin & tke\bin\Debug\es\ZedGraph.resources.dll
+C:\Users\Admin\Downloads\Desktop_A\Admin\admin & tke\bin\Debug\fr\ZedGraph.resources.dll
+C:\Users\Admin\Downloads\Desktop_A\Admin\admin & tke\bin\Debug\hu\ZedGraph.resources.dll
+C:\Users\Admin\Downloads\Desktop_A\Admin\admin & tke\bin\Debug\it\ZedGraph.resources.dll
+C:\Users\Admin\Downloads\Desktop_A\Admin\admin & tke\bin\Debug\ja\ZedGraph.resources.dll
+C:\Users\Admin\Downloads\Desktop_A\Admin\admin & tke\bin\Debug\pt\ZedGraph.resources.dll
+C:\Users\Admin\Downloads\Desktop_A\Admin\admin & tke\bin\Debug\ru\ZedGraph.resources.dll
+C:\Users\Admin\Downloads\Desktop_A\Admin\admin & tke\bin\Debug\sk\ZedGraph.resources.dll
+C:\Users\Admin\Downloads\Desktop_A\Admin\admin & tke\bin\Debug\sv\ZedGraph.resources.dll
+C:\Users\Admin\Downloads\Desktop_A\Admin\admin & tke\bin\Debug\tr\ZedGraph.resources.dll
+C:\Users\Admin\Downloads\Desktop_A\Admin\admin & tke\bin\Debug\zh-cn\ZedGraph.resources.dll
+C:\Users\Admin\Downloads\Desktop_A\Admin\admin & tke\bin\Debug\zh-tw\ZedGraph.resources.dll
+C:\Users\Admin\Downloads\Desktop_A\Admin\admin & tke\obj\Debug\admin & tke.csproj.AssemblyReference.cache
+C:\Users\Admin\Downloads\Desktop_A\Admin\admin & tke\obj\Debug\admin___tke.Admin_Player.resources
+C:\Users\Admin\Downloads\Desktop_A\Admin\admin & tke\obj\Debug\admin___tke.Edit_info.resources
+C:\Users\Admin\Downloads\Desktop_A\Admin\admin & tke\obj\Debug\admin___tke.Admin_Game.resources
+C:\Users\Admin\Downloads\Desktop_A\Admin\admin & tke\obj\Debug\admin___tke.Setting_Game.resources
+C:\Users\Admin\Downloads\Desktop_A\Admin\admin & tke\obj\Debug\admin___tke.Reports.resources
+C:\Users\Admin\Downloads\Desktop_A\Admin\admin & tke\obj\Debug\admin___tke.Search.resources
+C:\Users\Admin\Downloads\Desktop_A\Admin\admin & tke\obj\Debug\admin___tke.Properties.Resources.resources
+C:\Users\Admin\Downloads\Desktop_A\Admin\admin & tke\obj\Debug\admin & tke.csproj.GenerateResource.cache
+C:\Users\Admin\Downloads\Desktop_A\Admin\admin & tke\obj\Debug\admin & tke.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Downloads\Desktop_A\Admin\admin & tke\obj\Debug\admin & tke.csproj.CopyComplete
+C:\Users\Admin\Downloads\Desktop_A\Admin\admin & tke\obj\Debug\admin & tke.exe
+C:\Users\Admin\Downloads\Desktop_A\Admin\admin & tke\obj\Debug\admin & tke.pdb
+C:\Users\Admin\Documents\Tài liệu\Desktop_A\Admin\admin & tke\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\Admin\Documents\Tài liệu\Desktop_A\Admin\admin & tke\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\Admin\Documents\Tài liệu\Desktop_A\Admin\admin & tke\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\Admin\Documents\Tài liệu\Desktop_A\Admin\admin & tke\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\Admin\Documents\Tài liệu\Desktop_A\Admin\admin & tke\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\Admin\Documents\Tài liệu\Desktop_A\Admin\admin & tke\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\Admin\Documents\Tài liệu\Desktop_A\Admin\admin & tke\bin\Debug\Microsoft.ReportViewer.Design.dll
+C:\Users\Admin\Documents\Tài liệu\Desktop_A\Admin\admin & tke\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\Admin\Documents\Tài liệu\Desktop_A\Admin\admin & tke\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Admin\Documents\Tài liệu\Desktop_A\Admin\admin & tke\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\Admin\Documents\Tài liệu\Desktop_A\Admin\admin & tke\bin\Debug\EnvDTE.dll
+C:\Users\Admin\Documents\Tài liệu\Desktop_A\Admin\admin & tke\bin\Debug\stdole.dll
+C:\Users\Admin\Documents\Tài liệu\Desktop_A\Admin\admin & tke\bin\Debug\Microsoft.MSXML.dll
+C:\Users\Admin\Documents\Tài liệu\Desktop_A\Admin\admin & tke\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Documents\Tài liệu\Desktop_A\Admin\admin & tke\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Documents\Tài liệu\Desktop_A\Admin\admin & tke\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Documents\Tài liệu\Desktop_A\Admin\admin & tke\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Documents\Tài liệu\Desktop_A\Admin\admin & tke\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Documents\Tài liệu\Desktop_A\Admin\admin & tke\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Documents\Tài liệu\Desktop_A\Admin\admin & tke\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Documents\Tài liệu\Desktop_A\Admin\admin & tke\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Documents\Tài liệu\Desktop_A\Admin\admin & tke\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Documents\Tài liệu\Desktop_A\Admin\admin & tke\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Documents\Tài liệu\Desktop_A\Admin\admin & tke\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Documents\Tài liệu\Desktop_A\Admin\admin & tke\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Documents\Tài liệu\Desktop_A\Admin\admin & tke\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Documents\Tài liệu\Desktop_A\Admin\admin & tke\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Documents\Tài liệu\Desktop_A\Admin\admin & tke\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Documents\Tài liệu\Desktop_A\Admin\admin & tke\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Documents\Tài liệu\Desktop_A\Admin\admin & tke\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Documents\Tài liệu\Desktop_A\Admin\admin & tke\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Documents\Tài liệu\Desktop_A\Admin\admin & tke\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Documents\Tài liệu\Desktop_A\Admin\admin & tke\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Documents\Tài liệu\Desktop_A\Admin\admin & tke\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Documents\Tài liệu\Desktop_A\Admin\admin & tke\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Documents\Tài liệu\Desktop_A\Admin\admin & tke\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Documents\Tài liệu\Desktop_A\Admin\admin & tke\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Documents\Tài liệu\Desktop_A\Admin\admin & tke\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Documents\Tài liệu\Desktop_A\Admin\admin & tke\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Documents\Tài liệu\Desktop_A\Admin\admin & tke\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Documents\Tài liệu\Desktop_A\Admin\admin & tke\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Documents\Tài liệu\Desktop_A\Admin\admin & tke\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Documents\Tài liệu\Desktop_A\Admin\admin & tke\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Documents\Tài liệu\Desktop_A\Admin\admin & tke\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Documents\Tài liệu\Desktop_A\Admin\admin & tke\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Documents\Tài liệu\Desktop_A\Admin\admin & tke\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Documents\Tài liệu\Desktop_A\Admin\admin & tke\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Documents\Tài liệu\Desktop_A\Admin\admin & tke\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Documents\Tài liệu\Desktop_A\Admin\admin & tke\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Documents\Tài liệu\Desktop_A\Admin\admin & tke\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Documents\Tài liệu\Desktop_A\Admin\admin & tke\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Documents\Tài liệu\Desktop_A\Admin\admin & tke\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Documents\Tài liệu\Desktop_A\Admin\admin & tke\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Documents\Tài liệu\Desktop_A\Admin\admin & tke\obj\Debug\admin___tke.Admin.resources
+C:\Users\Admin\Documents\Tài liệu\Desktop_A\Admin\admin & tke\obj\Debug\admin___tke.ReportsManager.resources

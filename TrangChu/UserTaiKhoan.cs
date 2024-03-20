@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -14,6 +15,7 @@ namespace Gaming_Dashboard
 {
     public partial class UserTaiKhoan : UserControl
     {
+        public UserMain main;
         private string _username; // khai báo một trường riêng tư để lưu trữ tên người dùng
         public UserTaiKhoan(string username)
         {
@@ -105,9 +107,56 @@ namespace Gaming_Dashboard
                 UserDoiMatKhau.Instance.BringToFront();
         }
 
+
         private void lbl_Username_Click(object sender, EventArgs e)
         {
-            MessageBox.Show($"Welcome, {_username}!");
+            //string connectionString = "Data Source = ROSIE - PHAM\SQLEXPRESS; Initial Catalog = game_databaseA; Persist Security Info = True; User ID = rosie0107; Password = ***********; Encrypt = True; Trust Server Certificate = True";
+            //string connectionString = "Data Source = ROSIE - PHAM\SQLEXPRESS; Initial Catalog = game_databaseA; Integrated Security = True; Encrypt = True; Trust Server Certificate = True";
+            //string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\Admin\\Documents\\Tài liệu\\Desktop_A\\TrangChu\\Database1.mdf\";Integrated Security=True";
+
+            using (SqlConnection sqlConnection = admin___tke.Kết_nối.getConnection())
+            {
+                sqlConnection.Open();
+
+                string query = "SELECT * FROM Users WHERE UserName = @username";
+                SqlCommand command = new SqlCommand(query, sqlConnection);
+                command.Parameters.AddWithValue("@username", _username);
+
+                SqlDataReader reader = command.ExecuteReader();
+
+                StringBuilder userInfo = new StringBuilder();
+
+                if (reader.Read())
+                {
+                    userInfo.AppendLine($"ID: {reader["UserID"]}");
+                    userInfo.AppendLine($"Username: {reader["UserName"]}");
+                    userInfo.AppendLine($"Email: {reader["Email"]}");
+                    userInfo.AppendLine($"Password: {reader["Password"]}");
+                    userInfo.AppendLine($"Join Date: {reader["NGAYTHAMGIA"]}");
+                    userInfo.AppendLine($"First Name: {reader["TEN"]}");
+                    userInfo.AppendLine($"Last Name: {reader["HO"]}");
+                    userInfo.AppendLine($"Phone: {reader["SDT"]}");
+                    userInfo.AppendLine($"Country: {reader["QUOCGIA"]}");
+                    userInfo.AppendLine($"City: {reader["THANHPHO"]}");
+                    userInfo.AppendLine($"Address: {reader["Address"]}");
+                }
+                else
+                {
+                    MessageBox.Show($"No user found with username '{_username}'.");
+                    return;
+                }
+
+                MessageBox.Show(userInfo.ToString());
+
+                sqlConnection.Close();
+            }
+        }
+
+        private void lbl_DangXuat_Click(object sender, EventArgs e)
+        {
+            Main Main = new Main(); 
+            this.Hide();
+            Main.ShowDialog();
         }
     }
 }

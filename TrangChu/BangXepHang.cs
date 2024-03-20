@@ -1,4 +1,5 @@
-﻿using Guna.UI2.WinForms;
+﻿
+using Guna.UI2.WinForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,16 +21,18 @@ namespace Gaming_Dashboard
             InitializeComponent();
 
             // Kết nối với cơ sở dữ liệu và lấy thứ hạng
-            string connectionString = "Data Source=ROSIE-PHAM\\SQLEXPRESS;Initial Catalog=game_databaseA;Integrated Security=True;Pooling=True";
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            //string connectionString = "Data Source = ROSIE - PHAM\SQLEXPRESS; Initial Catalog = game_databaseA; Persist Security Info = True; User ID = rosie0107; Password = ***********; Encrypt = True; Trust Server Certificate = True";
+            //string connectionString = "Data Source = ROSIE - PHAM\SQLEXPRESS; Initial Catalog = game_databaseA; Integrated Security = True; Encrypt = True; Trust Server Certificate = True";
+            //string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\Admin\\Documents\\Tài liệu\\Desktop_A\\TrangChu\\Database1.mdf\";Integrated Security=True";
+            using (SqlConnection sqlConnection = admin___tke.Kết_nối.getConnection())
             {
-                connection.Open();
+                sqlConnection.Open();
 
                 SqlCommand command = new SqlCommand("SELECT u.UserName, gs.Score FROM GameSessions gs " +
                                                    "JOIN Users u ON gs.UserID = u.UserID " +
                                                    "JOIN UserGames ug ON gs.GameID = ug.GameID " +
                                                    "JOIN Games g ON gs.GameID = g.GameID " +
-                                                   "ORDER BY gs.Score DESC", connection);
+                                                   "ORDER BY gs.Score DESC", sqlConnection);
                 SqlDataReader reader = command.ExecuteReader();
 
 
@@ -70,7 +73,7 @@ namespace Gaming_Dashboard
                     index++;
                 }
 
-                connection.Close();
+                sqlConnection.Close();
 
             }
         }

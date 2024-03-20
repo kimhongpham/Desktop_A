@@ -24,5 +24,15 @@ namespace admin___tke
             admin_Game.Show();
 
         }
+
+        private void txt_NameG_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_Des_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }   
 }

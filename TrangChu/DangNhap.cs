@@ -39,7 +39,7 @@ namespace Gaming_Dashboard
 
         private void DangNhap_Load(object sender, EventArgs e)
         {
-           
+
         }
 
         private void guna2PictureBox1_Click(object sender, EventArgs e)
@@ -63,7 +63,7 @@ namespace Gaming_Dashboard
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-           
+
         }
 
         public void guna2Button2_Click(object sender, EventArgs e)
@@ -145,14 +145,16 @@ namespace Gaming_Dashboard
         }
         private bool PerformLogin(string email, string password)
         {
-            const string connectionString = "Data Source=ROSIE-PHAM\\SQLEXPRESS;Initial Catalog=game_databaseA;Integrated Security=True";
-
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            //const
+            //string connectionString = "Data Source = ROSIE - PHAM\SQLEXPRESS; Initial Catalog = game_databaseA; Persist Security Info = True; User ID = rosie0107; Password = ***********; Encrypt = True; Trust Server Certificate = True";
+            //string connectionString = "Data Source = ROSIE - PHAM\SQLEXPRESS; Initial Catalog = game_databaseA; Integrated Security = True; Encrypt = True; Trust Server Certificate = True";
+            //string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\Admin\\Documents\\Tài liệu\\Desktop_A\\TrangChu\\Database1.mdf\";Integrated Security=True";
+            using (SqlConnection sqlConnection = admin___tke.Kết_nối.getConnection())
             {
-                connection.Open();
+                sqlConnection.Open();
 
                 string sql = "SELECT * FROM Users WHERE Email = @Email AND Password = @Password";
-                SqlCommand command = new SqlCommand(sql, connection);
+                SqlCommand command = new SqlCommand(sql, sqlConnection);
                 command.Parameters.AddWithValue("@Email", email);
                 command.Parameters.AddWithValue("@Password", password);
 
@@ -163,13 +165,13 @@ namespace Gaming_Dashboard
                     loggedInUsername = reader["Username"].ToString();
 
                     // Close the connection and return true
-                    connection.Close();
+                    sqlConnection.Close();
                     return true;
                 }
                 else
                 {
                     // Close the connection and return false
-                    connection.Close();
+                    sqlConnection.Close();
                     return false;
                 }
             }

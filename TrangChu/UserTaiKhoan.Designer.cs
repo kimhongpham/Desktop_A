@@ -87,6 +87,7 @@
             this.lbl_DangXuat.Size = new System.Drawing.Size(89, 23);
             this.lbl_DangXuat.TabIndex = 33;
             this.lbl_DangXuat.Text = "Đăng xuất";
+            this.lbl_DangXuat.Click += new System.EventHandler(this.lbl_DangXuat_Click);
             // 
             // lbl_Username
             // 

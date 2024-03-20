@@ -1,7 +1,0 @@
-C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\DTO\bin\Debug\DTO.exe.config
-C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\DTO\bin\Debug\DTO.exe
-C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\DTO\bin\Debug\DTO.pdb
-C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
-C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
-C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\DTO\obj\Debug\DTO.exe
-C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\DTO\obj\Debug\DTO.pdb

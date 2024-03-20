@@ -80,15 +80,17 @@ namespace Gaming_Dashboard
 
             try
             {
-                string connectionString = "Data Source=ROSIE-PHAM\\SQLEXPRESS;Initial Catalog=game_databaseA;Integrated Security=True;Pooling=True";
+                //string connectionString = "Data Source = ROSIE - PHAM\SQLEXPRESS; Initial Catalog = game_databaseA; Persist Security Info = True; User ID = rosie0107; Password = ***********; Encrypt = True; Trust Server Certificate = True";
+                //string connectionString = "Data Source = ROSIE - PHAM\SQLEXPRESS; Initial Catalog = game_databaseA; Integrated Security = True; Encrypt = True; Trust Server Certificate = True";
+                //string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\Admin\\Documents\\Tài liệu\\Desktop_A\\TrangChu\\Database1.mdf\";Integrated Security=True";
 
-                using (SqlConnection connection = new SqlConnection(connectionString))
+                using (SqlConnection sqlConnection = admin___tke.Kết_nối.getConnection())
                 {
-                    connection.Open();
+                    sqlConnection.Open();
 
                     string sql = "SELECT COUNT(*) FROM Users WHERE Email = @Email";
 
-                    using (SqlCommand command = new SqlCommand(sql, connection))
+                    using (SqlCommand command = new SqlCommand(sql, sqlConnection))
                     {
                         command.Parameters.AddWithValue("@Email", email);
 
@@ -96,6 +98,7 @@ namespace Gaming_Dashboard
 
                         isRegistered = result > 0;
                     }
+                    sqlConnection.Close();
                 }
             }
             catch (Exception ex)

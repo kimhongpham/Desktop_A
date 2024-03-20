@@ -227,9 +227,9 @@
             this.label7.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(19, 23);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(71, 23);
+            this.label7.Size = new System.Drawing.Size(150, 23);
             this.label7.TabIndex = 14;
-            this.label7.Text = "Game 1";
+            this.label7.Text = "MEMORY MATCH";
             // 
             // UserThanhTich
             // 
