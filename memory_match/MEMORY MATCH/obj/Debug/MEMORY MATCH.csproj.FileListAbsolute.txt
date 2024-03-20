@@ -237,3 +237,10 @@ C:\Users\Admin\Downloads\Desktop_A\memory_match\MEMORY MATCH\obj\Debug\MEMORY MA
 C:\Users\Admin\Downloads\Desktop_A\memory_match\MEMORY MATCH\obj\Debug\MEMORY MATCH.csproj.CopyComplete
 C:\Users\Admin\Downloads\Desktop_A\memory_match\MEMORY MATCH\obj\Debug\MEMORY MATCH.exe
 C:\Users\Admin\Downloads\Desktop_A\memory_match\MEMORY MATCH\obj\Debug\MEMORY MATCH.pdb
+C:\Users\Admin\Downloads\Desktop_A\memory_match\MEMORY MATCH\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\Admin\Downloads\Desktop_A\memory_match\MEMORY MATCH\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\Admin\Downloads\Desktop_A\memory_match\MEMORY MATCH\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\Admin\Downloads\Desktop_A\memory_match\MEMORY MATCH\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\Admin\Downloads\Desktop_A\memory_match\MEMORY MATCH\bin\Debug\admin & tke.exe
+C:\Users\Admin\Downloads\Desktop_A\memory_match\MEMORY MATCH\bin\Debug\admin & tke.pdb
+C:\Users\Admin\Downloads\Desktop_A\memory_match\MEMORY MATCH\bin\Debug\admin & tke.exe.config

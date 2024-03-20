@@ -36,9 +36,7 @@
             this.guna2Panel8 = new Guna.UI2.WinForms.Guna2Panel();
             this.lbl_DoiMatKhau = new System.Windows.Forms.Label();
             this.AdminSelect = new Guna.UI2.WinForms.Guna2Panel();
-            this.pcrb_Avatar = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pcrb_Avatar)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_DangXuat
@@ -101,7 +99,6 @@
             this.guna2Panel8.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel8.BorderRadius = 12;
             this.guna2Panel8.Controls.Add(this.lbl_DoiMatKhau);
-            this.guna2Panel8.Controls.Add(this.pcrb_Avatar);
             this.guna2Panel8.Controls.Add(this.lbl_DangXuat);
             this.guna2Panel8.Controls.Add(this.lbl_CaiDat);
             this.guna2Panel8.Controls.Add(this.lbl_TInTuc);
@@ -142,19 +139,6 @@
             this.AdminSelect.Size = new System.Drawing.Size(1618, 922);
             this.AdminSelect.TabIndex = 68;
             // 
-            // pcrb_Avatar
-            // 
-            this.pcrb_Avatar.BackColor = System.Drawing.Color.Transparent;
-            this.pcrb_Avatar.ErrorImage = global::admin___tke.Properties.Resources.cacbcb625450fe0ea741;
-            this.pcrb_Avatar.ImageRotate = 0F;
-            this.pcrb_Avatar.Location = new System.Drawing.Point(39, 13);
-            this.pcrb_Avatar.Name = "pcrb_Avatar";
-            this.pcrb_Avatar.Size = new System.Drawing.Size(87, 87);
-            this.pcrb_Avatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pcrb_Avatar.TabIndex = 14;
-            this.pcrb_Avatar.TabStop = false;
-            this.pcrb_Avatar.UseTransparentBackground = true;
-            // 
             // Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -166,7 +150,6 @@
             this.Text = "Admin";
             this.guna2Panel8.ResumeLayout(false);
             this.guna2Panel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pcrb_Avatar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -180,7 +163,6 @@
         private System.Windows.Forms.Label lbl_Username;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel8;
         private System.Windows.Forms.Label lbl_DoiMatKhau;
-        private Guna.UI2.WinForms.Guna2PictureBox pcrb_Avatar;
         private Guna.UI2.WinForms.Guna2Panel AdminSelect;
     }
 }

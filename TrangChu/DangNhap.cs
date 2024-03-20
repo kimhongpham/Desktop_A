@@ -120,6 +120,16 @@ namespace Gaming_Dashboard
             string email = txt_DNEmail.Text;
             string password = txt_DNMatKhau.Text;
 
+            // Check for the specific case of email = "DoannhomA" and password = "999999"
+            if (email == "DoannhomA" && password == "999999")
+            {
+                // Open the Admin form
+                this.Hide();
+                var admin = new admin___tke.Admin();
+                admin.ShowDialog();
+                return;
+            }
+
             // Xác thực email và mật khẩu
             if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password))
             {
@@ -134,7 +144,7 @@ namespace Gaming_Dashboard
             {
                 // Đóng biểu mẫu đăng nhập và mở biểu mẫu chính
                 this.Hide();
-                UserMain userMain = new UserMain(loggedInUsername); // pass the username to the UserMain constructor
+                UserMain userMain = new UserMain(loggedInUsername); // pass the usernameto the UserMain constructor
                 this.main.Hide();
                 userMain.ShowDialog();
             }

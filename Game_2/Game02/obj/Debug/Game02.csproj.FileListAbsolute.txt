@@ -133,3 +133,10 @@ C:\Users\Admin\Downloads\Desktop_A\Game_2\Game02\obj\Debug\Game02.csproj.CoreCom
 C:\Users\Admin\Downloads\Desktop_A\Game_2\Game02\obj\Debug\Game02.csproj.CopyComplete
 C:\Users\Admin\Downloads\Desktop_A\Game_2\Game02\obj\Debug\Game02.exe
 C:\Users\Admin\Downloads\Desktop_A\Game_2\Game02\obj\Debug\Game02.pdb
+C:\Users\Admin\Downloads\Desktop_A\Game_2\Game02\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\Admin\Downloads\Desktop_A\Game_2\Game02\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\Admin\Downloads\Desktop_A\Game_2\Game02\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\Admin\Downloads\Desktop_A\Game_2\Game02\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\Admin\Downloads\Desktop_A\Game_2\Game02\bin\Debug\admin & tke.exe
+C:\Users\Admin\Downloads\Desktop_A\Game_2\Game02\bin\Debug\admin & tke.pdb
+C:\Users\Admin\Downloads\Desktop_A\Game_2\Game02\bin\Debug\admin & tke.exe.config
