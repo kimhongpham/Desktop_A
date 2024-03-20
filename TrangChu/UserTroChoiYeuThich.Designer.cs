@@ -115,9 +115,9 @@
             this.label12.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(79, 23);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(71, 23);
+            this.label12.Size = new System.Drawing.Size(95, 23);
             this.label12.TabIndex = 14;
-            this.label12.Text = "Game 3";
+            this.label12.Text = "UEH Quest";
             // 
             // guna2Panel2
             // 
@@ -180,9 +180,9 @@
             this.label10.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(79, 23);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(71, 23);
+            this.label10.Size = new System.Drawing.Size(158, 23);
             this.label10.TabIndex = 14;
-            this.label10.Text = "Game 2";
+            this.label10.Text = "Lost Island Advent";
             // 
             // lbl_XepHang
             // 
@@ -276,9 +276,9 @@
             this.label7.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(79, 23);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(150, 23);
+            this.label7.Size = new System.Drawing.Size(133, 23);
             this.label7.TabIndex = 14;
-            this.label7.Text = "MEMORY MATCH";
+            this.label7.Text = "Memory Match";
             // 
             // UserTroChoiYeuThich
             // 

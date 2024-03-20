@@ -44,7 +44,7 @@ namespace Gaming_Dashboard
                 // Tạo và gửi mã xác minh đến địa chỉ email của người dùng
                 Random random = new Random();
                 string verificationCode = random.Next(100000, 999999).ToString();
-                MailMessage mail = new MailMessage("your-email@example.com", txt_EmailXacMinh.Text);
+                MailMessage mail = new MailMessage("your-email@gmail.com", txt_EmailXacMinh.Text);
                 mail.Subject = "Mã xác minh đặt lại mật khẩu";
                 mail.Body = $"Mã xác minh của bạn là: {verificationCode}";
                 SmtpClient smtp = new SmtpClient("smtp.gmail.com");

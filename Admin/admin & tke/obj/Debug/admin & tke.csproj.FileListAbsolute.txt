@@ -303,4 +303,4 @@ C:\Users\Admin\Downloads\Desktop_A\Admin\admin & tke\bin\Debug\ru\Microsoft.Repo
 C:\Users\Admin\Downloads\Desktop_A\Admin\admin & tke\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\Admin\Downloads\Desktop_A\Admin\admin & tke\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\Admin\Downloads\Desktop_A\Admin\admin & tke\obj\Debug\admin___tke.Admin.resources
-C:\Users\Admin\Downloads\Desktop_A\Admin\admin & tke\obj\Debug\admin___tke.ReportsManager.resources
+C:\Users\Admin\Downloads\Desktop_A\Admin\admin & tke\obj\Debug\admin___tke.Reports.resources

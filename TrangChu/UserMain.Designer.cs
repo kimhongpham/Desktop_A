@@ -37,20 +37,14 @@
             this.guna2ImageButton5 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.imgBtn_Logo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pn_TrangChuMain = new Guna.UI2.WinForms.Guna2Panel();
-            this.btn_game3 = new System.Windows.Forms.Button();
-            this.btn_game2 = new System.Windows.Forms.Button();
-            this.btn_Game1 = new System.Windows.Forms.Button();
             this.ptrb_Avatar = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label11 = new System.Windows.Forms.Label();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.label12 = new System.Windows.Forms.Label();
+            this.btn_game2 = new System.Windows.Forms.Button();
             this.guna2PictureBox7 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.lbl_Game2 = new System.Windows.Forms.Label();
             this.guna2PictureBox8 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label14 = new System.Windows.Forms.Label();
-            this.guna2PictureBox9 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.btn_game3 = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
             this.guna2PictureBox10 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.lbl_Game3 = new System.Windows.Forms.Label();
@@ -77,8 +71,7 @@
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.txt_Search = new Guna.UI2.WinForms.Guna2TextBox();
             this.lbl_Game1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.guna2PictureBox6 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.btn_Game1 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.guna2PictureBox5 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -86,16 +79,15 @@
             this.label4 = new System.Windows.Forms.Label();
             this.lbl_Username = new System.Windows.Forms.Label();
             this.pn_TrangChu2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label12 = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgBtn_Logo)).BeginInit();
             this.pn_TrangChuMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptrb_Avatar)).BeginInit();
             this.guna2Panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox8)).BeginInit();
             this.guna2Panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox11)).BeginInit();
             this.guna2Panel8.SuspendLayout();
@@ -105,7 +97,6 @@
             this.guna2Panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             this.lbl_Game1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
             this.pn_TrangChu2.SuspendLayout();
@@ -124,7 +115,7 @@
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(50, 415);
+            this.guna2Panel1.Size = new System.Drawing.Size(50, 403);
             this.guna2Panel1.TabIndex = 34;
             // 
             // imgBtn_DangXuat
@@ -270,7 +261,7 @@
             this.pn_TrangChuMain.Controls.Add(this.label4);
             this.pn_TrangChuMain.Controls.Add(this.lbl_Username);
             this.pn_TrangChuMain.FillColor = System.Drawing.Color.White;
-            this.pn_TrangChuMain.Location = new System.Drawing.Point(0, 2);
+            this.pn_TrangChuMain.Location = new System.Drawing.Point(0, 3);
             this.pn_TrangChuMain.Name = "pn_TrangChuMain";
             this.pn_TrangChuMain.ShadowDecoration.BorderRadius = 12;
             this.pn_TrangChuMain.ShadowDecoration.Color = System.Drawing.Color.Gainsboro;
@@ -279,36 +270,6 @@
             this.pn_TrangChuMain.Size = new System.Drawing.Size(702, 466);
             this.pn_TrangChuMain.TabIndex = 45;
             this.pn_TrangChuMain.Paint += new System.Windows.Forms.PaintEventHandler(this.pn_TrangChuMain_Paint);
-            // 
-            // btn_game3
-            // 
-            this.btn_game3.Location = new System.Drawing.Point(130, 106);
-            this.btn_game3.Name = "btn_game3";
-            this.btn_game3.Size = new System.Drawing.Size(23, 24);
-            this.btn_game3.TabIndex = 57;
-            this.btn_game3.Text = "Game 3";
-            this.btn_game3.UseVisualStyleBackColor = true;
-            this.btn_game3.Click += new System.EventHandler(this.btn_game3_Click);
-            // 
-            // btn_game2
-            // 
-            this.btn_game2.Location = new System.Drawing.Point(130, 109);
-            this.btn_game2.Name = "btn_game2";
-            this.btn_game2.Size = new System.Drawing.Size(23, 23);
-            this.btn_game2.TabIndex = 56;
-            this.btn_game2.Text = "Game 2";
-            this.btn_game2.UseVisualStyleBackColor = true;
-            this.btn_game2.Click += new System.EventHandler(this.btn_game2_Click);
-            // 
-            // btn_Game1
-            // 
-            this.btn_Game1.Location = new System.Drawing.Point(118, 107);
-            this.btn_Game1.Name = "btn_Game1";
-            this.btn_Game1.Size = new System.Drawing.Size(23, 26);
-            this.btn_Game1.TabIndex = 55;
-            this.btn_Game1.Text = "Game 1";
-            this.btn_Game1.UseVisualStyleBackColor = true;
-            this.btn_Game1.Click += new System.EventHandler(this.btn_Game1_Click);
             // 
             // ptrb_Avatar
             // 
@@ -328,9 +289,7 @@
             // 
             this.guna2Panel5.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel5.BorderRadius = 12;
-            this.guna2Panel5.Controls.Add(this.label11);
             this.guna2Panel5.Controls.Add(this.btn_game2);
-            this.guna2Panel5.Controls.Add(this.guna2PictureBox1);
             this.guna2Panel5.Controls.Add(this.label12);
             this.guna2Panel5.Controls.Add(this.guna2PictureBox7);
             this.guna2Panel5.Controls.Add(this.lbl_Game2);
@@ -345,37 +304,15 @@
             this.guna2Panel5.Size = new System.Drawing.Size(162, 172);
             this.guna2Panel5.TabIndex = 52;
             // 
-            // label11
+            // btn_game2
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(126, 143);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(33, 19);
-            this.label11.TabIndex = 18;
-            this.label11.Text = "12K";
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.Image = global::Gaming_Dashboard.Properties.Resources.downloading_updates_96px;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(100, 139);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(20, 19);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox1.TabIndex = 17;
-            this.guna2PictureBox1.TabStop = false;
-            this.guna2PictureBox1.UseTransparentBackground = true;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(30, 143);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(28, 19);
-            this.label12.TabIndex = 16;
-            this.label12.Text = "4.6";
+            this.btn_game2.Location = new System.Drawing.Point(75, 141);
+            this.btn_game2.Name = "btn_game2";
+            this.btn_game2.Size = new System.Drawing.Size(65, 23);
+            this.btn_game2.TabIndex = 56;
+            this.btn_game2.Text = "Game 2";
+            this.btn_game2.UseVisualStyleBackColor = true;
+            this.btn_game2.Click += new System.EventHandler(this.btn_game2_Click);
             // 
             // guna2PictureBox7
             // 
@@ -395,9 +332,9 @@
             this.lbl_Game2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Game2.Location = new System.Drawing.Point(8, 109);
             this.lbl_Game2.Name = "lbl_Game2";
-            this.lbl_Game2.Size = new System.Drawing.Size(90, 20);
+            this.lbl_Game2.Size = new System.Drawing.Size(140, 20);
             this.lbl_Game2.TabIndex = 14;
-            this.lbl_Game2.Text = "Tên game 1";
+            this.lbl_Game2.Text = "Lost Island Advent";
             // 
             // guna2PictureBox8
             // 
@@ -417,8 +354,6 @@
             this.guna2Panel6.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel6.BorderRadius = 12;
             this.guna2Panel6.Controls.Add(this.btn_game3);
-            this.guna2Panel6.Controls.Add(this.label14);
-            this.guna2Panel6.Controls.Add(this.guna2PictureBox9);
             this.guna2Panel6.Controls.Add(this.label15);
             this.guna2Panel6.Controls.Add(this.guna2PictureBox10);
             this.guna2Panel6.Controls.Add(this.lbl_Game3);
@@ -433,27 +368,15 @@
             this.guna2Panel6.Size = new System.Drawing.Size(162, 172);
             this.guna2Panel6.TabIndex = 53;
             // 
-            // label14
+            // btn_game3
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(126, 143);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(33, 19);
-            this.label14.TabIndex = 18;
-            this.label14.Text = "12K";
-            // 
-            // guna2PictureBox9
-            // 
-            this.guna2PictureBox9.Image = global::Gaming_Dashboard.Properties.Resources.downloading_updates_96px;
-            this.guna2PictureBox9.ImageRotate = 0F;
-            this.guna2PictureBox9.Location = new System.Drawing.Point(100, 139);
-            this.guna2PictureBox9.Name = "guna2PictureBox9";
-            this.guna2PictureBox9.Size = new System.Drawing.Size(20, 19);
-            this.guna2PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox9.TabIndex = 17;
-            this.guna2PictureBox9.TabStop = false;
-            this.guna2PictureBox9.UseTransparentBackground = true;
+            this.btn_game3.Location = new System.Drawing.Point(84, 141);
+            this.btn_game3.Name = "btn_game3";
+            this.btn_game3.Size = new System.Drawing.Size(69, 24);
+            this.btn_game3.TabIndex = 57;
+            this.btn_game3.Text = "Game 3";
+            this.btn_game3.UseVisualStyleBackColor = true;
+            this.btn_game3.Click += new System.EventHandler(this.btn_game3_Click);
             // 
             // label15
             // 
@@ -483,9 +406,9 @@
             this.lbl_Game3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Game3.Location = new System.Drawing.Point(8, 109);
             this.lbl_Game3.Name = "lbl_Game3";
-            this.lbl_Game3.Size = new System.Drawing.Size(90, 20);
+            this.lbl_Game3.Size = new System.Drawing.Size(84, 20);
             this.lbl_Game3.TabIndex = 14;
-            this.lbl_Game3.Text = "Tên game 1";
+            this.lbl_Game3.Text = "UEH Quest";
             // 
             // guna2PictureBox11
             // 
@@ -798,8 +721,6 @@
             // 
             this.lbl_Game1.BackColor = System.Drawing.Color.Transparent;
             this.lbl_Game1.BorderRadius = 12;
-            this.lbl_Game1.Controls.Add(this.label7);
-            this.lbl_Game1.Controls.Add(this.guna2PictureBox6);
             this.lbl_Game1.Controls.Add(this.btn_Game1);
             this.lbl_Game1.Controls.Add(this.label6);
             this.lbl_Game1.Controls.Add(this.guna2PictureBox5);
@@ -815,27 +736,15 @@
             this.lbl_Game1.Size = new System.Drawing.Size(162, 172);
             this.lbl_Game1.TabIndex = 51;
             // 
-            // label7
+            // btn_Game1
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(126, 143);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(33, 19);
-            this.label7.TabIndex = 18;
-            this.label7.Text = "12K";
-            // 
-            // guna2PictureBox6
-            // 
-            this.guna2PictureBox6.Image = global::Gaming_Dashboard.Properties.Resources.downloading_updates_96px;
-            this.guna2PictureBox6.ImageRotate = 0F;
-            this.guna2PictureBox6.Location = new System.Drawing.Point(100, 139);
-            this.guna2PictureBox6.Name = "guna2PictureBox6";
-            this.guna2PictureBox6.Size = new System.Drawing.Size(20, 19);
-            this.guna2PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox6.TabIndex = 17;
-            this.guna2PictureBox6.TabStop = false;
-            this.guna2PictureBox6.UseTransparentBackground = true;
+            this.btn_Game1.Location = new System.Drawing.Point(78, 139);
+            this.btn_Game1.Name = "btn_Game1";
+            this.btn_Game1.Size = new System.Drawing.Size(65, 26);
+            this.btn_Game1.TabIndex = 55;
+            this.btn_Game1.Text = "Game 1";
+            this.btn_Game1.UseVisualStyleBackColor = true;
+            this.btn_Game1.Click += new System.EventHandler(this.btn_Game1_Click);
             // 
             // label6
             // 
@@ -865,9 +774,9 @@
             this.label5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(8, 109);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(90, 20);
+            this.label5.Size = new System.Drawing.Size(117, 20);
             this.label5.TabIndex = 14;
-            this.label5.Text = "Tên game 1";
+            this.label5.Text = "Memory Match";
             // 
             // guna2PictureBox4
             // 
@@ -905,11 +814,12 @@
             // 
             // pn_TrangChu2
             // 
+            this.pn_TrangChu2.AutoScroll = true;
             this.pn_TrangChu2.BackColor = System.Drawing.Color.Transparent;
             this.pn_TrangChu2.BorderRadius = 12;
             this.pn_TrangChu2.Controls.Add(this.pn_TrangChuMain);
             this.pn_TrangChu2.FillColor = System.Drawing.Color.White;
-            this.pn_TrangChu2.Location = new System.Drawing.Point(52, 1);
+            this.pn_TrangChu2.Location = new System.Drawing.Point(52, 0);
             this.pn_TrangChu2.Name = "pn_TrangChu2";
             this.pn_TrangChu2.ShadowDecoration.BorderRadius = 12;
             this.pn_TrangChu2.ShadowDecoration.Color = System.Drawing.Color.Gainsboro;
@@ -918,13 +828,22 @@
             this.pn_TrangChu2.Size = new System.Drawing.Size(702, 414);
             this.pn_TrangChu2.TabIndex = 55;
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(30, 143);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(28, 19);
+            this.label12.TabIndex = 16;
+            this.label12.Text = "4.6";
+            // 
             // UserMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(803, 403);
+            this.ClientSize = new System.Drawing.Size(760, 403);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.pn_TrangChu2);
             this.Name = "UserMain";
@@ -937,12 +856,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.ptrb_Avatar)).EndInit();
             this.guna2Panel5.ResumeLayout(false);
             this.guna2Panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox8)).EndInit();
             this.guna2Panel6.ResumeLayout(false);
             this.guna2Panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox11)).EndInit();
             this.guna2Panel8.ResumeLayout(false);
@@ -958,7 +875,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             this.lbl_Game1.ResumeLayout(false);
             this.lbl_Game1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();
             this.pn_TrangChu2.ResumeLayout(false);
@@ -977,15 +893,10 @@
         private Guna.UI2.WinForms.Guna2Panel pn_TrangChuMain;
         private Guna.UI2.WinForms.Guna2PictureBox ptrb_Avatar;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel5;
-        private System.Windows.Forms.Label label11;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
-        private System.Windows.Forms.Label label12;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox7;
         private System.Windows.Forms.Label lbl_Game2;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox8;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel6;
-        private System.Windows.Forms.Label label14;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox9;
         private System.Windows.Forms.Label label15;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox10;
         private System.Windows.Forms.Label lbl_Game3;
@@ -1012,8 +923,6 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
         private Guna.UI2.WinForms.Guna2TextBox txt_Search;
         private Guna.UI2.WinForms.Guna2Panel lbl_Game1;
-        private System.Windows.Forms.Label label7;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox6;
         private System.Windows.Forms.Label label6;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox5;
         private System.Windows.Forms.Label label5;
@@ -1025,5 +934,6 @@
         private System.Windows.Forms.Button btn_game3;
         private System.Windows.Forms.Button btn_game2;
         private System.Windows.Forms.Button btn_Game1;
+        private System.Windows.Forms.Label label12;
     }
 }

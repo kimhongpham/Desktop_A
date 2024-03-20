@@ -20,16 +20,16 @@ namespace admin___tke
 
         private void lbl_BaoCao_Click(object sender, EventArgs e)
         {
-            if (!AdminSelect.Controls.Contains(ReportsManager.Instance()))
+            /*if (!AdminSelect.Controls.Contains(Reports.Instance()))
             {
-                AdminSelect.Controls.Add(ReportsManager.Instance());
-                ReportsManager.Instance().Dock = DockStyle.Fill;
+                AdminSelect.Controls.Add(Reports.Instance());
+                Reports.Instance().Dock = DockStyle.Fill;
                 AdminSelect.BringToFront();
                 AutoScroll = false;
-                ReportsManager.Instance().BringToFront();
+                Reports.Instance().BringToFront();
             }
             else
-                ReportsManager.Instance().BringToFront();
+                Reports.Instance().BringToFront();*/
         }
     }
 }

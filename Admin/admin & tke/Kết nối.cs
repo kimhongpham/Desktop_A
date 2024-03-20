@@ -17,7 +17,6 @@ namespace admin___tke
             Password = "LopSE2004", 
             TrustServerCertificate = true
         };
-
         public static SqlConnection getConnection()
         {
             return new SqlConnection(builder.ConnectionString);

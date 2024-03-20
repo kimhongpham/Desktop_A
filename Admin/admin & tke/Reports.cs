@@ -13,17 +13,17 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace admin___tke
 {
-    public partial class ReportsManager
-    {
-        private static Reports _instance;
-        public static Reports Instance()
-        {
-            if (_instance == null) _instance = new Reports();
-            return _instance;
-        }
-    }
     public partial class Reports : Form
     {
+        public partial class ReportsManager
+        {
+            private static Reports _instance;
+            public static Reports Instance()
+            {
+                if (_instance == null) _instance = new Reports();
+                return _instance;
+            }
+        }
         public Reports()
         {
             InitializeComponent();
