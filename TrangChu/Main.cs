@@ -14,6 +14,7 @@ using UserControl = System.Windows.Forms.UserControl;
 using Game02;
 using MEMORY_MATCH;
 using Codecool.Quest;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace Gaming_Dashboard
 {
@@ -21,6 +22,8 @@ namespace Gaming_Dashboard
     {
 
         public SoundManager sound = new SoundManager(@"C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\TrangChu\Resources\welcome_soundtrack.mp3");
+        private string _username;
+
         public Main()
         {
             InitializeComponent();
@@ -224,7 +227,8 @@ namespace Gaming_Dashboard
 
         private void btn_game3_Click(object sender, EventArgs e)
         {
-            var MainForm = new Codecool.Quest.MainForm(); // tạo một phiên bản mới của Main Game 3
+            // Pass the `_username` variable to the MainForm constructor
+            var MainForm = new Codecool.Quest.MainForm(_username);
             MainForm.ShowDialog(); // hiển thị mẫu Main Game 3
         }
     }

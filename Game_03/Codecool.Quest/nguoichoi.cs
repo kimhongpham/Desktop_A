@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 namespace Codecool.Quest
 {
     public class nguoichoi
-    { 
+    {
+        public string Username { get; set; }
         public int mang
         {
             get; set;

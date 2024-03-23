@@ -12,6 +12,7 @@ namespace Codecool.Quest
 {
     public partial class Choose : Form
     {
+        private string _username;
         public Choose()
         {
             InitializeComponent();
@@ -39,7 +40,7 @@ namespace Codecool.Quest
                 Mainform.FormClosed -= MainForm_FormClosed;
                 Mainform.Close();
             }
-            Mainform = new MainForm();
+            Mainform = new MainForm(_username);
             Mainform.FormClosed += MainForm_FormClosed;
             Mainform.Show();
             this.Close();

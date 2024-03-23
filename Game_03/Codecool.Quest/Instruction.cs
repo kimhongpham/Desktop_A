@@ -19,12 +19,17 @@ namespace Codecool.Quest
 
         private void Instruction_Load(object sender, EventArgs e)
         {
-
+            label1.Text = "Di chuyển nhân vật bằng mũi tên, vượt qua các chướng ngại vật để khám phá một số cơ sở của UEH";
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

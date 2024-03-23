@@ -82,5 +82,19 @@ namespace admin___tke
                 sqlConnection.Close();
             }
         }
+
+        private void populateGameInfo(SqlDataReader sqlDataReader)
+        {
+            if (sqlDataReader.Read())
+            {
+                string gameID = sqlDataReader["GameID"].ToString();
+                lblGameID.Text = gameID;
+                lblName_G1.Text = sqlDataReader["GameName"].ToString();
+                lbl_des1.Text = sqlDataReader["GameDescription"].ToString();
+                // ReleaseDate.Value = (DateTime)sqlDataReader["NGAYPHATHANH"];
+            }
+        }
+
+        
     }
 }

@@ -63,6 +63,8 @@ namespace admin___tke
 
                 sqlConnection.Close();
             }
+
+            MessageBox.Show("Trò chơi đã được lưu thành công!", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void label1_Click(object sender, EventArgs e)

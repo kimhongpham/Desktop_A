@@ -178,17 +178,17 @@
   <data name="staff_96px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\staff_96px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Group 24" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="UEH-cover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UEH-cover.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="6658931_preview 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\6658931_preview 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="live_video_on_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\live_video_on_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Rectangle 35" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Rectangle 35.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="UEH-cover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\UEH-cover.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="main-background2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\main-background2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="star_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\star_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -205,14 +205,20 @@
   <data name="Rectangle 32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Rectangle 32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Group 22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="live_video_on_96px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\live_video_on_96px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="wallet_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\wallet_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Rectangle 37" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Rectangle 37.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Group 22" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Group 24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="login_96px11" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\login_96px11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -222,9 +228,6 @@
   </data>
   <data name="settings_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\settings_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="scroll 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\scroll 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cancel_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cancel_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -241,11 +244,11 @@
   <data name="search_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\search_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="live_video_on_96px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\live_video_on_96px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="6658931_preview 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\6658931_preview 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="live_video_on_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\live_video_on_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="scroll 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\scroll 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Rectangle 22" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Rectangle 22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -253,7 +256,7 @@
   <data name="notification_96px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\notification_96px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="main-background2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\main-background2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="423766228_421750483556628_4326353760960467707_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\423766228_421750483556628_4326353760960467707_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

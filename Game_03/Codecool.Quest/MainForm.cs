@@ -11,15 +11,15 @@ using System.Security.Cryptography.X509Certificates;
 using System.Drawing.Drawing2D;
 using System.Diagnostics;
 using Codecool.Quest.Models.Actors;
-using Newtonsoft.Json;
 using System.Runtime.Remoting.Messaging;
 using System.Timers;
 using quizGame;
 using System.Linq;
-using Codecool.Quest.Quest;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
 using Microsoft.Win32;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+using System.Data.SqlClient;
 
 namespace Codecool.Quest {
     [Serializable]
@@ -81,11 +81,14 @@ namespace Codecool.Quest {
             th2.Start();
         }
 
-        public MainForm()
+        private string _username;
+        public MainForm(string username)
         {
 
             InitializeComponent();
             Launch();
+            _username = username; // đặt trường riêng tư thành tên người dùng
+            lbl_Username.Text = _username;
             RecordtoolStripMenuItem2.Click += toolStripMenuItem2_Click;
             StoptoolStripMenuItem3.Click += toolStripMenuItem3_Click; // Đăng ký sự kiện 'Click' cho 'pauseToolStripMenuItem'
         }
@@ -142,6 +145,29 @@ namespace Codecool.Quest {
             FormHome.Show();
         }
         public bool isRecordWritten = false;
+        private int GetUserId(string username)
+        {
+            int userId = -1;
+
+            using (SqlConnection sqlConnection = admin___tke.Kết_nối.getConnection())
+            {
+                sqlConnection.Open();
+                string query = "SELECT UserID FROM Users WHERE UserName = @username";
+                SqlCommand command = new SqlCommand(query, sqlConnection);
+                command.Parameters.AddWithValue("@username", username);
+
+                using (SqlDataReader reader = command.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        userId = reader.GetInt32(0);
+                    }
+                }
+            }
+
+            return userId;
+        }
+
         public void TableLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
             TimeSpan timeSpan = stopwatch.Elapsed;
@@ -169,6 +195,7 @@ namespace Codecool.Quest {
             }
 
             DateTime date = DateTime.Now;
+            DateTime currentDate = DateTime.Now;
 
             Inventory inventory = map.inventory;
             Dictionary<string, Tiles.Tile> tiles = new Dictionary<string, Tiles.Tile>();
@@ -178,7 +205,9 @@ namespace Codecool.Quest {
             lnlHealth.Text = "Health " + map.Player.Health.ToString();
             progressBar1.Minimum = 0;
             progressBar1.Maximum = map.Player.maxHealth;
-            if(map.Player.Health <= 0)
+            int userId = GetUserId(_username);
+            int gameId = 3; // the game ID is fixed to 3
+            if (map.Player.Health <= 0)
             {
                 map.Player.Health = 0;
                 map.Player.isAlive = false;
@@ -190,17 +219,49 @@ namespace Codecool.Quest {
                 choose.Show();
                 MessageBox.Show("Bạn đã thua cuộc");
 
-                DateTime currentDate = DateTime.Now;
-  /*              if (!isRecordWritten)
-                {
-                    using (StreamWriter file = new StreamWriter(@".\Resources\kyluc.txt", true))
-                    {
-                        file.WriteLine("GameSession\nGameID\nUser\nStartDate\nEndDate\nScore");
-                        file.WriteLine("End\nNull\nNull+\n" + currentDate.ToShortDateString()+"\n"+ currentDate.ToShortDateString()+Score);
-                    }
+                
+                /*              if (!isRecordWritten)
+                              {
+                                  using (StreamWriter file = new StreamWriter(@".\Resources\kyluc.txt", true))
+                                  {
+                                      file.WriteLine("GameSession\nGameID\nUser\nStartDate\nEndDate\nScore");
+                                      file.WriteLine("End\nNull\nNull+\n" + currentDate.ToShortDateString()+"\n"+ currentDate.ToShortDateString()+Score);
+                                  }
 
-                    isRecordWritten = true;
-                }*/
+                                  isRecordWritten = true;
+                              }*/
+
+
+                using (SqlConnection sqlConnection = admin___tke.Kết_nối.getConnection())
+                {
+                    sqlConnection.Open();
+                    // Get max GameSessionID
+                    int maxGameSessionID = 0;
+                    string query = "SELECT MAX(GameSessionID) FROM GameSessions";
+                    SqlCommand command = new SqlCommand(query, sqlConnection);
+                    SqlDataReader reader = command.ExecuteReader();
+                    if (reader.Read())
+                    {
+                        maxGameSessionID = reader.GetInt32(0);
+                    }
+                    reader.Close();
+
+                    // Format the startDate and endDate
+                    string dateString = date.ToString("yyyy-MM-dd HH:mm:ss");
+                    string currentDateString = currentDate.ToString("yyyy-MM-dd HH:mm:ss");
+
+                    // Insert new GameSession row with incremented GameSessionID
+                    query = "INSERT INTO GameSessions (GameSessionID, GameID, UserID, StartDate, EndDate, Score) VALUES (@gameSessionID, @gameId, @userId, @startDate, @endDate, @score)";
+                    command = new SqlCommand(query, sqlConnection);
+                    command.Parameters.AddWithValue("@gameSessionID", maxGameSessionID + 1);
+                    command.Parameters.AddWithValue("@gameId", gameId);
+                    command.Parameters.AddWithValue("@userId", userId);
+                    command.Parameters.AddWithValue("@startDate", dateString);
+                    command.Parameters.AddWithValue("@endDate", currentDateString);
+                    command.Parameters.AddWithValue("@score", Score);
+
+                    command.ExecuteNonQuery();
+                }
                 th.Abort();
                 th2.Abort();
             }
@@ -217,16 +278,46 @@ namespace Codecool.Quest {
                 choose.TopMost = true; // Đặt form 2 ở trên cùng
                 choose.Show();
 
-   /*             if (!isRecordWritten)
-                {
-                    using (StreamWriter file = new StreamWriter(@".\Resources\kyluc.txt", true))
-                    {
-                        file.WriteLine("GameSession\nGameID\nUser\nStartDate\nEndDate\nScore");
-                        file.WriteLine("");
-                    }
+                /*             if (!isRecordWritten)
+                             {
+                                 using (StreamWriter file = new StreamWriter(@".\Resources\kyluc.txt", true))
+                                 {
+                                     file.WriteLine("GameSession\nGameID\nUser\nStartDate\nEndDate\nScore");
+                                     file.WriteLine("");
+                                 }
 
-                    isRecordWritten = true;
-                }*/
+                                 isRecordWritten = true;
+                             }*/
+                using (SqlConnection sqlConnection = admin___tke.Kết_nối.getConnection())
+                {
+                    sqlConnection.Open();
+                    // Get max GameSessionID
+                    int maxGameSessionID = 0;
+                    string query = "SELECT MAX(GameSessionID) FROM GameSessions";
+                    SqlCommand command = new SqlCommand(query, sqlConnection);
+                    SqlDataReader reader = command.ExecuteReader();
+                    if (reader.Read())
+                    {
+                        maxGameSessionID = reader.GetInt32(0);
+                    }
+                    reader.Close();
+
+                    // Format the startDate and endDate
+                    string dateString = date.ToString("yyyy-MM-dd HH:mm:ss");
+                    string currentDateString = currentDate.ToString("yyyy-MM-dd HH:mm:ss");
+
+                    // Insert new GameSession row with incremented GameSessionID
+                    query = "INSERT INTO GameSessions (GameSessionID, GameID, UserID, StartDate, EndDate, Score) VALUES (@gameSessionID, @gameId, @userId, @startDate, @endDate, @score)";
+                    command = new SqlCommand(query, sqlConnection);
+                    command.Parameters.AddWithValue("@gameSessionID", maxGameSessionID + 1);
+                    command.Parameters.AddWithValue("@gameId", gameId);
+                    command.Parameters.AddWithValue("@userId", userId);
+                    command.Parameters.AddWithValue("@startDate", dateString);
+                    command.Parameters.AddWithValue("@endDate", currentDateString);
+                    command.Parameters.AddWithValue("@score", Score);
+
+                    command.ExecuteNonQuery();
+                }
                 th2.Abort();
                 th.Abort();
                 

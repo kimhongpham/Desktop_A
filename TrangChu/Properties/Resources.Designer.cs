@@ -63,6 +63,16 @@ namespace Gaming_Dashboard.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _423766228_421750483556628_4326353760960467707_n {
+            get {
+                object obj = ResourceManager.GetObject("423766228_421750483556628_4326353760960467707_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _6658931_preview_1 {
             get {
                 object obj = ResourceManager.GetObject("6658931_preview 1", resourceCulture);

@@ -102,10 +102,6 @@
     <Compile Include="Models\Tiles.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Quest\CauHoiBus.cs" />
-    <Compile Include="Quest\CauHoiDB.cs" />
-    <Compile Include="Quest\MonBus.cs" />
-    <Compile Include="Quest\MonDB.cs" />
     <Compile Include="Setting.cs">
       <SubType>Form</SubType>
     </Compile>

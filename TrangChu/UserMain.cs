@@ -224,8 +224,10 @@ namespace Gaming_Dashboard
 
         private void btn_game3_Click(object sender, EventArgs e)
         {
-            var MainForm = new Codecool.Quest.MainForm(); // tạo một phiên bản mới của Main Game 3
-            MainForm.ShowDialog(); // show the main menu form
+            using (MainForm mainForm = new MainForm(_username))
+            {
+                mainForm.ShowDialog();
+            }
         }
 
         private void btn_game2_Click(object sender, EventArgs e)

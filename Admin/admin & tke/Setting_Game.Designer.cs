@@ -30,6 +30,8 @@
         {
             this.lbl_Setting = new System.Windows.Forms.Label();
             this.pnl_GameID = new Guna.UI2.WinForms.Guna2Panel();
+            this.txt_gameid = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.txt_Des = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_NameG = new Guna.UI2.WinForms.Guna2TextBox();
             this.btn_ChangePic = new Guna.UI2.WinForms.Guna2CircleButton();
@@ -37,8 +39,6 @@
             this.btn_Save = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Cancle = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Del = new Guna.UI2.WinForms.Guna2Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txt_gameid = new Guna.UI2.WinForms.Guna2TextBox();
             this.pnl_GameID.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_G)).BeginInit();
             this.SuspendLayout();
@@ -71,23 +71,59 @@
             this.pnl_GameID.Size = new System.Drawing.Size(1512, 494);
             this.pnl_GameID.TabIndex = 14;
             // 
+            // txt_gameid
+            // 
+            this.txt_gameid.BorderColor = System.Drawing.Color.Black;
+            this.txt_gameid.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_gameid.DefaultText = "";
+            this.txt_gameid.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_gameid.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_gameid.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_gameid.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_gameid.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_gameid.Font = new System.Drawing.Font("Lucida Sans Unicode", 20F, System.Drawing.FontStyle.Bold);
+            this.txt_gameid.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_gameid.Location = new System.Drawing.Point(139, 268);
+            this.txt_gameid.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_gameid.Name = "txt_gameid";
+            this.txt_gameid.PasswordChar = '\0';
+            this.txt_gameid.PlaceholderText = "";
+            this.txt_gameid.SelectedText = "";
+            this.txt_gameid.Size = new System.Drawing.Size(147, 45);
+            this.txt_gameid.TabIndex = 23;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Black", 26F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(35, 253);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(99, 60);
+            this.label1.TabIndex = 22;
+            this.label1.Text = "ID :";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
             // txt_Des
             // 
             this.txt_Des.BorderColor = System.Drawing.Color.Black;
             this.txt_Des.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_Des.DefaultText = "Mô tả";
+            this.txt_Des.DefaultText = "";
             this.txt_Des.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txt_Des.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txt_Des.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_Des.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_Des.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_Des.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Des.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.txt_Des.ForeColor = System.Drawing.Color.Black;
             this.txt_Des.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_Des.Location = new System.Drawing.Point(419, 76);
             this.txt_Des.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
+            this.txt_Des.Multiline = true;
             this.txt_Des.Name = "txt_Des";
             this.txt_Des.PasswordChar = '\0';
-            this.txt_Des.PlaceholderText = "";
+            this.txt_Des.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.txt_Des.PlaceholderText = "Mô tả";
             this.txt_Des.SelectedText = "";
             this.txt_Des.Size = new System.Drawing.Size(895, 158);
             this.txt_Des.TabIndex = 21;
@@ -202,39 +238,6 @@
             this.btn_Del.Size = new System.Drawing.Size(229, 72);
             this.btn_Del.TabIndex = 19;
             this.btn_Del.Text = "Delete";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Black", 26F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(35, 253);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(99, 60);
-            this.label1.TabIndex = 22;
-            this.label1.Text = "ID :";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // txt_gameid
-            // 
-            this.txt_gameid.BorderColor = System.Drawing.Color.Black;
-            this.txt_gameid.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_gameid.DefaultText = "";
-            this.txt_gameid.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_gameid.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_gameid.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_gameid.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_gameid.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_gameid.Font = new System.Drawing.Font("Lucida Sans Unicode", 20F, System.Drawing.FontStyle.Bold);
-            this.txt_gameid.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_gameid.Location = new System.Drawing.Point(139, 268);
-            this.txt_gameid.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txt_gameid.Name = "txt_gameid";
-            this.txt_gameid.PasswordChar = '\0';
-            this.txt_gameid.PlaceholderText = "";
-            this.txt_gameid.SelectedText = "";
-            this.txt_gameid.Size = new System.Drawing.Size(147, 45);
-            this.txt_gameid.TabIndex = 23;
             // 
             // Setting_Game
             // 

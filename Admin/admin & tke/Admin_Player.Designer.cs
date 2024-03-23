@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lbl_Welc = new System.Windows.Forms.Label();
             this.dgv_Player = new Guna.UI2.WinForms.Guna2DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -60,9 +60,10 @@
             // 
             this.lbl_Welc.AutoSize = true;
             this.lbl_Welc.Font = new System.Drawing.Font("Segoe UI Black", 26F, System.Drawing.FontStyle.Bold);
-            this.lbl_Welc.Location = new System.Drawing.Point(174, 32);
+            this.lbl_Welc.Location = new System.Drawing.Point(145, 27);
+            this.lbl_Welc.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_Welc.Name = "lbl_Welc";
-            this.lbl_Welc.Size = new System.Drawing.Size(286, 70);
+            this.lbl_Welc.Size = new System.Drawing.Size(243, 60);
             this.lbl_Welc.TabIndex = 0;
             this.lbl_Welc.Text = "Welcome!";
             // 
@@ -70,17 +71,17 @@
             // 
             this.dgv_Player.AllowUserToAddRows = false;
             this.dgv_Player.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            this.dgv_Player.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dgv_Player.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_Player.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_Player.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_Player.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgv_Player.ColumnHeadersHeight = 4;
             this.dgv_Player.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgv_Player.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -94,22 +95,23 @@
             this.Column8,
             this.Column9,
             this.Column10});
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_Player.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_Player.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgv_Player.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgv_Player.Location = new System.Drawing.Point(160, 361);
+            this.dgv_Player.Location = new System.Drawing.Point(133, 301);
+            this.dgv_Player.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgv_Player.Name = "dgv_Player";
             this.dgv_Player.ReadOnly = true;
             this.dgv_Player.RowHeadersVisible = false;
             this.dgv_Player.RowHeadersWidth = 62;
             this.dgv_Player.RowTemplate.Height = 28;
-            this.dgv_Player.Size = new System.Drawing.Size(1645, 647);
+            this.dgv_Player.Size = new System.Drawing.Size(1371, 539);
             this.dgv_Player.TabIndex = 12;
             this.dgv_Player.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgv_Player.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -222,9 +224,10 @@
             this.btn_Edit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btn_Edit.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Edit.ForeColor = System.Drawing.Color.White;
-            this.btn_Edit.Location = new System.Drawing.Point(1395, 82);
+            this.btn_Edit.Location = new System.Drawing.Point(1162, 68);
+            this.btn_Edit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_Edit.Name = "btn_Edit";
-            this.btn_Edit.Size = new System.Drawing.Size(232, 39);
+            this.btn_Edit.Size = new System.Drawing.Size(193, 32);
             this.btn_Edit.TabIndex = 13;
             this.btn_Edit.Text = "Edit";
             this.btn_Edit.Click += new System.EventHandler(this.btn_Edit_Click_1);
@@ -245,13 +248,13 @@
             this.txt_S.IconLeft = global::admin___tke.Properties.Resources._23d49a59106bba35e37a;
             this.txt_S.IconLeftOffset = new System.Drawing.Point(3, 0);
             this.txt_S.IconLeftSize = new System.Drawing.Size(30, 30);
-            this.txt_S.Location = new System.Drawing.Point(168, 245);
-            this.txt_S.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txt_S.Location = new System.Drawing.Point(140, 204);
+            this.txt_S.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_S.Name = "txt_S";
             this.txt_S.PasswordChar = '\0';
             this.txt_S.PlaceholderText = "Search";
             this.txt_S.SelectedText = "";
-            this.txt_S.Size = new System.Drawing.Size(726, 61);
+            this.txt_S.Size = new System.Drawing.Size(605, 51);
             this.txt_S.TabIndex = 21;
             // 
             // cbx_Date
@@ -269,9 +272,10 @@
             this.cbx_Date.Items.AddRange(new object[] {
             "Newest",
             "Latest"});
-            this.cbx_Date.Location = new System.Drawing.Point(1395, 16);
+            this.cbx_Date.Location = new System.Drawing.Point(1162, 13);
+            this.cbx_Date.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbx_Date.Name = "cbx_Date";
-            this.cbx_Date.Size = new System.Drawing.Size(232, 36);
+            this.cbx_Date.Size = new System.Drawing.Size(194, 36);
             this.cbx_Date.TabIndex = 23;
             this.cbx_Date.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -279,9 +283,10 @@
             // 
             this.pnl_GP.Controls.Add(this.btn_PPage);
             this.pnl_GP.Controls.Add(this.btn_GPage);
-            this.pnl_GP.Location = new System.Drawing.Point(168, 126);
+            this.pnl_GP.Location = new System.Drawing.Point(140, 105);
+            this.pnl_GP.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnl_GP.Name = "pnl_GP";
-            this.pnl_GP.Size = new System.Drawing.Size(451, 85);
+            this.pnl_GP.Size = new System.Drawing.Size(376, 71);
             this.pnl_GP.TabIndex = 24;
             // 
             // btn_PPage
@@ -293,9 +298,10 @@
             this.btn_PPage.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btn_PPage.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_PPage.ForeColor = System.Drawing.Color.White;
-            this.btn_PPage.Location = new System.Drawing.Point(238, 11);
+            this.btn_PPage.Location = new System.Drawing.Point(198, 9);
+            this.btn_PPage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_PPage.Name = "btn_PPage";
-            this.btn_PPage.Size = new System.Drawing.Size(187, 56);
+            this.btn_PPage.Size = new System.Drawing.Size(156, 47);
             this.btn_PPage.TabIndex = 16;
             this.btn_PPage.Text = "Player";
             // 
@@ -309,9 +315,10 @@
             this.btn_GPage.FillColor = System.Drawing.Color.Gainsboro;
             this.btn_GPage.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
             this.btn_GPage.ForeColor = System.Drawing.Color.White;
-            this.btn_GPage.Location = new System.Drawing.Point(18, 11);
+            this.btn_GPage.Location = new System.Drawing.Point(15, 9);
+            this.btn_GPage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_GPage.Name = "btn_GPage";
-            this.btn_GPage.Size = new System.Drawing.Size(187, 56);
+            this.btn_GPage.Size = new System.Drawing.Size(156, 47);
             this.btn_GPage.TabIndex = 17;
             this.btn_GPage.Text = "Game";
             this.btn_GPage.Click += new System.EventHandler(this.btn_GPage_Click);
@@ -325,27 +332,30 @@
             this.btn_Find.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btn_Find.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Find.ForeColor = System.Drawing.Color.White;
-            this.btn_Find.Location = new System.Drawing.Point(943, 245);
+            this.btn_Find.Location = new System.Drawing.Point(786, 204);
+            this.btn_Find.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_Find.Name = "btn_Find";
-            this.btn_Find.Size = new System.Drawing.Size(169, 61);
+            this.btn_Find.Size = new System.Drawing.Size(141, 51);
             this.btn_Find.TabIndex = 31;
             this.btn_Find.Text = "Find";
+            this.btn_Find.Click += new System.EventHandler(this.btn_Find_Click);
             // 
             // guna2Panel1
             // 
             this.guna2Panel1.Controls.Add(this.btn_Edit);
             this.guna2Panel1.Controls.Add(this.cbx_Date);
-            this.guna2Panel1.Location = new System.Drawing.Point(160, 217);
+            this.guna2Panel1.Location = new System.Drawing.Point(133, 181);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1645, 138);
+            this.guna2Panel1.Size = new System.Drawing.Size(1371, 115);
             this.guna2Panel1.TabIndex = 25;
             // 
             // Admin_Player
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1920, 1050);
+            this.ClientSize = new System.Drawing.Size(1600, 875);
             this.Controls.Add(this.btn_Find);
             this.Controls.Add(this.pnl_GP);
             this.Controls.Add(this.txt_S);
@@ -353,6 +363,7 @@
             this.Controls.Add(this.lbl_Welc);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Admin_Player";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin Player";
