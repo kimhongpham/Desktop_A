@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -59,44 +60,74 @@ namespace Gaming_Dashboard
                     MessageBox.Show("Mật khẩu không khớp.");
                     return;
                 }
+
+                // Hash the password
+                var passwordHash = HashPassword(txt_DKMatKhau.Text);
+
                 // Tạo tài khoản người dùng mới
                 User newUser = new User
                 {
                     Username = txt_DKTenTaiKhoan.Text,
                     Email = txt_DKEmail.Text,
-                    Password = txt_DKMatKhau.Text
+                    Password = passwordHash
                 };
 
-                //string connectionString = "Data Source = ROSIE - PHAM\SQLEXPRESS; Initial Catalog = game_databaseA; Persist Security Info = True; User ID = rosie0107; Password = ***********; Encrypt = True; Trust Server Certificate = True";
-                //string connectionString = "Data Source = ROSIE - PHAM\SQLEXPRESS; Initial Catalog = game_databaseA; Integrated Security = True; Encrypt = True; Trust Server Certificate = True";
-                //string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\Admin\\Documents\\Tài liệu\\Desktop_A\\TrangChu\\Database1.mdf\";Integrated Security=True"; 
                 try
                 {
                     using (SqlConnection sqlConnection = admin___tke.Kết_nối.getConnection())
                     {
-                        sqlConnection.Open(); // Mở kết nối
-                        MessageBox.Show("Kết nối thành công!");
+                        sqlConnection.Open();
+                        //MessageBox.Show("Kết nối thành công!");
 
-                        // Định nghĩa truy vấn SQL để chèn dữ liệu người dùng và lấy UserID được tạo ra
-                        string sql = "INSERT INTO Users (Username, Email, Password, NGAYTHAMGIA) VALUES (@Username, @Email, @Password, GETDATE()); SELECT SCOPE_IDENTITY()";
-                        using (SqlCommand command = new SqlCommand(sql, sqlConnection))
+                        // Add check for existing username
+                        string checkUsernameQuery = "SELECT COUNT(*) FROM Users WHERE Username = @Username";
+                        using (SqlCommand checkUsernameCommand = new SqlCommand(checkUsernameQuery, sqlConnection))
+                        {
+                            checkUsernameCommand.Parameters.AddWithValue("@Username", newUser.Username);
+
+                            // If username already exists in the Users table, display an error message
+                            if (Convert.ToInt32(checkUsernameCommand.ExecuteScalar()) > 0)
+                            {
+                                MessageBox.Show("Tên tài khoản đã tồn tại. Vui lòng sử dụng tên tài khoản khác.");
+                                return;
+                            }
+                        }
+                        // Kiểm tra mọi địa chỉ email trùng lặp
+                        string checkEmailQuery = "SELECT COUNT(*) FROM Users WHERE Email = @Email";
+                        using (SqlCommand checkCommand = new SqlCommand(checkEmailQuery, sqlConnection))
+                        {
+                            checkCommand.Parameters.AddWithValue("@Email", newUser.Email);
+
+                            // Nếu địa chỉ email đã tồn tại trong bảng Người dùng, hãy hiển thị thông báo lỗi
+                            if (Convert.ToInt32(checkCommand.ExecuteScalar()) > 0)
+                            {
+                                MessageBox.Show("Email đã tồn tại. Vui lòng sử dụng email khác.");
+                                return;
+                            }
+                        }
+
+                        // Định nghĩa truy vấn SQL để chèn dữ liệu người dùng vào bảng Users
+                        string insertQuery = "INSERT INTO Users (Username, Email, Password, NGAYTHAMGIA) VALUES (@Username, @Email, @Password, GETDATE())";
+
+                        // Chèn người dùng mới vào bảng Người dùng
+                        using (SqlCommand command = new SqlCommand(insertQuery, sqlConnection))
                         {
                             command.Parameters.AddWithValue("@Username", newUser.Username);
                             command.Parameters.AddWithValue("@Email", newUser.Email);
                             command.Parameters.AddWithValue("@Password", newUser.Password);
 
-                            // Thực thi truy vấn và lấy UserID được tạo ra
-                            int userID = Convert.ToInt32(command.ExecuteScalar());
-                            MessageBox.Show("Chèn thành công! UserID: " + userID);
+                            command.ExecuteNonQuery();
+
+                            MessageBox.Show("Đăng ký thành công! Click 'OK' để đăng nhập.");
+
+                            // Hiển thị thông báo thành công và chuyển đến trang chủ
+                            this.Hide();
+                            string username = txt_DKTenTaiKhoan.Text;
+                            UserMain userMain = new UserMain(username);
+                            this.main.Hide();
+                            userMain.ShowDialog();
                         }
                     }
-                    // Hiển thị thông báo thành công và chuyển đến trang chủ
-                    MessageBox.Show("Đăng ký thành công!");
-                    this.Hide();
-                    string username = txt_DKTenTaiKhoan.Text; // get the username
-                    UserMain userMain = new UserMain(username); // create a new instance of UserMain and pass the username
-                    this.main.Hide();
-                    userMain.ShowDialog();
                 }
                 catch (Exception ex)
                 {
@@ -109,6 +140,15 @@ namespace Gaming_Dashboard
             }
         }
 
+        private string HashPassword(string password)
+        {
+            using (SHA256 sha256 = SHA256.Create())
+            {
+                byte[] passwordBytes = Encoding.UTF8.GetBytes(password);
+                byte[] hashedPassword = sha256.ComputeHash(passwordBytes);
+                return Convert.ToBase64String(hashedPassword);
+            }
+        }
     }
 
     internal class User

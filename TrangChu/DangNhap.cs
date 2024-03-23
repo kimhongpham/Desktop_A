@@ -6,6 +6,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -119,8 +120,9 @@ namespace Gaming_Dashboard
         {
             string email = txt_DNEmail.Text;
             string password = txt_DNMatKhau.Text;
+            loggedInUsername = "";
 
-            // Check for the specific case of email = "DoannhomA" and password = "999999"
+            // Kiểm tra trường hợp cụ thể email = "DoannhomA" và mật khẩu = "999999"
             if (email == "DoannhomA" && password == "999999")
             {
                 // Open the Admin form
@@ -138,11 +140,17 @@ namespace Gaming_Dashboard
                 return;
             }
 
+            // Hash the entered password before comparing it to the stored hash
+            string hashedPassword = HashPassword(password);
+
             // Thực hiện logic đăng nhập
-            bool isLoggedIn = PerformLogin(email, password);
+            bool isLoggedIn = PerformLogin(email, hashedPassword);
 
             if (isLoggedIn)
             {
+                // Get username from email
+                loggedInUsername = GetUsernameFromEmail(email);
+
                 // Đóng biểu mẫu đăng nhập và mở biểu mẫu chính
                 this.Hide();
                 UserMain userMain = new UserMain(loggedInUsername); // pass the usernameto the UserMain constructor
@@ -154,37 +162,74 @@ namespace Gaming_Dashboard
                 MessageBox.Show("Email hoặc mật khẩu không đúng.");
             }
         }
-        private bool PerformLogin(string email, string password)
+
+        private string GetUsernameFromEmail(string email)
         {
-            //const
-            //string connectionString = "Data Source = ROSIE - PHAM\SQLEXPRESS; Initial Catalog = game_databaseA; Persist Security Info = True; User ID = rosie0107; Password = ***********; Encrypt = True; Trust Server Certificate = True";
-            //string connectionString = "Data Source = ROSIE - PHAM\SQLEXPRESS; Initial Catalog = game_databaseA; Integrated Security = True; Encrypt = True; Trust Server Certificate = True";
-            //string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\Admin\\Documents\\Tài liệu\\Desktop_A\\TrangChu\\Database1.mdf\";Integrated Security=True";
+            // Using the connectionstring provided in the given function
             using (SqlConnection sqlConnection = admin___tke.Kết_nối.getConnection())
             {
                 sqlConnection.Open();
 
-                string sql = "SELECT * FROM Users WHERE Email = @Email AND Password = @Password";
+                string sql = "SELECT * FROM Users WHERE Email = @Email";
                 SqlCommand command = new SqlCommand(sql, sqlConnection);
                 command.Parameters.AddWithValue("@Email", email);
-                command.Parameters.AddWithValue("@Password", password);
 
                 SqlDataReader reader = command.ExecuteReader();
+
                 if (reader.Read())
                 {
-                    // Set the loggedInUsername variable
-                    loggedInUsername = reader["Username"].ToString();
+                    // Get the username from the database
+                    string username = reader["Username"].ToString();
 
-                    // Close the connection and return true
+                    // Close the connection and return the username
                     sqlConnection.Close();
-                    return true;
+                    return username;
                 }
-                else
+
+                // Close the connection and return an empty string
+                sqlConnection.Close();
+                return "";
+            }
+        }
+
+        private bool PerformLogin(string email, string hashedPassword)
+        {
+            // Using the connection string provided in the given function
+            using (SqlConnection sqlConnection = admin___tke.Kết_nối.getConnection())
+            {
+                sqlConnection.Open();
+
+                string sql = "SELECT * FROM Users WHERE Email = @Email";
+                SqlCommand command = new SqlCommand(sql, sqlConnection);
+                command.Parameters.AddWithValue("@Email", email);
+
+                SqlDataReader reader = command.ExecuteReader();
+
+                if (reader.Read())
                 {
-                    // Close the connection and return false
-                    sqlConnection.Close();
-                    return false;
+                    // Compare the hashed password from the database to the entered password's hash
+                    string storedHash = reader["Password"].ToString();
+                    if (storedHash == hashedPassword)
+                    {
+                        // Close the connection and return true
+                        sqlConnection.Close();
+                        return true;
+                    }
                 }
+
+                // Close the connection and return false
+                sqlConnection.Close();
+                return false;
+            }
+        }
+
+        private string HashPassword(string password)
+        {
+            // Hash the entered password using the provided HashPassword function
+            using (SHA256 sha256 = SHA256.Create())
+            {
+                byte[] passwordBytes = Encoding.UTF8.GetBytes(password);
+                byte[] hashedPassword = sha256.ComputeHash(passwordBytes); return Convert.ToBase64String(hashedPassword);
             }
         }
     }

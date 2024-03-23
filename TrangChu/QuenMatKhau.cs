@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data;
 using System.Data.SqlClient;
+using System.Net;
 using System.Net.Mail;
 using System.Windows.Forms;
 
@@ -29,42 +30,23 @@ namespace Gaming_Dashboard
         // Xử lý sự kiện khi nút Xác Minh được nhấn
         private void btn_XacMinh_Click(object sender, EventArgs e)
         {
-            // Xác thực việc nhập email
             if (string.IsNullOrEmpty(txt_EmailXacMinh.Text))
             {
                 MessageBox.Show("Vui lòng nhập email của bạn.");
                 return;
             }
 
-            // Kiểm tra email đã đăng ký chưa
             bool isRegistered = CheckEmailRegistration(txt_EmailXacMinh.Text);
 
             if (isRegistered)
             {
-                // Tạo và gửi mã xác minh đến địa chỉ email của người dùng
-                Random random = new Random();
-                string verificationCode = random.Next(100000, 999999).ToString();
-                MailMessage mail = new MailMessage("your-email@gmail.com", txt_EmailXacMinh.Text);
-                mail.Subject = "Mã xác minh đặt lại mật khẩu";
-                mail.Body = $"Mã xác minh của bạn là: {verificationCode}";
-                SmtpClient smtp = new SmtpClient("smtp.gmail.com");
-                smtp.Port = 587;
-                smtp.Credentials = new System.Net.NetworkCredential("your-email@gmail.com", "your-email-password");
-                smtp.EnableSsl = true;
-
-                // Gửi email
-                try
+                User user = GetUserByEmail(txt_EmailXacMinh.Text);
+                if (user != null)
                 {
-                    smtp.Send(mail);
-
-                    // Đóng biểu mẫu QuenMatKhau hiện tại
+                    MessageBox.Show("Mật khẩu của bạn là: " + user.Password);
                     this.Hide();
-                    DoiMatKhau DoiMatKhau = new DoiMatKhau();
-                    //DoiMatKhau.ShowDialog();
-                }
-                catch (SmtpException ex)
-                {
-                    MessageBox.Show("Lỗi gửi email: " + ex.Message);
+                    var loginForm = new DangNhap();
+                    loginForm.Show();
                 }
             }
             else
@@ -73,17 +55,51 @@ namespace Gaming_Dashboard
             }
         }
 
-        // Phương thức kiểm tra đăng ký email
+        private User GetUserByEmail(string email)
+        {
+            User user = null;
+            try
+            {
+                using (SqlConnection sqlConnection = admin___tke.Kết_nối.getConnection())
+                {
+                    sqlConnection.Open();
+
+                    string sql = "SELECT * FROM Users WHERE Email = @Email";
+
+                    using (SqlCommand command = new SqlCommand(sql, sqlConnection))
+                    {
+                        command.Parameters.AddWithValue("@Email", email);
+
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                user = new User
+                                {
+                                    Username = reader["Username"].ToString(),
+                                    Email = reader["Email"].ToString(),
+                                    Password = reader["Password"].ToString()
+                                };
+                            }
+                        }
+                    }
+                    sqlConnection.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi truy vấn dữ liệu: " + ex.Message);
+            }
+
+            return user;
+        }
+
         private bool CheckEmailRegistration(string email)
         {
             bool isRegistered = false;
 
             try
             {
-                //string connectionString = "Data Source = ROSIE - PHAM\SQLEXPRESS; Initial Catalog = game_databaseA; Persist Security Info = True; User ID = rosie0107; Password = ***********; Encrypt = True; Trust Server Certificate = True";
-                //string connectionString = "Data Source = ROSIE - PHAM\SQLEXPRESS; Initial Catalog = game_databaseA; Integrated Security = True; Encrypt = True; Trust Server Certificate = True";
-                //string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\Admin\\Documents\\Tài liệu\\Desktop_A\\TrangChu\\Database1.mdf\";Integrated Security=True";
-
                 using (SqlConnection sqlConnection = admin___tke.Kết_nối.getConnection())
                 {
                     sqlConnection.Open();
@@ -103,7 +119,6 @@ namespace Gaming_Dashboard
             }
             catch (Exception ex)
             {
-                // Xử lý ngoại lệ
                 MessageBox.Show("Lỗi truy vấn dữ liệu: " + ex.Message);
             }
 
