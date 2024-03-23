@@ -8,6 +8,8 @@ CREATE TABLE Games (
     NGAYPHATHANH DATE,
     THELOAI NVARCHAR(50)
 );
+ALTER TABLE Games DROP COLUMN THELOAI;
+ALTER TABLE Games ADD GameDescription NVARCHAR(255);
 
 CREATE TABLE Users (
     UserID INT IDENTITY(1,1) PRIMARY KEY,
@@ -44,6 +46,7 @@ CREATE TABLE GameSessions (
 select *from Games;
 select *from Users;
 select *from UserGames;
+select *from CauHoi;
 
 
 set ansi_nulls on

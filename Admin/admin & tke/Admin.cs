@@ -13,23 +13,34 @@ namespace admin___tke
 {
     public partial class Admin : Form
     {
+        private Reports _reportsForm;
+
         public Admin()
         {
             InitializeComponent();
+            IsMdiContainer = true;
         }
+
+        private List<Form> _mdiChildren = new List<Form>();
 
         private void lbl_BaoCao_Click(object sender, EventArgs e)
         {
-            /*if (!AdminSelect.Controls.Contains(Reports.Instance()))
+            /*if (_reportsForm == null)
             {
-                AdminSelect.Controls.Add(Reports.Instance());
-                Reports.Instance().Dock = DockStyle.Fill;
-                AdminSelect.BringToFront();
-                AutoScroll = false;
-                Reports.Instance().BringToFront();
+                _reportsForm = new Reports();
             }
-            else
-                Reports.Instance().BringToFront();*/
+
+            // Set the reports form's MdiParent property
+            _reportsForm.MdiParent = this;
+
+            // Add the reports form to the MdiChildren collection
+            this.IsMdiContainer = true;
+            this.MdiChildren.Add(_reportsForm);
+
+
+            // Bring the reports form to the front
+            _reportsForm.BringToFront();*/
         }
     }
+
 }

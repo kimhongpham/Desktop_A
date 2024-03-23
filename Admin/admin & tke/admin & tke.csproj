@@ -104,6 +104,16 @@
     <Compile Include="Admin_Game.Designer.cs">
       <DependentUpon>Admin_Game.cs</DependentUpon>
     </Compile>
+    <Compile Include="game_databaseADataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>game_databaseADataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="game_databaseADataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>game_databaseADataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Kết nối.cs" />
     <Compile Include="Setting_Game.cs">
       <SubType>Form</SubType>
@@ -157,6 +167,28 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="game_databaseADataSet.xsc">
+      <DependentUpon>game_databaseADataSet.xsd</DependentUpon>
+    </None>
+    <None Include="game_databaseADataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>game_databaseADataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="game_databaseADataSet.xss">
+      <DependentUpon>game_databaseADataSet.xsd</DependentUpon>
+    </None>
+    <None Include="game_databaseADataSet1.xsc">
+      <DependentUpon>game_databaseADataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="game_databaseADataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>game_databaseADataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="game_databaseADataSet1.xss">
+      <DependentUpon>game_databaseADataSet1.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

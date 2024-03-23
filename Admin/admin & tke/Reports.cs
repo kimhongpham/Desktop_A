@@ -15,12 +15,23 @@ namespace admin___tke
 {
     public partial class Reports : Form
     {
-        public partial class ReportsManager
+        private static Reports _instance;
+        private static readonly object _lock = new object();
+        public static Reports Instance
         {
-            private static Reports _instance;
-            public static Reports Instance()
+            get
             {
-                if (_instance == null) _instance = new Reports();
+                if (_instance == null)
+                {
+                    lock (_lock)
+                    {
+                        if (_instance == null)
+                        {
+                            _instance = new Reports();
+                        }
+                    }
+                }
+
                 return _instance;
             }
         }
@@ -105,7 +116,6 @@ namespace admin___tke
 
             // Thêm biểu đồ vào điều khiển guna2Panel3
             guna2Panel3.Controls.Add(chart);
-
         }
 
         private void label2_Click(object sender, EventArgs e)

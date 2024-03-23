@@ -19,11 +19,9 @@ namespace admin___tke
 
         private void btn_Cancle_Click(object sender, EventArgs e)
         {
-            
-            Admin_Player admin_Player = new Admin_Player();
-            admin_Player.Show();
-            this.Close();
+            dgv_Player.DataSource = GetUser();
         }
+        DataSet GetUser() { DataSet ds = new DataSet(); return ds; }
 
         private void btnInvite_Click(object sender, EventArgs e)
         {
@@ -43,6 +41,11 @@ namespace admin___tke
                 // Thực hiện hành động tương ứng ở đây
                 MessageBox.Show("You have cancelled the invitation.");
             }
+        }
+
+        private void dgv_Player_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

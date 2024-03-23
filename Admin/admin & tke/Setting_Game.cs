@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -33,6 +34,56 @@ namespace admin___tke
         private void txt_Des_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_Save_Click(object sender, EventArgs e)
+        {
+            string gameID = txt_gameid.Text;
+            string gameName = txt_NameG.Text;
+            string gameDescription = txt_Des.Text;
+
+            // Truncate the description to a maximum length of 200 characters
+            if (gameDescription.Length > 200)
+            {
+                gameDescription = gameDescription.Substring(0, 200);
+            }
+
+            using (SqlConnection sqlConnection = admin___tke.Kết_nối.getConnection())
+            {
+                sqlConnection.Open();
+
+                string query = "INSERT INTO Games (GameID, GameName, NGAYPHATHANH, GameDescription) VALUES (@gameID, @gameName, @releaseDate, @gameDescription)";
+                SqlCommand sqlCommand = new SqlCommand(query, sqlConnection);
+                sqlCommand.Parameters.AddWithValue("@gameID", gameID);
+                sqlCommand.Parameters.AddWithValue("@gameName", gameName);
+                sqlCommand.Parameters.AddWithValue("@releaseDate", DateTime.Today);
+                sqlCommand.Parameters.AddWithValue("@gameDescription", gameDescription);
+
+                sqlCommand.ExecuteNonQuery();
+
+                sqlConnection.Close();
+            }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pic_G_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btn_ChangePic_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Image Files (*.bmp;*.jpg;*.jpeg;*.png;*.tif)|*.bmp;*.jpg;*.jpeg;*.png;*.tif";
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                pic_G.Image = Image.FromFile(openFileDialog.FileName);
+            }
         }
     }   
 }

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.lbl_Setting = new System.Windows.Forms.Label();
-            this.pnl_Setting = new Guna.UI2.WinForms.Guna2Panel();
+            this.pnl_GameID = new Guna.UI2.WinForms.Guna2Panel();
             this.txt_Des = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_NameG = new Guna.UI2.WinForms.Guna2TextBox();
             this.btn_ChangePic = new Guna.UI2.WinForms.Guna2CircleButton();
@@ -37,7 +37,9 @@
             this.btn_Save = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Cancle = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Del = new Guna.UI2.WinForms.Guna2Button();
-            this.pnl_Setting.SuspendLayout();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txt_gameid = new Guna.UI2.WinForms.Guna2TextBox();
+            this.pnl_GameID.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_G)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,20 +54,22 @@
             this.lbl_Setting.TabIndex = 0;
             this.lbl_Setting.Text = "Setting game";
             // 
-            // pnl_Setting
+            // pnl_GameID
             // 
-            this.pnl_Setting.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pnl_Setting.BorderThickness = 2;
-            this.pnl_Setting.Controls.Add(this.txt_Des);
-            this.pnl_Setting.Controls.Add(this.txt_NameG);
-            this.pnl_Setting.Controls.Add(this.btn_ChangePic);
-            this.pnl_Setting.Controls.Add(this.pic_G);
-            this.pnl_Setting.FillColor = System.Drawing.Color.White;
-            this.pnl_Setting.Location = new System.Drawing.Point(43, 152);
-            this.pnl_Setting.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.pnl_Setting.Name = "pnl_Setting";
-            this.pnl_Setting.Size = new System.Drawing.Size(1512, 494);
-            this.pnl_Setting.TabIndex = 14;
+            this.pnl_GameID.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.pnl_GameID.BorderThickness = 2;
+            this.pnl_GameID.Controls.Add(this.txt_gameid);
+            this.pnl_GameID.Controls.Add(this.label1);
+            this.pnl_GameID.Controls.Add(this.txt_Des);
+            this.pnl_GameID.Controls.Add(this.txt_NameG);
+            this.pnl_GameID.Controls.Add(this.btn_ChangePic);
+            this.pnl_GameID.Controls.Add(this.pic_G);
+            this.pnl_GameID.FillColor = System.Drawing.Color.White;
+            this.pnl_GameID.Location = new System.Drawing.Point(43, 152);
+            this.pnl_GameID.Margin = new System.Windows.Forms.Padding(2);
+            this.pnl_GameID.Name = "pnl_GameID";
+            this.pnl_GameID.Size = new System.Drawing.Size(1512, 494);
+            this.pnl_GameID.TabIndex = 14;
             // 
             // txt_Des
             // 
@@ -80,6 +84,7 @@
             this.txt_Des.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Des.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_Des.Location = new System.Drawing.Point(419, 76);
+            this.txt_Des.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.txt_Des.Name = "txt_Des";
             this.txt_Des.PasswordChar = '\0';
             this.txt_Des.PlaceholderText = "";
@@ -123,12 +128,13 @@
             this.btn_ChangePic.Image = global::admin___tke.Properties.Resources.setting_settings_icon_183789;
             this.btn_ChangePic.ImageSize = new System.Drawing.Size(30, 30);
             this.btn_ChangePic.Location = new System.Drawing.Point(335, 189);
-            this.btn_ChangePic.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_ChangePic.Margin = new System.Windows.Forms.Padding(2);
             this.btn_ChangePic.Name = "btn_ChangePic";
             this.btn_ChangePic.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btn_ChangePic.Size = new System.Drawing.Size(33, 33);
             this.btn_ChangePic.TabIndex = 19;
             this.btn_ChangePic.UseTransparentBackground = true;
+            this.btn_ChangePic.Click += new System.EventHandler(this.btn_ChangePic_Click);
             // 
             // pic_G
             // 
@@ -136,12 +142,13 @@
             this.pic_G.Image = global::admin___tke.Properties.Resources.Rectangle_2386;
             this.pic_G.ImageRotate = 0F;
             this.pic_G.Location = new System.Drawing.Point(12, 16);
-            this.pic_G.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pic_G.Margin = new System.Windows.Forms.Padding(2);
             this.pic_G.Name = "pic_G";
             this.pic_G.Size = new System.Drawing.Size(368, 218);
             this.pic_G.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pic_G.TabIndex = 0;
             this.pic_G.TabStop = false;
+            this.pic_G.Click += new System.EventHandler(this.pic_G_Click);
             // 
             // btn_Save
             // 
@@ -153,11 +160,12 @@
             this.btn_Save.Font = new System.Drawing.Font("Segoe UI", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Save.ForeColor = System.Drawing.Color.White;
             this.btn_Save.Location = new System.Drawing.Point(362, 743);
-            this.btn_Save.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Save.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Save.Name = "btn_Save";
             this.btn_Save.Size = new System.Drawing.Size(229, 72);
             this.btn_Save.TabIndex = 15;
             this.btn_Save.Text = "Save";
+            this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
             // 
             // btn_Cancle
             // 
@@ -171,7 +179,7 @@
             this.btn_Cancle.Font = new System.Drawing.Font("Segoe UI", 26F, System.Drawing.FontStyle.Bold);
             this.btn_Cancle.ForeColor = System.Drawing.Color.Black;
             this.btn_Cancle.Location = new System.Drawing.Point(694, 743);
-            this.btn_Cancle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Cancle.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Cancle.Name = "btn_Cancle";
             this.btn_Cancle.Size = new System.Drawing.Size(229, 72);
             this.btn_Cancle.TabIndex = 18;
@@ -189,11 +197,44 @@
             this.btn_Del.Font = new System.Drawing.Font("Segoe UI", 26F, System.Drawing.FontStyle.Bold);
             this.btn_Del.ForeColor = System.Drawing.Color.White;
             this.btn_Del.Location = new System.Drawing.Point(1015, 743);
-            this.btn_Del.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Del.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Del.Name = "btn_Del";
             this.btn_Del.Size = new System.Drawing.Size(229, 72);
             this.btn_Del.TabIndex = 19;
             this.btn_Del.Text = "Delete";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Black", 26F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(35, 253);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(99, 60);
+            this.label1.TabIndex = 22;
+            this.label1.Text = "ID :";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // txt_gameid
+            // 
+            this.txt_gameid.BorderColor = System.Drawing.Color.Black;
+            this.txt_gameid.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_gameid.DefaultText = "";
+            this.txt_gameid.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_gameid.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_gameid.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_gameid.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_gameid.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_gameid.Font = new System.Drawing.Font("Lucida Sans Unicode", 20F, System.Drawing.FontStyle.Bold);
+            this.txt_gameid.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_gameid.Location = new System.Drawing.Point(139, 268);
+            this.txt_gameid.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_gameid.Name = "txt_gameid";
+            this.txt_gameid.PasswordChar = '\0';
+            this.txt_gameid.PlaceholderText = "";
+            this.txt_gameid.SelectedText = "";
+            this.txt_gameid.Size = new System.Drawing.Size(147, 45);
+            this.txt_gameid.TabIndex = 23;
             // 
             // Setting_Game
             // 
@@ -204,14 +245,15 @@
             this.Controls.Add(this.btn_Del);
             this.Controls.Add(this.btn_Cancle);
             this.Controls.Add(this.btn_Save);
-            this.Controls.Add(this.pnl_Setting);
+            this.Controls.Add(this.pnl_GameID);
             this.Controls.Add(this.lbl_Setting);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Setting_Game";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Setting Game";
-            this.pnl_Setting.ResumeLayout(false);
+            this.pnl_GameID.ResumeLayout(false);
+            this.pnl_GameID.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_G)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -221,7 +263,7 @@
         #endregion
 
         private System.Windows.Forms.Label lbl_Setting;
-        private Guna.UI2.WinForms.Guna2Panel pnl_Setting;
+        private Guna.UI2.WinForms.Guna2Panel pnl_GameID;
         private Guna.UI2.WinForms.Guna2PictureBox pic_G;
         private Guna.UI2.WinForms.Guna2Button btn_Save;
         private Guna.UI2.WinForms.Guna2TextBox txt_Des;
@@ -229,5 +271,7 @@
         private Guna.UI2.WinForms.Guna2CircleButton btn_ChangePic;
         private Guna.UI2.WinForms.Guna2Button btn_Cancle;
         private Guna.UI2.WinForms.Guna2Button btn_Del;
+        private System.Windows.Forms.Label label1;
+        private Guna.UI2.WinForms.Guna2TextBox txt_gameid;
     }
 }
