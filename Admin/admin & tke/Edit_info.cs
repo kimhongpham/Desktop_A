@@ -32,7 +32,7 @@ namespace admin___tke
             dgv_Player.Columns.Add("THANHPHO", "THANHPHO");
             dgv_Player.Columns.Add("Address", "Address");
 
-            // Add command button to DataGridView
+            // Thêm nút lệnh vào DataGridView
             DataGridViewButtonColumn deleteButton = new DataGridViewButtonColumn();
             deleteButton.Name = "DeleteButton";
             deleteButton.HeaderText = "Xóa";
@@ -53,15 +53,15 @@ namespace admin___tke
 
                 SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
 
-                // Clear the DataGridView before adding new data
+                // Xóa DataGridView trước khi thêm dữ liệu mới
                 dgv_Player.Rows.Clear();
 
                 while (sqlDataReader.Read())
                 {
-                    // Add a new row to the DataGridView
+                    // Thêm một hàng mới vào DataGridView
                     int rowIndex = dgv_Player.Rows.Add();
 
-                    // Set the values of the cells in the new row
+                    // Đặt giá trị của các ô trong hàng mới
                     dgv_Player.Rows[rowIndex].Cells[0].Value = sqlDataReader["UserID"].ToString();
                     dgv_Player.Rows[rowIndex].Cells[1].Value = sqlDataReader["UserName"].ToString();
                     dgv_Player.Rows[rowIndex].Cells[2].Value = sqlDataReader["Email"].ToString();
@@ -76,7 +76,7 @@ namespace admin___tke
 
                 sqlDataReader.Close();
 
-                // Refresh the DataGridView to display the new data
+                // Làm mới DataGridView để hiển thị dữ liệu mới
                 dgv_Player.Refresh();
 
                 sqlConnection.Close();
@@ -87,15 +87,15 @@ namespace admin___tke
         {
             if (e.ColumnIndex == dgv_Player.Columns["DeleteButton"].Index && e.RowIndex >= 0)
             {
-                // Get the UserID of the selected row
+                // Lấy UserID của hàng đã chọn
                 int userId = Convert.ToInt32(dgv_Player.Rows[e.RowIndex].Cells["UserID"].Value);
 
-                // Show confirmation dialog
+                // Hiển thị hộp thoại xác nhận
                 DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn xóa người dùng này?", "Xác nhận", MessageBoxButtons.YesNo);
 
                 if (result == DialogResult.Yes)
                 {
-                    // Delete the user from the database
+                    // Xóa người dùng khỏi cơ sở dữ liệu
                     using (SqlConnection sqlConnection = admin___tke.Kết_nối.getConnection())
                     {
                         sqlConnection.Open();
@@ -108,10 +108,10 @@ namespace admin___tke
                         sqlConnection.Close();
                     }
 
-                    // Remove the row from the DataGridView
+                    // Xóa hàng khỏi DataGridView
                     dgv_Player.Rows.RemoveAt(e.RowIndex);
 
-                    // Show success message
+                    // Hiển thị thông báo thành công
                     MessageBox.Show("Xóa người dùng thành công.", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
@@ -179,7 +179,7 @@ namespace admin___tke
             {
                 sqlConnection.Open();
 
-                // Create an SQL command to update the user record
+                // Tạo lệnh SQL để cập nhật hồ sơ người dùng
                 string query = "UPDATE Users SET UserName = @UserName, Email = @Email, NGAYTHAMGIA = @JoinDate, TEN = @FirstName, HO = @LastName, SDT = @PhoneNumber, QUOCGIA = @Country, THANHPHO = @City, Address = @Address WHERE UserID = @UserId";
                 SqlCommand sqlCommand = new SqlCommand(query, sqlConnection);
 

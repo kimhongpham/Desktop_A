@@ -40,6 +40,7 @@
             this.ptrb_Avatar = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
             this.btn_game2 = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
             this.guna2PictureBox7 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.lbl_Game2 = new System.Windows.Forms.Label();
             this.guna2PictureBox8 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -79,7 +80,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.lbl_Username = new System.Windows.Forms.Label();
             this.pn_TrangChu2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label12 = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgBtn_Logo)).BeginInit();
             this.pn_TrangChuMain.SuspendLayout();
@@ -269,7 +269,6 @@
             this.pn_TrangChuMain.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(4);
             this.pn_TrangChuMain.Size = new System.Drawing.Size(702, 466);
             this.pn_TrangChuMain.TabIndex = 45;
-            this.pn_TrangChuMain.Paint += new System.Windows.Forms.PaintEventHandler(this.pn_TrangChuMain_Paint);
             // 
             // ptrb_Avatar
             // 
@@ -313,6 +312,16 @@
             this.btn_game2.Text = "Game 2";
             this.btn_game2.UseVisualStyleBackColor = true;
             this.btn_game2.Click += new System.EventHandler(this.btn_game2_Click);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(30, 143);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(28, 19);
+            this.label12.TabIndex = 16;
+            this.label12.Text = "4.6";
             // 
             // guna2PictureBox7
             // 
@@ -827,16 +836,6 @@
             this.pn_TrangChu2.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(4);
             this.pn_TrangChu2.Size = new System.Drawing.Size(702, 414);
             this.pn_TrangChu2.TabIndex = 55;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(30, 143);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(28, 19);
-            this.label12.TabIndex = 16;
-            this.label12.Text = "4.6";
             // 
             // UserMain
             // 

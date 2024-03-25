@@ -31,40 +31,36 @@ namespace Gaming_Dashboard
 
         public void DisplayHighestScores(string username)
         {
-            // Create a connection to the database
-            //string connectionString = "Data Source = ROSIE - PHAM\SQLEXPRESS; Initial Catalog = game_databaseA; Persist Security Info = True; User ID = rosie0107; Password = ***********; Encrypt = True; Trust Server Certificate = True";
-            //string connectionString = "Data Source = ROSIE - PHAM\SQLEXPRESS; Initial Catalog = game_databaseA; Integrated Security = True; Encrypt = True; Trust Server Certificate = True";
-            //string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\Admin\\Documents\\Tài liệu\\Desktop_A\\TrangChu\\Database1.mdf\";Integrated Security=True";
             using (SqlConnection sqlConnection = admin___tke.Kết_nối.getConnection())
             {
                 sqlConnection.Open();
 
-                // Create a command to retrieve the user's highest scores from the database
+                // Tạo lệnh lấy điểm cao nhất của người dùng từ cơ sở dữ liệu
                 string selectCommand = "SELECT g.GameName, MAX(gs.Score) as HighestScore FROM GameSessions gs JOIN Users u ON gs.UserID = u.UserID JOIN UserGames ug ON gs.GameID = ug.GameID JOIN Games g ON gs.GameID = g.GameID WHERE u.UserName = @UserName GROUP BY g.GameName ORDER BY HighestScore DESC";
                 using (SqlCommand command = new SqlCommand(selectCommand, sqlConnection))
                 {
-                    // Set the parameter value for the command
+                    // Đặt giá trị tham số cho lệnh
                     command.Parameters.AddWithValue("@UserName", username);
 
-                    // Execute the command and retrieve the results
+                    // Thực hiện lệnh và lấy kết quả
                     using (SqlDataReader reader = command.ExecuteReader())
                     {
-                        // Clear the guna2Panel controls before displaying the new results
+                        // Xóa các điều khiển guna2Panel trước khi hiển thị kết quả mới
                         guna2Panel9.Controls.Clear();
                         guna2Panel2.Controls.Clear();
                         guna2Panel3.Controls.Clear();
 
-                        // Add the results to the guna2Panel controls
+                        // Thêm kết quả vào điều khiển guna2Panel
                         int panelIndex = 0;
                         while (reader.Read())
                         {
-                            // Create a new label for the game name and score
+                            // Tạo nhãn mới cho tên trò chơi và điểm số
                             Label gameLabel = new Label();
                             gameLabel.Text = $"{reader["GameName"]}: {reader["HighestScore"]}";
                             gameLabel.AutoSize = true;
                             gameLabel.Location = new Point(10, 10 + (panelIndex * 20));
 
-                            // Add the label to the appropriate guna2Panel control
+                            // Thêm nhãn vào điều khiển guna2Panel thích hợp
                             switch (panelIndex)
                             {
                                 case 0:
@@ -78,7 +74,7 @@ namespace Gaming_Dashboard
                                     break;
                             }
 
-                            // Increment the panel index
+                            // Tăng chỉ số bảng điều khiển
                             panelIndex++;
                         }
                     }

@@ -42,7 +42,7 @@ namespace admin___tke
             string gameName = txt_NameG.Text;
             string gameDescription = txt_Des.Text;
 
-            // Truncate the description to a maximum length of 200 characters
+            // Cắt ngắn mô tả xuống độ dài tối đa 200 ký tự
             if (gameDescription.Length > 200)
             {
                 gameDescription = gameDescription.Substring(0, 200);

@@ -1,5 +1,4 @@
-﻿
-using Guna.UI2.WinForms;
+﻿using Guna.UI2.WinForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,59 +18,40 @@ namespace Gaming_Dashboard
         public BangXepHang()
         {
             InitializeComponent();
-
-            // Kết nối với cơ sở dữ liệu và lấy thứ hạng
+            // Query data
             using (SqlConnection sqlConnection = admin___tke.Kết_nối.getConnection())
             {
                 sqlConnection.Open();
-
-                SqlCommand command = new SqlCommand("SELECT u.UserName, gs.Score FROM GameSessions gs " +
-                                                   "JOIN Users u ON gs.UserID = u.UserID " +
-                                                   "JOIN UserGames ug ON gs.GameID = ug.GameID " +
-                                                   "JOIN Games g ON gs.GameID = g.GameID " +
-                                                   "ORDER BY gs.Score DESC", sqlConnection);
-                SqlDataReader reader = command.ExecuteReader();
-
-
-                int index = 0;
-                while (reader.Read())
+                using (SqlCommand command = new SqlCommand(
+                        "SELECT U.UserName, G.GameID, G.Score " +
+                        "FROM (" +
+                            "SELECT GameID, MAX(Score) as Score, UserID " +
+                            "FROM GameSessions " +
+                            "GROUP BY GameID, UserID " +
+                        ") G JOIN GameSessions S on G.UserID = S.UserID AND G.GameID = S.GameID " +
+                        "JOIN Users U ON G.UserID = U.UserID",
+                        sqlConnection))
                 {
-                    switch (index)
+                    SqlDataReader reader = command.ExecuteReader();
+
+                    int labelIndex = 0;
+                    while (reader.Read())
                     {
-                        case 0:
-                            label7.Text = reader["UserName"].ToString();
-                            label8.Text = reader["Score"].ToString();
-                            break;
-                        case 1:
-                            label10.Text = reader["UserName"].ToString();
-                            label9.Text = reader["Score"].ToString();
-                            break;
-                        case 2:
-                            label12.Text = reader["UserName"].ToString();
-                            label11.Text = reader["Score"].ToString();
-                            break;
+                        int gameID = (int)reader["GameID"];
+
+                        // Update UserName label
+                        Control userNameLabel = pnl_1.Controls[$"lbl_1_{labelIndex}"];
+                        lbl_1.Text = reader["UserName"].ToString();
+
+                        // Update Score label
+                        Control scoreLabel = pnl_1.Controls[$"lbl_s1_{labelIndex}"];
+                        lnl_s1.Text = $"Score: {reader["Score"]}";
+
+                        labelIndex++;
                     }
 
-                    // Thêm hình ảnh vào Guna2Button
-                    Guna2Button button = new Guna2Button();
-                    button.Text = $"{reader["Rank"]}. {reader["UserName"]} - {reader["Score"]}";
-                    switch (index)
-                    {
-                        case 0:
-                            guna2Button9.Controls.Add(button);
-                            break;
-                        case 1:
-                            guna2Button1.Controls.Add(button);
-                            break;
-                        case 2:
-                            guna2Button2.Controls.Add(button);
-                            break;
-                    }
-                    index++;
+                    sqlConnection.Close();
                 }
-
-                sqlConnection.Close();
-
             }
         }
         private static BangXepHang _instance;
@@ -90,16 +70,6 @@ namespace Gaming_Dashboard
         }
 
         private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2Panel9_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
         {
 
         }

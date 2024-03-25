@@ -55,7 +55,6 @@
     <Compile Include="Choose.Designer.cs">
       <DependentUpon>Choose.cs</DependentUpon>
     </Compile>
-    <Compile Include="Database1.cs" />
     <Compile Include="Exit.cs">
       <SubType>Form</SubType>
     </Compile>

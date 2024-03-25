@@ -6,10 +6,9 @@ CREATE TABLE Games (
     GameID INT PRIMARY KEY,
     GameName NVARCHAR(100) NOT NULL,
     NGAYPHATHANH DATE,
-    THELOAI NVARCHAR(50)
+    GameDescription NVARCHAR(255)
 );
-ALTER TABLE Games DROP COLUMN THELOAI;
-ALTER TABLE Games ADD GameDescription NVARCHAR(255);
+
 
 CREATE TABLE Users (
     UserID INT IDENTITY(1,1) PRIMARY KEY,
@@ -46,8 +45,10 @@ CREATE TABLE GameSessions (
 select *from Games;
 select *from Users;
 select *from UserGames;
-select *from CauHoi;
-
+select *from GameSessions;
+ALTER TABLE Games DROP COLUMN THELOAI;
+ALTER TABLE Games ADD GameDescription NVARCHAR(255);
+ALTER TABLE Games ADD GameImage varbinary(max);
 
 set ansi_nulls on
 go

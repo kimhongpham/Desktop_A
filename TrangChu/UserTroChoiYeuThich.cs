@@ -35,15 +35,11 @@ namespace Gaming_Dashboard
         private void DisplayUserRankings()
         {
             // Connect to the database
-            // Replace "your_connection_string" with the actual connection string
-            //string connectionString = "Data Source = ROSIE - PHAM\SQLEXPRESS; Initial Catalog = game_databaseA; Persist Security Info = True; User ID = rosie0107; Password = ***********; Encrypt = True; Trust Server Certificate = True";
-            //string connectionString = "Data Source = ROSIE - PHAM\SQLEXPRESS; Initial Catalog = game_databaseA; Integrated Security = True; Encrypt = True; Trust Server Certificate = True";
-            //string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\Admin\\Documents\\Tài liệu\\Desktop_A\\TrangChu\\Database1.mdf\";Integrated Security=True";
             using (SqlConnection sqlConnection = admin___tke.Kết_nối.getConnection())
             {
                 sqlConnection.Open();
 
-                // Define the SQL query
+                // Xác định truy vấn SQL
                 string query = @"
             SELECT u.UserID, g.GameName, g.GameID, COUNT(*) as PlayCount,
                 ROW_NUMBER() OVER (PARTITION BY g.GameID ORDER BY COUNT(*) DESC) as Rank
@@ -55,27 +51,27 @@ namespace Gaming_Dashboard
             ORDER BY g.GameID, PlayCount DESC;
         ";
 
-                // Execute the SQL query
+                // Thực hiện truy vấn SQL
                 using (SqlCommand command = new SqlCommand(query, sqlConnection))
                 {
                     using (SqlDataReader reader = command.ExecuteReader())
                     {
-                        // Display the data in three guna2Panel controls
+                        // Hiển thị dữ liệu trong ba điều khiển guna2Panel
                         int panelIndex = 0;
                         int currentGameID = -1;
                         while (reader.Read())
                         {
-                            // Get the data from the SqlDataReader
+                            // Lấy dữ liệu từ SqlDataReader
                             int userID = reader.GetInt32(0);
                             string gameName = reader.GetString(1);
                             int gameID = reader.GetInt32(2);
                             int playCount = reader.GetInt32(3);
                             int rank = reader.GetInt32(4);
 
-                            // Display the ranking for the current game
+                            // Hiển thị thứ hạng cho trò chơi hiện tại
                             if (currentGameID == gameID)
                             {
-                                // Set the text of the guna2Panel controls
+                                // Đặt văn bản của điều khiển guna2Panel
                                 guna2Panel9.Text = $"{gameName} (Rank {rank})";
                                 guna2Panel9.Tag = userID;
 
@@ -89,7 +85,7 @@ namespace Gaming_Dashboard
                             }
                             else
                             {
-                                // Reset the panel index and set the current game ID
+                                // Đặt lại chỉ mục bảng điều khiển và đặt ID trò chơi hiện tại
                                 panelIndex = 0;
                                 currentGameID = gameID;
                             }

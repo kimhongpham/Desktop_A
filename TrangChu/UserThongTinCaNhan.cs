@@ -83,18 +83,17 @@ namespace Gaming_Dashboard
         }
         private int GetUserIdFromUsername(string username)
         {
-            // Create a connection to the database
-            //string connectionString = "Data Source=ROSIE-PHAM\\SQLEXPRESS;Initial Catalog=game_databaseA;Initial Catalog=game_databaseA;Persist Security Info=False;User ID=rosie0107;Password=@hong0107;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=True;Connection Timeout=30;";
+            // Tạo kết nối tới cơ sở dữ liệu
             int userId = -1;
-            using (SqlConnection sqlConnection = Kết_nối.getConnection())
+            using (SqlConnection sqlConnection = admin___tke.Kết_nối.getConnection())
             {
                 sqlConnection.Open();
 
-                // Create a command to retrieve the user's ID from the database
+                // Tạo lệnh truy xuất ID người dùng từ cơ sở dữ liệu
                 string selectCommand = "SELECT UserID FROM Users WHERE UserName = @UserName";
                 using (SqlCommand command = new SqlCommand(selectCommand, sqlConnection))
                 {
-                    // Set the parameter value for the command
+                    // Đặt giá trị tham số cho lệnh
                     command.Parameters.AddWithValue("@UserName", username);
 
                     // Execute the command and retrieve the user's ID

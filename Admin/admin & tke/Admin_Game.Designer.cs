@@ -46,6 +46,7 @@
             this.btn_P1 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_Find = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_Thêm = new Guna.UI2.WinForms.Guna2Button();
             this.pnel_1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picG1)).BeginInit();
             this.pnl_GP.SuspendLayout();
@@ -83,10 +84,10 @@
             this.pnel_1.Controls.Add(this.lblName_G1);
             this.pnel_1.Controls.Add(this.picG1);
             this.pnel_1.FillColor = System.Drawing.Color.White;
-            this.pnel_1.Location = new System.Drawing.Point(47, 196);
+            this.pnel_1.Location = new System.Drawing.Point(47, 235);
             this.pnel_1.Margin = new System.Windows.Forms.Padding(2);
             this.pnel_1.Name = "pnel_1";
-            this.pnel_1.Size = new System.Drawing.Size(1499, 250);
+            this.pnel_1.Size = new System.Drawing.Size(1499, 256);
             this.pnel_1.TabIndex = 13;
             // 
             // lblGameID
@@ -327,12 +328,30 @@
             this.btn_Find.Text = "Find";
             this.btn_Find.Click += new System.EventHandler(this.btn_Find_Click);
             // 
+            // btn_Thêm
+            // 
+            this.btn_Thêm.BorderRadius = 10;
+            this.btn_Thêm.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Thêm.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Thêm.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Thêm.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Thêm.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Thêm.ForeColor = System.Drawing.Color.White;
+            this.btn_Thêm.Location = new System.Drawing.Point(1405, 173);
+            this.btn_Thêm.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Thêm.Name = "btn_Thêm";
+            this.btn_Thêm.Size = new System.Drawing.Size(141, 51);
+            this.btn_Thêm.TabIndex = 34;
+            this.btn_Thêm.Text = "Thêm";
+            this.btn_Thêm.Click += new System.EventHandler(this.btn_Thêm_Click);
+            // 
             // Admin_Game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1600, 875);
+            this.Controls.Add(this.btn_Thêm);
             this.Controls.Add(this.btn_P3);
             this.Controls.Add(this.btn_P2);
             this.Controls.Add(this.btn_P1);
@@ -347,6 +366,7 @@
             this.Name = "Admin_Game";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin Game";
+            this.Load += new System.EventHandler(this.Admin_Game_Load);
             this.pnel_1.ResumeLayout(false);
             this.pnel_1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picG1)).EndInit();
@@ -377,5 +397,6 @@
         private System.Windows.Forms.Panel panel1;
         private Guna.UI2.WinForms.Guna2Button btn_Find;
         private System.Windows.Forms.Label lblGameID;
+        private Guna.UI2.WinForms.Guna2Button btn_Thêm;
     }
 }

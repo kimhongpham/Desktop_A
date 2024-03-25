@@ -125,9 +125,9 @@ namespace Gaming_Dashboard
             // Kiểm tra trường hợp cụ thể email = "DoannhomA" và mật khẩu = "999999"
             if (email == "DoannhomA" && password == "999999")
             {
-                // Open the Admin form
+                // Mở biểu mẫu Quản trị viên
                 this.Hide();
-                var admin = new admin___tke.Admin();
+                var admin = new admin___tke.Admin_Player();
                 this.main.Hide();
                 admin.ShowDialog();
                 return;
@@ -148,12 +148,12 @@ namespace Gaming_Dashboard
 
             if (isLoggedIn)
             {
-                // Get username from email
+                // Nhận tên người dùng từ email
                 loggedInUsername = GetUsernameFromEmail(email);
 
                 // Đóng biểu mẫu đăng nhập và mở biểu mẫu chính
                 this.Hide();
-                UserMain userMain = new UserMain(loggedInUsername); // pass the usernameto the UserMain constructor
+                UserMain userMain = new UserMain(loggedInUsername); // chuyển tên người dùng tới hàm tạo UserMain
                 this.main.Hide();
                 userMain.ShowDialog();
             }
@@ -165,7 +165,7 @@ namespace Gaming_Dashboard
 
         private string GetUsernameFromEmail(string email)
         {
-            // Using the connectionstring provided in the given function
+            // Sử dụng chuỗi kết nối được cung cấp trong hàm đã cho
             using (SqlConnection sqlConnection = admin___tke.Kết_nối.getConnection())
             {
                 sqlConnection.Open();
@@ -178,15 +178,15 @@ namespace Gaming_Dashboard
 
                 if (reader.Read())
                 {
-                    // Get the username from the database
+                    // Lấy tên người dùng từ cơ sở dữ liệu
                     string username = reader["Username"].ToString();
 
-                    // Close the connection and return the username
+                    // Đóng kết nối và trả lại tên người dùng
                     sqlConnection.Close();
                     return username;
                 }
 
-                // Close the connection and return an empty string
+                // Đóng kết nối và trả về một chuỗi trống
                 sqlConnection.Close();
                 return "";
             }
@@ -194,7 +194,7 @@ namespace Gaming_Dashboard
 
         private bool PerformLogin(string email, string hashedPassword)
         {
-            // Using the connection string provided in the given function
+            // Sử dụng chuỗi kết nối được cung cấp trong hàm đã cho
             using (SqlConnection sqlConnection = admin___tke.Kết_nối.getConnection())
             {
                 sqlConnection.Open();
@@ -211,13 +211,13 @@ namespace Gaming_Dashboard
                     string storedHash = reader["Password"].ToString();
                     if (storedHash == hashedPassword)
                     {
-                        // Close the connection and return true
+                        // Đóng kết nối và trả về true
                         sqlConnection.Close();
                         return true;
                     }
                 }
 
-                // Close the connection and return false
+                // Đóng kết nối và trả về sai
                 sqlConnection.Close();
                 return false;
             }

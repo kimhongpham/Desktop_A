@@ -73,5 +73,19 @@ namespace admin___tke
                 return userTable;
             }
         }
+
+        private void btn_R_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Reports Reports = new Reports();
+            Reports.Show();
+        }
+
+        private void btn_S_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Search Search = new Search();
+            Search.Show();
+        }
     }
 }

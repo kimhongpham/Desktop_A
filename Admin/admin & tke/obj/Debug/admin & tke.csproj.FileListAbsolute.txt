@@ -305,7 +305,6 @@ C:\Users\Admin\Downloads\Desktop_A\Admin\admin & tke\bin\Debug\zh-CHT\Microsoft.
 C:\Users\Admin\Downloads\Desktop_A\Admin\admin & tke\obj\Debug\admin___tke.Admin.resources
 C:\Users\Admin\Downloads\Desktop_A\Admin\admin & tke\obj\Debug\admin___tke.Reports.resources
 C:\Users\Admin\Documents\Tài liệu\ueh\Desktop_A\Admin\admin & tke\obj\Debug\admin & tke.csproj.AssemblyReference.cache
-C:\Users\Admin\Documents\Tài liệu\ueh\Desktop_A\Admin\admin & tke\obj\Debug\admin___tke.Admin.resources
 C:\Users\Admin\Documents\Tài liệu\ueh\Desktop_A\Admin\admin & tke\obj\Debug\admin___tke.Admin_Player.resources
 C:\Users\Admin\Documents\Tài liệu\ueh\Desktop_A\Admin\admin & tke\obj\Debug\admin___tke.Edit_info.resources
 C:\Users\Admin\Documents\Tài liệu\ueh\Desktop_A\Admin\admin & tke\obj\Debug\admin___tke.Admin_Game.resources

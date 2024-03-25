@@ -34,18 +34,8 @@
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.lbl_Reports = new System.Windows.Forms.Label();
             this.pnl_c3 = new Guna.UI2.WinForms.Guna2Panel();
-            this.chart_3 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.pnl_c4 = new Guna.UI2.WinForms.Guna2Panel();
             this.chart_4 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
@@ -55,28 +45,21 @@
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label4 = new System.Windows.Forms.Label();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
-            this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label3 = new System.Windows.Forms.Label();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
-            this.chart3 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label5 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.btn_GamePage = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Down = new Guna.UI2.WinForms.Guna2Button();
             this.cbx_2 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.cbx_3 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.cbx_1 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
-            this.pnl_c3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart_3)).BeginInit();
             this.pnl_c4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart_4)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
-            this.guna2Panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
-            this.guna2Panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart3)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
             this.guna2Panel5.SuspendLayout();
             this.SuspendLayout();
@@ -85,7 +68,7 @@
             // 
             this.lbl_Reports.AutoSize = true;
             this.lbl_Reports.Font = new System.Drawing.Font("Segoe UI Black", 26F, System.Drawing.FontStyle.Bold);
-            this.lbl_Reports.Location = new System.Drawing.Point(2, 0);
+            this.lbl_Reports.Location = new System.Drawing.Point(2, 2);
             this.lbl_Reports.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_Reports.Name = "lbl_Reports";
             this.lbl_Reports.Size = new System.Drawing.Size(194, 60);
@@ -94,30 +77,11 @@
             // 
             // pnl_c3
             // 
-            this.pnl_c3.Controls.Add(this.chart_3);
             this.pnl_c3.Location = new System.Drawing.Point(72, 438);
             this.pnl_c3.Margin = new System.Windows.Forms.Padding(2);
             this.pnl_c3.Name = "pnl_c3";
             this.pnl_c3.Size = new System.Drawing.Size(642, 302);
             this.pnl_c3.TabIndex = 6;
-            // 
-            // chart_3
-            // 
-            chartArea1.Name = "ChartArea1";
-            this.chart_3.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart_3.Legends.Add(legend1);
-            this.chart_3.Location = new System.Drawing.Point(52, 28);
-            this.chart_3.Margin = new System.Windows.Forms.Padding(2);
-            this.chart_3.Name = "chart_3";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chart_3.Series.Add(series1);
-            this.chart_3.Size = new System.Drawing.Size(388, 200);
-            this.chart_3.TabIndex = 1;
-            this.chart_3.Text = "chart3";
             // 
             // pnl_c4
             // 
@@ -130,17 +94,17 @@
             // 
             // chart_4
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chart_4.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chart_4.Legends.Add(legend2);
+            chartArea1.Name = "ChartArea1";
+            this.chart_4.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart_4.Legends.Add(legend1);
             this.chart_4.Location = new System.Drawing.Point(50, 28);
             this.chart_4.Margin = new System.Windows.Forms.Padding(2);
             this.chart_4.Name = "chart_4";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chart_4.Series.Add(series2);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart_4.Series.Add(series1);
             this.chart_4.Size = new System.Drawing.Size(388, 200);
             this.chart_4.TabIndex = 2;
             this.chart_4.Text = "chart4";
@@ -193,18 +157,18 @@
             // 
             // chart1
             // 
-            chartArea3.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.chart1.Legends.Add(legend3);
+            chartArea2.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart1.Legends.Add(legend2);
             this.chart1.Location = new System.Drawing.Point(30, 65);
             this.chart1.Margin = new System.Windows.Forms.Padding(2);
             this.chart1.Name = "chart1";
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
-            series3.Legend = "Legend1";
-            series3.Name = "Series1";
-            this.chart1.Series.Add(series3);
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chart1.Series.Add(series2);
             this.chart1.Size = new System.Drawing.Size(222, 82);
             this.chart1.TabIndex = 1;
             this.chart1.Text = "chart1";
@@ -223,37 +187,17 @@
             // guna2Panel3
             // 
             this.guna2Panel3.BorderRadius = 10;
-            this.guna2Panel3.Controls.Add(this.chart2);
-            this.guna2Panel3.Controls.Add(this.label3);
             this.guna2Panel3.Location = new System.Drawing.Point(858, 195);
             this.guna2Panel3.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.Size = new System.Drawing.Size(278, 178);
             this.guna2Panel3.TabIndex = 9;
             // 
-            // chart2
-            // 
-            chartArea4.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            this.chart2.Legends.Add(legend4);
-            this.chart2.Location = new System.Drawing.Point(30, 65);
-            this.chart2.Margin = new System.Windows.Forms.Padding(2);
-            this.chart2.Name = "chart2";
-            series4.ChartArea = "ChartArea1";
-            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
-            series4.Legend = "Legend1";
-            series4.Name = "Series1";
-            this.chart2.Series.Add(series4);
-            this.chart2.Size = new System.Drawing.Size(222, 82);
-            this.chart2.TabIndex = 1;
-            this.chart2.Text = "chart2";
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(65, 17);
+            this.label3.Location = new System.Drawing.Point(922, 158);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(156, 41);
@@ -263,37 +207,17 @@
             // guna2Panel4
             // 
             this.guna2Panel4.BorderRadius = 10;
-            this.guna2Panel4.Controls.Add(this.chart3);
-            this.guna2Panel4.Controls.Add(this.label5);
             this.guna2Panel4.Location = new System.Drawing.Point(1207, 195);
             this.guna2Panel4.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel4.Name = "guna2Panel4";
             this.guna2Panel4.Size = new System.Drawing.Size(278, 178);
             this.guna2Panel4.TabIndex = 9;
             // 
-            // chart3
-            // 
-            chartArea5.Name = "ChartArea1";
-            this.chart3.ChartAreas.Add(chartArea5);
-            legend5.Name = "Legend1";
-            this.chart3.Legends.Add(legend5);
-            this.chart3.Location = new System.Drawing.Point(30, 65);
-            this.chart3.Margin = new System.Windows.Forms.Padding(2);
-            this.chart3.Name = "chart3";
-            series5.ChartArea = "ChartArea1";
-            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
-            series5.Legend = "Legend1";
-            series5.Name = "Series1";
-            this.chart3.Series.Add(series5);
-            this.chart3.Size = new System.Drawing.Size(222, 82);
-            this.chart3.TabIndex = 1;
-            this.chart3.Text = "chart3";
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(43, 17);
+            this.label5.Location = new System.Drawing.Point(1267, 158);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(160, 41);
@@ -303,12 +227,31 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Controls.Add(this.lbl_Reports);
+            this.flowLayoutPanel1.Controls.Add(this.btn_GamePage);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.BottomUp;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1600, 62);
             this.flowLayoutPanel1.TabIndex = 28;
+            // 
+            // btn_GamePage
+            // 
+            this.btn_GamePage.BorderRadius = 20;
+            this.btn_GamePage.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_GamePage.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_GamePage.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_GamePage.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_GamePage.FillColor = System.Drawing.Color.Gainsboro;
+            this.btn_GamePage.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
+            this.btn_GamePage.ForeColor = System.Drawing.Color.White;
+            this.btn_GamePage.Location = new System.Drawing.Point(200, 13);
+            this.btn_GamePage.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_GamePage.Name = "btn_GamePage";
+            this.btn_GamePage.Size = new System.Drawing.Size(156, 47);
+            this.btn_GamePage.TabIndex = 18;
+            this.btn_GamePage.Text = "Player";
             // 
             // btn_Down
             // 
@@ -417,6 +360,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1600, 875);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.guna2Panel4);
             this.Controls.Add(this.guna2Panel3);
@@ -430,8 +375,6 @@
             this.Name = "Reports";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form5";
-            this.pnl_c3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.chart_3)).EndInit();
             this.pnl_c4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chart_4)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
@@ -439,16 +382,11 @@
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
-            this.guna2Panel3.ResumeLayout(false);
-            this.guna2Panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
-            this.guna2Panel4.ResumeLayout(false);
-            this.guna2Panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart3)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.guna2Panel5.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -456,7 +394,6 @@
 
         private System.Windows.Forms.Label lbl_Reports;
         private Guna.UI2.WinForms.Guna2Panel pnl_c3;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart_3;
         private Guna.UI2.WinForms.Guna2Panel pnl_c4;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart_4;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
@@ -466,10 +403,8 @@
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart2;
         private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private Guna.UI2.WinForms.Guna2Button btn_Down;
@@ -477,5 +412,6 @@
         private Guna.UI2.WinForms.Guna2ComboBox cbx_3;
         private Guna.UI2.WinForms.Guna2ComboBox cbx_1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel5;
+        private Guna.UI2.WinForms.Guna2Button btn_GamePage;
     }
 }

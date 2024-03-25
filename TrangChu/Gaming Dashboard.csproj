@@ -100,7 +100,6 @@
     <Compile Include="DoiMatKhau.Designer.cs">
       <DependentUpon>DoiMatKhau.cs</DependentUpon>
     </Compile>
-    <Compile Include="Kết nối.cs" />
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>

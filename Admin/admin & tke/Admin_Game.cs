@@ -29,9 +29,7 @@ namespace admin___tke
 
         private void btn_SettingG1_Click(object sender, EventArgs e)
         {
-            this.Close();
-            Setting_Game setting_Game = new Setting_Game();
-            setting_Game.Show();
+            
             
         }
 
@@ -95,6 +93,16 @@ namespace admin___tke
             }
         }
 
-        
+        private void btn_Thêm_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Setting_Game setting_Game = new Setting_Game();
+            setting_Game.Show();
+        }
+
+        private void Admin_Game_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

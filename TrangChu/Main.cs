@@ -23,6 +23,7 @@ namespace Gaming_Dashboard
 
         public SoundManager sound = new SoundManager(@"C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\TrangChu\Resources\welcome_soundtrack.mp3");
         private string _username;
+        private int _userID;
 
         public Main()
         {
@@ -221,7 +222,7 @@ namespace Gaming_Dashboard
 
         private void btn_game2_Click(object sender, EventArgs e)
         {
-            var mainMenu = new Game02.MainMenu(); // tạo một phiên bản mới của Main Game 2
+            var mainMenu = new Game02.MainMenu(_username); // tạo một phiên bản mới của Main Game 2
             mainMenu.ShowDialog(); // hiển thị mẫu Main Game 2
         }
 

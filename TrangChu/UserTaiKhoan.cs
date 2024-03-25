@@ -110,9 +110,6 @@ namespace Gaming_Dashboard
 
         private void lbl_Username_Click(object sender, EventArgs e)
         {
-            //string connectionString = "Data Source = ROSIE - PHAM\SQLEXPRESS; Initial Catalog = game_databaseA; Persist Security Info = True; User ID = rosie0107; Password = ***********; Encrypt = True; Trust Server Certificate = True";
-            //string connectionString = "Data Source = ROSIE - PHAM\SQLEXPRESS; Initial Catalog = game_databaseA; Integrated Security = True; Encrypt = True; Trust Server Certificate = True";
-            //string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\Admin\\Documents\\Tài liệu\\Desktop_A\\TrangChu\\Database1.mdf\";Integrated Security=True";
 
             using (SqlConnection sqlConnection = admin___tke.Kết_nối.getConnection())
             {

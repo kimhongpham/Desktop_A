@@ -79,20 +79,20 @@ namespace Gaming_Dashboard
                         sqlConnection.Open();
                         //MessageBox.Show("Kết nối thành công!");
 
-                        // Add check for existing username
+                        // Thêm kiểm tra tên người dùng hiện có
                         string checkUsernameQuery = "SELECT COUNT(*) FROM Users WHERE Username = @Username";
                         using (SqlCommand checkUsernameCommand = new SqlCommand(checkUsernameQuery, sqlConnection))
                         {
                             checkUsernameCommand.Parameters.AddWithValue("@Username", newUser.Username);
 
-                            // If username already exists in the Users table, display an error message
+                            // Nếu tên người dùng đã tồn tại trong bảng Người dùng, hiển thị thông báo lỗi
                             if (Convert.ToInt32(checkUsernameCommand.ExecuteScalar()) > 0)
                             {
                                 MessageBox.Show("Tên tài khoản đã tồn tại. Vui lòng sử dụng tên tài khoản khác.");
                                 return;
                             }
                         }
-                        // Kiểm tra mọi địa chỉ email trùng lặp
+                        // Kiểm tra mọi vòng lặp email địa chỉ
                         string checkEmailQuery = "SELECT COUNT(*) FROM Users WHERE Email = @Email";
                         using (SqlCommand checkCommand = new SqlCommand(checkEmailQuery, sqlConnection))
                         {

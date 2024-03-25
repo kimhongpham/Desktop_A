@@ -17,5 +17,11 @@ namespace admin___tke
             InitializeComponent();
         }
 
+        private void btn_GamePage_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Admin_Player ap = new Admin_Player();   
+            ap.ShowDialog();
+        }
     }
 }

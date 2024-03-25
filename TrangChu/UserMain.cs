@@ -24,6 +24,7 @@ namespace Gaming_Dashboard
         
         public SoundManager sound = new SoundManager(@"D:\github_repo\Game-Dashboard-GabiBox\Resources\welcome_soundtrack.mp3");
         private string _username; // khai báo một trường riêng tư để lưu trữ tên người dùng
+        private int _userID;
 
         public UserMain(string username) // sửa đổi hàm tạo để chấp nhận tham số tên người dùng
         {
@@ -33,54 +34,9 @@ namespace Gaming_Dashboard
         }
 
 
-        private void guna2Panel7_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void guna2Panel5_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void guna2PictureBox13_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2Panel6_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void guna2Button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2Panel8_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void guna2PictureBox3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void guna2TextBox1_TextChanged(object sender, EventArgs e)
         {
 
-        }
-
-        private void guna2Panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-            
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -211,11 +167,6 @@ namespace Gaming_Dashboard
         {
         }
 
-        private void pn_TrangChuMain_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void btn_Game1_Click(object sender, EventArgs e)
         {
             var MainOption = new MEMORY_MATCH.MainOption(); // tạo một phiên bản mới của Main Game 1
@@ -232,8 +183,11 @@ namespace Gaming_Dashboard
 
         private void btn_game2_Click(object sender, EventArgs e)
         {
-            var mainMenu = new Game02.MainMenu(); // tạo một phiên bản mới của Main Game 2
-            mainMenu.ShowDialog(); // show the main menu form
+            using (var mainMenu = new Game02.MainMenu(_username))
+            {
+                this.Hide();
+                mainMenu.ShowDialog();
+            }
         }
     }
 }
