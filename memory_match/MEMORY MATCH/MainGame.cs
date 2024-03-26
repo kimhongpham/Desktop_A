@@ -11,6 +11,7 @@ using System.Windows.Forms;
 
 
 using System.Drawing;
+using System.Data.SqlClient;
 
 namespace MEMORY_MATCH
 {
@@ -52,7 +53,7 @@ Properties.Resources.card10
         // Nút Pause
         private void btn_pause_Click(object sender, EventArgs e)
         {
-            Pause pause = new Pause(maingame);
+            Pause pause = new Pause(maingame,_username);
             pause.Show();
             isPaused = !isPaused;
         }
@@ -63,11 +64,75 @@ Properties.Resources.card10
             isPaused = !isPaused;
         }
         //private MainOption mainoption;
-        public MainGame()
+        private string _username;
+        public MainGame(string username)
         {
             InitializeComponent();
             //score = 0;
             InitializeGame();
+            _username = username;
+        }
+        public int GetUserId(string username)
+        {
+            int userId = -1;
+
+            using (SqlConnection sqlConnection = admin___tke.Kết_nối.getConnection())
+            {
+                sqlConnection.Open();
+                string query = "SELECT UserID FROM Users WHERE UserName = @username";
+                SqlCommand command = new SqlCommand(query, sqlConnection);
+                command.Parameters.AddWithValue("@username", username);
+
+                using (SqlDataReader reader = command.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        userId = reader.GetInt32(0);
+                    }
+                }
+            }
+
+            return userId;
+        }
+
+
+        public void InsertGameSession()
+        {
+            DateTime date = DateTime.Now;
+            DateTime currentDate = DateTime.Now;
+            int userId = GetUserId(_username);
+            int gameId = 1;
+            using (SqlConnection sqlConnection = admin___tke.Kết_nối.getConnection())
+            {
+                sqlConnection.Open();
+                // Get max GameSessionID
+                int maxGameSessionID = 0;
+                string query = "SELECT MAX(GameSessionID) FROM GameSessions";
+                SqlCommand command = new SqlCommand(query, sqlConnection);
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.Read())
+                {
+                    maxGameSessionID = reader.GetInt32(0);
+                }
+                reader.Close();
+
+
+                // Format the startDate and endDate
+                string dateString = date.ToString("yyyy-MM-dd HH:mm:ss");
+                string currentDateString = currentDate.ToString("yyyy-MM-dd HH:mm:ss");
+
+                // Insert new GameSession row with incremented GameSessionID
+                query = "INSERT INTO GameSessions (GameSessionID, GameID, UserID, StartDate, EndDate, Score) VALUES (@gameSessionID, @gameId, @userId, @startDate, @endDate, @score)";
+                command = new SqlCommand(query, sqlConnection);
+                command.Parameters.AddWithValue("@gameSessionID", maxGameSessionID + 1);
+                command.Parameters.AddWithValue("@gameId", gameId);
+                command.Parameters.AddWithValue("@userId", userId);
+                command.Parameters.AddWithValue("@startDate", dateString);
+                command.Parameters.AddWithValue("@endDate", currentDateString);
+                command.Parameters.AddWithValue("@score", score);
+
+                command.ExecuteNonQuery();
+            }
         }
 
 
@@ -271,12 +336,13 @@ Properties.Resources.card10
                                 }
                                 else
                                 {
-                                    EndGame endgame = new EndGame(this);
+                                    EndGame endgame = new EndGame(maingame,_username);
                                     endgame.Show();
                                 }
                             }
                             // Tăng điểm và cập nhật label điểm
                             //UpdateLevelScore();
+                            InsertGameSession();
 
 
                             isProcessing = false; // Đánh dấu kết thúc xử lý
@@ -313,7 +379,7 @@ Properties.Resources.card10
                 // Check if maxFlips becomes zero after decrement, trigger game over
                 if (maxFlips <= 0)
                 {
-                    GameOver gameOver = new GameOver(this);
+                    GameOver gameOver = new GameOver(maingame,_username);
                     gameOver.Show();
                     lbl_time.Text = "Times: 0";
                     return;
@@ -345,6 +411,7 @@ Properties.Resources.card10
         private void MainGame_Load(object sender, EventArgs e)
         {
             isPaused = false;
+            InsertGameSession();
         }
     }
 }

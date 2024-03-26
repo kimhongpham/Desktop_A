@@ -24,30 +24,65 @@ namespace Gaming_Dashboard
                 sqlConnection.Open();
                 using (SqlCommand command = new SqlCommand(
                         "SELECT U.UserName, G.GameID, G.Score " +
-                        "FROM (" +
-                            "SELECT GameID, MAX(Score) as Score, UserID " +
-                            "FROM GameSessions " +
-                            "GROUP BY GameID, UserID " +
-                        ") G JOIN GameSessions S on G.UserID = S.UserID AND G.GameID = S.GameID " +
-                        "JOIN Users U ON G.UserID = U.UserID",
+            "FROM (" +
+                "SELECT GameID, MAX(Score) as Score, UserID " +
+                "FROM GameSessions " +
+                "GROUP BY GameID, UserID " +
+            ") G JOIN GameSessions S on G.GameID = S.GameID AND G.Score = S.Score " +
+            "JOIN Users U ON G.UserID = U.UserID",
                         sqlConnection))
                 {
                     SqlDataReader reader = command.ExecuteReader();
 
-                    int labelIndex = 0;
+                    int labelIndex1 = 0;
+                    int panelIndex1 = 1;
+                    int labelIndex2 = 0;
+                    int panelIndex2 = 2;
+                    int labelIndex3 = 0;
+                    int panelIndex3 = 3;
+
                     while (reader.Read())
                     {
                         int gameID = (int)reader["GameID"];
 
-                        // Update UserName label
-                        Control userNameLabel = pnl_1.Controls[$"lbl_1_{labelIndex}"];
-                        lbl_1.Text = reader["UserName"].ToString();
+                        if (gameID == 1)
+                        {
+                            // Update UserName label for panel 1
+                            Control userNameLabel = pnl_1.Controls[$"lbl_1_{labelIndex1}"];
+                            lbl_1.Text = reader["UserName"].ToString();
 
-                        // Update Score label
-                        Control scoreLabel = pnl_1.Controls[$"lbl_s1_{labelIndex}"];
-                        lnl_s1.Text = $"Score: {reader["Score"]}";
+                            // Update Score label for panel 1
+                            Control scoreLabel = pnl_1.Controls[$"lbl_s1_{labelIndex1}"];
+                            lnl_s1.Text = $"Score: {reader["Score"]}";
 
-                        labelIndex++;
+                            labelIndex1++;
+                        }
+                        else if (gameID == 2 && panelIndex2 == 2)
+                        {
+                            // Update UserName label for panel 2
+                            Control userNameLabel = pnl_2.Controls[$"lbl_1_{labelIndex2}"];
+                            lbl2.Text = reader["UserName"].ToString();
+
+                            // Update Score label for panel 2
+                            Control scoreLabel = pnl_2.Controls[$"lbl_s1_{labelIndex2}"];
+                            lbl_s2.Text = $"Score: {reader["Score"]}";
+
+                            labelIndex2++;
+                            panelIndex2++;
+                        }
+                        else if (gameID == 3 && panelIndex3 == 3)
+                        {
+                            // Update UserName label for panel 3
+                            Control userNameLabel = pnl_3.Controls[$"lbl_1_{labelIndex3}"];
+                            lbl_3.Text = reader["UserName"].ToString();
+
+                            // Update Score label for panel 3
+                            Control scoreLabel = pnl_3.Controls[$"lbl_s1_{labelIndex3}"];
+                            lnl_s3.Text = $"Score: {reader["Score"]}";
+
+                            labelIndex3++;
+                            panelIndex3++;
+                        }
                     }
 
                     sqlConnection.Close();

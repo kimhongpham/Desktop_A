@@ -51,6 +51,7 @@
             this.btn_NhapLaiMK.TabIndex = 17;
             this.btn_NhapLaiMK.Text = "Nhập lại mật khẩu";
             this.btn_NhapLaiMK.UseTransparentBackground = true;
+            this.btn_NhapLaiMK.Click += new System.EventHandler(this.btn_NhapLaiMK_Click);
             // 
             // txt_MatKhauMoi
             // 

@@ -16,7 +16,6 @@ namespace Game02
     {
         private int score;
         private string _username;
-        private int _userID;
 
         public Win(string username)
         {

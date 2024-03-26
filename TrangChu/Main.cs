@@ -15,6 +15,8 @@ using Game02;
 using MEMORY_MATCH;
 using Codecool.Quest;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+using admin___tke;
+using System.Data.SqlClient;
 
 namespace Gaming_Dashboard
 {
@@ -23,11 +25,38 @@ namespace Gaming_Dashboard
 
         public SoundManager sound = new SoundManager(@"C:\Users\Admin\Documents\Tài liệu\ueh\phát triển ứng dụng desktop\Desktop_A\TrangChu\Resources\welcome_soundtrack.mp3");
         private string _username;
-        private int _userID;
 
         public Main()
         {
             InitializeComponent();
+            DangKy1.Instance.BackButtonClicked += DangKy1_BackButtonClicked;
+            label6.Text = GetTotalGameSessionID(1).ToString();
+            label12.Text = GetTotalGameSessionID(2).ToString();
+            label15.Text = GetTotalGameSessionID(3).ToString();
+        }
+
+        private int GetTotalGameSessionID(int gameId)
+        {
+            using (SqlConnection sqlConnection = admin___tke.Kết_nối.getConnection())
+            {
+                sqlConnection.Open();
+
+                using (var command = new SqlCommand("SELECT COUNT(*) FROM GameSessions WHERE GameID = @GameID", sqlConnection))
+                {
+                    command.Parameters.AddWithValue("@GameID", gameId);
+
+                    return (int)command.ExecuteScalar();
+                }
+            }
+        }
+        private void DangKy1_BackButtonClicked(object sender, EventArgs e)
+        {
+            // Go to the main page
+            pn_TrangChuMain.BringToFront();
+
+            // Remove the DangKy1 form
+            if (pn_TrangChu2.Controls.Contains(DangKy1.Instance))
+                pn_TrangChu2.Controls.Remove(DangKy1.Instance);
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -60,15 +89,6 @@ namespace Gaming_Dashboard
                 DangKy1.Instance.BringToFront();
         }
 
-        private void guna2Panel8_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         private void Main_Load(object sender, EventArgs e)
         {
@@ -105,11 +125,6 @@ namespace Gaming_Dashboard
         {
             AutoScroll = true;
             pn_TrangChuMain.BringToFront();
-
-        }
-
-        private void pn_TrangChu_Paint(object sender, PaintEventArgs e)
-        {
 
         }
 
@@ -161,14 +176,6 @@ namespace Gaming_Dashboard
                 BangXepHang.Instance.BringToFront();
         }
 
-        private void btn_ChoiNgayMain_Click(object sender, EventArgs e)
-        {
-
-        }
-        private void label19_Click(object sender, EventArgs e)
-        {
-            
-        }
 
         private void imgBtn_CaiDat_Click(object sender, EventArgs e)
         {
@@ -194,29 +201,10 @@ namespace Gaming_Dashboard
             MessageBox.Show("Yêu cầu đăng nhập!");
         }
 
-        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2PictureBox3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lbl_TopGameMain_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lbl_Game1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void btn_Game1_Click(object sender, EventArgs e)
         {
-            var MainOption = new MEMORY_MATCH.MainOption(); // tạo một phiên bản mới của Main Game 1
+            var MainOption = new MEMORY_MATCH.MainOption(_username); // tạo một phiên bản mới của Main Game 1
             MainOption.ShowDialog();
         }
 
@@ -232,5 +220,6 @@ namespace Gaming_Dashboard
             var MainForm = new Codecool.Quest.MainForm(_username);
             MainForm.ShowDialog(); // hiển thị mẫu Main Game 3
         }
+
     }
 }

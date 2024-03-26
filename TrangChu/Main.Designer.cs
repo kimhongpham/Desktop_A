@@ -203,7 +203,6 @@
             this.pn_SidebarTrangChu.Name = "pn_SidebarTrangChu";
             this.pn_SidebarTrangChu.Size = new System.Drawing.Size(50, 467);
             this.pn_SidebarTrangChu.TabIndex = 21;
-            this.pn_SidebarTrangChu.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
             // 
             // imgBtn_CaiDat
             // 
@@ -393,7 +392,6 @@
             this.lbl_Game1.Size = new System.Drawing.Size(117, 20);
             this.lbl_Game1.TabIndex = 14;
             this.lbl_Game1.Text = "Memory Watch";
-            this.lbl_Game1.Click += new System.EventHandler(this.lbl_Game1_Click);
             // 
             // picbox_game1Main
             // 
@@ -417,7 +415,6 @@
             this.lbl_TopGameMain.Size = new System.Drawing.Size(189, 23);
             this.lbl_TopGameMain.TabIndex = 50;
             this.lbl_TopGameMain.Text = "Top Game Trong Ngày";
-            this.lbl_TopGameMain.Click += new System.EventHandler(this.lbl_TopGameMain_Click);
             // 
             // label12
             // 
@@ -1496,7 +1493,6 @@
             this.btn_ChoiNgayMain.Size = new System.Drawing.Size(150, 43);
             this.btn_ChoiNgayMain.TabIndex = 49;
             this.btn_ChoiNgayMain.Text = "Chơi ngay";
-            this.btn_ChoiNgayMain.Click += new System.EventHandler(this.btn_ChoiNgayMain_Click);
             // 
             // btn_DangNhapMain
             // 
@@ -1579,7 +1575,7 @@
             this.lbl_BXHgame3.Name = "lbl_BXHgame3";
             this.lbl_BXHgame3.Size = new System.Drawing.Size(53, 19);
             this.lbl_BXHgame3.TabIndex = 29;
-            this.lbl_BXHgame3.Text = "Game1";
+            this.lbl_BXHgame3.Text = "Game3";
             // 
             // lbl_TopNguoiChoi3_Main
             // 
@@ -1631,7 +1627,7 @@
             this.lbl_BXHgame2.Name = "lbl_BXHgame2";
             this.lbl_BXHgame2.Size = new System.Drawing.Size(53, 19);
             this.lbl_BXHgame2.TabIndex = 29;
-            this.lbl_BXHgame2.Text = "Game1";
+            this.lbl_BXHgame2.Text = "Game2";
             // 
             // lbl_TopNguoiChoi2_Main
             // 
@@ -1719,7 +1715,6 @@
             this.guna2PictureBox3.TabIndex = 48;
             this.guna2PictureBox3.TabStop = false;
             this.guna2PictureBox3.UseTransparentBackground = true;
-            this.guna2PictureBox3.Click += new System.EventHandler(this.guna2PictureBox3_Click);
             // 
             // txt_Search
             // 
@@ -1743,7 +1738,6 @@
             this.txt_Search.SelectedText = "";
             this.txt_Search.Size = new System.Drawing.Size(491, 36);
             this.txt_Search.TabIndex = 46;
-            this.txt_Search.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
             // 
             // pn_TrangChu2
             // 

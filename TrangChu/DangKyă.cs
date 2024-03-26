@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using admin___tke;
+using Codecool.Quest;
 
 namespace Gaming_Dashboard
 {
@@ -41,7 +42,8 @@ namespace Gaming_Dashboard
 
         private void btn_QuayLai_Click(object sender, EventArgs e)
         {
-
+            if (BackButtonClicked != null)
+                BackButtonClicked(this, EventArgs.Empty);
         }
 
 

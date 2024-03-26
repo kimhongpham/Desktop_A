@@ -47,10 +47,18 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_Find = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Thêm = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pnel_1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picG1)).BeginInit();
             this.pnl_GP.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.guna2Panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblWelc
@@ -284,6 +292,7 @@
             this.btn_P2.Size = new System.Drawing.Size(59, 61);
             this.btn_P2.TabIndex = 26;
             this.btn_P2.Text = "2";
+            this.btn_P2.Click += new System.EventHandler(this.btn_P2_Click);
             // 
             // btn_P1
             // 
@@ -345,12 +354,95 @@
             this.btn_Thêm.Text = "Thêm";
             this.btn_Thêm.Click += new System.EventHandler(this.btn_Thêm_Click);
             // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.guna2Panel1.BorderThickness = 2;
+            this.guna2Panel1.Controls.Add(this.label1);
+            this.guna2Panel1.Controls.Add(this.guna2CircleButton1);
+            this.guna2Panel1.Controls.Add(this.label2);
+            this.guna2Panel1.Controls.Add(this.label3);
+            this.guna2Panel1.Controls.Add(this.guna2PictureBox1);
+            this.guna2Panel1.FillColor = System.Drawing.Color.White;
+            this.guna2Panel1.Location = new System.Drawing.Point(47, 510);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(1499, 256);
+            this.guna2Panel1.TabIndex = 35;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Black", 26F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(409, 174);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 60);
+            this.label1.TabIndex = 23;
+            // 
+            // guna2CircleButton1
+            // 
+            this.guna2CircleButton1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2CircleButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2CircleButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2CircleButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2CircleButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2CircleButton1.FillColor = System.Drawing.Color.White;
+            this.guna2CircleButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2CircleButton1.ForeColor = System.Drawing.Color.White;
+            this.guna2CircleButton1.Image = global::admin___tke.Properties.Resources.setting_settings_icon_183789;
+            this.guna2CircleButton1.ImageSize = new System.Drawing.Size(30, 30);
+            this.guna2CircleButton1.Location = new System.Drawing.Point(1438, 16);
+            this.guna2CircleButton1.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2CircleButton1.Name = "guna2CircleButton1";
+            this.guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CircleButton1.Size = new System.Drawing.Size(50, 50);
+            this.guna2CircleButton1.TabIndex = 19;
+            this.guna2CircleButton1.Tag = "setting";
+            this.guna2CircleButton1.UseTransparentBackground = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(413, 67);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(89, 36);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "Mô tả";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Lucida Sans Unicode", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(402, 16);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(151, 42);
+            this.label3.TabIndex = 17;
+            this.label3.Text = "Game 1";
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.BorderRadius = 50;
+            this.guna2PictureBox1.Image = global::admin___tke.Properties.Resources.Rectangle_2386;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(12, 16);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(368, 218);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox1.TabIndex = 0;
+            this.guna2PictureBox1.TabStop = false;
+            // 
             // Admin_Game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1600, 875);
+            this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.btn_Thêm);
             this.Controls.Add(this.btn_P3);
             this.Controls.Add(this.btn_P2);
@@ -372,6 +464,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.picG1)).EndInit();
             this.pnl_GP.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            this.guna2Panel1.ResumeLayout(false);
+            this.guna2Panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -398,5 +493,11 @@
         private Guna.UI2.WinForms.Guna2Button btn_Find;
         private System.Windows.Forms.Label lblGameID;
         private Guna.UI2.WinForms.Guna2Button btn_Thêm;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private System.Windows.Forms.Label label1;
+        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
     }
 }

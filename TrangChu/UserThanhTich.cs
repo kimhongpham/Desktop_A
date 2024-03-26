@@ -9,78 +9,165 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Guna.UI2.WinForms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace Gaming_Dashboard
 {
     public partial class UserThanhTich : UserControl
     {
-        public UserThanhTich()
+        private string _username;
+        public UserThanhTich(string username)
         {
             InitializeComponent();
+            _username = username;
+            LoadUserScores();
         }
         private static UserThanhTich _instance;
-        public static UserThanhTich Instance
+        public static UserThanhTich Instance(string username)
         {
-            get
-            {
-                if (_instance == null)
-                    _instance = new UserThanhTich();
-                return _instance;
-            }
+            if (_instance == null)
+                _instance = new UserThanhTich(username);
+            return _instance;
         }
-
-        public void DisplayHighestScores(string username)
+        private int GetUserIdFromUsername(string username)
         {
+            // Tạo kết nối tới cơ sở dữ liệu
+            int userId = -1;
             using (SqlConnection sqlConnection = admin___tke.Kết_nối.getConnection())
             {
                 sqlConnection.Open();
 
-                // Tạo lệnh lấy điểm cao nhất của người dùng từ cơ sở dữ liệu
-                string selectCommand = "SELECT g.GameName, MAX(gs.Score) as HighestScore FROM GameSessions gs JOIN Users u ON gs.UserID = u.UserID JOIN UserGames ug ON gs.GameID = ug.GameID JOIN Games g ON gs.GameID = g.GameID WHERE u.UserName = @UserName GROUP BY g.GameName ORDER BY HighestScore DESC";
+                // Tạo lệnh truy xuất ID người dùng từ cơ sở dữ liệu
+                string selectCommand = "SELECT UserID FROM Users WHERE UserName = @UserName";
                 using (SqlCommand command = new SqlCommand(selectCommand, sqlConnection))
                 {
                     // Đặt giá trị tham số cho lệnh
                     command.Parameters.AddWithValue("@UserName", username);
 
-                    // Thực hiện lệnh và lấy kết quả
+                    // Thực hiện lệnh và lấy ID người dùng
                     using (SqlDataReader reader = command.ExecuteReader())
                     {
-                        // Xóa các điều khiển guna2Panel trước khi hiển thị kết quả mới
-                        guna2Panel9.Controls.Clear();
-                        guna2Panel2.Controls.Clear();
-                        guna2Panel3.Controls.Clear();
-
-                        // Thêm kết quả vào điều khiển guna2Panel
-                        int panelIndex = 0;
-                        while (reader.Read())
+                        if (reader.Read())
                         {
-                            // Tạo nhãn mới cho tên trò chơi và điểm số
-                            Label gameLabel = new Label();
-                            gameLabel.Text = $"{reader["GameName"]}: {reader["HighestScore"]}";
-                            gameLabel.AutoSize = true;
-                            gameLabel.Location = new Point(10, 10 + (panelIndex * 20));
-
-                            // Thêm nhãn vào điều khiển guna2Panel thích hợp
-                            switch (panelIndex)
-                            {
-                                case 0:
-                                    guna2Panel9.Controls.Add(gameLabel);
-                                    break;
-                                case 1:
-                                    guna2Panel2.Controls.Add(gameLabel);
-                                    break;
-                                case 2:
-                                    guna2Panel3.Controls.Add(gameLabel);
-                                    break;
-                            }
-
-                            // Tăng chỉ số bảng điều khiển
-                            panelIndex++;
+                            userId = reader.GetInt32(0);
                         }
                     }
                 }
                 sqlConnection.Close();
             }
+
+            return userId;
+        }
+        private void LoadUserScores()
+        {
+            // Lấy ID người dùng từ tên người dùng
+            int userId = GetUserIdFromUsername(_username);
+
+            // Xác định truy vấn SQL để lấy điểm và xếp hạng cao nhất cho mỗi trò chơi
+            string selectCommand = @"
+    SELECT 
+    g.GameID,
+    g.GameName AS GameName,
+    MAX(gs.Score) AS HighestScore,
+    DENSE_RANK() OVER(ORDER BY MAX(gs.Score) DESC) AS Ranking
+FROM 
+    GameSessions gs
+    JOIN Games g ON gs.GameID = g.GameID
+    JOIN Users u ON gs.UserID = u.UserID
+WHERE 
+    u.UserID = @UserID
+GROUP BY 
+    g.GameID, g.GameName
+ORDER BY 
+    g.GameID;
+";
+
+            // Thực hiện truy vấn và hiển thị kết quả trong nhãn và nút
+            using (SqlConnection sqlConnection = admin___tke.Kết_nối.getConnection())
+            {
+                sqlConnection.Open();
+                using (SqlCommand command = new SqlCommand(selectCommand, sqlConnection))
+                {
+                    // Đặt giá trị của tham số ID người dùng
+                    command.Parameters.AddWithValue("@UserID", userId);
+
+                    // Thực hiện lệnh và lấy trình đọc dữ liệu
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        int gameId = 1;
+                        while (gameId <= 3)
+                        {
+                            // Kiểm tra xem có bản ghi nào được trả về
+                            if (reader.HasRows)
+                            {
+                                // Nếu có bản ghi, đọc các giá trị từ trình đọc dữ liệu
+                                // và đặt chúng vào nhãn và nút
+                                if (reader.Read())
+                                {
+                                    string gameName = reader.GetString(1);
+                                    long highestScore = reader.GetInt64(2);
+                                    object ranking = reader.GetValue(3);
+                                    int rank = Convert.ToInt32(ranking);
+
+                                    if (gameId == 1)
+                                    {
+                                        label1.Text = highestScore.ToString();
+                                        btn1.Text = rank.ToString();
+                                    }
+                                    else if (gameId == 2)
+                                    {
+                                        label2.Text = highestScore.ToString();
+                                        btn2.Text = rank.ToString();
+                                    }
+                                    else if (gameId == 3)
+                                    {
+                                        label3.Text = highestScore.ToString();
+                                        btn3.Text = rank.ToString();
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                // Nếu không có bản ghi, đặt điểm và xếp hạng mặc định
+                                if (gameId == 1)
+                                {
+                                    label1.Text = "0";
+                                    btn1.Text = "0";
+                                }
+                                else if (gameId == 2)
+                                {
+                                    label2.Text = "0";
+                                    btn2.Text = "0";
+                                }
+                                else if (gameId == 3)
+                                {
+                                    label3.Text = "0";
+                                    btn3.Text = "0";
+                                }
+                            }
+
+                            gameId++;
+                        }
+                    }
+                }
+
+                sqlConnection.Close();
+            }
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

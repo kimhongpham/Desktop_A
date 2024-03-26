@@ -8,15 +8,17 @@ using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 namespace MEMORY_MATCH
 {
     public partial class EndGame : Form
     {
         private MainGame maingame;
-        public EndGame(MainGame maingame)
+        private string _username;
+        public EndGame(MainGame maingame, string username)
         {
             InitializeComponent();
+            _username = username;
             this.maingame = maingame;
         }
 
@@ -30,12 +32,13 @@ namespace MEMORY_MATCH
         {
             label2.Text = "Score: " + maingame.score;
             label3.Text = "Level: " + maingame.level;
+            //maingame.InsertGameSession();
         }
 
         private void btn_return_Click(object sender, EventArgs e)
         {
             this.Close();
-            PlayAgain playagain = new PlayAgain(maingame);
+            PlayAgain playagain = new PlayAgain(maingame,_username);
             playagain.Show();
         }
         

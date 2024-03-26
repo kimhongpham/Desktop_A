@@ -122,20 +122,20 @@ namespace admin___tke
         private void btnInvite_Click(object sender, EventArgs e)
         {
             // Hiển thị hộp thoại thông báo khi button được nhấn
-            DialogResult result = MessageBox.Show("Would you like to invite this user to become an administrator?", "Confirmation", MessageBoxButtons.OKCancel);
+            DialogResult result = MessageBox.Show("Bạn có muốn mời người dùng này trở thành quản trị viên không?", "Xác nhận", MessageBoxButtons.OKCancel);
 
             // Xử lý kết quả từ hộp thoại thông báo
             if (result == DialogResult.OK)
             {
                 // Người dùng chọn OK
                 // Thực hiện hành động tương ứng ở đây
-                MessageBox.Show("You have invited the user to become an administrator.");
+                MessageBox.Show("Bạn đã mời người dùng trở thành quản trị viên.");
             }
             else if (result == DialogResult.Cancel)
             {
                 // Người dùng chọn Cancel
                 // Thực hiện hành động tương ứng ở đây
-                MessageBox.Show("You have cancelled the invitation.");
+                MessageBox.Show("Bạn đã hủy lời mời.");
             }
         }
 
@@ -198,6 +198,13 @@ namespace admin___tke
 
                 sqlConnection.Close();
             }
+        }
+
+        private void btn_GamePage_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Admin_Player ap = new Admin_Player();
+            ap.ShowDialog();
         }
     }
 }

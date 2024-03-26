@@ -7,15 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace MEMORY_MATCH
 {
     public partial class PlayAgain : Form
     {
         private MainGame maingame;
-        public PlayAgain(MainGame maingame)
+        private string _username;
+        public PlayAgain(MainGame maingame, string username)
         {
             InitializeComponent();
+            _username = username;
             this.maingame = maingame;
         }
 
@@ -29,7 +32,7 @@ namespace MEMORY_MATCH
         {
             this.Close();
             maingame.Close();
-            MainGame mg=new MainGame();
+            MainGame mg=new MainGame(_username);
             mg.Show();
         }
 

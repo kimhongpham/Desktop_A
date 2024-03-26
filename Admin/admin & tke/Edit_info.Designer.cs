@@ -37,6 +37,7 @@
             this.btn_Save = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Cancle = new Guna.UI2.WinForms.Guna2Button();
             this.btnInvite = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_GamePage = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Player)).BeginInit();
             this.SuspendLayout();
             // 
@@ -170,12 +171,31 @@
             this.btnInvite.Text = "Invite";
             this.btnInvite.Click += new System.EventHandler(this.btnInvite_Click);
             // 
+            // btn_GamePage
+            // 
+            this.btn_GamePage.BorderRadius = 20;
+            this.btn_GamePage.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_GamePage.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_GamePage.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_GamePage.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_GamePage.FillColor = System.Drawing.Color.Gainsboro;
+            this.btn_GamePage.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
+            this.btn_GamePage.ForeColor = System.Drawing.Color.White;
+            this.btn_GamePage.Location = new System.Drawing.Point(54, 20);
+            this.btn_GamePage.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_GamePage.Name = "btn_GamePage";
+            this.btn_GamePage.Size = new System.Drawing.Size(156, 47);
+            this.btn_GamePage.TabIndex = 36;
+            this.btn_GamePage.Text = "Player";
+            this.btn_GamePage.Click += new System.EventHandler(this.btn_GamePage_Click);
+            // 
             // Edit_info
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1600, 875);
+            this.Controls.Add(this.btn_GamePage);
             this.Controls.Add(this.btnInvite);
             this.Controls.Add(this.btn_Cancle);
             this.Controls.Add(this.btn_Save);
@@ -199,5 +219,6 @@
         private Guna.UI2.WinForms.Guna2Button btn_Save;
         private Guna.UI2.WinForms.Guna2Button btn_Cancle;
         private Guna.UI2.WinForms.Guna2Button btnInvite;
+        private Guna.UI2.WinForms.Guna2Button btn_GamePage;
     }
 }

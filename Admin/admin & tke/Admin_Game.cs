@@ -104,5 +104,12 @@ namespace admin___tke
         {
 
         }
+
+        private void btn_P2_Click(object sender, EventArgs e)
+        {
+            Admin_Game form2 = new Admin_Game();
+            form2.Show();
+            this.Hide();
+        }
     }
 }

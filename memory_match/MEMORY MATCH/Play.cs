@@ -7,19 +7,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace MEMORY_MATCH
 {
     public partial class Play : Form
     {
-        public Play()
+        private string _username;
+        public Play(string username)
         {
             InitializeComponent();
+            _username = username;
         }
 
         private void btn_no_play_Click(object sender, EventArgs e)
         {
-            MainGame maingame= new MainGame();
+            MainGame maingame= new MainGame(_username);
             maingame.Show();
             this.Close();
         }

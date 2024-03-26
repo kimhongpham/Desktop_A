@@ -252,6 +252,7 @@
             this.btn_GamePage.Size = new System.Drawing.Size(156, 47);
             this.btn_GamePage.TabIndex = 18;
             this.btn_GamePage.Text = "Player";
+            this.btn_GamePage.Click += new System.EventHandler(this.btn_GamePage_Click);
             // 
             // btn_Down
             // 

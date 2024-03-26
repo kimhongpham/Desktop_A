@@ -7,15 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace MEMORY_MATCH
 {
     public partial class Pause : Form
     {
         private MainGame maingame;
-        public Pause(MainGame mainGame)
+        private string _username;
+        public Pause(MainGame mainGame, string username)
         {
             InitializeComponent();
+            _username = username;
             this.maingame = mainGame;
         }
        
@@ -49,7 +52,7 @@ namespace MEMORY_MATCH
         private void btn_playagain_pause_Click(object sender, EventArgs e)
         {
             this.Close ();
-            PlayAgain playagain = new PlayAgain(maingame);
+            PlayAgain playagain = new PlayAgain(maingame,_username);
             playagain.Show();
         }
     }

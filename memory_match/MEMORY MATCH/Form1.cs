@@ -10,6 +10,7 @@ using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace MEMORY_MATCH
 {
@@ -17,11 +18,13 @@ namespace MEMORY_MATCH
     {
         private MainGame maingame;
         private MainOption mainoption;
+        private string _username;
         // public TimeSpan ElapsedTime { get; private set; }
 
-        public MainOption()
+        public MainOption(string username)
         {
             InitializeComponent();
+            _username = username;
             //BackgroundSound.PlayMusic();
         }
 
@@ -56,7 +59,7 @@ namespace MEMORY_MATCH
         {
             EventClick();
             // this.Hide(); giúp tắt trang mainoption nhưng hiện đang bị lỗi
-            Play play = new Play();
+            Play play = new Play(_username);
             play.Show();
         }
 

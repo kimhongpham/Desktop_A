@@ -293,3 +293,52 @@ C:\Users\Admin\Documents\Tài liệu\ueh\Desktop_A\memory_match\MEMORY MATCH\obj
 C:\Users\Admin\Documents\Tài liệu\ueh\Desktop_A\memory_match\MEMORY MATCH\obj\Debug\MEMORY MATCH.csproj.CopyComplete
 C:\Users\Admin\Documents\Tài liệu\ueh\Desktop_A\memory_match\MEMORY MATCH\obj\Debug\MEMORY MATCH.exe
 C:\Users\Admin\Documents\Tài liệu\ueh\Desktop_A\memory_match\MEMORY MATCH\obj\Debug\MEMORY MATCH.pdb
+C:\Users\Admin\Downloads\Desktop_A4\memory_match\MEMORY MATCH\obj\Debug\MEMORY MATCH.csproj.AssemblyReference.cache
+C:\Users\Admin\Downloads\Desktop_A4\memory_match\MEMORY MATCH\obj\Debug\MEMORY_MATCH.EndGame.resources
+C:\Users\Admin\Downloads\Desktop_A4\memory_match\MEMORY MATCH\obj\Debug\MEMORY_MATCH.Exit.resources
+C:\Users\Admin\Downloads\Desktop_A4\memory_match\MEMORY MATCH\obj\Debug\MEMORY_MATCH.MainOption.resources
+C:\Users\Admin\Downloads\Desktop_A4\memory_match\MEMORY MATCH\obj\Debug\MEMORY_MATCH.GameOver.resources
+C:\Users\Admin\Downloads\Desktop_A4\memory_match\MEMORY MATCH\obj\Debug\MEMORY_MATCH.Howtoplay.resources
+C:\Users\Admin\Downloads\Desktop_A4\memory_match\MEMORY MATCH\obj\Debug\MEMORY_MATCH.MainGame.resources
+C:\Users\Admin\Downloads\Desktop_A4\memory_match\MEMORY MATCH\obj\Debug\MEMORY_MATCH.Pause.resources
+C:\Users\Admin\Downloads\Desktop_A4\memory_match\MEMORY MATCH\obj\Debug\MEMORY_MATCH.Play.resources
+C:\Users\Admin\Downloads\Desktop_A4\memory_match\MEMORY MATCH\obj\Debug\MEMORY_MATCH.PlayAgain.resources
+C:\Users\Admin\Downloads\Desktop_A4\memory_match\MEMORY MATCH\obj\Debug\MEMORY_MATCH.Properties.Resources.resources
+C:\Users\Admin\Downloads\Desktop_A4\memory_match\MEMORY MATCH\obj\Debug\MEMORY_MATCH.Record.resources
+C:\Users\Admin\Downloads\Desktop_A4\memory_match\MEMORY MATCH\obj\Debug\MEMORY_MATCH.Setting.resources
+C:\Users\Admin\Downloads\Desktop_A4\memory_match\MEMORY MATCH\obj\Debug\MEMORY MATCH.csproj.GenerateResource.cache
+C:\Users\Admin\Downloads\Desktop_A4\memory_match\MEMORY MATCH\obj\Debug\MEMORY MATCH.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Downloads\Desktop_A4\memory_match\MEMORY MATCH\obj\Debug\MEMORY MATCH.exe
+C:\Users\Admin\Downloads\Desktop_A4\memory_match\MEMORY MATCH\obj\Debug\MEMORY MATCH.pdb
+C:\Users\Admin\Downloads\Desktop_A4\memory_match\MEMORY MATCH\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\Admin\Downloads\Desktop_A4\memory_match\MEMORY MATCH\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\Admin\Downloads\Desktop_A4\memory_match\MEMORY MATCH\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\Admin\Downloads\Desktop_A4\memory_match\MEMORY MATCH\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\Admin\Downloads\Desktop_A4\memory_match\MEMORY MATCH\bin\Debug\MEMORY MATCH.exe.config
+C:\Users\Admin\Downloads\Desktop_A4\memory_match\MEMORY MATCH\bin\Debug\MEMORY MATCH.exe
+C:\Users\Admin\Downloads\Desktop_A4\memory_match\MEMORY MATCH\bin\Debug\MEMORY MATCH.pdb
+C:\Users\Admin\Downloads\Desktop_A4\memory_match\MEMORY MATCH\bin\Debug\admin & tke.exe
+C:\Users\Admin\Downloads\Desktop_A4\memory_match\MEMORY MATCH\bin\Debug\Guna.UI2.dll
+C:\Users\Admin\Downloads\Desktop_A4\memory_match\MEMORY MATCH\bin\Debug\Microsoft.Win32.Registry.dll
+C:\Users\Admin\Downloads\Desktop_A4\memory_match\MEMORY MATCH\bin\Debug\NAudio.Asio.dll
+C:\Users\Admin\Downloads\Desktop_A4\memory_match\MEMORY MATCH\bin\Debug\NAudio.Core.dll
+C:\Users\Admin\Downloads\Desktop_A4\memory_match\MEMORY MATCH\bin\Debug\NAudio.dll
+C:\Users\Admin\Downloads\Desktop_A4\memory_match\MEMORY MATCH\bin\Debug\NAudio.Midi.dll
+C:\Users\Admin\Downloads\Desktop_A4\memory_match\MEMORY MATCH\bin\Debug\NAudio.Wasapi.dll
+C:\Users\Admin\Downloads\Desktop_A4\memory_match\MEMORY MATCH\bin\Debug\NAudio.WinForms.dll
+C:\Users\Admin\Downloads\Desktop_A4\memory_match\MEMORY MATCH\bin\Debug\NAudio.WinMM.dll
+C:\Users\Admin\Downloads\Desktop_A4\memory_match\MEMORY MATCH\bin\Debug\System.Security.AccessControl.dll
+C:\Users\Admin\Downloads\Desktop_A4\memory_match\MEMORY MATCH\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\Admin\Downloads\Desktop_A4\memory_match\MEMORY MATCH\bin\Debug\admin & tke.pdb
+C:\Users\Admin\Downloads\Desktop_A4\memory_match\MEMORY MATCH\bin\Debug\admin & tke.exe.config
+C:\Users\Admin\Downloads\Desktop_A4\memory_match\MEMORY MATCH\bin\Debug\Microsoft.Win32.Registry.xml
+C:\Users\Admin\Downloads\Desktop_A4\memory_match\MEMORY MATCH\bin\Debug\NAudio.xml
+C:\Users\Admin\Downloads\Desktop_A4\memory_match\MEMORY MATCH\bin\Debug\NAudio.Asio.xml
+C:\Users\Admin\Downloads\Desktop_A4\memory_match\MEMORY MATCH\bin\Debug\NAudio.Core.xml
+C:\Users\Admin\Downloads\Desktop_A4\memory_match\MEMORY MATCH\bin\Debug\NAudio.Midi.xml
+C:\Users\Admin\Downloads\Desktop_A4\memory_match\MEMORY MATCH\bin\Debug\NAudio.Wasapi.xml
+C:\Users\Admin\Downloads\Desktop_A4\memory_match\MEMORY MATCH\bin\Debug\NAudio.WinForms.xml
+C:\Users\Admin\Downloads\Desktop_A4\memory_match\MEMORY MATCH\bin\Debug\NAudio.WinMM.xml
+C:\Users\Admin\Downloads\Desktop_A4\memory_match\MEMORY MATCH\bin\Debug\System.Security.AccessControl.xml
+C:\Users\Admin\Downloads\Desktop_A4\memory_match\MEMORY MATCH\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\Admin\Downloads\Desktop_A4\memory_match\MEMORY MATCH\obj\Debug\MEMORY MATCH.csproj.CopyComplete

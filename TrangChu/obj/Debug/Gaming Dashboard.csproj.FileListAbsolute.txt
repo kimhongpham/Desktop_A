@@ -443,3 +443,60 @@ C:\Users\Admin\Documents\Tài liệu\ueh\Desktop_A\TrangChu\obj\Debug\Gaming Das
 C:\Users\Admin\Documents\Tài liệu\ueh\Desktop_A\TrangChu\obj\Debug\Gaming Dashboard.csproj.CopyComplete
 C:\Users\Admin\Documents\Tài liệu\ueh\Desktop_A\TrangChu\obj\Debug\Gaming Dashboard.exe
 C:\Users\Admin\Documents\Tài liệu\ueh\Desktop_A\TrangChu\obj\Debug\Gaming Dashboard.pdb
+C:\Users\Admin\Downloads\Desktop_A4\TrangChu\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\Admin\Downloads\Desktop_A4\TrangChu\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\Admin\Downloads\Desktop_A4\TrangChu\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\Admin\Downloads\Desktop_A4\TrangChu\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\Admin\Downloads\Desktop_A4\TrangChu\bin\Debug\Gaming Dashboard.exe.config
+C:\Users\Admin\Downloads\Desktop_A4\TrangChu\bin\Debug\Gaming Dashboard.exe
+C:\Users\Admin\Downloads\Desktop_A4\TrangChu\bin\Debug\Gaming Dashboard.pdb
+C:\Users\Admin\Downloads\Desktop_A4\TrangChu\bin\Debug\admin & tke.exe
+C:\Users\Admin\Downloads\Desktop_A4\TrangChu\bin\Debug\Codecool.Quest.exe
+C:\Users\Admin\Downloads\Desktop_A4\TrangChu\bin\Debug\EntityFramework.dll
+C:\Users\Admin\Downloads\Desktop_A4\TrangChu\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Admin\Downloads\Desktop_A4\TrangChu\bin\Debug\Game02.exe
+C:\Users\Admin\Downloads\Desktop_A4\TrangChu\bin\Debug\Guna.UI2.dll
+C:\Users\Admin\Downloads\Desktop_A4\TrangChu\bin\Debug\MEMORY MATCH.exe
+C:\Users\Admin\Downloads\Desktop_A4\TrangChu\bin\Debug\NAudio.WinMM.dll
+C:\Users\Admin\Downloads\Desktop_A4\TrangChu\bin\Debug\NAudio.dll
+C:\Users\Admin\Downloads\Desktop_A4\TrangChu\bin\Debug\NAudio.Core.dll
+C:\Users\Admin\Downloads\Desktop_A4\TrangChu\bin\Debug\Microsoft.Win32.Registry.dll
+C:\Users\Admin\Downloads\Desktop_A4\TrangChu\bin\Debug\NAudio.Wasapi.dll
+C:\Users\Admin\Downloads\Desktop_A4\TrangChu\bin\Debug\admin & tke.pdb
+C:\Users\Admin\Downloads\Desktop_A4\TrangChu\bin\Debug\admin & tke.exe.config
+C:\Users\Admin\Downloads\Desktop_A4\TrangChu\bin\Debug\Codecool.Quest.pdb
+C:\Users\Admin\Downloads\Desktop_A4\TrangChu\bin\Debug\Codecool.Quest.exe.config
+C:\Users\Admin\Downloads\Desktop_A4\TrangChu\bin\Debug\Game02.pdb
+C:\Users\Admin\Downloads\Desktop_A4\TrangChu\bin\Debug\Game02.exe.config
+C:\Users\Admin\Downloads\Desktop_A4\TrangChu\bin\Debug\MEMORY MATCH.pdb
+C:\Users\Admin\Downloads\Desktop_A4\TrangChu\bin\Debug\MEMORY MATCH.exe.config
+C:\Users\Admin\Downloads\Desktop_A4\TrangChu\bin\Debug\EntityFramework.xml
+C:\Users\Admin\Downloads\Desktop_A4\TrangChu\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Admin\Downloads\Desktop_A4\TrangChu\bin\Debug\NAudio.WinMM.xml
+C:\Users\Admin\Downloads\Desktop_A4\TrangChu\bin\Debug\NAudio.xml
+C:\Users\Admin\Downloads\Desktop_A4\TrangChu\bin\Debug\NAudio.Core.xml
+C:\Users\Admin\Downloads\Desktop_A4\TrangChu\bin\Debug\Microsoft.Win32.Registry.xml
+C:\Users\Admin\Downloads\Desktop_A4\TrangChu\bin\Debug\NAudio.Wasapi.xml
+C:\Users\Admin\Downloads\Desktop_A4\TrangChu\obj\Debug\Gaming Dashboard.csproj.AssemblyReference.cache
+C:\Users\Admin\Downloads\Desktop_A4\TrangChu\obj\Debug\Interop.WMPLib.dll
+C:\Users\Admin\Downloads\Desktop_A4\TrangChu\obj\Debug\Gaming Dashboard.csproj.ResolveComReference.cache
+C:\Users\Admin\Downloads\Desktop_A4\TrangChu\obj\Debug\Gaming_Dashboard.BangXepHang.resources
+C:\Users\Admin\Downloads\Desktop_A4\TrangChu\obj\Debug\Gaming_Dashboard.DangKy1.resources
+C:\Users\Admin\Downloads\Desktop_A4\TrangChu\obj\Debug\Gaming_Dashboard.DangNhap.resources
+C:\Users\Admin\Downloads\Desktop_A4\TrangChu\obj\Debug\Gaming_Dashboard.DoiMatKhau.resources
+C:\Users\Admin\Downloads\Desktop_A4\TrangChu\obj\Debug\Gaming_Dashboard.Main.resources
+C:\Users\Admin\Downloads\Desktop_A4\TrangChu\obj\Debug\Gaming_Dashboard.Properties.Resources.resources
+C:\Users\Admin\Downloads\Desktop_A4\TrangChu\obj\Debug\Gaming_Dashboard.QuenMatKhau.resources
+C:\Users\Admin\Downloads\Desktop_A4\TrangChu\obj\Debug\Gaming_Dashboard.UserDoiMatKhau.resources
+C:\Users\Admin\Downloads\Desktop_A4\TrangChu\obj\Debug\Gaming_Dashboard.UserThongBao.resources
+C:\Users\Admin\Downloads\Desktop_A4\TrangChu\obj\Debug\Gaming_Dashboard.UserThongTinCaNhan.resources
+C:\Users\Admin\Downloads\Desktop_A4\TrangChu\obj\Debug\Gaming_Dashboard.UserTroChoiYeuThich.resources
+C:\Users\Admin\Downloads\Desktop_A4\TrangChu\obj\Debug\Gaming_Dashboard.UserCaiDat.resources
+C:\Users\Admin\Downloads\Desktop_A4\TrangChu\obj\Debug\Gaming_Dashboard.UserMain.resources
+C:\Users\Admin\Downloads\Desktop_A4\TrangChu\obj\Debug\Gaming_Dashboard.UserTaiKhoan.resources
+C:\Users\Admin\Downloads\Desktop_A4\TrangChu\obj\Debug\Gaming_Dashboard.UserThanhTich.resources
+C:\Users\Admin\Downloads\Desktop_A4\TrangChu\obj\Debug\Gaming Dashboard.csproj.GenerateResource.cache
+C:\Users\Admin\Downloads\Desktop_A4\TrangChu\obj\Debug\Gaming Dashboard.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Downloads\Desktop_A4\TrangChu\obj\Debug\Gaming Dashboard.csproj.CopyComplete
+C:\Users\Admin\Downloads\Desktop_A4\TrangChu\obj\Debug\Gaming Dashboard.exe
+C:\Users\Admin\Downloads\Desktop_A4\TrangChu\obj\Debug\Gaming Dashboard.pdb

@@ -15,14 +15,17 @@ namespace Gaming_Dashboard
 {
     public partial class UserTaiKhoan : UserControl
     {
-        public UserMain main;
+        public UserMain usermain;
+        public Main main;
         private string _username; // khai báo một trường riêng tư để lưu trữ tên người dùng
+
         public UserTaiKhoan(string username)
         {
             InitializeComponent();
             _username = username; // đặt trường riêng tư thành tên người dùng
             lbl_Username.Text = _username; // đặt văn bản của nhãn thành tên người dùng
         }
+
         private static UserTaiKhoan _instance;
         public static UserTaiKhoan Instance(string username)
         {
@@ -47,16 +50,16 @@ namespace Gaming_Dashboard
 
         private void label2_Click(object sender, EventArgs e)
         {
-            if (!guna2Panel1.Controls.Contains(UserThanhTich.Instance))
+            if (!guna2Panel1.Controls.Contains(UserThanhTich.Instance(_username)))
             {
-                guna2Panel1.Controls.Add(UserThanhTich.Instance);
-                UserThanhTich.Instance.Dock = DockStyle.Fill;
+                guna2Panel1.Controls.Add(UserThanhTich.Instance(_username));
+                UserThanhTich.Instance(_username).Dock = DockStyle.Fill;
                 guna2Panel1.BringToFront();
                 AutoScroll = false;
-                UserThanhTich.Instance.BringToFront();
+                UserThanhTich.Instance(_username).BringToFront();
             }
             else
-                UserThanhTich.Instance.BringToFront();
+                UserThanhTich.Instance(_username).BringToFront();
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -95,16 +98,16 @@ namespace Gaming_Dashboard
 
         private void label5_Click(object sender, EventArgs e)
         {
-            if (!guna2Panel1.Controls.Contains(UserDoiMatKhau.Instance))
+            if (!guna2Panel1.Controls.Contains(UserDoiMatKhau.Instance(_username)))
             {
-                guna2Panel1.Controls.Add(UserDoiMatKhau.Instance);
-                UserDoiMatKhau.Instance.Dock = DockStyle.Fill;
+                guna2Panel1.Controls.Add(UserDoiMatKhau.Instance(_username));
+                UserDoiMatKhau.Instance(_username).Dock = DockStyle.Fill;
                 guna2Panel1.BringToFront();
                 AutoScroll = false;
-                UserDoiMatKhau.Instance.BringToFront();
+                UserDoiMatKhau.Instance(_username).BringToFront();
             }
             else
-                UserDoiMatKhau.Instance.BringToFront();
+                UserDoiMatKhau.Instance(_username).BringToFront();
         }
 
 
@@ -151,9 +154,11 @@ namespace Gaming_Dashboard
 
         private void lbl_DangXuat_Click(object sender, EventArgs e)
         {
-            Main Main = new Main(); 
             this.Hide();
-            Main.ShowDialog();
+            Main mainForm = new Main();
+            this.Hide(); // Hide the current form (UserMain)
+            mainForm.Show();
+            main?.Hide(); // Hide the UserMain form if it exists
         }
     }
 }

@@ -129,18 +129,13 @@ namespace admin___tke
             // Thêm biểu đồ vào điều khiển guna2Panel4
             guna2Panel4.Controls.Add(playerChart);
 
-            // Tạo biểu đồ mới về số lượng người dùng tham gia mỗi ngày
             Chart userPerDayChart = new Chart();
-
-            // Đặt thuộc tính Dock của biểu đồ thành Fill để chiếm toàn bộ bảng
             userPerDayChart.Dock = DockStyle.Fill;
 
-            // Đặt thuộc tính ChartArea của biểu đồ thành ChartArea mới
             ChartArea userPerDayArea = new ChartArea();
             userPerDayArea.Name = "UserPerDayArea";
             userPerDayChart.ChartAreas.Add(userPerDayArea);
 
-            // Đặt thuộc tính Sê-ri của biểu đồ thành Sê-ri mới
             Series userPerDaySeries = new Series
             {
                 ChartType = SeriesChartType.Line,
@@ -154,10 +149,10 @@ namespace admin___tke
                 sqlConnection.Open();
 
                 string query = "SELECT COUNT(*) as count, CAST(NGAYTHAMGIA as DATE) as date " +
-               "FROM Users " +
-               "WHERE NGAYTHAMGIA IS NOT NULL " +
-               "GROUP BY CAST(NGAYTHAMGIA as DATE) " +
-               "ORDER BY CAST(NGAYTHAMGIA as DATE)";
+                               "FROM Users " +
+                               "WHERE NGAYTHAMGIA IS NOT NULL " +
+                               "GROUP BY CAST(NGAYTHAMGIA as DATE) " +
+                               "ORDER BY CAST(NGAYTHAMGIA as DATE)";
                 SqlCommand command = new SqlCommand(query, sqlConnection);
 
                 using (SqlDataReader reader = command.ExecuteReader())
@@ -165,8 +160,10 @@ namespace admin___tke
                     while (reader.Read())
                     {
                         DateTime date = reader.GetDateTime(1);
-                        double xValue = date.ToOADate();
                         int count = reader.GetInt32(0);
+
+                        // Convert the DateTime value to a double value using the ToOADate method
+                        double xValue = date.ToOADate();
 
                         // Thêm số lượng người dùng tham gia mỗi ngày vào biểu đồ
                         userPerDaySeries.Points.Add(new DataPoint(xValue, count));
@@ -176,10 +173,13 @@ namespace admin___tke
                 sqlConnection.Close();
             }
 
-            // Đặt thuộc tính ChartType của chuỗi thành Line
-            userPerDaySeries.ChartType = SeriesChartType.Line;
+            // Set the X-value type to Date
+            userPerDaySeries.XValueType = ChartValueType.Date;
 
-            // Thêm biểu đồ vào bảng pnl_c3
+            // Format the X-axis labels to display the date in the format "dd/MM/yyyy"
+            userPerDayChart.ChartAreas["UserPerDayArea"].AxisX.LabelStyle.Format = "dd/MM/yyyy";
+
+            // Add the chart to the pnl_c3 control
             pnl_c3.Controls.Add(userPerDayChart);
         }
 
@@ -196,6 +196,13 @@ namespace admin___tke
         private void btn_Down_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_GamePage_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Admin_Player ap = new Admin_Player();
+            ap.ShowDialog();
         }
     }
 }

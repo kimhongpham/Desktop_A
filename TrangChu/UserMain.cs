@@ -15,6 +15,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 using Game02;
 using MEMORY_MATCH;
 using Codecool.Quest;
+using System.Data.SqlClient;
 
 namespace Gaming_Dashboard
 {
@@ -31,8 +32,25 @@ namespace Gaming_Dashboard
             InitializeComponent();
             _username = username; // đặt trường riêng tư thành tên người dùng
             lbl_Username.Text = _username; // đặt văn bản của nhãn thành tên người dùng
+            label6.Text = GetTotalGameSessionID(1).ToString();
+            label12.Text = GetTotalGameSessionID(2).ToString();
+            label15.Text = GetTotalGameSessionID(3).ToString();
         }
 
+        private int GetTotalGameSessionID(int gameId)
+        {
+            using (SqlConnection sqlConnection = admin___tke.Kết_nối.getConnection())
+            {
+                sqlConnection.Open();
+
+                using (var command = new SqlCommand("SELECT COUNT(*) FROM GameSessions WHERE GameID = @GameID", sqlConnection))
+                {
+                    command.Parameters.AddWithValue("@GameID", gameId);
+
+                    return (int)command.ExecuteScalar();
+                }
+            }
+        }
 
         private void guna2TextBox1_TextChanged(object sender, EventArgs e)
         {
@@ -169,7 +187,7 @@ namespace Gaming_Dashboard
 
         private void btn_Game1_Click(object sender, EventArgs e)
         {
-            var MainOption = new MEMORY_MATCH.MainOption(); // tạo một phiên bản mới của Main Game 1
+            var MainOption = new MEMORY_MATCH.MainOption(_username); // tạo một phiên bản mới của Main Game 1
             MainOption.ShowDialog();
         }
 
