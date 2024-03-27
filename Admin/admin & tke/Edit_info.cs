@@ -121,21 +121,56 @@ namespace admin___tke
 
         private void btnInvite_Click(object sender, EventArgs e)
         {
-            // Hiển thị hộp thoại thông báo khi button được nhấn
-            DialogResult result = MessageBox.Show("Bạn có muốn mời người dùng này trở thành quản trị viên không?", "Xác nhận", MessageBoxButtons.OKCancel);
+            if (dgv_Player.SelectedRows.Count > 0)
+            {
+                // Lấy hàng được chọn
+                DataGridViewRow selectedRow = dgv_Player.SelectedRows[0];
 
-            // Xử lý kết quả từ hộp thoại thông báo
-            if (result == DialogResult.OK)
-            {
-                // Người dùng chọn OK
-                // Thực hiện hành động tương ứng ở đây
-                MessageBox.Show("Bạn đã mời người dùng trở thành quản trị viên.");
+                // Lấy giá trị UserID từ hàng được chọn
+                int userId = Convert.ToInt32(selectedRow.Cells["UserID"].Value);
+
+                // Lấy giá trị tên người dùng hiện tại từ DataGridView
+                string currentUsername = selectedRow.Cells["UserName"].Value.ToString();
+
+                // Tạo tên người dùng mới bằng cách thêm một số ngẫu nhiên vào tên hiện tại
+                string newUsername = GenerateNewUsername(currentUsername);
+
+                // Cập nhật tên người dùng trong cơ sở dữ liệu
+                UpdateUsername(userId, newUsername);
+
+                // Cập nhật giá trị tên người dùng trong DataGridView
+                selectedRow.Cells["UserName"].Value = newUsername;
+
+                MessageBox.Show("Đã thay đổi tên người dùng thành công.", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            else if (result == DialogResult.Cancel)
+            else
             {
-                // Người dùng chọn Cancel
-                // Thực hiện hành động tương ứng ở đây
-                MessageBox.Show("Bạn đã hủy lời mời.");
+                MessageBox.Show("Vui lòng chọn một người dùng.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private string GenerateNewUsername(string currentUsername)
+        {
+            string newUsername = "#" + currentUsername;
+            return newUsername;
+        }
+
+        private void UpdateUsername(int userId, string newUsername)
+        {
+            using (SqlConnection sqlConnection = admin___tke.Kết_nối.getConnection())
+            {
+                sqlConnection.Open();
+
+                // Tạo lệnh SQL để cập nhật tên người dùng
+                string query = "UPDATE Users SET UserName = @NewUsername WHERE UserID = @UserId";
+                SqlCommand sqlCommand = new SqlCommand(query, sqlConnection);
+
+                sqlCommand.Parameters.AddWithValue("@UserId", userId);
+                sqlCommand.Parameters.AddWithValue("@NewUsername", newUsername);
+
+                sqlCommand.ExecuteNonQuery();
+
+                sqlConnection.Close();
             }
         }
 

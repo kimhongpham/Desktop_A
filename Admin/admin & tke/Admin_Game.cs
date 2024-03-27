@@ -73,7 +73,7 @@ namespace admin___tke
                     }
                     else
                     {
-                        MessageBox.Show("Game not found", "Not Found", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Không tìm thấy trò chơi", "Không tìm thấy", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                 }
 
@@ -107,9 +107,7 @@ namespace admin___tke
 
         private void btn_P2_Click(object sender, EventArgs e)
         {
-            Admin_Game form2 = new Admin_Game();
-            form2.Show();
-            this.Hide();
+            
         }
     }
 }

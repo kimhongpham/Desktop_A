@@ -64,23 +64,14 @@ namespace Gaming_Dashboard
             int userId = GetUserIdFromUsername(_username);
 
             // Xác định truy vấn SQL để lấy điểm và xếp hạng cao nhất cho mỗi trò chơi
-            string selectCommand = @"
-    SELECT 
-    g.GameID,
-    g.GameName AS GameName,
-    MAX(gs.Score) AS HighestScore,
-    DENSE_RANK() OVER(ORDER BY MAX(gs.Score) DESC) AS Ranking
-FROM 
-    GameSessions gs
-    JOIN Games g ON gs.GameID = g.GameID
-    JOIN Users u ON gs.UserID = u.UserID
-WHERE 
-    u.UserID = @UserID
-GROUP BY 
-    g.GameID, g.GameName
-ORDER BY 
-    g.GameID;
-";
+            string selectCommand = @"SELECT GameID, GameName, HighestScore, Ranking
+                                   FROM (SELECT GameID, GameName, UserID, HighestScore,RANK() OVER (PARTITION BY GameID ORDER BY HighestScore DESC) AS Ranking
+                                        FROM (SELECT g.GameID, g.GameName, gs.UserID, MAX(gs.Score) AS HighestScore
+                                            FROM GameSessions gs
+                                            JOIN Games g ON gs.GameID = g.GameID
+                                            GROUP BY g.GameID, g.GameName, gs.UserID) AS subquery) AS ranks
+                                            WHERE UserID = @UserID
+                                            ORDER BY GameID; ";
 
             // Thực hiện truy vấn và hiển thị kết quả trong nhãn và nút
             using (SqlConnection sqlConnection = admin___tke.Kết_nối.getConnection())

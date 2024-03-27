@@ -44,23 +44,7 @@ namespace Gaming_Dashboard
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            // Hiển thị ô nhập mã xác minh và hướng dẫn
-            lbl_DatLaiMatKhau.Text = "Vui lòng nhập mã xác minh được gửi đến địa chỉ email của bạn.";
-            txt_NhapMaXacMinh.Visible = true;
-            btn_MatKhauNhapLai.Visible = true;
-            if (string.IsNullOrEmpty(txt_NhapMaXacMinh.Text))
-            {
-                MessageBox.Show("Vui lòng nhập mã xác nhận.");
-                return;
-            }
-
-            if (txt_NhapMaXacMinh.Text != "123456") // Thay thế mã này bằng mã xác minh thực tế được gửi đến email của người dùng
-            {
-                MessageBox.Show("Mã xác minh không hợp lệ.");
-                return;
-            }
-            lbl_DatLaiMatKhau.Text = "";
-            txt_NhapMaXacMinh.Visible = false;
+            
         }
 
         private void btn_MatKhauNhapLai_Click(object sender, EventArgs e)

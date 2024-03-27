@@ -92,6 +92,7 @@ namespace Gaming_Dashboard
                 AutoScroll = false;
             pn_TrangChu2.BringToFront();
             UserTaiKhoan.Instance(_username).BringToFront();
+            UserTaiKhoan.Instance(_username).usermain = this;
         }
 
         private void guna2PictureBox2_Click(object sender, EventArgs e)
@@ -159,7 +160,22 @@ namespace Gaming_Dashboard
 
         private void guna2ImageButton2_Click(object sender, EventArgs e)
         {
-         
+            // Kiểm tra if username đang đăng nhập bắt đầu bằng # thì mới thực hiện
+            if (!_username.StartsWith("#"))
+            {
+                MessageBox.Show("Bạn không phải là admin!");
+                return;
+            }
+
+            // Ẩn form hiện tại
+            this.Hide();
+            // Mở biểu mẫu Quản trị viên
+            var admin = new admin___tke.Admin_Player();
+            admin.ShowDialog();
+            // Đóng form đang được mở
+            admin.Close();
+            // Hiển thị lại form hiện tại
+            this.Show();
         }
 
         private void label29_Click(object sender, EventArgs e)

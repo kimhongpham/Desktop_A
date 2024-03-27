@@ -155,10 +155,9 @@ namespace Gaming_Dashboard
         private void lbl_DangXuat_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Main mainForm = new Main();
-            this.Hide(); // Hide the current form (UserMain)
-            mainForm.Show();
-            main?.Hide(); // Hide the UserMain form if it exists
+            Main Main = new Main(); 
+            this.usermain.Hide();
+            Main.ShowDialog();
         }
     }
 }

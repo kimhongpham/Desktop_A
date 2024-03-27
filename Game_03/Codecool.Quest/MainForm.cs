@@ -131,18 +131,13 @@ namespace Codecool.Quest {
         }
 
 
-        private DateTime startDate;
-        private DateTime endDate;
-
         private void MainForm_Load(object sender, System.EventArgs e)
         {
-            startDate = DateTime.Now; // capture startDate
-
             QuestGame.x = new nguoichoi();
             lblGameOver.Visible = false;
             textBoxRecord.Visible = false;
-            string filePath = @".\Resources\legends-never-die-against-the-current-cktg-2017-nhacchuongviet.com.wav";
-            soundPlayer1.SoundLocation = filePath;
+            string filePath = @".\Resources\legends-never-die-against-the-current-cktg-2017-nhacchuongviet.com.wav"; 
+            soundPlayer1.SoundLocation= filePath;
             soundPlayer1.Play();
 
             Home FormHome = new Home();
@@ -190,7 +185,7 @@ namespace Codecool.Quest {
             {
                 Score = QuestGame.x.diem + 1;
             }
-            else if (timeSpan < TimeSpan.FromMinutes(3))
+            else if (timeSpan < TimeSpan.FromMinutes(4))
             {
                 Score = QuestGame.x.diem + 0;
             }
@@ -199,11 +194,9 @@ namespace Codecool.Quest {
                 map.Player.Health = 0;
             }
 
-            endDate = DateTime.Now; // record endDate
-
             DateTime date = DateTime.Now;
-            int userId = GetUserId(_username);
-            int gameId = 3;
+            DateTime currentDate = DateTime.Now;
+
             Inventory inventory = map.inventory;
             Dictionary<string, Tiles.Tile> tiles = new Dictionary<string, Tiles.Tile>();
             tiles = Tiles.tileMap;
@@ -212,6 +205,8 @@ namespace Codecool.Quest {
             lnlHealth.Text = "Health " + map.Player.Health.ToString();
             progressBar1.Minimum = 0;
             progressBar1.Maximum = map.Player.maxHealth;
+            int userId = GetUserId(_username);
+            int gameId = 3; // the game ID is fixed to 3
             if (map.Player.Health <= 0)
             {
                 map.Player.Health = 0;
@@ -225,16 +220,17 @@ namespace Codecool.Quest {
                 MessageBox.Show("Bạn đã thua cuộc");
 
 
-                /*              if (!isRecordWritten)
-                              {
-                                  using (StreamWriter file = new StreamWriter(@".\Resources\kyluc.txt", true))
-                                  {
-                                      file.WriteLine("GameSession\nGameID\nUser\nStartDate\nEndDate\nScore");
-                                      file.WriteLine("End\nNull\nNull+\n" + currentDate.ToShortDateString()+"\n"+ currentDate.ToShortDateString()+Score);
-                                  }
+                if (!isRecordWritten)
+                {
+                    using (StreamWriter file = new StreamWriter(@".\Resources\kyluc.txt", true))
+                    {
+                        file.WriteLine(date);
+                        file.WriteLine("Bạn đã thua cuộc");
+                        file.WriteLine("--------------------------");
+                    }
 
-                                  isRecordWritten = true;
-                              }*/
+                    isRecordWritten = true;
+                }
 
 
                 using (SqlConnection sqlConnection = admin___tke.Kết_nối.getConnection())
@@ -253,7 +249,7 @@ namespace Codecool.Quest {
 
                     // Format the startDate and endDate
                     string dateString = date.ToString("yyyy-MM-dd HH:mm:ss");
-                    string endDateString = endDate.ToString("yyyy-MM-dd HH:mm:ss");
+                    string currentDateString = currentDate.ToString("yyyy-MM-dd HH:mm:ss");
 
                     // Insert new GameSession row with incremented GameSessionID
                     query = "INSERT INTO GameSessions (GameSessionID, GameID, UserID, StartDate, EndDate, Score) VALUES (@gameSessionID, @gameId, @userId, @startDate, @endDate, @score)";
@@ -262,7 +258,7 @@ namespace Codecool.Quest {
                     command.Parameters.AddWithValue("@gameId", gameId);
                     command.Parameters.AddWithValue("@userId", userId);
                     command.Parameters.AddWithValue("@startDate", dateString);
-                    command.Parameters.AddWithValue("@endDate", endDateString);
+                    command.Parameters.AddWithValue("@endDate", currentDateString);
                     command.Parameters.AddWithValue("@score", Score);
 
                     command.ExecuteNonQuery();
@@ -283,16 +279,17 @@ namespace Codecool.Quest {
                 choose.TopMost = true; // Đặt form 2 ở trên cùng
                 choose.Show();
 
-                /*             if (!isRecordWritten)
-                             {
-                                 using (StreamWriter file = new StreamWriter(@".\Resources\kyluc.txt", true))
-                                 {
-                                     file.WriteLine("GameSession\nGameID\nUser\nStartDate\nEndDate\nScore");
-                                     file.WriteLine("");
-                                 }
+                if (!isRecordWritten)
+                {
+                    using (StreamWriter file = new StreamWriter(@".\Resources\kyluc.txt", true))
+                    {
+                        file.WriteLine(date);
+                        file.WriteLine(label15.Text);
+                        file.WriteLine("--------------------------");
+                    }
 
-                                 isRecordWritten = true;
-                             }*/
+                    isRecordWritten = true;
+                }
                 using (SqlConnection sqlConnection = admin___tke.Kết_nối.getConnection())
                 {
                     sqlConnection.Open();
@@ -309,7 +306,7 @@ namespace Codecool.Quest {
 
                     // Format the startDate and endDate
                     string dateString = date.ToString("yyyy-MM-dd HH:mm:ss");
-                    string endDateString = endDate.ToString("yyyy-MM-dd HH:mm:ss");
+                    string currentDateString = currentDate.ToString("yyyy-MM-dd HH:mm:ss");
 
                     // Insert new GameSession row with incremented GameSessionID
                     query = "INSERT INTO GameSessions (GameSessionID, GameID, UserID, StartDate, EndDate, Score) VALUES (@gameSessionID, @gameId, @userId, @startDate, @endDate, @score)";
@@ -318,14 +315,14 @@ namespace Codecool.Quest {
                     command.Parameters.AddWithValue("@gameId", gameId);
                     command.Parameters.AddWithValue("@userId", userId);
                     command.Parameters.AddWithValue("@startDate", dateString);
-                    command.Parameters.AddWithValue("@endDate", endDateString);
+                    command.Parameters.AddWithValue("@endDate", currentDateString);
                     command.Parameters.AddWithValue("@score", Score);
 
                     command.ExecuteNonQuery();
                 }
                 th2.Abort();
                 th.Abort();
-
+                
             }
             progressBar1.Value = map.Player.Health;
             int i = 0;
@@ -576,6 +573,7 @@ namespace Codecool.Quest {
 
         private void toolStripMenuItem3_Click(object sender, EventArgs e)
         {
+            
             if (stopwatch.IsRunning)
             {
                 stopwatch.Stop();
@@ -636,17 +634,70 @@ namespace Codecool.Quest {
         {
 
         }
-
+        
         private void countinueToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            // Khôi phục trạng thái từ Properties.Settings
-            string appState = Properties.Settings.Default.AppState;
-            // Sử dụng trạng thái để thực hiện các hành động phù hợp
+            LoadGame();
         }
 
         private void textBoxRecord_TextChanged(object sender, EventArgs e)
         {
 
+        }
+        public void SaveGame()
+        {
+            // Khởi tạo luồng để ghi dữ liệu
+            using (Stream stream = File.OpenWrite(Path.Combine(Application.StartupPath, "savegame.dat")))
+            {
+                BinaryFormatter formatter = new BinaryFormatter();
+
+                // Tạo một đối tượng GameState để lưu trữ trạng thái game
+                GameState state = new GameState
+                {
+                    Health = map.Player.Health,
+                    Map = map.ToString(),
+                    Time = stopwatch.Elapsed,
+                    Score = QuestGame.x.diem
+                };
+
+                // Ghi đối tượng GameState vào tệp
+                formatter.Serialize(stream, state);
+                savedTime = stopwatch.Elapsed;
+            }
+        }
+        // Định nghĩa một lớp GameState để lưu trữ trạng thái game
+        [Serializable]
+        public class GameState
+        {
+            public int Health { get; set; }
+            public string Map { get; set; }
+            public TimeSpan Time { get; set; }
+            public int Score { get; set; }
+        }
+        private TimeSpan savedTime;
+        public void LoadGame()
+{
+            // Kiểm tra xem tệp lưu trạng thái có tồn tại không
+            if (File.Exists(Path.Combine(Application.StartupPath, "savegame.dat")))
+            {
+                // Khởi tạo luồng để đọc dữ liệu
+                using (Stream stream = File.OpenRead(Path.Combine(Application.StartupPath, "savegame.dat")))
+                {
+                    BinaryFormatter formatter = new BinaryFormatter();
+
+                    // Đọc đối tượng GameState từ tệp
+                    GameState state = (GameState)formatter.Deserialize(stream);
+
+                    // Khôi phục trạng thái game từ đối tượng GameState
+                    map = MapLoader.LoadMap(state.Map);
+                    map.Player.Health = state.Health;
+
+                    // Thiết lập lại thời gian bằng giá trị đã lưu trước đó
+                    stopwatch.Restart();
+
+                    QuestGame.x.diem = state.Score;
+                }
+            }
         }
     }
 }

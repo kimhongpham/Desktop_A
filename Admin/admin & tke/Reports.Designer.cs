@@ -28,16 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.lbl_Reports = new System.Windows.Forms.Label();
             this.pnl_c3 = new Guna.UI2.WinForms.Guna2Panel();
             this.pnl_c4 = new Guna.UI2.WinForms.Guna2Panel();
-            this.chart_4 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -55,8 +51,7 @@
             this.cbx_3 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.cbx_1 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
-            this.pnl_c4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart_4)).BeginInit();
+            this.label6 = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
@@ -85,35 +80,16 @@
             // 
             // pnl_c4
             // 
-            this.pnl_c4.Controls.Add(this.chart_4);
-            this.pnl_c4.Location = new System.Drawing.Point(858, 438);
+            this.pnl_c4.Location = new System.Drawing.Point(749, 408);
             this.pnl_c4.Margin = new System.Windows.Forms.Padding(2);
             this.pnl_c4.Name = "pnl_c4";
-            this.pnl_c4.Size = new System.Drawing.Size(627, 302);
+            this.pnl_c4.Size = new System.Drawing.Size(851, 441);
             this.pnl_c4.TabIndex = 6;
-            // 
-            // chart_4
-            // 
-            chartArea1.Name = "ChartArea1";
-            this.chart_4.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart_4.Legends.Add(legend1);
-            this.chart_4.Location = new System.Drawing.Point(50, 28);
-            this.chart_4.Margin = new System.Windows.Forms.Padding(2);
-            this.chart_4.Name = "chart_4";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chart_4.Series.Add(series1);
-            this.chart_4.Size = new System.Drawing.Size(388, 200);
-            this.chart_4.TabIndex = 2;
-            this.chart_4.Text = "chart4";
             // 
             // guna2Panel1
             // 
             this.guna2Panel1.BorderRadius = 10;
             this.guna2Panel1.Controls.Add(this.label2);
-            this.guna2Panel1.Controls.Add(this.label1);
             this.guna2Panel1.Location = new System.Drawing.Point(72, 195);
             this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel1.Name = "guna2Panel1";
@@ -127,16 +103,16 @@
             this.label2.Location = new System.Drawing.Point(67, 65);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(143, 81);
+            this.label2.Size = new System.Drawing.Size(0, 81);
             this.label2.TabIndex = 1;
-            this.label2.Text = "000";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(56, 17);
+            this.label1.Location = new System.Drawing.Point(131, 167);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(164, 41);
@@ -148,7 +124,6 @@
             // 
             this.guna2Panel2.BorderRadius = 10;
             this.guna2Panel2.Controls.Add(this.chart1);
-            this.guna2Panel2.Controls.Add(this.label4);
             this.guna2Panel2.Location = new System.Drawing.Point(437, 195);
             this.guna2Panel2.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel2.Name = "guna2Panel2";
@@ -157,18 +132,18 @@
             // 
             // chart1
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chart1.Legends.Add(legend2);
+            chartArea7.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea7);
+            legend7.Name = "Legend1";
+            this.chart1.Legends.Add(legend7);
             this.chart1.Location = new System.Drawing.Point(30, 65);
             this.chart1.Margin = new System.Windows.Forms.Padding(2);
             this.chart1.Name = "chart1";
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chart1.Series.Add(series2);
+            series7.ChartArea = "ChartArea1";
+            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
+            series7.Legend = "Legend1";
+            series7.Name = "Series1";
+            this.chart1.Series.Add(series7);
             this.chart1.Size = new System.Drawing.Size(222, 82);
             this.chart1.TabIndex = 1;
             this.chart1.Text = "chart1";
@@ -177,7 +152,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(43, 17);
+            this.label4.Location = new System.Drawing.Point(478, 167);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(192, 41);
@@ -355,13 +330,27 @@
             this.guna2Panel5.Size = new System.Drawing.Size(1598, 69);
             this.guna2Panel5.TabIndex = 8;
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(216, 772);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(378, 41);
+            this.label6.TabIndex = 29;
+            this.label6.Text = "Số lượt đăng ký theo ngày";
+            // 
             // Reports
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1600, 875);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.guna2Panel4);
@@ -376,12 +365,9 @@
             this.Name = "Reports";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form5";
-            this.pnl_c4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.chart_4)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.guna2Panel2.ResumeLayout(false);
-            this.guna2Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
@@ -396,7 +382,6 @@
         private System.Windows.Forms.Label lbl_Reports;
         private Guna.UI2.WinForms.Guna2Panel pnl_c3;
         private Guna.UI2.WinForms.Guna2Panel pnl_c4;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart_4;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
@@ -414,5 +399,6 @@
         private Guna.UI2.WinForms.Guna2ComboBox cbx_1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel5;
         private Guna.UI2.WinForms.Guna2Button btn_GamePage;
+        private System.Windows.Forms.Label label6;
     }
 }

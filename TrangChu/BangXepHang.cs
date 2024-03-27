@@ -23,14 +23,15 @@ namespace Gaming_Dashboard
             {
                 sqlConnection.Open();
                 using (SqlCommand command = new SqlCommand(
-                        "SELECT U.UserName, G.GameID, G.Score " +
-            "FROM (" +
-                "SELECT GameID, MAX(Score) as Score, UserID " +
-                "FROM GameSessions " +
-                "GROUP BY GameID, UserID " +
-            ") G JOIN GameSessions S on G.GameID = S.GameID AND G.Score = S.Score " +
-            "JOIN Users U ON G.UserID = U.UserID",
-                        sqlConnection))
+   @"SELECT U.UserName, G.GameID, G.Score 
+   FROM (
+       SELECT GameID, Score, UserID,
+       ROW_NUMBER() OVER (PARTITION BY GameID ORDER BY Score DESC) AS Rank
+       FROM GameSessions
+   ) G
+   JOIN Users U ON G.UserID = U.UserID
+   WHERE G.Rank = 1;",
+   sqlConnection))
                 {
                     SqlDataReader reader = command.ExecuteReader();
 

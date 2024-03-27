@@ -122,16 +122,7 @@ namespace Gaming_Dashboard
             string password = txt_DNMatKhau.Text;
             loggedInUsername = "";
 
-            // Kiểm tra trường hợp cụ thể email = "DoannhomA" và mật khẩu = "999999"
-            if (email == "DoannhomA" && password == "999999")
-            {
-                // Mở biểu mẫu Quản trị viên
-                this.Hide();
-                var admin = new admin___tke.Admin_Player();
-                this.main.Hide();
-                admin.ShowDialog();
-                return;
-            }
+            
 
             // Xác thực email và mật khẩu
             if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password))

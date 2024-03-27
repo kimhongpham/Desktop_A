@@ -30,20 +30,27 @@ namespace Codecool.Quest
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            // Lấy form MainForm hiện tại
+            MainForm mainForm = Application.OpenForms.OfType<MainForm>().FirstOrDefault();
+            if (mainForm != null)
+            {
+                // Đóng MainForm
+                mainForm.Hide();
+            }
+            this.Hide();
         }
         private MainForm Mainform;
+
         public void btnRestart_Click(object sender, EventArgs e)
         {
-            if (Mainform != null)
+            // Lấy form MainForm hiện tại
+            MainForm mainForm = Application.OpenForms.OfType<MainForm>().FirstOrDefault();
+            if (mainForm != null)
             {
-                Mainform.FormClosed -= MainForm_FormClosed;
-                Mainform.Close();
+                // Đóng MainForm
+                mainForm.Hide();
             }
-            Mainform = new MainForm(_username);
-            Mainform.FormClosed += MainForm_FormClosed;
-            Mainform.Show();
-            this.Close();
+            this.Hide();
         }
         public void MainForm_FormClosed(object sender, FormClosedEventArgs e)
         {

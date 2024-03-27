@@ -1,4 +1,4 @@
-CREATE DATABASE game_databaseA;
+﻿CREATE DATABASE game_databaseA;
 
 USE game_databaseA;
 
@@ -42,33 +42,14 @@ CREATE TABLE GameSessions (
     FOREIGN KEY (GameID) REFERENCES Games(GameID),
     FOREIGN KEY (UserID) REFERENCES Users(UserID)
 );
-select *from Games;
-select *from Users;
-select *from UserGames;
-select *from GameSessions;
-ALTER TABLE Games DROP COLUMN THELOAI;
-ALTER TABLE Games ADD GameDescription NVARCHAR(255);
-ALTER TABLE Games ADD GameImage varbinary(max);
-DROP TABLE CauHoi
-DROP TABLE Mon
-DELETE FROM Games
-WHERE GameName='Game 1';
-SELECT 
-    g.GameID,
-    g.GameName AS GameName,
-    MAX(gs.Score) AS HighestScore,
-    DENSE_RANK() OVER(ORDER BY MAX(gs.Score) DESC) AS Ranking
-FROM 
-    GameSessions gs
-    JOIN Games g ON gs.GameID = g.GameID
-    JOIN Users u ON gs.UserID = u.UserID
-WHERE 
-    u.UserID = '8'
-GROUP BY 
-    g.GameID, g.GameName
-ORDER BY 
-    g.GameID;
-
-select *
-from GameSessions gs
-where gs.UserID = '9' and gameid ='1';
+CREATE TABLE GameState 
+(
+    ID INT PRIMARY KEY IDENTITY,
+    UserID INT,
+    Level INT,
+    Score INT,
+    Rows INT,
+    Cols INT,
+    MaxFlips INT,
+    FOREIGN KEY (UserID) REFERENCES Users(UserID)
+);

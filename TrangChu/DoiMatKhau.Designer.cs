@@ -197,7 +197,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.guna2Panel2);
             this.Name = "DoiMatKhau";
-            this.Size = new System.Drawing.Size(800, 450);
+            this.Size = new System.Drawing.Size(329, 450);
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
             this.ResumeLayout(false);

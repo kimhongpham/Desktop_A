@@ -421,7 +421,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(151, 42);
             this.label3.TabIndex = 17;
-            this.label3.Text = "Game 1";
+            this.label3.Text = "Game 2";
             // 
             // guna2PictureBox1
             // 

@@ -63,6 +63,13 @@ namespace Gaming_Dashboard
                     return;
                 }
 
+                // Check if the email is from gmail.com
+                if (!txt_DKEmail.Text.EndsWith("@gmail.com"))
+                {
+                    MessageBox.Show("Vui lòng sử dụng địa chỉ email Gmail.");
+                    return;
+                }
+
                 // Hash the password
                 var passwordHash = HashPassword(txt_DKMatKhau.Text);
 
@@ -94,6 +101,7 @@ namespace Gaming_Dashboard
                                 return;
                             }
                         }
+
                         // Kiểm tra mọi vòng lặp email địa chỉ
                         string checkEmailQuery = "SELECT COUNT(*) FROM Users WHERE Email = @Email";
                         using (SqlCommand checkCommand = new SqlCommand(checkEmailQuery, sqlConnection))
