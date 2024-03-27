@@ -204,7 +204,7 @@ namespace Gaming_Dashboard
 
         private void btn_Game1_Click(object sender, EventArgs e)
         {
-            var MainOption = new MEMORY_MATCH.MainOption(_username); // tạo một phiên bản mới của Main Game 1
+            var MainOption = new MEMORY_MATCH.MainOption(); // tạo một phiên bản mới của Main Game 1
             MainOption.ShowDialog();
         }
 

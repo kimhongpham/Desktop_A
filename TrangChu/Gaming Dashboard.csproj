@@ -389,6 +389,10 @@
       <Project>{c2c8b5e6-85b1-4fb3-83ad-58a38e417926}</Project>
       <Name>admin &amp; tke</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Game 1\MEMORY MATCH\MEMORY MATCH.csproj">
+      <Project>{e2a4416d-2725-454e-b21b-889c1746addc}</Project>
+      <Name>MEMORY MATCH</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Game_03\Codecool.Quest\Codecool.Quest.csproj">
       <Project>{e705a73b-d7c5-4f3c-afb5-d7ea15a2acc3}</Project>
       <Name>Codecool.Quest</Name>
@@ -396,10 +400,6 @@
     <ProjectReference Include="..\Game_2\Game02\Game02.csproj">
       <Project>{1c0f478f-7fca-4e3c-9d01-7a38b3a9ee05}</Project>
       <Name>Game02</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\memory_match\MEMORY MATCH\MEMORY MATCH.csproj">
-      <Project>{e2a4416d-2725-454e-b21b-889c1746addc}</Project>
-      <Name>MEMORY MATCH</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
