@@ -39,12 +39,12 @@ namespace admin___tke
             {
                 sqlConnection.Open();
 
-                string query = "SELECT MAX(userid) FROM users";
+                string query = "SELECT COUNT(*) FROM users";
                 SqlCommand command = new SqlCommand(query, sqlConnection);
 
-                int lastUserId = (int)command.ExecuteScalar();
+                int numberOfUsers = (int)command.ExecuteScalar();
 
-                label2.Text = $"{lastUserId}";
+                label2.Text = $"{numberOfUsers}";
 
                 sqlConnection.Close();
             }

@@ -387,7 +387,7 @@ namespace Game02
                 this.Controls.Remove(i);
             }
             enemyList.Clear();
-            for (int i = 0; i < 1; i++)
+            for (int i = 0; i < 3; i++)
             {
                 SpawnEnemy();
             }

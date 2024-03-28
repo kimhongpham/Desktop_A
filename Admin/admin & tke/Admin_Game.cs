@@ -92,9 +92,11 @@ namespace admin___tke
             {
                 sqlConnection.Open();
 
-                string query = "SELECT GameName, GameDescription FROM Games WHERE GameName = @gameName";
+                // Escape the search term to handle potential wildcard characters
+                string escapedGameName = SqlHelper.EscapeLike(gameName);
+
+                string query = $"SELECT GameName, GameDescription FROM Games WHERE GameName LIKE '%{escapedGameName}%'";
                 SqlCommand sqlCommand = new SqlCommand(query, sqlConnection);
-                sqlCommand.Parameters.AddWithValue("@gameName", gameName);
 
                 using (SqlDataReader sqlDataReader = sqlCommand.ExecuteReader())
                 {
@@ -113,6 +115,20 @@ namespace admin___tke
                 }
 
                 sqlConnection.Close();
+            }
+        }
+
+        // Extension method to escape the search term
+        public static class SqlHelper
+        {
+            public static string EscapeLike(string input)
+            {
+                if (string.IsNullOrEmpty(input))
+                {
+                    return input;
+                }
+
+                return input.Replace("_", "[_]").Replace("%", "[%]");
             }
         }
 

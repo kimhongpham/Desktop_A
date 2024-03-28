@@ -15,7 +15,7 @@ namespace Game02
             _username = username;
         }
 
-        private void guna2Button1_Click(object sender, EventArgs e)
+        private void btn_Start_Click(object sender, EventArgs e)
         {
             if (SelectChar != 0)
             {

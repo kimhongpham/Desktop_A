@@ -94,7 +94,7 @@ namespace Game02
             lblScore.Text = "Your score: " + score.ToString();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btn_NewG_Click(object sender, EventArgs e)
         {
             this.Hide();
             CharSelect charSelect = new CharSelect(_username);
@@ -102,7 +102,7 @@ namespace Game02
             this.Close();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_Main_Click(object sender, EventArgs e)
         {
             InsertGameSession();
             this.Hide();

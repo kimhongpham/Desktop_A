@@ -458,6 +458,7 @@
             this.Name = "Admin_Game";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin Game";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Admin_Game_Load);
             this.pnel_1.ResumeLayout(false);
             this.pnel_1.PerformLayout();

@@ -206,6 +206,7 @@
             this.Name = "Edit_info";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Player)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game02", "Game_2\Game02\Gam
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codecool.Quest", "Game_03\Codecool.Quest\Codecool.Quest.csproj", "{E705A73B-D7C5-4F3C-AFB5-D7EA15A2ACC3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MEMORY MATCH", "Game 1\MEMORY MATCH\MEMORY MATCH.csproj", "{E2A4416D-2725-454E-B21B-889C1746ADDC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MEMORY MATCH", "memory_match\MEMORY MATCH\MEMORY MATCH.csproj", "{E2A4416D-2725-454E-B21B-889C1746ADDC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

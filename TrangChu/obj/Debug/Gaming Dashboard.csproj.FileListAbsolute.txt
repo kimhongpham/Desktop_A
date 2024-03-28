@@ -500,3 +500,9 @@ C:\Users\Admin\Downloads\Desktop_A4\TrangChu\obj\Debug\Gaming Dashboard.csproj.C
 C:\Users\Admin\Downloads\Desktop_A4\TrangChu\obj\Debug\Gaming Dashboard.csproj.CopyComplete
 C:\Users\Admin\Downloads\Desktop_A4\TrangChu\obj\Debug\Gaming Dashboard.exe
 C:\Users\Admin\Downloads\Desktop_A4\TrangChu\obj\Debug\Gaming Dashboard.pdb
+C:\Users\Admin\Downloads\Desktop_A4\TrangChu\bin\Debug\Properties\Resources.resx
+C:\Users\Admin\Downloads\Desktop_A4\TrangChu\bin\Debug\Properties\Resources.Designer.cs
+C:\Users\Admin\Downloads\Desktop_A4\TrangChu\bin\Debug\Resources\Chill.wav
+C:\Users\Admin\Downloads\Desktop_A\TrangChu\bin\Debug\Properties\Resources.resx
+C:\Users\Admin\Downloads\Desktop_A\TrangChu\bin\Debug\Properties\Resources.Designer.cs
+C:\Users\Admin\Downloads\Desktop_A\TrangChu\bin\Debug\Resources\Chill.wav

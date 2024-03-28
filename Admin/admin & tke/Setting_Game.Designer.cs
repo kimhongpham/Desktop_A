@@ -277,6 +277,7 @@
             this.Name = "Setting_Game";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Setting Game";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.pnl_GameID.ResumeLayout(false);
             this.pnl_GameID.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_G)).EndInit();

@@ -74,7 +74,7 @@
             this.pnl_1st.Controls.Add(this.pic_N1);
             this.pnl_1st.FillColor = System.Drawing.Color.White;
             this.pnl_1st.Location = new System.Drawing.Point(51, 172);
-            this.pnl_1st.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnl_1st.Margin = new System.Windows.Forms.Padding(2);
             this.pnl_1st.Name = "pnl_1st";
             this.pnl_1st.Size = new System.Drawing.Size(1487, 250);
             this.pnl_1st.TabIndex = 14;
@@ -107,7 +107,7 @@
             this.pic_N1.Image = global::admin___tke.Properties.Resources.Rectangle_2386;
             this.pic_N1.ImageRotate = 0F;
             this.pic_N1.Location = new System.Drawing.Point(12, 16);
-            this.pic_N1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pic_N1.Margin = new System.Windows.Forms.Padding(2);
             this.pic_N1.Name = "pic_N1";
             this.pic_N1.Size = new System.Drawing.Size(368, 218);
             this.pic_N1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -123,7 +123,7 @@
             this.pnl_2nd.Controls.Add(this.pic_N2);
             this.pnl_2nd.FillColor = System.Drawing.Color.White;
             this.pnl_2nd.Location = new System.Drawing.Point(51, 457);
-            this.pnl_2nd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnl_2nd.Margin = new System.Windows.Forms.Padding(2);
             this.pnl_2nd.Name = "pnl_2nd";
             this.pnl_2nd.Size = new System.Drawing.Size(1487, 250);
             this.pnl_2nd.TabIndex = 17;
@@ -156,7 +156,7 @@
             this.pic_N2.Image = global::admin___tke.Properties.Resources.Rectangle_2386;
             this.pic_N2.ImageRotate = 0F;
             this.pic_N2.Location = new System.Drawing.Point(12, 16);
-            this.pic_N2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pic_N2.Margin = new System.Windows.Forms.Padding(2);
             this.pic_N2.Name = "pic_N2";
             this.pic_N2.Size = new System.Drawing.Size(368, 218);
             this.pic_N2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -174,7 +174,7 @@
             this.btn_SP3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.btn_SP3.ForeColor = System.Drawing.Color.DimGray;
             this.btn_SP3.Location = new System.Drawing.Point(947, 759);
-            this.btn_SP3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_SP3.Margin = new System.Windows.Forms.Padding(2);
             this.btn_SP3.Name = "btn_SP3";
             this.btn_SP3.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btn_SP3.Size = new System.Drawing.Size(59, 61);
@@ -192,7 +192,7 @@
             this.btn_SP2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.btn_SP2.ForeColor = System.Drawing.Color.DimGray;
             this.btn_SP2.Location = new System.Drawing.Point(882, 759);
-            this.btn_SP2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_SP2.Margin = new System.Windows.Forms.Padding(2);
             this.btn_SP2.Name = "btn_SP2";
             this.btn_SP2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btn_SP2.Size = new System.Drawing.Size(59, 61);
@@ -208,7 +208,7 @@
             this.btn_SP1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_SP1.ForeColor = System.Drawing.Color.White;
             this.btn_SP1.Location = new System.Drawing.Point(812, 759);
-            this.btn_SP1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_SP1.Margin = new System.Windows.Forms.Padding(2);
             this.btn_SP1.Name = "btn_SP1";
             this.btn_SP1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btn_SP1.Size = new System.Drawing.Size(59, 61);
@@ -231,7 +231,7 @@
             "Newest",
             "Latest"});
             this.cbx_Date.Location = new System.Drawing.Point(1102, 83);
-            this.cbx_Date.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbx_Date.Margin = new System.Windows.Forms.Padding(2);
             this.cbx_Date.Name = "cbx_Date";
             this.cbx_Date.Size = new System.Drawing.Size(194, 36);
             this.cbx_Date.TabIndex = 24;
@@ -247,7 +247,7 @@
             this.btn_Find.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Find.ForeColor = System.Drawing.Color.White;
             this.btn_Find.Location = new System.Drawing.Point(968, 93);
-            this.btn_Find.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Find.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Find.Name = "btn_Find";
             this.btn_Find.Size = new System.Drawing.Size(141, 51);
             this.btn_Find.TabIndex = 32;
@@ -258,7 +258,7 @@
             this.panel1.Controls.Add(this.cbxDate);
             this.panel1.Controls.Add(this.cbx_Date);
             this.panel1.Location = new System.Drawing.Point(45, 80);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1492, 78);
             this.panel1.TabIndex = 33;
@@ -279,7 +279,7 @@
             "Newest",
             "Latest"});
             this.cbxDate.Location = new System.Drawing.Point(1184, 13);
-            this.cbxDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbxDate.Margin = new System.Windows.Forms.Padding(2);
             this.cbxDate.Name = "cbxDate";
             this.cbxDate.Size = new System.Drawing.Size(194, 36);
             this.cbxDate.TabIndex = 35;
@@ -288,7 +288,7 @@
             // panel2
             // 
             this.panel2.Location = new System.Drawing.Point(792, 748);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(230, 83);
             this.panel2.TabIndex = 34;
@@ -354,10 +354,11 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Search";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Search";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.pnl_1st.ResumeLayout(false);
             this.pnl_1st.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_N1)).EndInit();

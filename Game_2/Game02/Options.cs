@@ -8,23 +8,22 @@ namespace Game02
     public partial class Options : Form
     {
         private string _username;
-        private int _userID;
-        private SoundPlayer soundPlayer = new SoundPlayer();
-        public bool isPlaying = true;
-        
-        
+        private SoundManager soundManager;
+
         public Options(string username)
         {
             InitializeComponent();
             _username = username;
+            soundManager = SoundManager.GetInstance();
+            UpdateButtonState();
         }
 
         private void Options_Load(object sender, EventArgs e)
         {
-            
+
         }
 
-        private void guna2Button2_Click(object sender, EventArgs e)
+        private void btn_Exit_Click(object sender, EventArgs e)
         {
             this.Hide();
             MainMenu mn = new MainMenu(_username);
@@ -32,7 +31,7 @@ namespace Game02
             this.Close();
         }
 
-        private void guna2Button3_Click(object sender, EventArgs e)
+        private void btn_Sp_Click(object sender, EventArgs e)
         {
             this.Hide();
             Support support = new Support(_username);
@@ -42,20 +41,24 @@ namespace Game02
 
         private void btn_Play_Click(object sender, EventArgs e)
         {
-            if (isPlaying)
+            // Bật hoặc tắt âm thanh
+            soundManager.ToggleSound();
+
+            // Cập nhật trạng thái của nút
+            UpdateButtonState();
+        }
+
+        private void UpdateButtonState()
+        {
+            // Cập nhật văn bản của nút dựa trên trạng thái hiện tại của âm thanh
+            if (soundManager.IsPlaying())
             {
-                soundPlayer.Stop();
-                btn_Play.Text = "Play";
+                btn_Play.Text = "Pause Sound";
             }
             else
             {
-                soundPlayer.Play();
-                btn_Play.Text = "Stop";
+                btn_Play.Text = "Play Sound";
             }
-
-            isPlaying = !isPlaying;
-            
         }
-
     }
 }

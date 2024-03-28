@@ -149,14 +149,7 @@ namespace Game02
                 ls.ShowDialog();
                 this.Close();
             }
-            else if (a2.Bounds.IntersectsWith(picPlayer.Bounds))
-            {
-                lvl_b us = new lvl_b(score + scoreFromPreviousLevel, SelectChar, _username);
-                this.Hide();
-                timer1.Stop();
-                us.ShowDialog();
-                this.Close();
-            }
+            
         }
 
         private void timer1_Tick(object sender, EventArgs e)

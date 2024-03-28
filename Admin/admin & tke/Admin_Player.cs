@@ -56,21 +56,39 @@ namespace admin___tke
 
         private DataTable GetUser(string userName)
         {
+            DataTable userTable = new DataTable();
+
             using (SqlConnection sqlConnection = admin___tke.Kết_nối.getConnection())
             {
                 sqlConnection.Open();
 
-                string query = "SELECT UserID, UserName, Email, NGAYTHAMGIA, TEN, HO, SDT, QUOCGIA, THANHPHO, Address FROM Users WHERE UserName = @UserName";
+                // Escape the search term to handle potential wildcard characters
+                string escapedUserName = SqlHelper.EscapeLike(userName);
+
+                // Using the LIKE operator with wildcard characters
+                string query = $"SELECT UserID, UserName, Email, NGAYTHAMGIA, TEN, HO, SDT, QUOCGIA, THANHPHO, Address FROM Users WHERE UserName LIKE '%{escapedUserName}%'";
 
                 SqlCommand sqlCommand = new SqlCommand(query, sqlConnection);
-                sqlCommand.Parameters.AddWithValue("@UserName", userName);
-
-                DataTable userTable = new DataTable();
-                userTable.Load(sqlCommand.ExecuteReader());
+                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(sqlCommand);
+                sqlDataAdapter.Fill(userTable);
 
                 sqlConnection.Close();
+            }
 
-                return userTable;
+            return userTable;
+        }
+
+        // Extension method to escape the search term
+        public static class SqlHelper
+        {
+            public static string EscapeLike(string input)
+            {
+                if (string.IsNullOrEmpty(input))
+                {
+                    return input;
+                }
+
+                return input.Replace("_", "[_]").Replace("%", "[%]");
             }
         }
 
