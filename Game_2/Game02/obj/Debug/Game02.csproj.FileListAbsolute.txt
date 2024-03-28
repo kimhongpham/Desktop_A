@@ -232,6 +232,3 @@ D:\Desktop_A\Game_2\Game02\bin\Debug\Resources\Chill.wav
 C:\Users\Admin\Downloads\Desktop_A4\Game_2\Game02\bin\Debug\Properties\Resources.resx
 C:\Users\Admin\Downloads\Desktop_A4\Game_2\Game02\bin\Debug\Properties\Resources.Designer.cs
 C:\Users\Admin\Downloads\Desktop_A4\Game_2\Game02\bin\Debug\Resources\Chill.wav
-C:\Users\Admin\Downloads\Desktop_A\Game_2\Game02\bin\Debug\Properties\Resources.resx
-C:\Users\Admin\Downloads\Desktop_A\Game_2\Game02\bin\Debug\Properties\Resources.Designer.cs
-C:\Users\Admin\Downloads\Desktop_A\Game_2\Game02\bin\Debug\Resources\Chill.wav

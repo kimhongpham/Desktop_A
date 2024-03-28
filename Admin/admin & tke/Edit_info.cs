@@ -95,6 +95,19 @@ namespace admin___tke
 
                 if (result == DialogResult.Yes)
                 {
+                    // Xóa hàng khỏi GameSessions trước
+                    using (SqlConnection sqlConnection = admin___tke.Kết_nối.getConnection())
+                    {
+                        sqlConnection.Open();
+
+                        string query = "DELETE FROM GameSessions WHERE UserID = @UserId";
+                        SqlCommand sqlCommand = new SqlCommand(query, sqlConnection);
+                        sqlCommand.Parameters.AddWithValue("@UserId", userId);
+                        sqlCommand.ExecuteNonQuery();
+
+                        sqlConnection.Close();
+                    }
+
                     // Xóa người dùng khỏi cơ sở dữ liệu
                     using (SqlConnection sqlConnection = admin___tke.Kết_nối.getConnection())
                     {
