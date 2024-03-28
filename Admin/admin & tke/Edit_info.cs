@@ -141,7 +141,7 @@ namespace admin___tke
                 // Cập nhật giá trị tên người dùng trong DataGridView
                 selectedRow.Cells["UserName"].Value = newUsername;
 
-                MessageBox.Show("Đã thay đổi tên người dùng thành công.", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Đã phân quyền thành công.", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {

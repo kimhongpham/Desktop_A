@@ -11,7 +11,7 @@ namespace Gaming_Dashboard
     {
         private static QuenMatKhau _instance;
         public DoiMatKhau DoiMatKhauForm { get; private set; }
-        private string otp;
+        //private string otp;
 
         public static QuenMatKhau Instance
         {
@@ -43,16 +43,24 @@ namespace Gaming_Dashboard
 
             if (isRegistered)
             {
+                // SendOTP(txt_EmailXacMinh.Text);
+                DoiMatKhau.Instance.UserEmail = txt_EmailXacMinh.Text;
                 // Tạo và gửi mã OTP đến địa chỉ email của người dùng
-                otp = GenerateOTP();
-                SendOTP(txt_EmailXacMinh.Text, otp);
+                //otp = GenerateOTP();
+                SendOTP(txt_EmailXacMinh.Text);
 
-                // Đóng biểu mẫu QuenMatKhau hiện tại
-                this.Hide();
 
                 // Hiển thị biểu mẫu DoiMatKhau và chuyển mã OTP
-                //DoiMatKhauForm = new DoiMatKhau(otp);
-                //DoiMatKhauForm.ShowDialog();
+                if (!guna2Panel2.Controls.Contains(DoiMatKhau.Instance))
+                {
+                    guna2Panel2.Controls.Add(DoiMatKhau.Instance);
+                    QuenMatKhau.Instance.Dock = DockStyle.Fill;
+                    guna2Panel2.BringToFront();
+                    AutoScroll = false;
+                    DoiMatKhau.Instance.BringToFront();
+                }
+                else
+                    guna2Panel2.BringToFront();
             }
             else
             {
@@ -102,7 +110,7 @@ namespace Gaming_Dashboard
         }
 
         // Phương thức gửi OTP đến địa chỉ email
-        private void SendOTP(string email, string otp)
+        private void SendOTP(string email)
         {
             try
             {
@@ -130,6 +138,11 @@ namespace Gaming_Dashboard
             {
                 MessageBox.Show("Failed to send OTP: " + ex.Message);
             }
+        }
+
+        private void guna2Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

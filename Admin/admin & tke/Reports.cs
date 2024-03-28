@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data.SqlClient;
 using System.Windows.Forms;
@@ -60,7 +61,7 @@ namespace admin___tke
 
             Legend legend = new Legend();
             legend.Docking = Docking.Right;
-            chart.Legends.Add(legend);
+            //chart.Legends.Add(legend);
 
             using (SqlConnection sqlConnection = Kết_nối.getConnection())
             {
@@ -200,6 +201,8 @@ namespace admin___tke
 
             // Đặt ChartArea cho biểu đồ
             columnChart.ChartAreas.Add(columnArea);
+            columnChart.Legends.Add(new Legend("Legend"));
+            columnChart.Legends["Legend"].Docking = Docking.Right;
 
             // Nhận kết nối
             using (SqlConnection sqlConnection = Kết_nối.getConnection())
@@ -223,6 +226,7 @@ namespace admin___tke
                 // Thực hiện truy vấn và điền vào biểu đồ
                 using (SqlDataReader reader = command.ExecuteReader())
                 {
+                    HashSet<string> addedGameNames = new HashSet<string>();
                     while (reader.Read())
                     {
                         DateTime date = reader.GetDateTime(0);
@@ -255,6 +259,13 @@ namespace admin___tke
 
                         // Thêm điểm dữ liệu vào chuỗi
                         columnChart.Series[gameName].Points.AddXY(date, playerCount);
+                        if (!addedGameNames.Contains(gameName))
+                        {
+                            addedGameNames.Add(gameName);
+
+                            // Thêm mục chú giải cho tên trò chơi
+                            columnChart.Legends["Legend"].CustomItems.Add(new LegendItem(gameName, columnChart.Series[gameName].Color, ""));
+                        }
                     }
                 }
 
@@ -265,7 +276,7 @@ namespace admin___tke
             pnl_c4.Controls.Add(columnChart);
         }
 
-        
+
         private void label2_Click(object sender, EventArgs e)
         {
 

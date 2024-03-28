@@ -39,6 +39,7 @@
             this.btn_Save = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Cancle = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Del = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.pnl_GameID.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_G)).BeginInit();
             this.SuspendLayout();
@@ -195,7 +196,7 @@
             this.btn_Save.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btn_Save.Font = new System.Drawing.Font("Segoe UI", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Save.ForeColor = System.Drawing.Color.White;
-            this.btn_Save.Location = new System.Drawing.Point(362, 743);
+            this.btn_Save.Location = new System.Drawing.Point(214, 743);
             this.btn_Save.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Save.Name = "btn_Save";
             this.btn_Save.Size = new System.Drawing.Size(229, 72);
@@ -214,7 +215,7 @@
             this.btn_Cancle.FillColor = System.Drawing.Color.White;
             this.btn_Cancle.Font = new System.Drawing.Font("Segoe UI", 26F, System.Drawing.FontStyle.Bold);
             this.btn_Cancle.ForeColor = System.Drawing.Color.Black;
-            this.btn_Cancle.Location = new System.Drawing.Point(694, 743);
+            this.btn_Cancle.Location = new System.Drawing.Point(486, 743);
             this.btn_Cancle.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Cancle.Name = "btn_Cancle";
             this.btn_Cancle.Size = new System.Drawing.Size(229, 72);
@@ -232,12 +233,32 @@
             this.btn_Del.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
             this.btn_Del.Font = new System.Drawing.Font("Segoe UI", 26F, System.Drawing.FontStyle.Bold);
             this.btn_Del.ForeColor = System.Drawing.Color.White;
-            this.btn_Del.Location = new System.Drawing.Point(1015, 743);
+            this.btn_Del.Location = new System.Drawing.Point(762, 743);
             this.btn_Del.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Del.Name = "btn_Del";
             this.btn_Del.Size = new System.Drawing.Size(229, 72);
             this.btn_Del.TabIndex = 19;
             this.btn_Del.Text = "Delete";
+            this.btn_Del.Click += new System.EventHandler(this.btn_Del_Click);
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.BorderRadius = 17;
+            this.guna2Button1.BorderThickness = 8;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.White;
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 26F, System.Drawing.FontStyle.Bold);
+            this.guna2Button1.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button1.Location = new System.Drawing.Point(1046, 743);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(229, 72);
+            this.guna2Button1.TabIndex = 20;
+            this.guna2Button1.Text = "Update";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // Setting_Game
             // 
@@ -245,6 +266,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1600, 875);
+            this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.btn_Del);
             this.Controls.Add(this.btn_Cancle);
             this.Controls.Add(this.btn_Save);
@@ -276,5 +298,6 @@
         private Guna.UI2.WinForms.Guna2Button btn_Del;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2TextBox txt_gameid;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }

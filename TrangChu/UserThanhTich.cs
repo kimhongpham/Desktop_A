@@ -85,59 +85,39 @@ namespace Gaming_Dashboard
                     // Thực hiện lệnh và lấy trình đọc dữ liệu
                     using (SqlDataReader reader = command.ExecuteReader())
                     {
-                        int gameId = 1;
-                        while (gameId <= 3)
+                        while (reader.Read())
                         {
-                            // Kiểm tra xem có bản ghi nào được trả về
-                            if (reader.HasRows)
+                            int gameId = reader.GetInt32(0);
+                            if (gameId == 1)
                             {
-                                // Nếu có bản ghi, đọc các giá trị từ trình đọc dữ liệu
-                                // và đặt chúng vào nhãn và nút
-                                if (reader.Read())
-                                {
-                                    string gameName = reader.GetString(1);
-                                    long highestScore = reader.GetInt64(2);
-                                    object ranking = reader.GetValue(3);
-                                    int rank = Convert.ToInt32(ranking);
+                                string gameName = reader.GetString(1);
+                                long highestScore = reader.GetInt64(2);
+                                object ranking = reader.GetValue(3);
+                                int rank = Convert.ToInt32(ranking);
 
-                                    if (gameId == 1)
-                                    {
-                                        label1.Text = highestScore.ToString();
-                                        btn1.Text = rank.ToString();
-                                    }
-                                    else if (gameId == 2)
-                                    {
-                                        label2.Text = highestScore.ToString();
-                                        btn2.Text = rank.ToString();
-                                    }
-                                    else if (gameId == 3)
-                                    {
-                                        label3.Text = highestScore.ToString();
-                                        btn3.Text = rank.ToString();
-                                    }
-                                }
+                                label1.Text = highestScore.ToString();
+                                btn1.Text = rank.ToString();
                             }
-                            else
+                            else if (gameId == 2)
                             {
-                                // Nếu không có bản ghi, đặt điểm và xếp hạng mặc định
-                                if (gameId == 1)
-                                {
-                                    label1.Text = "0";
-                                    btn1.Text = "0";
-                                }
-                                else if (gameId == 2)
-                                {
-                                    label2.Text = "0";
-                                    btn2.Text = "0";
-                                }
-                                else if (gameId == 3)
-                                {
-                                    label3.Text = "0";
-                                    btn3.Text = "0";
-                                }
-                            }
+                                string gameName = reader.GetString(1);
+                                long highestScore = reader.GetInt64(2);
+                                object ranking = reader.GetValue(3);
+                                int rank = Convert.ToInt32(ranking);
 
-                            gameId++;
+                                label2.Text = highestScore.ToString();
+                                btn2.Text = rank.ToString();
+                            }
+                            else if (gameId == 3)
+                            {
+                                string gameName = reader.GetString(1);
+                                long highestScore = reader.GetInt64(2);
+                                object ranking = reader.GetValue(3);
+                                int rank = Convert.ToInt32(ranking);
+
+                                label3.Text = highestScore.ToString();
+                                btn3.Text = rank.ToString();
+                            }
                         }
                     }
                 }

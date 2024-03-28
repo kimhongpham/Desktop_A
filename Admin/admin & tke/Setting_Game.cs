@@ -87,5 +87,118 @@ namespace admin___tke
                 pic_G.Image = Image.FromFile(openFileDialog.FileName);
             }
         }
+
+        private void btn_Del_Click(object sender, EventArgs e)
+        {
+            // Check if the textbox is empty
+            if (string.IsNullOrWhiteSpace(txt_gameid.Text.Trim()))
+            {
+                MessageBox.Show("Vui lòng nhập vào mã trò chơi", "Xác nhận", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Check if the gameid is a valid id
+            int gameid;
+            if (!int.TryParse(txt_gameid.Text.Trim(), out gameid) || gameid <= 0)
+            {
+                MessageBox.Show("Vui lòng nhập vào một mã trò chơi hợp lệ", "Xác nhận", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Check if the gameid exists in the database
+            using (SqlConnection sqlConnection = admin___tke.Kết_nối.getConnection())
+            {
+                sqlConnection.Open();
+
+                string query = "SELECT COUNT(*) FROM Games WHERE GameID = @gameid";
+                SqlCommand sqlCommand = new SqlCommand(query, sqlConnection);
+                sqlCommand.Parameters.AddWithValue("@gameid", gameid);
+                int count = (int)sqlCommand.ExecuteScalar();
+
+                if (count == 0)
+                {
+                    MessageBox.Show("Không tìm thấy mã trò chơi này", "Xác nhận", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                // Show confirmation message
+                if (MessageBox.Show("Bạn có chắc chắn muốn xóa tất cả dữ liệu của trò chơi này?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+                {
+                    return;
+                }
+
+                // Delete the game
+                query = "DELETE FROM Games WHERE GameID = @gameid";
+                sqlCommand = new SqlCommand(query, sqlConnection);
+                sqlCommand.Parameters.AddWithValue("@gameid", gameid);
+                sqlCommand.ExecuteNonQuery();
+
+                MessageBox.Show("Xóa thành công trò chơi này!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                // Clear the textbox
+                txt_gameid.Clear();
+            }
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            // Check if the textbox is empty
+            if (string.IsNullOrWhiteSpace(txt_gameid.Text.Trim()))
+            {
+                MessageBox.Show("Vui lòng nhập vào mã trò chơi", "Xác nhận", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Check if the gameid is a valid id
+            int gameid;
+            if (!int.TryParse(txt_gameid.Text.Trim(), out gameid))
+            {
+                MessageBox.Show("Vui lòng nhập vào một mã trò chơi hợp lệ", "Xác nhận", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Check if the gameid exists in the database
+            using (SqlConnection sqlConnection = admin___tke.Kết_nối.getConnection())
+            {
+                sqlConnection.Open();
+
+                string query = "SELECT COUNT(*) FROM Games WHERE GameID = @gameid";
+                SqlCommand sqlCommand = new SqlCommand(query, sqlConnection);
+                sqlCommand.Parameters.AddWithValue("@gameid", gameid);
+                int count = (int)sqlCommand.ExecuteScalar();
+
+                if (count == 0)
+                {
+                    MessageBox.Show("Không tìm thấy mã trò chơi này", "Xác nhận", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                // Update game name and description
+                if (!string.IsNullOrWhiteSpace(txt_NameG.Text.Trim()))
+                {
+                    query = "UPDATE Games SET GameName = @gameName WHERE GameID = @gameid";
+                    sqlCommand = new SqlCommand(query, sqlConnection);
+                    sqlCommand.Parameters.AddWithValue("@gameName", txt_NameG.Text.Trim());
+                    sqlCommand.Parameters.AddWithValue("@gameid", gameid);
+                    sqlCommand.ExecuteNonQuery();
+                }
+
+                if (!string.IsNullOrWhiteSpace(txt_Des.Text.Trim()))
+                {
+                    query = "UPDATE Games SET GameDescription = @gameDescription WHERE GameID = @gameid";
+                    sqlCommand = new SqlCommand(query, sqlConnection);
+                    sqlCommand.Parameters.AddWithValue("@gameDescription", txt_Des.Text.Trim());
+                    sqlCommand.Parameters.AddWithValue("@gameid", gameid);
+                    sqlCommand.ExecuteNonQuery();
+                }
+
+                MessageBox.Show("Cập nhật thành công trò chơi này!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                // Clear the textboxes
+                txt_gameid.Clear();
+                txt_NameG.Clear();
+                txt_Des.Clear();
+            }
+        }
     }   
 }

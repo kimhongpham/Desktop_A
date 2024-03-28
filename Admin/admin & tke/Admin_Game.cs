@@ -21,16 +21,48 @@ namespace admin___tke
 {
     public partial class Admin_Game : Form
     {
+        private int currentPage = 1;
+        private int pageSize = 3;
+        private int totalRecords;
         public Admin_Game()
+{
+    InitializeComponent();
+
+    // Connect to the database
+    using (SqlConnection sqlConnection = admin___tke.Kết_nối.getConnection())
+    {
+        sqlConnection.Open();
+
+        // Insert data into lblName_G1 and lbl_des1 for gameid = 1
+        string query1 = "SELECT GameName, GameDescription FROM Games WHERE GameID = 1";
+        SqlCommand sqlCommand1 = new SqlCommand(query1, sqlConnection);
+        using (SqlDataReader sqlDataReader = sqlCommand1.ExecuteReader())
         {
-            InitializeComponent();
-            
+            if (sqlDataReader.Read())
+            {
+                lblName_G1.Text = sqlDataReader.GetString(0);
+                lbl_des1.Text = sqlDataReader.IsDBNull(1) ? "" : sqlDataReader.GetString(1);
+            }
         }
+
+        // Insert data into label3 and label2 for gameid = 2
+        string query2 = "SELECT GameName, GameDescription FROM Games WHERE GameID = 2";
+        SqlCommand sqlCommand2 = new SqlCommand(query2, sqlConnection);
+        using (SqlDataReader sqlDataReader = sqlCommand2.ExecuteReader())
+        {
+            if (sqlDataReader.Read())
+            {
+                label3.Text = sqlDataReader.GetString(0);
+                label2.Text = sqlDataReader.IsDBNull(1) ? "" : sqlDataReader.GetString(1);
+            }
+        }
+    }
+}
 
         private void btn_SettingG1_Click(object sender, EventArgs e)
         {
-            
-            
+
+
         }
 
         private void btn_SettingG2_Click(object sender, EventArgs e)
@@ -49,7 +81,7 @@ namespace admin___tke
 
         private void txt_Search_TextChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void btn_Find_Click(object sender, EventArgs e)
@@ -70,6 +102,9 @@ namespace admin___tke
                     {
                         lblName_G1.Text = sqlDataReader.GetString(0);
                         lbl_des1.Text = sqlDataReader.IsDBNull(1) ? "" : sqlDataReader.GetString(1);
+
+                        // Remove guna2Panel1 from the form
+                        this.Controls.Remove(guna2Panel1);
                     }
                     else
                     {
@@ -105,9 +140,46 @@ namespace admin___tke
 
         }
 
+        private int _currentPage = 1;
+        private int _pageSize = 10; // Rename the variable to have a unique name
+
         private void btn_P2_Click(object sender, EventArgs e)
         {
-            
+            _currentPage++;
+            LoadGames();
+        }
+
+        private void LoadGames()
+        {
+            int offset = (currentPage - 1) * pageSize; // Calculate the offset based on the current page
+            string gameName = txt_Search.Text;
+
+            using (SqlConnection sqlConnection = admin___tke.Kết_nối.getConnection())
+            {
+                sqlConnection.Open();
+
+                string query = "SELECT GameName, GameDescription FROM Games WHERE GameName = @gameName " +
+                               "ORDER BY GameName OFFSET @offset ROWS FETCH NEXT @pageSize ROWS ONLY";
+                SqlCommand sqlCommand = new SqlCommand(query, sqlConnection);
+                sqlCommand.Parameters.AddWithValue("@gameName", gameName);
+                sqlCommand.Parameters.AddWithValue("@offset", offset);
+                sqlCommand.Parameters.AddWithValue("@pageSize", pageSize);
+
+                using (SqlDataReader sqlDataReader = sqlCommand.ExecuteReader())
+                {
+                    if (sqlDataReader.Read())
+                    {
+                        lblName_G1.Text = sqlDataReader.GetString(0);
+                        lbl_des1.Text = sqlDataReader.IsDBNull(1) ? "" : sqlDataReader.GetString(1);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Không tìm thấy trò chơi", "Không tìm thấy", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+
+                sqlConnection.Close();
+            }
         }
     }
 }
