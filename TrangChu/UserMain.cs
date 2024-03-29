@@ -219,7 +219,7 @@ namespace Gaming_Dashboard
         {
             using (var mainMenu = new Game02.MainMenu(_username))
             {
-                this.Hide();
+                
                 mainMenu.ShowDialog();
             }
         }
